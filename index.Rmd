@@ -7,4 +7,4 @@ documentclass: book
 
 # Introducción {-}
 
-Este es el inicio de mi libro.
+Este es el inicio de mi libro parte 2.
