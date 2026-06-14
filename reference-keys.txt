@@ -1,3 +1,4 @@
-base
 agentforce
-part-1
+fundamentals
+qa
+agentforce-builder-tools
