@@ -882,6 +882,35 @@
       "Maintainer": "Yihui Xie <xie@yihui.name>",
       "Repository": "http://rspm/default/latest"
     },
+    "rstudioapi": {
+      "Package": "rstudioapi",
+      "Version": "0.19.0",
+      "Source": "Repository",
+      "Title": "Safely Access the RStudio API",
+      "Description": "Access the RStudio API (if available) and provide informative error messages when it's not.",
+      "Authors@R": "c( person(\"Kevin\", \"Ushey\", role = c(\"aut\", \"cre\"), email = \"kevin@rstudio.com\"), person(\"JJ\", \"Allaire\", role = c(\"aut\"), email = \"jj@posit.co\"), person(\"Hadley\", \"Wickham\", role = c(\"aut\"), email = \"hadley@posit.co\"), person(\"Gary\", \"Ritchie\", role = c(\"aut\"), email = \"gary@posit.co\"), person(family = \"RStudio\", role = \"cph\") )",
+      "Maintainer": "Kevin Ushey <kevin@rstudio.com>",
+      "License": "MIT + file LICENSE",
+      "URL": "https://rstudio.github.io/rstudioapi/, https://github.com/rstudio/rstudioapi",
+      "BugReports": "https://github.com/rstudio/rstudioapi/issues",
+      "Suggests": [
+        "testthat",
+        "knitr",
+        "rmarkdown",
+        "clipr",
+        "covr",
+        "curl",
+        "jsonlite",
+        "R6",
+        "withr"
+      ],
+      "VignetteBuilder": "knitr",
+      "Encoding": "UTF-8",
+      "Config/roxygen2/version": "8.0.0",
+      "NeedsCompilation": "no",
+      "Author": "Kevin Ushey [aut, cre], JJ Allaire [aut], Hadley Wickham [aut], Gary Ritchie [aut], RStudio [cph]",
+      "Repository": "CRAN"
+    },
     "sass": {
       "Package": "sass",
       "Version": "0.4.10",
@@ -942,6 +971,41 @@
       "Author": "Yihui Xie [aut, cre, cph] (ORCID: <https://orcid.org/0000-0003-0645-5666>), Posit Software, PBC [cph, fnd], Christophe Dervieux [ctb] (ORCID: <https://orcid.org/0000-0003-4474-2498>), Devon Ryan [ctb] (ORCID: <https://orcid.org/0000-0002-8549-0971>), Ethan Heinzen [ctb], Fernando Cagua [ctb]",
       "Maintainer": "Yihui Xie <xie@yihui.name>",
       "Repository": "http://rspm/default/latest"
+    },
+    "webexercises": {
+      "Package": "webexercises",
+      "Version": "1.1.0",
+      "Source": "Repository",
+      "Date": "2023-04-18",
+      "Title": "Create Interactive Web Exercises in 'R Markdown' (Formerly 'webex')",
+      "Description": "Functions for easily creating interactive web pages using 'R Markdown' that students can use in self-guided learning.",
+      "Authors@R": "c( person(\"Dale\",\"Barr\", email = \"dalejbarr@protonmail.com\", role = c(\"aut\")), person(\"Lisa\", \"DeBruine\", email = \"debruine@gmail.com\", role = c(\"aut\", \"cre\")))",
+      "URL": "https://github.com/psyteachr/webexercises",
+      "Depends": [
+        "R (>= 3.1.2)"
+      ],
+      "Imports": [
+        "jsonlite",
+        "knitr",
+        "yaml",
+        "utils",
+        "grDevices",
+        "rstudioapi",
+        "rmarkdown (>= 2.2)"
+      ],
+      "License": "CC BY-SA 4.0",
+      "RoxygenNote": "7.2.1",
+      "Suggests": [
+        "testthat",
+        "bookdown",
+        "quarto",
+        "xfun"
+      ],
+      "Encoding": "UTF-8",
+      "NeedsCompilation": "no",
+      "Author": "Dale Barr [aut], Lisa DeBruine [aut, cre]",
+      "Maintainer": "Lisa DeBruine <debruine@gmail.com>",
+      "Repository": "CRAN"
     },
     "xfun": {
       "Package": "xfun",

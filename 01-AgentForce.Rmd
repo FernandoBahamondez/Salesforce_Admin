@@ -45,4 +45,4 @@ cat("Durante el desarrollo de un agente en **Agentforce**, la herramienta *Conve
 cat(unhide())
 ```
 
-# 
+![](images/clipboard-892693140.png)
