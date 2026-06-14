@@ -1,5 +1,0 @@
----
-title: "base"
-output: html_document
----
-

@@ -5,6 +5,14 @@ site: bookdown::bookdown_site
 documentclass: book
 ---
 
+```{r setup, include=FALSE}
+# Este bloque oculto obliga a renv a registrar estos paquetes
+library(bookdown)
+library(knitr)
+library(rmarkdown)
+```
+
+
 # Introducción {-}
 
 Este es el inicio de mi libro parte 2.
