@@ -16,3 +16,7 @@ library(rmarkdown)
 # Introducción {-}
 
 Este es el inicio de mi libro parte 2.
+
+# Base
+
+Aqui va la base
