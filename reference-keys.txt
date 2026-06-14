@@ -1,2 +1,4 @@
 agentforce
 fundamentals
+objective-explain-how-to-maintain-update-or-install-prompts-and-instructions-in-agent-builder-light-testing-conversation-preview.
+describe-the-capabilities-and-use-cases-of-agentforce-scenarios-about-use-cases-when-its-appropriate-to-use-ai-security-troubleshooting-agent-permissions.
