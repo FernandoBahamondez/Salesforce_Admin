@@ -1,4 +1,2 @@
 agentforce
 fundamentals
-qa
-agentforce-builder-tools
