@@ -6,15 +6,19 @@ This is an example guided of Salesforce Admin
 
 Information from the website:
 
-![](images/clipboard-3257589671.png)
+![](images/clipboard-3257589671.png){width="841"}
 
-![](images/clipboard-2490970243.png)
+How do I trust Generative AI?
+
+Einstein GPT Trust Layer\
+
+![](images/clipboard-2736234821.png){width="907"}
 
 ## QA {.unnumbered}
 
 ### Agentforce - Builder Tools {.unnumbered}
 
-*Objective: Explain how to maintain, update, or install prompts and instructions in Agent Builder (light testing, conversation preview).*
+#### *Objective: Explain how to maintain, update, or install prompts and instructions in Agent Builder (light testing, conversation preview).*
 
 1.  Cosmic Solutions is building an Agentforce agent to answer customer questions about order status. During development, the admin wants to quickly test a few sample utterances and see which topics and actions the agent selects for each request before creating automated tests.
 
@@ -51,7 +55,7 @@ cat(unhide())
 
 ![](images/clipboard-2908751140.png)
 
-2.  A Salesforce Administrator needs to configure a solution where support agents receive a generated synopsis of lengthy case history to improve efficiency, while simultaneously ensuring that all cases marked with a "High" priority are immediately and predictably reassigned to a specific queue for compliance purposes. Which solution design aligns with te best practices for selecting between AI and tradicional automation?
+2.  A Salesforce Administrator needs to configure a solution where support agents receive a generated synopsis of lengthy case history to improve efficiency, while simultaneously ensuring that all cases marked with a "High" priority are immediately and predictably reassigned to a specific queue for compliance purposes. Which solution design aligns with te best practices for selecting between AI and traditional automation?
 
 ```{r echo=FALSE, results='asis'}
 
@@ -71,7 +75,7 @@ cat("<br>\n\n")
 
 # 4. Botón oculto con la explicación
 cat(hide("Check"))
-cat("**Correct Answer is: B. Conversation Preview.**\n\n")
+cat("**Correct Answer is: A. Conversation Preview.**\n\n")
 cat("
 The best practice is to use artificial intelligence for tasks that require interpretation, such as summarizing unstructured data, while relying on traditional automation for tasks requiring certainty. AI is ideal for generating synopses from lengthy histories as it can reason and condense information contextually. In contrast, compliance-driven actions like reassignment based on priority require deterministic, predictable outcomes, which are best handled by tools such as case assignment rules to ensure the action happens exactly the same way every time.")
 
@@ -79,4 +83,65 @@ cat(unhide())
 
 ```
 
-3.  
+#### Describe the capabilities and use cases of Agentforce (scenarios about use cases, when it’s appropriate to use AI, security, troubleshooting agent permissions).
+
+3.  A sales manager asks Agentforce to summarize a specific confidential Opportunity record but receives a response the information cannot be retrieved. An administrator verifies that the Opportunity exists and that other managers can successfully access it using Agentforce. What is the primary security mechanism causing this results?
+
+    ```{r echo=FALSE, results='asis'}
+
+    # 2. Definimos las alternativas. La correcta siempre lleva 'answer ='
+    opciones_agentforce_3 <- c(
+      answer = "A. The AI agent inherits the requesting user's permissions and strictly respects their sharing and field-level security.",
+      "B.The AI agent is restricted by a separate permission set that specifically limits its access to confidential recod types",
+      "C. The Einstein Trust Layer has automatically redacted the sensitive financial fields from the AI agent's view preventing the summary.",
+      "D. The AI agent configuration lacks the 'View All Data' system permission required to search private records."
+    )
+
+    # 3. cat() inyecta el HTML directamente en la web
+    cat(longmcq(opciones_agentforce_3))
+
+    # Un pequeño salto de línea visual
+    cat("<br>\n\n")
+
+    # 4. Botón oculto con la explicación
+    cat(hide("Check"))
+    cat("**Correct Answer is: A. Conversation Preview.**\n\n")
+    cat("Agentforce operates by inheriting the access permissions of the user interacting with it. If the sales manager does not have the necessary object, field, or record-level access, such as sharing rules, to view the specific Opportunity record, the AI agent will be unable to retrieve or display that information.
+
+    Agentforce does not use a separate, overriding permission set for record access, nor does it require 'View All Data' to function. Agentforce strictly mirrors the user's access context. While the Einstein Trust Layer handles data masking to protect sensitive information during processing, the inability to retrieve a record entirely is caused by standard Salesforce sharing restrictions rather than Trust Layer redaction.")
+
+    cat(unhide())
+
+
+
+    ```
+
+4.  A support agent attempts to use Agentforce to update the "Escalated" checkbox on a Case record during a conversation. The agent acknowledges the request but fails to complete the update, returning an error message indicating it cannot modify the record. An administrator confirms the Agentforce action is correctly configured and active.What is the most likely cause of this issue?\
+
+    ```{r echo=FALSE, results='asis'}
+    # 2. Definimos las alternativas. La correcta siempre lleva 'answer ='
+    opciones_agentforce_4 <- c(
+      "A. The support agent does not have the 'Customize Application' permission required to invoke Agent actions",
+      "B. The Einstein Trust Layer detected sensitive data and blocked the write operation.",
+      "C. The Escalated field is not include in the Agentforce Service Agent's creating prompt.",
+      answer = "D. The support agent's profile lacks field-level security access for the Escalated field."
+    )
+
+    # 3. cat() inyecta el HTML directamente en la web
+    cat(longmcq(opciones_agentforce_4))
+
+
+    # Un pequeño salto de línea visual
+    cat("<br>\n\n")
+
+    # 4. Botón oculto con la explicación
+    cat(hide("Check"))
+    cat("**Correct Answer is: D. Conversation Preview.**\n\n")
+    cat("Agentforce operates by strictly inheriting the permissions of the user interacting with it. If the user does not have specific Edit access to a field via field-level security (FLS) in their profile or permission sets, the AI agent will be unable to modify that field, even if the Agent action itself is active and valid.
+
+    The Einstein Trust Layer focuses on data masking and safety policies (like preventing toxic output) rather than blocking standard field updates based on user permissions. Prompts provide instructions and context, but they do not control the underlying database permissions required to commit a change. Customize Application is a high-level administrative permission such that end users do not need it to perform standard record updates through the AI agent.")
+
+    cat(unhide())
+    ```
+
+5.  
