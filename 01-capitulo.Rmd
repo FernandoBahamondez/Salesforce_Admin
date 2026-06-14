@@ -7,3 +7,5 @@ Puedes usar sintaxis Markdown normal aquí.
 ## part 1
 
 Parte 1
+
+![](images/clipboard-3257589671.png)
