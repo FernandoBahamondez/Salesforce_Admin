@@ -8,17 +8,13 @@ Information from the website:
 
 ![](images/clipboard-3257589671.png)
 
-## QA
+![](images/clipboard-2490970243.png)
 
-![](images/clipboard-4004856675.png)
+## QA {.unnumbered}
 
-![](images/clipboard-892693140.png)
-
-###  Agentforce Builder Tools
+### Agentforce Builder Tools {.unnumbered}
 
 Detailed Objective: Explain how to maintain, update, or install prompts and instructions in Agent Builder (light testing, conversation preview).
-
-
 
 1.  Cosmic Solutions is building an Agentforce agent to answer customer questions about order status. During development, the admin wants to quickly test a few sample utterances and see which topics and actions the agent selects for each request before creating automated tests.
 
@@ -44,7 +40,7 @@ cat("<br>\n\n")
 
 # 4. Botón oculto con la explicación
 cat(hide("Check"))
-cat("**La respuesta correcta es: B. Conversation Preview.**\n\n")
+cat("**Correct Answer is: B. Conversation Preview.**\n\n")
 cat("In this scenario, the admin needs to interact with the agent in real time to observe how topics and actions are selected for specific utterances. The Conversation Preview panel in Agentforce Builder allows for manual testing during development, providing immediate feedback on the agent’s behavior and decision-making.
 
 Agentforce Testing Center is designed for batch testing large volumes of utterances and is better suited for automated, large-scale validation. Enhanced Event Logs allow admins to review recorded conversation events after interactions occur, but they do not provide real-time testing during development.
@@ -59,4 +55,13 @@ cat("<img src='images/clipboard-1944312766.png' width='100%' style='border-radiu
 cat(unhide())
 ```
 
+![](images/clipboard-2908751140.png)
 
+![](images/clipboard-1670948014.png)
+
+**Incorrect**
+
+***The best practice is to use artificial intelligence for tasks that require interpretation, such as summarizing unstructured data, while relying on traditional automation for tasks requiring certainty. AI is ideal for generating synopses from lengthy histories as it can reason and condense information contextually. In contrast, compliance-driven actions like reassignment based on priority require deterministic, predictable outcomes, which are best handled by tools such as case assignment rules to ensure the action happens exactly the same way every time.***
+
+**Objective:** Agentforce\
+**Detailed Objective:** Describe the capabilities and use cases of Agentforce (scenarios about use cases, when it’s appropriate to use AI, security, troubleshooting agent permissions).

@@ -2,6 +2,11 @@ bookdown::gitbook:
   css: include/webex.css
   includes:
     after_body: include/webex.js
+  # ESTA LÍNEA ES CRUCIAL PARA LAS IMÁGENES
+  rmd_resources: images
+  config:
+    toc:
+      collapse: subsection
 bookdown::bs4_book:
   df_print: kable
   theme:
