@@ -12,9 +12,9 @@ Information from the website:
 
 ## QA {.unnumbered}
 
-### Agentforce Builder Tools {.unnumbered}
+### Agentforce - Builder Tools {.unnumbered}
 
-Detailed Objective: Explain how to maintain, update, or install prompts and instructions in Agent Builder (light testing, conversation preview).
+*Objective: Explain how to maintain, update, or install prompts and instructions in Agent Builder (light testing, conversation preview).*
 
 1.  Cosmic Solutions is building an Agentforce agent to answer customer questions about order status. During development, the admin wants to quickly test a few sample utterances and see which topics and actions the agent selects for each request before creating automated tests.
 
@@ -25,7 +25,7 @@ Detailed Objective: Explain how to maintain, update, or install prompts and inst
 library(webexercises)
 
 # 2. Definimos las alternativas. La correcta siempre lleva 'answer ='
-opciones_agentforce <- c(
+opciones_agentforce_1 <- c(
   "A. Agentforce Testing Center",
   answer = "B. Conversation Preview",
   "C. Enhanced Event Logs",
@@ -33,7 +33,7 @@ opciones_agentforce <- c(
 )
 
 # 3. cat() inyecta el HTML directamente en la web
-cat(longmcq(opciones_agentforce))
+cat(longmcq(opciones_agentforce_1))
 
 # Un pequeño salto de línea visual
 cat("<br>\n\n")
@@ -46,22 +46,37 @@ cat("In this scenario, the admin needs to interact with the agent in real time t
 Agentforce Testing Center is designed for batch testing large volumes of utterances and is better suited for automated, large-scale validation. Enhanced Event Logs allow admins to review recorded conversation events after interactions occur, but they do not provide real-time testing during development.
 Testing Preview is not an actual Agentforce tool and does not exist.")
 
-# 1. Damos un pequeño salto de línea para separar el texto de la foto
-cat("<br><br>\n\n")
-
-# 2. Inyectamos la imagen de tu portapapeles usando HTML
-cat("<img src='images/clipboard-1944312766.png' width='100%' style='border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);'>\n\n")
-
 cat(unhide())
 ```
 
 ![](images/clipboard-2908751140.png)
 
-![](images/clipboard-1670948014.png)
+2.  A Salesforce Administrator needs to configure a solution where support agents receive a generated synopsis of lengthy case history to improve efficiency, while simultaneously ensuring that all cases marked with a "High" priority are immediately and predictably reassigned to a specific queue for compliance purposes. Which solution design aligns with te best practices for selecting between AI and tradicional automation?
 
-**Incorrect**
+```{r echo=FALSE, results='asis'}
 
-***The best practice is to use artificial intelligence for tasks that require interpretation, such as summarizing unstructured data, while relying on traditional automation for tasks requiring certainty. AI is ideal for generating synopses from lengthy histories as it can reason and condense information contextually. In contrast, compliance-driven actions like reassignment based on priority require deterministic, predictable outcomes, which are best handled by tools such as case assignment rules to ensure the action happens exactly the same way every time.***
+# 2. Definimos las alternativas. La correcta siempre lleva 'answer ='
+opciones_agentforce_2 <- c(
+  answer = "A. Use Agentforce to generate the case synopsis and a case assignment rule to handle the priority-based reassignment.",
+  "B. Create a screen flow to handle the case synopsis generation and use Agentforce to monitor for high-priority cases.",
+  "C. Implement Agentforce to handle both the case synopsis generation and the priority-based reassignment to unify the process.",
+  "D. Configure Agentforce to handle the case reassignment and use a record-triggered flow to generate the case synopsis."
+)
 
-**Objective:** Agentforce\
-**Detailed Objective:** Describe the capabilities and use cases of Agentforce (scenarios about use cases, when it’s appropriate to use AI, security, troubleshooting agent permissions).
+# 3. cat() inyecta el HTML directamente en la web
+cat(longmcq(opciones_agentforce_2))
+
+# Un pequeño salto de línea visual
+cat("<br>\n\n")
+
+# 4. Botón oculto con la explicación
+cat(hide("Check"))
+cat("**Correct Answer is: B. Conversation Preview.**\n\n")
+cat("
+The best practice is to use artificial intelligence for tasks that require interpretation, such as summarizing unstructured data, while relying on traditional automation for tasks requiring certainty. AI is ideal for generating synopses from lengthy histories as it can reason and condense information contextually. In contrast, compliance-driven actions like reassignment based on priority require deterministic, predictable outcomes, which are best handled by tools such as case assignment rules to ensure the action happens exactly the same way every time.")
+
+cat(unhide())
+
+```
+
+3.  
