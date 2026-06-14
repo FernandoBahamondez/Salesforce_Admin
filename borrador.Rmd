@@ -1,6 +1,0 @@
----
-title: "borrador"
-output: html_document
----
-
-test de borrador
