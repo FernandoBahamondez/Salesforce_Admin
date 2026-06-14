@@ -1,3 +1,10 @@
 agentforce
 part-1
 base
+preparation
+fundamentals
+qa
+pregunta-1-de-10-agentforce-builder-tools
+pregunta-1-de-10-agentforce-builder-tools-1
+section
+agentforce-builder-tools

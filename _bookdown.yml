@@ -1,2 +1,3 @@
-book_filename: "mi_libro"
-output_dir: "docs"
+book_filename: mi_libro
+output_dir: docs
+before_chapter_script: R/webex.R
