@@ -14,11 +14,22 @@ Einstein GPT Trust Layer\
 
 ![](images/clipboard-2736234821.png){width="907"}
 
+### AI Sales Agents
+
+$$
+Agentforce_{SalesAgent} = \begin{cases}
+Tipo_A& \text{  , Situacion 1}\\
+\\
+Tipoa_B & \text{   , Situacion 2}
+\end{cases}
+$$
+
+
 ## Q&A {.unnumbered}
 
 ### Agentforce - Builder Tools {.unnumbered}
 
-#### *Objective: Explain how to maintain, update, or install prompts and instructions in Agent Builder (light testing, conversation preview).*
+#### *Objective: Explain how to maintain, update, or install prompts and instructions in Agent Builder (light testing, conversation preview).*{.unnumbered}
 
 1.  Cosmic Solutions is building an Agentforce agent to answer customer questions about order status. During development, the admin wants to quickly test a few sample utterances and see which topics and actions the agent selects for each request before creating automated tests.
 
@@ -200,8 +211,7 @@ cat("<br>\n\n")
 cat(hide("Check"))
 cat("**Correct Answer is: D. PII/ Data Masking**\n\n")
 cat("The PII/Data Masking feature of the Einstein Trust Layer is responsible for identifying sensitive information, such as credit card numbers, email addresses, or social security numbers, within a prompt and replacing it with generic placeholder text (e.g., [CREDIT_CARD_NUMBER]) before the request is sent to the external LLM. This ensures that the third-party model never receives or processes the actual sensitive data, keeping it securely inside the Salesforce boundary.
-
-Zero Data Retention is a policy agreement that ensures an external LLM provider does not store or train their models on the data sent to them, but it does not prevent the data from being sent in the first place. Prompt Defense is designed to detect and block "jailbreaking" attempts or malicious prompts that try to bypass safety controls, not to hide data. Toxic Language Detection scans the AI's output to prevent the generation of harmful or offensive content, but it does not protect sensitive input data from reaching the model.")
+Zero Data Retention is a policy agreement that ensures an external LLM provider does not store or train their models on the data sent to them, but it does not prevent the data from being sent in the first place. Prompt Defense is designed to detect and block 'jailbreaking' attempts or malicious prompts that try to bypass safety controls, not to hide data. Toxic Language Detection scans the AI's output to prevent the generation of harmful or offensive content, but it does not protect sensitive input data from reaching the model.")
 
 
 cat(unhide())
