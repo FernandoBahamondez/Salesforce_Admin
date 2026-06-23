@@ -2,4 +2,5 @@ agentforce-8
 fundamentals
 ai-sales-agents
 describe-the-capabilities-and-use-cases-of-agentforce-scenarios-about-use-cases-when-its-appropriate-to-use-ai-security-troubleshooting-agent-permissions.
-data-analytics-17
+data-analytics-managment-17
+questions
