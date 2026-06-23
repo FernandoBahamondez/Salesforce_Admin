@@ -1,4 +1,4 @@
-# Agentforce
+# Agentforce 8%
 
 The first chapter of this documentation is abount Agentforce, the newest technology of Salesforce that is interacting with a contect on which is changing faster every year.
 
@@ -14,16 +14,35 @@ Einstein GPT Trust Layer\
 
 ![](images/clipboard-2736234821.png){width="907"}
 
+
+
 ### AI Sales Agents
 
+Sales Agents:
+
 $$
-Agentforce_{SalesAgent} = \begin{cases}
-Tipo_A& \text{  , Situacion 1}\\
+\text{AI Sales Agents}_{} \to
+\text{Agent Type}_{🤖} = \begin{cases}
+\text{SDR Agent}& \text{  , Situacion 1}\\
 \\
-Tipoa_B & \text{   , Situacion 2}
+\text{Sales Coach} & \text{   , Situacion 2}\\
+\\
 \end{cases}
 $$
 
+$$
+\text{AI Sales Agents}_{} \to
+\text{Agent Type}_{} = \begin{cases}
+\text{Prospecting}& \text{  , Situacion 1}\\
+\\
+\text{Agentforce Engagement} & \text{   , Situacion 2}\\
+\\
+\text{Sales Management} & \text{   , Situacion 2}\\
+\\
+\text{Sales Coaching} & \text{   , Situacion 2}\\
+\\
+\end{cases}
+$$
 
 ## Q&A {.unnumbered}
 
@@ -187,7 +206,7 @@ cat(unhide())
 
     ```
 
-    [https://help.salesforce.com/s/articleView?id=sales.sales_agents_coach_parent.htm&type=5https://help.salesforce.com/s/articleView?id=sales.sales_agents_coach_parent.htm&type=5](https://help.salesforce.com/s/articleView?id=sales.sales_agents_coach_parent.htm&type=5){.uri}
+[https://help.salesforce.com/s/articleView?id=sales.sales_agents_coach_parent.htm&type=5https://help.salesforce.com/s/articleView?id=sales.sales_agents_coach_parent.htm&type=5](https://help.salesforce.com/s/articleView?id=sales.sales_agents_coach_parent.htm&type=5){.uri}
 
 6.  An administrator wants to ensure that when Agentforce generates email drafts, sensitive customer credit card numbers stored in the case description are never visible to an external Large Language Model (LLM) provider. Which Einstein Trust Layer capability directly prevents this sensitive data from being shared with the LLM?
 
