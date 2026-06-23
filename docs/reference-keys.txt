@@ -13,3 +13,6 @@ describe-the-capabilities-and-use-cases-of-agentforce-scenarios-about-use-cases-
 ai-sales-agents
 studyguide
 agentforce-8
+data-analytics-managment-17
+questions
+describe-the-considerations-when-importing-updating-transferring-mass-deleting-exporting-and-backing-up-data.

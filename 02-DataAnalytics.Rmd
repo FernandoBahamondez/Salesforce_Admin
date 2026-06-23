@@ -3,6 +3,38 @@ title: "02-Data&Analytics"
 output: html_document
 ---
 
-# Data & Analytics 17%
+# Data & Analytics Managment 17%
 
-question 11
+## Questions
+
+### *Describe the considerations when importing, updating, transferring, mass deleting, exporting and backing up data.* {.unnumbered}
+
+1.  An account manager at Cosmic Circle Financial is on a leave of absence, and the administrator has been asked to transfer the account records owned by him to a sales manager. Which of the following are transferred with account records by default using the mass transfer feature in Salesforce?
+Choose 2 answers.
+
+```{r echo=FALSE, results='asis'}
+# 2. Definimos las alternativas. La correcta siempre lleva 'answer ='
+opciones_dam_1 <- c(
+  answer ="A. Open activities assigned to the account manager",
+  "B. Completed activities assigned to the account manager",
+  answer ="C. Open opportunities that belong to the account manager",
+   "D. Open Cases assigned to the account manager."
+)
+
+# 3. cat() inyecta el HTML directamente en la web
+cat(longmcq(opciones_dam_1))
+
+# Un pequeño salto de línea visual
+cat("<br>\n\n")
+
+# 4. Botón oculto con la explicación
+cat(hide("Check"))
+cat("**Correct Answer is: A and C.**\n\n")
+cat("In Salesforce Classic and Lightning Experience, accounts can be mass transferred to other users. By default, the new user will own associated Contacts, open Opportunities, Contracts in Draft & In Approval Process status, Orders in Draft status, Notes, Attachments, and open Activities assigned to the existing owner.
+
+The option to transfer associated open cases assigned to the existing owner can be optionally selected. There is no option to include associated completed activities in the mass transfer feature.")
+
+cat(unhide())
+```
+
+![](images/clipboard-314377289.png)
