@@ -1,8 +1,3 @@
----
-title: "02-Data&Analytics"
-output: html_document
----
-
 # Data & Analytics Managment 17%
 
 ## Questions
