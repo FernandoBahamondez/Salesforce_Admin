@@ -90,7 +90,7 @@ cat(unhide())
 
 4.  Where can the Salesforce record ID be obtained from? Choose 3 answers.
 
-```{r opciones_dam_4 echo=FALSE, results='asis'}
+```{r opciones_dam_4, echo=FALSE, results='asis'}
 # 2. Definimos las alternativas. La correcta siempre lleva 'answer ='
 opciones_dam_4 <- c(
   "A. Record name",
@@ -118,7 +118,7 @@ cat(unhide())
 
 5.  What will happen if a record in a Data Loader import file contains a pick list value that does not exist in Salesforce and the pick list is not restricted?
 
-```{r opciones_dam_5 echo=FALSE, results='asis'}
+```{r opciones_dam_5, echo=FALSE, results='asis'}
 # 2. Definimos las alternativas. La correcta siempre lleva 'answer ='
 opciones_dam_5 <- c(
   "A. The record will be added, and the picklist value will be added to the list of existing values",
@@ -209,3 +209,26 @@ cat(unhide())
 ![](images/clipboard-841573346.png)
 
 8.  The Salesforce Administrator discovered that a number of records were deleted by mistake 2 weeks ago
+
+```{r opciones_dam_8, echo=FALSE, results='asis'}
+# 2. Definimos las alternativas. La correcta siempre lleva 'answer ='
+opciones_dam_8 <- c(
+  "A. ",
+  "B. ",
+  "C. ",
+  answer ="D."
+)
+
+# 3. cat() inyecta el HTML directamente en la web
+cat(longmcq(opciones_dam_8))
+
+# Un pequeño salto de línea visual
+cat("<br>\n\n")
+
+# 4. Botón oculto con la explicación
+cat(hide("Check"))
+cat("**Correct Answer is: D.**\n\n")
+cat("asdfasdfasd")
+
+cat(unhide())
+```

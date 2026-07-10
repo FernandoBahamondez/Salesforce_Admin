@@ -115,11 +115,10 @@
 <div id="describe-the-considerations-when-importing-updating-transferring-mass-deleting-exporting-and-backing-up-data." class="section level3 unnumbered hasAnchor">
 <h3><em>Describe the considerations when importing, updating, transferring, mass deleting, exporting and backing up data.</em><a href="data-analytics-managment-17.html#describe-the-considerations-when-importing-updating-transferring-mass-deleting-exporting-and-backing-up-data." class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ol style="list-style-type: decimal">
-<li>An account manager at Cosmic Circle Financial is on a leave of absence, and the administrator has been asked to transfer the account records owned by him to a sales manager. Which of the following are transferred with account records by default using the mass transfer feature in Salesforce?
-Choose 2 answers.</li>
+<li>An account manager at Cosmic Circle Financial is on a leave of absence, and the administrator has been asked to transfer the account records owned by him to a sales manager. Which of the following are transferred with account records by default using the mass transfer feature in Salesforce? Choose 2 answers.</li>
 </ol>
-<div id="radio_XQBVFXYPDW" class="webex-radiogroup">
-<label><input type="radio" autocomplete="off" name="radio_XQBVFXYPDW" value="answer"></input> <span>A. Open activities assigned to the account manager</span></label><label><input type="radio" autocomplete="off" name="radio_XQBVFXYPDW" value=""></input> <span>B. Completed activities assigned to the account manager</span></label><label><input type="radio" autocomplete="off" name="radio_XQBVFXYPDW" value="answer"></input> <span>C. Open opportunities that belong to the account manager</span></label><label><input type="radio" autocomplete="off" name="radio_XQBVFXYPDW" value=""></input> <span>D. Open Cases assigned to the account manager.</span></label>
+<div id="radio_APSWMMZCGV" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_APSWMMZCGV" value="answer"></input> <span>A. Open activities assigned to the account manager</span></label><label><input type="radio" autocomplete="off" name="radio_APSWMMZCGV" value=""></input> <span>B. Completed activities assigned to the account manager</span></label><label><input type="radio" autocomplete="off" name="radio_APSWMMZCGV" value="answer"></input> <span>C. Open opportunities that belong to the account manager</span></label><label><input type="radio" autocomplete="off" name="radio_APSWMMZCGV" value=""></input> <span>D. Open Cases assigned to the account manager.</span></label>
 </div>
 <p><br></p>
 <div class="webex-solution">
@@ -131,6 +130,114 @@ Check
 <p>The option to transfer associated open cases assigned to the existing owner can be optionally selected. There is no option to include associated completed activities in the mass transfer feature.</p>
 </div>
 <p><img src="images/clipboard-314377289.png" /></p>
+<ol start="2" style="list-style-type: decimal">
+<li>A salesforce Administrator has 7 million records that need to be loaded into Salesforce and wants to do it in one batch. How can the records be uploaded in one batch?</li>
+</ol>
+<div id="radio_MYLEKCVEMY" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_MYLEKCVEMY" value="answer"></input> <span>A. Data Loader </span></label><label><input type="radio" autocomplete="off" name="radio_MYLEKCVEMY" value=""></input> <span>B. It is not possible to load 7 million records</span></label><label><input type="radio" autocomplete="off" name="radio_MYLEKCVEMY" value=""></input> <span>C. Third-party data loading tool</span></label><label><input type="radio" autocomplete="off" name="radio_MYLEKCVEMY" value=""></input> <span>D. Data import Wizard</span></label>
+</div>
+<p><br></p>
+<div class="webex-solution">
+<button>
+Check
+</button>
+<p><strong>Correct Answer is: A.</strong></p>
+<p>Data Loader can now support large file loads, handling up to 5 million records with Bulk API and up to 150 million records with Bulk API 2.0. However, for records exceeding these limits or for additional features, third-party data loading tools available on the AppExchange might be required.</p>
+</div>
+<ol start="3" style="list-style-type: decimal">
+<li>What is true regarding the use of an external ID field for matching in the Data Import Wizard? Choose 2 answers.</li>
+</ol>
+<div id="radio_WXDFJVBXOQ" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_WXDFJVBXOQ" value=""></input> <span>A. Matching by external ID is only available when importing solutions.</span></label><label><input type="radio" autocomplete="off" name="radio_WXDFJVBXOQ" value=""></input> <span>B. Matching by external ID is only available for customer objects</span></label><label><input type="radio" autocomplete="off" name="radio_WXDFJVBXOQ" value="answer"></input> <span>C. Matching by external ID is available for any object that includes an External ID field and can be imported.</span></label><label><input type="radio" autocomplete="off" name="radio_WXDFJVBXOQ" value="answer"></input> <span>D. Existing records with external IDs that match the values in the import file are detected.</span></label>
+</div>
+<p><br></p>
+<div class="webex-solution">
+<button>
+Check
+</button>
+<p><strong>Correct Answer is: C and D.</strong></p>
+<p>Matching by external ID is available for any object that has an External Id and can be imported via the Data Import Wizard. When the option to match by External ID is selected, the Data Import Wizard detects existing records in Salesforce with external IDs that match the values specified in the import file.</p>
+</div>
+<ol start="4" style="list-style-type: decimal">
+<li>Where can the Salesforce record ID be obtained from? Choose 3 answers.</li>
+</ol>
+<div id="radio_USEBUITZNT" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_USEBUITZNT" value=""></input> <span>A. Record name</span></label><label><input type="radio" autocomplete="off" name="radio_USEBUITZNT" value="answer"></input> <span>B. Reports</span></label><label><input type="radio" autocomplete="off" name="radio_USEBUITZNT" value=""></input> <span>C. Setup</span></label><label><input type="radio" autocomplete="off" name="radio_USEBUITZNT" value="answer"></input> <span>D. The record URL in the browser</span></label><label><input type="radio" autocomplete="off" name="radio_USEBUITZNT" value="answer"></input> <span>E. Data Loader export file</span></label>
+</div>
+<p><br></p>
+<div class="webex-solution">
+<button>
+Check
+</button>
+<p><strong>Correct Answer is: B, D and E.</strong></p>
+<p>The Salesforce record ID can be included in reports. It is part of the URL when accessing records, and it can also be included in a Data Loader export file. Record IDs cannot be obtained from either Setup or the record name</p>
+</div>
+<p><img src="images/clipboard-4021438372.png" /></p>
+<ol start="5" style="list-style-type: decimal">
+<li>What will happen if a record in a Data Loader import file contains a pick list value that does not exist in Salesforce and the pick list is not restricted?</li>
+</ol>
+<div id="radio_ZZAAWAXUVD" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_ZZAAWAXUVD" value=""></input> <span>A. The record will be added, and the picklist value will be added to the list of existing values</span></label><label><input type="radio" autocomplete="off" name="radio_ZZAAWAXUVD" value="answer"></input> <span>B. The record will be added with the default value for the picklist field.</span></label><label><input type="radio" autocomplete="off" name="radio_ZZAAWAXUVD" value=""></input> <span>C. The import will fail with an error message.</span></label><label><input type="radio" autocomplete="off" name="radio_ZZAAWAXUVD" value="answer"></input> <span>D. The record will be added, but the picklist value will not be added to the list of selectable.</span></label>
+</div>
+<p><br></p>
+<div class="webex-solution">
+<button>
+Check
+</button>
+<p><strong>Correct Answer is: D </strong></p>
+<p>TWhen a record is imported through API or Data Loader and it has a new picklist value unavailable in the non-restricted picklist, the record gets created with the new value in the field. However, this new value is not added permanently to the picklist value set of the field. It is available only on this record.</p>
+<p>When the record is edited anytime later, the picklist value will stay the same until the record is saved with a different choice for the same picklist.</p>
+<p>If the picklist is restricted, i.e., ‘Restrict picklist to the values defined in the value set’ is selected, then additional values cannot be added via the API or Data Loader, and the record is not saved.</p>
+<p>The first screenshot shows the option ‘Restrict picklist to the values defined in the value set’ not selected. It allows values to be inserted in that picklist field for the record via the API or Data Loader.</p>
+<p>In the second screenshot, only ‘Primary’ and ‘Secondary’ exist as picklist value options that can be selected. However, the third screenshot shows a saved contact record with a value of ‘Tertiary’ in the ‘Level’ field. That is not an existing picklist value, but the record is created, and the value is set.</p>
+</div>
+<p><img src="images/clipboard-4063175369.png" /></p>
+<ol start="6" style="list-style-type: decimal">
+<li>An organization has multi-currency enabled. What can cause a record in an import file to fail?<br />
+Choose 2 answers.</li>
+</ol>
+<div id="radio_JUMCVEWSAB" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_JUMCVEWSAB" value="answer"></input> <span>A. The record fails system validation rules</span></label><label><input type="radio" autocomplete="off" name="radio_JUMCVEWSAB" value=""></input> <span>B. Currency in the file is an inactive Salesforce currency</span></label><label><input type="radio" autocomplete="off" name="radio_JUMCVEWSAB" value="answer"></input> <span>C. The record fails custom validation rules</span></label><label><input type="radio" autocomplete="off" name="radio_JUMCVEWSAB" value=""></input> <span>D. Currency field is left blank</span></label>
+</div>
+<p><br></p>
+<div class="webex-solution">
+<button>
+Check
+</button>
+<p><strong>Correct Answer is: A and C.</strong></p>
+<p>A record in the import file could fail because it fails system validation rules, like missing a required field, or fails custom validation rules. If multi-currency is enabled and the currency field is left blank or an inactive currency is used, the personal currency of the user will be used.</p>
+</div>
+<p><img src="images/clipboard-2519718129.png" /></p>
+<p><img src="images/clipboard-1749418094.png" /></p>
+<ol start="7" style="list-style-type: decimal">
+<li>What record attribute is required to update a record using Data Loader?</li>
+</ol>
+<div id="radio_ZIOQMNLZJM" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_ZIOQMNLZJM" value=""></input> <span>A. Record Name</span></label><label><input type="radio" autocomplete="off" name="radio_ZIOQMNLZJM" value=""></input> <span>B. Created By Id</span></label><label><input type="radio" autocomplete="off" name="radio_ZIOQMNLZJM" value=""></input> <span>C. Record Type</span></label><label><input type="radio" autocomplete="off" name="radio_ZIOQMNLZJM" value="answer"></input> <span>D. Record ID</span></label>
+</div>
+<p><br></p>
+<div class="webex-solution">
+<button>
+Check
+</button>
+<p><strong>Correct Answer is: D.</strong></p>
+<p>A record in the import file could fail because it fails system validation rules, like missing a required field, or fails custom validation rules. If multi-currency is enabled and the currency field is left blank or an inactive currency is used, the personal currency of the user will be used.</p>
+</div>
+<p><img src="images/clipboard-841573346.png" /></p>
+<ol start="8" style="list-style-type: decimal">
+<li>The Salesforce Administrator discovered that a number of records were deleted by mistake 2 weeks ago</li>
+</ol>
+<div id="radio_YTGJZYNYLH" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_YTGJZYNYLH" value=""></input> <span>A. </span></label><label><input type="radio" autocomplete="off" name="radio_YTGJZYNYLH" value=""></input> <span>B. </span></label><label><input type="radio" autocomplete="off" name="radio_YTGJZYNYLH" value=""></input> <span>C. </span></label><label><input type="radio" autocomplete="off" name="radio_YTGJZYNYLH" value="answer"></input> <span>D.</span></label>
+</div>
+<p><br></p>
+<div class="webex-solution">
+<button>
+Check
+</button>
+<p><strong>Correct Answer is: D.</strong></p>
+<p>asdfasdfasd</p>
+</div>
 
 </div>
 </div>
