@@ -27,15 +27,19 @@ Actually the weight about the Exam is:
 - Service and Support Applications = 10 %
 - Productivity and Collaboration = 10%
 
-
-
 This document is trying to help me, another way to study and also to share with people how like to go deeper to the platform.
 
 The concept behind this project is trying to going deeper to every layer, on which can visualize like this image:
 
 ![](images/base_libro_3.svg){width="900"}
 
-# StudyGuide{.unnumbered}
+# Study Guide {.unnumbered}
 
+\
+What I really need to know about each topic for the Admin Exam?
 
-test
+As I mention on the following image, here is the weight about each topic:
+
+![](images/clipboard-1784973755.png)
+
+I will try to do schema and resume about each topic.
