@@ -23,7 +23,7 @@ Sales Agents:
 $$
 \text{AI Sales Agents}_{} \to
 \text{Agent Type}_{🤖} = \begin{cases}
-\text{SDR Agent}& \text{  , Situacion 1}\\
+\text{SDR Agent}& \text{  , Sales Development Representative}\\
 \\
 \text{Sales Coach} & \text{   , Situacion 2}\\
 \\
@@ -117,7 +117,7 @@ cat(unhide())
 
 3.  A sales manager asks Agentforce to summarize a specific confidential Opportunity record but receives a response the information cannot be retrieved. An administrator verifies that the Opportunity exists and that other managers can successfully access it using Agentforce. What is the primary security mechanism causing this results?
 
-    ```{r echo=FALSE, results='asis'}
+```{r echo=FALSE, results='asis'}
 
     # 2. Definimos las alternativas. La correcta siempre lleva 'answer ='
     opciones_agentforce_3 <- c(
@@ -144,11 +144,11 @@ cat(unhide())
 
 
 
-    ```
+```
 
 4.  A support agent attempts to use Agentforce to update the "Escalated" checkbox on a Case record during a conversation. The agent acknowledges the request but fails to complete the update, returning an error message indicating it cannot modify the record. An administrator confirms the Agentforce action is correctly configured and active.What is the most likely cause of this issue?\
 
-    ```{r echo=FALSE, results='asis'}
+```{r echo=FALSE, results='asis'}
     # 2. Definimos las alternativas. La correcta siempre lleva 'answer ='
     opciones_agentforce_4 <- c(
       "A. The support agent does not have the 'Customize Application' permission required to invoke Agent actions",
@@ -172,11 +172,11 @@ cat(unhide())
     The Einstein Trust Layer focuses on data masking and safety policies (like preventing toxic output) rather than blocking standard field updates based on user permissions. Prompts provide instructions and context, but they do not control the underlying database permissions required to commit a change. Customize Application is a high-level administrative permission such that end users do not need it to perform standard record updates through the AI agent.")
 
     cat(unhide())
-    ```
+```
 
 5.  The sales director at Cosmic Containers is facing a challenge with a high volume of inbound leads. The sales team is unable to respond quickly enough, resulting in missed opportunities. The director needs a solution that can autonomously engage with these leads 24/7, answer initial product questions, and schedule meetings directly on the sales representatives' calendars. Which Agentforce agent type is specifically designed to meet these requirements?
 
-    ```{r echo=FALSE, results='asis'}
+```{r echo=FALSE, results='asis'}
     # 2. Definimos las alternativas. La correcta siempre lleva 'answer ='
     opciones_agentforce_5 <- c(
       "A. Agentforce Sales Coach",
@@ -204,7 +204,7 @@ cat(unhide())
 
     cat(unhide())
 
-    ```
+```
 
 [https://help.salesforce.com/s/articleView?id=sales.sales_agents_coach_parent.htm&type=5https://help.salesforce.com/s/articleView?id=sales.sales_agents_coach_parent.htm&type=5](https://help.salesforce.com/s/articleView?id=sales.sales_agents_coach_parent.htm&type=5){.uri}
 
@@ -244,7 +244,7 @@ cat(unhide())
 
 7.  A service agent asks Agentforce to summarize a high-priority case managed by a different regional team. Although the administrator confirms the case exists in Salesforce, Agentforce responds that it cannot find the record. The service agent also cannot find this case when performing a manual global search. What is the most likely reason for this behavior?
 
-    ```{r echo=FALSE, results='asis'}
+```{r echo=FALSE, results='asis'}
     # 2. Definimos las alternativas. La correcta siempre lleva 'answer ='
     opciones_agentforce_7 <- c(
       "A. The Agentforce Service Agent User profile lacks the 'View All Data' system permission required to search across regions ",
@@ -269,7 +269,7 @@ cat(unhide())
 
     cat(unhide())
 
-    ```
+```
 
 8.  An HR manager at Cosmic Kicks wants to deploy an AI agent to assist internal staff. The goal is to allow employees to ask questions about company benefits, retrieve their remaining time-off balance, and submit IT help desk tickets using natural language. Which AI agent type is best suited for this internal productivity scenario?
 
@@ -329,7 +329,7 @@ cat(unhide())
 10. Cosmic Care Solutions is evaluating ways to improve its customer support operations. The leadership team is deciding between implementing Einstein bots or adopting Salesforce Agentforce Service Agent. They want a solution that can independently handle customer conversations, take actions in Salesforce, and reduce the need for constant human intervention and scripted workflows.\
     Which statement best describes the key difference between traditional bots and Agentforce Service Agent?
 
-    ```{r echo=FALSE, results='asis'}
+```{r echo=FALSE, results='asis'}
     # 2. Definimos las alternativas. La correcta siempre lleva 'answer ='
     opciones_agentforce_6 <- c(
       "A. Bots and Agentforce Service Agent both rely mainly on scripted conversations, but Agentforce Service Agent requires larger training datasets to operate effectively",
@@ -350,4 +350,4 @@ cat(unhide())
     cat("Traditional bots rely heavily on scripted conversations, predefined flows, and human support for handling more complex situations. In contrast, Agentforce Service Agent uses Salesforce’s AI reasoning engine to autonomously engage in realistic customer conversations, complete actions in Salesforce, and proactively support customer service goals with less manual setup and intervention.")
 
     cat(unhide())
-    ```
+```
