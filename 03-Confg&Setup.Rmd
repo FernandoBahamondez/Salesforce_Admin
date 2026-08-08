@@ -1,0 +1,29 @@
+# Configuration and Setup 15%
+
+## Fundamentals
+
+On this chapter, We describe the principial concepts and configurations about Configuration and Setup.\
+\
+It's really common that in the organization may you are admin, We don't use the entire setup, because we choose what is relevant for the businees necessity.
+
+![](images/clipboard-1367487754.png){width="372"}
+
+### General Settings
+
+One of the question in the exam , always is about :\
+\
+What can you configure in the Company Settings?\
+\
+So We need to keep in mind this image:
+
+![](images/clipboard-3516321170.png){width="349"}
+
+And also in the section about company information, to know the difference between Data Space vs File Space.
+
+![](images/clipboard-2855667803.png)
+
+### Einstein Search
+
+We also need the read at least the description about what the Einstein Rearch does when we are looking for some record in the organization, so algo is good idea to keep in mind this image:
+
+![](images/clipboard-251281043.png){width="796"}

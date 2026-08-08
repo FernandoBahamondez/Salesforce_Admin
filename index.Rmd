@@ -20,8 +20,8 @@ Actually the weight about the Exam is:
 
 - **Agentforce= 8%** \<-- New topic!
 - Data and Analytics Managment = 17 %
-- Automation = 15%
 - Configuration and Setup = 15 %
+- Automation = 15%
 - Object Manager and Lightning App Builder = 15 %
 - Sales and Marketing Applications = 10%
 - Service and Support Applications = 10 %
@@ -42,4 +42,4 @@ As I mention on the following image, here is the weight about each topic:
 
 ![](images/clipboard-1784973755.png)
 
-I will try to do schema and resume about each topic.
+I will try to do and schema and resume about each topic.
