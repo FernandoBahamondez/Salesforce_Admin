@@ -4,3 +4,7 @@ ai-sales-agents
 describe-the-capabilities-and-use-cases-of-agentforce-scenarios-about-use-cases-when-its-appropriate-to-use-ai-security-troubleshooting-agent-permissions.
 data-analytics-managment-17
 questions
+configuration-and-setup-15
+fundamentals-1
+general-settings
+einstein-search
