@@ -55,3 +55,86 @@ The "subsection" about User Interface, We can configure the Collapsible Sections
 We also need the read at least the description about what the Einstein Search does when we are looking for some record in the organization, so also is good idea to keep in mind this image:
 
 ![](images/clipboard-251281043.png){width="796"}
+
+### My Domain
+
+The leadership of a large online apparel company wishes to enalbe the My Domain feature in Salesforce. What does the Salesforce Administrator need to consider before enabling the My Domain feature? Choose 2 answers.
+
+```{r conf_setup_mydomain1, echo=FALSE, results='asis'}
+# 2. Definimos las alternativas. La correcta siempre lleva 'answer ='
+opciones_conf_setup_mydomain1 <- c(
+  answer ="A. A My Domain request can be reverted deploying a new domain.",
+  answer ="B. Visualforce page URLs will change.",
+  "C. User will not be able to log in from https://login.salesforce.com",
+  "D. My Domain cannot be used in a sandbox environment."
+)
+
+# 3. cat() inyecta el HTML directamente en la web
+cat(longmcq(opciones_conf_setup_mydomain1))
+
+# Un pequeño salto de línea visual
+cat("<br>\n\n")
+
+# 4. Botón oculto con la explicación
+cat(hide("Check"))
+cat("**Correct Answer is: D.**\n\n")
+cat("")
+
+cat(unhide())
+```
+
+### Field-Level Security
+
+- The users with the Sales profile should no longer have access to several fields on a custoom object. The Salesforce Admin employs field-level secutiry for these fields. What should the Salesforce Administrator consider before changing the page layout and field-level secutiry settings? Choose 2 answers.
+
+```{r conf_setup_field_level_security1, echo=FALSE, results='asis'}
+# 2. Definimos las alternativas. La correcta siempre lleva 'answer ='
+opciones_conf_setup_field_level_security1 <- c(
+  answer ="A. Fields can be set as hidden in the page layout but users will still be able to access the fields in reports, search, and list views.",
+  "B. If a field is set be read-onlye using field.level secutiry for a user's profile but the user has edit access to the object, then the user can update the field.",
+  answer ="C. If a field is hidden using field-level secutiry, it soes not appear in page layouts, search results, related lists, list views, or reports.",
+  "D. If a field is hidden field-level security, it does appear in page layouts, search results, related lists, and list views but it will appear in reports."
+)
+
+# 3. cat() inyecta el HTML directamente en la web
+cat(longmcq(opciones_conf_setup_field_level_security1))
+
+# Un pequeño salto de línea visual
+cat("<br>\n\n")
+
+# 4. Botón oculto con la explicación
+cat(hide("Check"))
+cat("**Correct Answer is: A and C.**\n\n")
+cat("")
+
+cat(unhide())
+```
+
+### Multi-Factor Authentication
+
+- Cosmic Supermarket would like to allow its employees to log in to Salesforce using their Google credentials. A Salesforce admin of the company is required to configure single sing-on (SSO) using Google as the third-party authentication provider. However, the employees should be required to rpove their identity using multi-factor autehntication (MFA). Which of the following are valid considerations related to this use case? Choose 2 answers.
+
+```{r conf_setup_mfa1, echo=FALSE, results='asis'}
+# 2. Definimos las alternativas. La correcta siempre lleva 'answer ='
+opciones_conf_setup_mfa1 <- c(
+  answer = "A. MFA should be in the 'High Assurance' column on the 'Session Settings' page in Setup ",
+  "B. A managed package must be installed to set up multi-factor when Google is used as the third-party authentication provider. ",
+  answer = "C. MFA can be configured for users by setting the 'Session Secutiry Level Requiered at Login' in their profiles.",
+  "D. By default, MFA is enforced for users who log in through an authentication provider that supports single sign-on (SSO)"
+)
+
+# 3. cat() inyecta el HTML directamente en la web
+cat(longmcq(opciones_conf_setup_mfa1))
+
+# Un pequeño salto de línea visual
+cat("<br>\n\n")
+
+# 4. Botón oculto con la explicación
+cat(hide("Check"))
+cat("**Correct Answer is: A and C.**\n\n")
+cat("")
+
+cat(unhide())
+```
+
+![![](images/clipboard-4253108297.png)](images/clipboard-3710518353.png)

@@ -351,3 +351,36 @@ cat(unhide())
 
     cat(unhide())
 ```
+
+### Explain the various organization security controls
+
+
+- An administrator has created and activated an Employee Agent in Agentforce to assist the sales team with internal querires abount accounts, opportunities, and company knowledge.
+However, the agent is not visible to the sales users, even though their profiles have standard object permissions.
+What is the correct step to make this Employee Agent available to the sales user?
+
+```{r c_and_s_1, echo=FALSE, results='asis'}
+# 2. Definimos las alternativas. La correcta siempre lleva 'answer ='
+opciones_c_and_s_1 <- c(
+  "A. Assign the dedicated agent user (auto-generated for the Employee Agent) to a permission set with the 'View All Records' and 'View All fields' permissions on relvant objects. ",
+  answer ="B. In the Agentforce Agents Setup page, open the agent details and add the sales users' profiles or permission sets directtly to the Agent Accesss tab on the agent record. ",
+  "C. In the configuration page of a permission set assigned to the sales users, clikc Agent Access, Edit, and move the specific Employee Agent t the Enabed Agents list.",
+  "D. Ensure the sales users have the 'Connect Agent to Lightning Experience' permission enabled in their profiles, as this controls agent visibility in the internal UI."
+)
+
+# 3. cat() inyecta el HTML directamente en la web
+cat(longmcq(opciones_c_and_s_1))
+
+# Un pequeño salto de línea visual
+cat("<br>\n\n")
+
+# 4. Botón oculto con la explicación
+cat(hide("Check"))
+cat("**Correct Answer is: A.**\n\n")
+cat("For Agentforce agents, user access and visibility are controlled via the Agent Access tab in permission sets or profiles assigned to end users. Therefore, to allow the sales users to access and interact with the agent, the agent must be enabled in the profile or permission set assigned to them via the Agent Access settings.
+
+Employee Agents run in the logged-in user's context and do not run on behalf of a dedicated agent user, unlike the Agentforce Service agent. The Agent Access tab exists in permission sets/profiles, not on the agent record in Setup. A 'Connect Agent to Lightning Experience' permission does not exist.")
+
+cat(unhide())
+```
+

@@ -16,3 +16,13 @@ agentforce-8
 data-analytics-managment-17
 questions
 describe-the-considerations-when-importing-updating-transferring-mass-deleting-exporting-and-backing-up-data.
+configuration-and-setup-15
+fundamentals-1
+general-settings
+multiple-currencies
+user-interface
+user-interface-1
+einstein-search
+explain-the-various-organization-security-controls
+my-domain
+field-level-security
