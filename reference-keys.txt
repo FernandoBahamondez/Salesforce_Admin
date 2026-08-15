@@ -2,6 +2,7 @@ agentforce-8
 fundamentals
 ai-sales-agents
 describe-the-capabilities-and-use-cases-of-agentforce-scenarios-about-use-cases-when-its-appropriate-to-use-ai-security-troubleshooting-agent-permissions.
+explain-the-various-organization-security-controls
 data-analytics-managment-17
 questions
 configuration-and-setup-15
@@ -11,3 +12,6 @@ multiple-currencies
 user-interface
 user-interface-1
 einstein-search
+my-domain
+field-level-security
+multi-factor-authentication
