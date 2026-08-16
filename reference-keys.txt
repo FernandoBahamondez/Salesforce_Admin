@@ -12,6 +12,10 @@ multiple-currencies
 user-interface
 user-interface-1
 einstein-search
+user
+create
+add-multiple-users
+login
 my-domain
 field-level-security
 multi-factor-authentication

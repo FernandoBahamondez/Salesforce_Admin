@@ -101,9 +101,10 @@
 <li class="chapter" data-level="3.1.2" data-path="configuration-and-setup-15.html"><a href="configuration-and-setup-15.html#multiple-currencies"><i class="fa fa-check"></i><b>3.1.2</b> Multiple Currencies</a></li>
 <li class="chapter" data-level="3.1.3" data-path="configuration-and-setup-15.html"><a href="configuration-and-setup-15.html#user-interface"><i class="fa fa-check"></i><b>3.1.3</b> User Interface</a></li>
 <li class="chapter" data-level="3.1.4" data-path="configuration-and-setup-15.html"><a href="configuration-and-setup-15.html#einstein-search"><i class="fa fa-check"></i><b>3.1.4</b> Einstein Search</a></li>
-<li class="chapter" data-level="3.1.5" data-path="configuration-and-setup-15.html"><a href="configuration-and-setup-15.html#my-domain"><i class="fa fa-check"></i><b>3.1.5</b> My Domain</a></li>
-<li class="chapter" data-level="3.1.6" data-path="configuration-and-setup-15.html"><a href="configuration-and-setup-15.html#field-level-security"><i class="fa fa-check"></i><b>3.1.6</b> Field-Level Security</a></li>
-<li class="chapter" data-level="3.1.7" data-path="configuration-and-setup-15.html"><a href="configuration-and-setup-15.html#multi-factor-authentication"><i class="fa fa-check"></i><b>3.1.7</b> Multi-Factor Authentication</a></li>
+<li class="chapter" data-level="3.1.5" data-path="configuration-and-setup-15.html"><a href="configuration-and-setup-15.html#user"><i class="fa fa-check"></i><b>3.1.5</b> User</a></li>
+<li class="chapter" data-level="3.1.6" data-path="configuration-and-setup-15.html"><a href="configuration-and-setup-15.html#my-domain"><i class="fa fa-check"></i><b>3.1.6</b> My Domain</a></li>
+<li class="chapter" data-level="3.1.7" data-path="configuration-and-setup-15.html"><a href="configuration-and-setup-15.html#field-level-security"><i class="fa fa-check"></i><b>3.1.7</b> Field-Level Security</a></li>
+<li class="chapter" data-level="3.1.8" data-path="configuration-and-setup-15.html"><a href="configuration-and-setup-15.html#multi-factor-authentication"><i class="fa fa-check"></i><b>3.1.8</b> Multi-Factor Authentication</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -167,11 +168,48 @@ So We need to keep in mind this image:</p>
 <p>We also need the read at least the description about what the Einstein Search does when we are looking for some record in the organization, so also is good idea to keep in mind this image:</p>
 <p><img src="images/clipboard-251281043.png" width="796" /></p>
 </div>
-<div id="my-domain" class="section level3 hasAnchor" number="3.1.5">
-<h3><span class="header-section-number">3.1.5</span> My Domain<a href="configuration-and-setup-15.html#my-domain" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>The leadership of a large online apparel company wishes to enalbe the My Domain feature in Salesforce. What does the Salesforce Administrator need to consider before enabling the My Domain feature? Choose 2 answers.</p>
-<div id="radio_ZQPPMOUZBP" class="webex-radiogroup">
-<label><input type="radio" autocomplete="off" name="radio_ZQPPMOUZBP" value="answer"></input> <span>A. A My Domain request can be reverted deploying a new domain.</span></label><label><input type="radio" autocomplete="off" name="radio_ZQPPMOUZBP" value="answer"></input> <span>B. Visualforce page URLs will change.</span></label><label><input type="radio" autocomplete="off" name="radio_ZQPPMOUZBP" value=""></input> <span>C. User will not be able to log in from <a href="https://login.salesforce.com" class="uri">https://login.salesforce.com</a></span></label><label><input type="radio" autocomplete="off" name="radio_ZQPPMOUZBP" value=""></input> <span>D. My Domain cannot be used in a sandbox environment.</span></label>
+<div id="user" class="section level3 hasAnchor" number="3.1.5">
+<h3><span class="header-section-number">3.1.5</span> User<a href="configuration-and-setup-15.html#user" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>I create this topic just to have a summary about the key concepts about diferrents situation in the User configuration and the security level layer that the Admin can Add or remove.</p>
+<p>This following image is to help to keep in mind the Key Concepts that the Salesforce Exam may will ask.</p>
+<p><img src="images/clipboard-3407930525.png" /></p>
+<div id="create" class="section level4 hasAnchor" number="3.1.5.1">
+<h4><span class="header-section-number">3.1.5.1</span> Create<a href="configuration-and-setup-15.html#create" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>If you need a create a New User, it’s simple to go to the setup configuration and to keep in mind the minimal data that the system required.</p>
+<p>Let’s check another common situation:</p>
+</div>
+<div id="add-multiple-users" class="section level4 hasAnchor" number="3.1.5.2">
+<h4><span class="header-section-number">3.1.5.2</span> Add Multiple Users<a href="configuration-and-setup-15.html#add-multiple-users" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>If you need to add multiple User’s and the amount is not to big, for example if you need the create 10 users, We can use de Add Multiple users bottom.</p>
+<p><img src="images/clipboard-4292574042.png" /></p>
+<p>Anothe common situation is, If you need to create 200 users but you don’t want to notify the user od their login details.<br />
+What is the most efficient way to achieve this?<br />
+<br />
+<strong><em>Use the Data Loader.</em></strong></p>
+</div>
+<div id="login" class="section level4 hasAnchor" number="3.1.5.3">
+<h4><span class="header-section-number">3.1.5.3</span> Login<a href="configuration-and-setup-15.html#login" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Single Sign-On (SSO) configuration is a really common setup that the company’s does, because you can add the core solution for login in the applications official company.</p>
+<p><img src="images/clipboard-1663373767.png" /></p>
+<p>Just we need to keep in mind this key situation:</p>
+<ol style="list-style-type: decimal">
+<li>Salesforce Password policies do not apply for SSO users.</li>
+<li>SSO users can not reset their passwords within Salesforce.</li>
+</ol>
+<hr />
+<p>What are reason if a user is not able to login?</p>
+<ol style="list-style-type: decimal">
+<li>The user is loogin in from an IP address outside of the <strong><em>defined</em></strong> range for their profile.</li>
+<li>THe user is attempting to log in outside of the login hours defined for their profile.</li>
+</ol>
+</div>
+</div>
+<div id="my-domain" class="section level3 hasAnchor" number="3.1.6">
+<h3><span class="header-section-number">3.1.6</span> My Domain<a href="configuration-and-setup-15.html#my-domain" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The leadership of a large online apparel company wishes to enable the My Domain feature in Salesforce. What does the Administrator need to consider before enabling the My Domain feature?</p>
+<p>Choose 2 answers.</p>
+<div id="radio_RZBLOWTXXE" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_RZBLOWTXXE" value="answer"></input> <span>A. A My Domain request can be reverted deploying a new domain.</span></label><label><input type="radio" autocomplete="off" name="radio_RZBLOWTXXE" value="answer"></input> <span>B. Visualforce page URLs will change.</span></label><label><input type="radio" autocomplete="off" name="radio_RZBLOWTXXE" value=""></input> <span>C. User will not be able to log in from <a href="https://login.salesforce.com" class="uri">https://login.salesforce.com</a></span></label><label><input type="radio" autocomplete="off" name="radio_RZBLOWTXXE" value=""></input> <span>D. My Domain cannot be used in a sandbox environment.</span></label>
 </div>
 <p><br></p>
 <div class="webex-solution">
@@ -181,13 +219,13 @@ Check
 <p><strong>Correct Answer is: D.</strong></p>
 </div>
 </div>
-<div id="field-level-security" class="section level3 hasAnchor" number="3.1.6">
-<h3><span class="header-section-number">3.1.6</span> Field-Level Security<a href="configuration-and-setup-15.html#field-level-security" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="field-level-security" class="section level3 hasAnchor" number="3.1.7">
+<h3><span class="header-section-number">3.1.7</span> Field-Level Security<a href="configuration-and-setup-15.html#field-level-security" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li>The users with the Sales profile should no longer have access to several fields on a custoom object. The Salesforce Admin employs field-level secutiry for these fields. What should the Salesforce Administrator consider before changing the page layout and field-level secutiry settings? Choose 2 answers.</li>
 </ul>
-<div id="radio_JDRAZPTYJI" class="webex-radiogroup">
-<label><input type="radio" autocomplete="off" name="radio_JDRAZPTYJI" value="answer"></input> <span>A. Fields can be set as hidden in the page layout but users will still be able to access the fields in reports, search, and list views.</span></label><label><input type="radio" autocomplete="off" name="radio_JDRAZPTYJI" value=""></input> <span>B. If a field is set be read-onlye using field.level secutiry for a user's profile but the user has edit access to the object, then the user can update the field.</span></label><label><input type="radio" autocomplete="off" name="radio_JDRAZPTYJI" value="answer"></input> <span>C. If a field is hidden using field-level secutiry, it soes not appear in page layouts, search results, related lists, list views, or reports.</span></label><label><input type="radio" autocomplete="off" name="radio_JDRAZPTYJI" value=""></input> <span>D. If a field is hidden field-level security, it does appear in page layouts, search results, related lists, and list views but it will appear in reports.</span></label>
+<div id="radio_UIMSRHSUBI" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_UIMSRHSUBI" value="answer"></input> <span>A. Fields can be set as hidden in the page layout but users will still be able to access the fields in reports, search, and list views.</span></label><label><input type="radio" autocomplete="off" name="radio_UIMSRHSUBI" value=""></input> <span>B. If a field is set be read-onlye using field.level secutiry for a user's profile but the user has edit access to the object, then the user can update the field.</span></label><label><input type="radio" autocomplete="off" name="radio_UIMSRHSUBI" value="answer"></input> <span>C. If a field is hidden using field-level secutiry, it soes not appear in page layouts, search results, related lists, list views, or reports.</span></label><label><input type="radio" autocomplete="off" name="radio_UIMSRHSUBI" value=""></input> <span>D. If a field is hidden field-level security, it does appear in page layouts, search results, related lists, and list views but it will appear in reports.</span></label>
 </div>
 <p><br></p>
 <div class="webex-solution">
@@ -197,13 +235,13 @@ Check
 <p><strong>Correct Answer is: A and C.</strong></p>
 </div>
 </div>
-<div id="multi-factor-authentication" class="section level3 hasAnchor" number="3.1.7">
-<h3><span class="header-section-number">3.1.7</span> Multi-Factor Authentication<a href="configuration-and-setup-15.html#multi-factor-authentication" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="multi-factor-authentication" class="section level3 hasAnchor" number="3.1.8">
+<h3><span class="header-section-number">3.1.8</span> Multi-Factor Authentication<a href="configuration-and-setup-15.html#multi-factor-authentication" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
-<li>Cosmic Supermarket would like to allow its employees to log in to Salesforce using their Google credentials. A Salesforce admin of the company is required to configure single sing-on (SSO) using Google as the third-party authentication provider. However, the employees should be required to rpove their identity using multi-factor autehntication (MFA). Which of the following are valid considerations related to this use case? Choose 2 answers.</li>
+<li>Cosmic Supermarket would like to allow its employees to log in to Salesforce using their Google credentials. A Salesforce admin of the company is required to configure single sing-on (SSO) using Google as the third-party authentication provider. However, the employees should be required to prove their identity using multi-factor authentication (MFA). Which of the following are valid considerations related to this use case? Choose 2 answers.</li>
 </ul>
-<div id="radio_SFMMQXNGFC" class="webex-radiogroup">
-<label><input type="radio" autocomplete="off" name="radio_SFMMQXNGFC" value="answer"></input> <span>A. MFA should be in the 'High Assurance' column on the 'Session Settings' page in Setup </span></label><label><input type="radio" autocomplete="off" name="radio_SFMMQXNGFC" value=""></input> <span>B. A managed package must be installed to set up multi-factor when Google is used as the third-party authentication provider. </span></label><label><input type="radio" autocomplete="off" name="radio_SFMMQXNGFC" value="answer"></input> <span>C. MFA can be configured for users by setting the 'Session Secutiry Level Requiered at Login' in their profiles.</span></label><label><input type="radio" autocomplete="off" name="radio_SFMMQXNGFC" value=""></input> <span>D. By default, MFA is enforced for users who log in through an authentication provider that supports single sign-on (SSO)</span></label>
+<div id="radio_OAEPQELEHA" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_OAEPQELEHA" value="answer"></input> <span>A. MFA should be in the 'High Assurance' column on the 'Session Settings' page in Setup </span></label><label><input type="radio" autocomplete="off" name="radio_OAEPQELEHA" value=""></input> <span>B. A managed package must be installed to set up multi-factor when Google is used as the third-party authentication provider. </span></label><label><input type="radio" autocomplete="off" name="radio_OAEPQELEHA" value="answer"></input> <span>C. MFA can be configured for users by setting the 'Session Secutiry Level Requiered at Login' in their profiles.</span></label><label><input type="radio" autocomplete="off" name="radio_OAEPQELEHA" value=""></input> <span>D. By default, MFA is enforced for users who log in through an authentication provider that supports single sign-on (SSO)</span></label>
 </div>
 <p><br></p>
 <div class="webex-solution">
