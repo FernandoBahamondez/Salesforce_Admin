@@ -26,3 +26,8 @@ einstein-search
 explain-the-various-organization-security-controls
 my-domain
 field-level-security
+user
+create
+add-multiple-users
+login
+multi-factor-authentication

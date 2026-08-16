@@ -56,9 +56,54 @@ We also need the read at least the description about what the Einstein Search do
 
 ![](images/clipboard-251281043.png){width="796"}
 
+### User
+
+I create this topic just to have a summary about the key concepts about diferrents situation in the User configuration and the security level layer that the Admin can Add or remove.
+
+This following image is to help to keep in mind the Key Concepts that the Salesforce Exam may will ask.
+
+![](images/clipboard-3407930525.png)
+
+#### Create
+
+If you need a create a New User, it's simple to go to the setup configuration and to keep in mind the minimal data that the system required.
+
+Let's check another common situation:
+
+#### Add Multiple Users
+
+If you need to add multiple User's and the amount is not to big, for example if you need the create 10 users, We can use de Add Multiple users bottom.
+
+![](images/clipboard-4292574042.png)
+
+Anothe common situation is, If you need to create 200 users but you don't want to notify the user od their login details.\
+What is the most efficient way to achieve this?\
+\
+***Use the Data Loader.***
+
+#### Login
+
+Single Sign-On (SSO) configuration is a really common setup that the company's does, because you can add the core solution for login in the applications official company.
+
+![](images/clipboard-1663373767.png)
+
+Just we need to keep in mind this key situation:
+
+1.  Salesforce Password policies do not apply for SSO users.
+2.  SSO users can not reset their passwords within Salesforce.
+
+------------------------------------------------------------------------
+
+What are reason if a user is not able to login?
+
+1.  The user is loogin in from an IP address outside of the ***defined*** range for their profile.
+2.  THe user is attempting to log in outside of the login hours defined for their profile.
+
 ### My Domain
 
-The leadership of a large online apparel company wishes to enalbe the My Domain feature in Salesforce. What does the Salesforce Administrator need to consider before enabling the My Domain feature? Choose 2 answers.
+The leadership of a large online apparel company wishes to enable the My Domain feature in Salesforce. What does the Administrator need to consider before enabling the My Domain feature?
+
+Choose 2 answers.
 
 ```{r conf_setup_mydomain1, echo=FALSE, results='asis'}
 # 2. Definimos las alternativas. La correcta siempre lleva 'answer ='
@@ -112,7 +157,7 @@ cat(unhide())
 
 ### Multi-Factor Authentication
 
-- Cosmic Supermarket would like to allow its employees to log in to Salesforce using their Google credentials. A Salesforce admin of the company is required to configure single sing-on (SSO) using Google as the third-party authentication provider. However, the employees should be required to rpove their identity using multi-factor autehntication (MFA). Which of the following are valid considerations related to this use case? Choose 2 answers.
+- Cosmic Supermarket would like to allow its employees to log in to Salesforce using their Google credentials. A Salesforce admin of the company is required to configure single sing-on (SSO) using Google as the third-party authentication provider. However, the employees should be required to prove their identity using multi-factor authentication (MFA). Which of the following are valid considerations related to this use case? Choose 2 answers.
 
 ```{r conf_setup_mfa1, echo=FALSE, results='asis'}
 # 2. Definimos las alternativas. La correcta siempre lleva 'answer ='
