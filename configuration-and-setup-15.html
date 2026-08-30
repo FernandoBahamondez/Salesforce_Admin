@@ -30,7 +30,7 @@
   
   
 <link rel="prev" href="data-analytics-managment-17.html"/>
-
+<link rel="next" href="miscellaneous.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -102,10 +102,20 @@
 <li class="chapter" data-level="3.1.3" data-path="configuration-and-setup-15.html"><a href="configuration-and-setup-15.html#user-interface"><i class="fa fa-check"></i><b>3.1.3</b> User Interface</a></li>
 <li class="chapter" data-level="3.1.4" data-path="configuration-and-setup-15.html"><a href="configuration-and-setup-15.html#einstein-search"><i class="fa fa-check"></i><b>3.1.4</b> Einstein Search</a></li>
 <li class="chapter" data-level="3.1.5" data-path="configuration-and-setup-15.html"><a href="configuration-and-setup-15.html#user"><i class="fa fa-check"></i><b>3.1.5</b> User</a></li>
-<li class="chapter" data-level="3.1.6" data-path="configuration-and-setup-15.html"><a href="configuration-and-setup-15.html#my-domain"><i class="fa fa-check"></i><b>3.1.6</b> My Domain</a></li>
-<li class="chapter" data-level="3.1.7" data-path="configuration-and-setup-15.html"><a href="configuration-and-setup-15.html#field-level-security"><i class="fa fa-check"></i><b>3.1.7</b> Field-Level Security</a></li>
-<li class="chapter" data-level="3.1.8" data-path="configuration-and-setup-15.html"><a href="configuration-and-setup-15.html#multi-factor-authentication"><i class="fa fa-check"></i><b>3.1.8</b> Multi-Factor Authentication</a></li>
+<li class="chapter" data-level="3.1.6" data-path="configuration-and-setup-15.html"><a href="configuration-and-setup-15.html#folder"><i class="fa fa-check"></i><b>3.1.6</b> Folder</a></li>
+<li class="chapter" data-level="3.1.7" data-path="configuration-and-setup-15.html"><a href="configuration-and-setup-15.html#files"><i class="fa fa-check"></i><b>3.1.7</b> Files</a></li>
+<li class="chapter" data-level="3.1.8" data-path="configuration-and-setup-15.html"><a href="configuration-and-setup-15.html#restricction-rule"><i class="fa fa-check"></i><b>3.1.8</b> Restricction Rule</a></li>
+<li class="chapter" data-level="3.1.9" data-path="configuration-and-setup-15.html"><a href="configuration-and-setup-15.html#my-domain"><i class="fa fa-check"></i><b>3.1.9</b> My Domain</a></li>
+<li class="chapter" data-level="3.1.10" data-path="configuration-and-setup-15.html"><a href="configuration-and-setup-15.html#field-level-security"><i class="fa fa-check"></i><b>3.1.10</b> Field-Level Security</a></li>
+<li class="chapter" data-level="3.1.11" data-path="configuration-and-setup-15.html"><a href="configuration-and-setup-15.html#multi-factor-authentication"><i class="fa fa-check"></i><b>3.1.11</b> Multi-Factor Authentication</a></li>
+<li class="chapter" data-level="3.1.12" data-path="configuration-and-setup-15.html"><a href="configuration-and-setup-15.html#organization-wide-default-setting"><i class="fa fa-check"></i><b>3.1.12</b> Organization Wide-Default Setting</a></li>
+<li class="chapter" data-level="3.1.13" data-path="configuration-and-setup-15.html"><a href="configuration-and-setup-15.html#sharing-setting"><i class="fa fa-check"></i><b>3.1.13</b> Sharing Setting</a></li>
+<li class="chapter" data-level="3.1.14" data-path="configuration-and-setup-15.html"><a href="configuration-and-setup-15.html#object-manager"><i class="fa fa-check"></i><b>3.1.14</b> Object Manager</a></li>
 </ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="miscellaneous.html"><a href="miscellaneous.html"><i class="fa fa-check"></i><b>4</b> Miscellaneous</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="miscellaneous.html"><a href="miscellaneous.html#actions-plans"><i class="fa fa-check"></i><b>4.1</b> Actions Plans</a></li>
 </ul></li>
 </ul>
 
@@ -173,13 +183,113 @@ So We need to keep in mind this image:</p>
 <p>I create this topic just to have a summary about the key concepts about diferrents situation in the User configuration and the security level layer that the Admin can Add or remove.</p>
 <p>This following image is to help to keep in mind the Key Concepts that the Salesforce Exam may will ask.</p>
 <p><img src="images/clipboard-3407930525.png" /></p>
-<div id="create" class="section level4 hasAnchor" number="3.1.5.1">
-<h4><span class="header-section-number">3.1.5.1</span> Create<a href="configuration-and-setup-15.html#create" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<div id="user---key-principles" class="section level4 hasAnchor" number="3.1.5.1">
+<h4><span class="header-section-number">3.1.5.1</span> User - Key Principles<a href="configuration-and-setup-15.html#user---key-principles" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>On this table we have the main summary:</p>
+<table>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Feature</strong></td>
+<td><strong>Profile</strong></td>
+<td><strong>Role</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Main focus</strong></td>
+<td>What you can <strong>do</strong> (Permissions).</td>
+<td>Which records you can <strong>see</strong> (Visibility).</td>
+</tr>
+<tr class="odd">
+<td><strong>Mandatory?</strong></td>
+<td>Yes, it is 100% mandatory.</td>
+<td>No, it is optional.</td>
+</tr>
+<tr class="even">
+<td><strong>Practical example</strong></td>
+<td>Gives you access to the “Create Opportunity” button.</td>
+<td>Allows you to see your team’s Opportunities.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="profile" class="section level4 hasAnchor" number="3.1.5.2">
+<h4><span class="header-section-number">3.1.5.2</span> Profile<a href="configuration-and-setup-15.html#profile" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Profiles determine how users access objects and data, and what they can do in an application. Tab settings are controlled from profiles and permission sets, and they indicate whether a tab is exposed or not in its associated app.</p>
+<p><img src="images/clipboard-2818892244.png" /><br />
+<br />
+What can be controlled in profiles?</p>
+<p>PageLayout</p>
+<p><img src="images/clipboard-2725611388.png" /></p>
+<p>Field-Level Security</p>
+<p><img src="images/clipboard-1212938602.png" /></p>
+<p>Standar Object Permissions</p>
+<p><img src="images/clipboard-1189516143.png" /></p>
+<p>If you are in a dynamic organization with more than 5000 users across the globe. Which best practices should the Salesforce Administrator of the organization follow in order to manage changes to permissions for different groups of users more effectively by reducing the overhead of customization?</p>
+<ol style="list-style-type: decimal">
+<li>The SF Admin should use permission sets to extend permissions for individuals or small groups of users as required.</li>
+<li>The SF Admin should not create a custom profile every time a user requires additional access or permission.</li>
+</ol>
+<p>Charleston Small Business Products has recently expanded its business to include marketing and technology services. Consequently, the Salesforce Administrator must set up several new profiles to limit access to new objects created. Which object settings can be controlled from a Profile?</p>
+<p><br />
+Profile Object Settings include:<br />
+1) Tab settings<br />
+2) Record types and page layout settings 3) Object permissions<br />
+4) Field permissions<br />
+</p>
+<div id="minimum-access---salesforce" class="section level5 hasAnchor" number="3.1.5.2.1">
+<h5><span class="header-section-number">3.1.5.2.1</span> Minimum Access - Salesforce<a href="configuration-and-setup-15.html#minimum-access---salesforce" class="anchor-section" aria-label="Anchor link to header"></a></h5>
+<p>The company has a group of support users who require access to Salesforce. All these users need access to Chatter features and activities. A few of these users also require the ability to view and edit cases and records of a custom object called ‘Product Issue’. None of the users should be able to view or edit the records of any other object. Which solution should be utilized to ensure that these users have the required permissions?</p>
+<ul>
+<li>Assign the ‘Minimun Access - Salesforce’ to all the users and assign a permission set to the user who requiere additional access.</li>
+</ul>
+<p>The ‘Minimum Access – Salesforce’ profile is a least-privilege profile that includes ‘Access Activities,’ ‘Chatter Internal User,’ ‘Lightning Console User’, and ‘View Help Link’ permissions. To meet the requirement, this profile can be assigned to all the users who need to access Chatter features and activities. A permission set can be created and assigned to the subset of users who also need to view and edit cases and records of a custom object.</p>
+<p>The ‘Standard User’ profile would allow creating and editing the records of most objects. The ‘Standard Platform User’ profile would give access to core platform functionality, such as accounts and contacts, which is not required in this case. Also, it does not grant access to cases, as the Salesforce license associated with this profile does not include access to the Case object. The ‘Read Only’ profile would grant the ability to view the records of other objects.</p>
+<p>Note: Salesforce orgs created in Spring ’21 and later don’t have the ‘Read-Only’ standard profile any more. For orgs that were created before Spring ‘21, Salesforce will enforce the conversion of the ’Read Only’ standard profile into a custom profile.</p>
+</div>
+</div>
+<div id="role" class="section level4 hasAnchor" number="3.1.5.3">
+<h4><span class="header-section-number">3.1.5.3</span> Role<a href="configuration-and-setup-15.html#role" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>The role of a sales manager of ABC company was recently changed due to a transfer. She is now able to access an account record that is not owned by her. The Salesforce Administrator of the company would like to determine whether the role hierarchy is the reason for the record access. Which of the following can be used to quickly determine this?</p>
+<ul>
+<li>SHARING HIERARCHY BUTTON.</li>
+</ul>
+<p>The Sharing Hierarchy button on an account record can be used to view all the users who have access to the record and the reason for the access. From the Sharing Hierarchy list view, one can click on ‘View’ to view the reason for record access.</p>
+<p>Sharing settings will not necessarily be able to address this because it will only show the OWD for the object. The Account Team related list will only show which users have been given access to the record by being added as an Account Team member. However, if access is given in another way, the Account Team related list will not be able to show this. Apex sharing reasons are used to indicate why sharing has been implemented when creating Apex managed sharing on custom objects.</p>
+<p>Note: Sharing Hierarchy is currently only available for accounts, opportunities, cases, contacts, leads, and custom objects.</p>
+<p><img src="images/clipboard-417305295.png" /></p>
+</div>
+<div id="permission-set" class="section level4 hasAnchor" number="3.1.5.4">
+<h4><span class="header-section-number">3.1.5.4</span> Permission Set<a href="configuration-and-setup-15.html#permission-set" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Bob and Patrick are sales users and share the same custom sales profile. The sales profile allows create and edit of contacts but not delete. The sales manager would like Patrick to be able to create and edit contact records, however, Bob should also be able to delete contacts. How can the Salesforce Administrator configure this most efficiently?</p>
+<ul>
+<li><p>Create a permission set and assign it to Bob.</p>
+<p><img src="images/clipboard-4094278170.png" /></p></li>
+</ul>
+<p>Although two profiles could be created with different permissions to the Contact object, it is more efficient to create a permission set to give Bob the extra permissions and use one profile for sales users. Permission sets can grant object and field level permissions and extend profile permissions and access.</p>
+</div>
+<div id="delegated-administration" class="section level4 hasAnchor" number="3.1.5.5">
+<h4><span class="header-section-number">3.1.5.5</span> Delegated Administration<a href="configuration-and-setup-15.html#delegated-administration" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>A Salesforce Administrator wishes to delegate the responsibility of resetting passwords and creating new users to her assistant. The Salesforce Administrator does not wish to give her assistant full administrative rights. What is the most appropriate solution in this case?</p>
+<ul>
+<li>Assign the user to a delegated group that has selected user administration permissions.</li>
+</ul>
+<p>What is the primary benefit of “View All Fields” permission in Salesforce?</p>
+<ul>
+<li>It grants users read-only access to all fields for a specific object.</li>
+</ul>
+<p><img src="images/clipboard-796978498.png" /></p>
+</div>
+<div id="create" class="section level4 hasAnchor" number="3.1.5.6">
+<h4><span class="header-section-number">3.1.5.6</span> Create<a href="configuration-and-setup-15.html#create" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>If you need a create a New User, it’s simple to go to the setup configuration and to keep in mind the minimal data that the system required.</p>
 <p>Let’s check another common situation:</p>
 </div>
-<div id="add-multiple-users" class="section level4 hasAnchor" number="3.1.5.2">
-<h4><span class="header-section-number">3.1.5.2</span> Add Multiple Users<a href="configuration-and-setup-15.html#add-multiple-users" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<div id="add-multiple-users" class="section level4 hasAnchor" number="3.1.5.7">
+<h4><span class="header-section-number">3.1.5.7</span> Add Multiple Users<a href="configuration-and-setup-15.html#add-multiple-users" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>If you need to add multiple User’s and the amount is not to big, for example if you need the create 10 users, We can use de Add Multiple users bottom.</p>
 <p><img src="images/clipboard-4292574042.png" /></p>
 <p>Anothe common situation is, If you need to create 200 users but you don’t want to notify the user od their login details.<br />
@@ -187,8 +297,8 @@ What is the most efficient way to achieve this?<br />
 <br />
 <strong><em>Use the Data Loader.</em></strong></p>
 </div>
-<div id="login" class="section level4 hasAnchor" number="3.1.5.3">
-<h4><span class="header-section-number">3.1.5.3</span> Login<a href="configuration-and-setup-15.html#login" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<div id="login" class="section level4 hasAnchor" number="3.1.5.8">
+<h4><span class="header-section-number">3.1.5.8</span> Login<a href="configuration-and-setup-15.html#login" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Single Sign-On (SSO) configuration is a really common setup that the company’s does, because you can add the core solution for login in the applications official company.</p>
 <p><img src="images/clipboard-1663373767.png" /></p>
 <p>Just we need to keep in mind this key situation:</p>
@@ -203,13 +313,113 @@ What is the most efficient way to achieve this?<br />
 <li>THe user is attempting to log in outside of the login hours defined for their profile.</li>
 </ol>
 </div>
+<div id="log-out" class="section level4 hasAnchor" number="3.1.5.9">
+<h4><span class="header-section-number">3.1.5.9</span> Log Out<a href="configuration-and-setup-15.html#log-out" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Another typical question is about what can you configure when the user Log Out the platform.</p>
+<p><img src="images/clipboard-1050888336.png" /></p>
+<p><img src="images/clipboard-1113754816.png" /></p>
+<p>What options does a SF Admin have regarding setting the page displayed after a user logs out of Salesforce?</p>
+<ol style="list-style-type: decimal">
+<li>Display the standard Salesforce login page.</li>
+<li>Display a Custom Log Out page.</li>
+<li>Display a custom Single Sing-On page.</li>
+</ol>
 </div>
-<div id="my-domain" class="section level3 hasAnchor" number="3.1.6">
-<h3><span class="header-section-number">3.1.6</span> My Domain<a href="configuration-and-setup-15.html#my-domain" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="specific-config-record-type" class="section level4 hasAnchor" number="3.1.5.10">
+<h4><span class="header-section-number">3.1.5.10</span> Specific config record type<a href="configuration-and-setup-15.html#specific-config-record-type" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>The Account object has two record types named ‘Partner’ and ‘Customer’ assigned to a certain profile. A user with the said profile prefers the ‘Customer’ record type to be selected and applied automatically when he clicks on the ‘New’ button on the account page when creating the account record. Which setting allows the default record type to be selected and applied automatically for the user when creating a new record for the object?</p>
+<ul>
+<li>Default record type settings in personal settings.</li>
+</ul>
+<p><img src="images/clipboard-446919503.png" /></p>
+<p><img src="images/clipboard-273921315.png" /></p>
+<p>A default record type is set at the profile level. The Salesforce Administrator can specify a default record type for the profile that will affect all the users under that profile. To enable the default record type to be automatically selected and applied for the user when creating a new record for the object, the user should update the option in their personal settings.</p>
+<p>It is not possible to specify a default record type using a permission set.</p>
+<p>Password Policies</p>
+<p>If you need that all of the Salesforce users in the organization to change their passwords after 60 days. The password should have a minimum password length of 12 characters, and the maximum invalid login attempts should be 3. What should the Salesforce Administrator consider when configuring this?</p>
+<ol style="list-style-type: decimal">
+<li><p>Password Policies can be maintained at the organization level.</p>
+<p><img src="images/clipboard-1728603903.png" /></p></li>
+<li><p>Password Policies settings can be maintained for each profile.</p>
+<p><img src="images/clipboard-168619125.png" /></p></li>
+</ol>
+</div>
+<div id="scoping-rule" class="section level4 hasAnchor" number="3.1.5.11">
+<h4><span class="header-section-number">3.1.5.11</span> Scoping Rule<a href="configuration-and-setup-15.html#scoping-rule" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>FED is a company in the United States that uses the Unlimited edition of Salesforce. Sales reps of the company regularly access and update opportunities in Salesforce. The reps in the eastern region of the country should only be able to view opportunities of accounts located in Florida in list views and reports but still have access to the filtered-out records. Which Salesforce feature should be used for this use case?</p>
+<ul>
+<li>Scoping Rule</li>
+</ul>
+<p>A scoping rule can be used to control the records that users see in list views, reports, and SOQL, based on the selected criteria. Scoping rules are available for the following standard objects: Account, Case, Contact, Event, Lead, Opportunity, and Task, and for custom objects.</p>
+<p>A restriction rule is applied to a user to filter the records that the user is granted access to via org-wide defaults, sharing rules, and other sharing mechanisms. It is available for custom objects, external objects, contracts, tasks, and events.</p>
+<p>Restriction rules are used to prevent access to certain records, like sensitive data or information that isn’t important for their work, while scoping rules are flexible and can be enabled and disabled on a query-by-query basis. Also, they do not restrict the access that users have to records.</p>
+<p>A sharing rule is used to grant access to records based on criteria or ownership.</p>
+</div>
+<div id="user-management-settings" class="section level4 hasAnchor" number="3.1.5.12">
+<h4><span class="header-section-number">3.1.5.12</span> User Management Settings<a href="configuration-and-setup-15.html#user-management-settings" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>The system administrator of FED company needs to create a custom object with several custom fields to store information about the shipments created for the company’s customers. A minimum access custom profile has been assigned to all the Salesforce users. Permission sets are used to grant any additional permissions required by the users. How can the administrator set field-level security on permission sets instead of profiles when creating the custom fields?</p>
+<ul>
+<li>Enable ‘Field-Level Secutiry for Permission sets during Field craetion’ on the ‘User Management Settings’ page in Setup.</li>
+</ul>
+<p><img src="images/clipboard-4065222785.png" /></p>
+</div>
+</div>
+<div id="folder" class="section level3 hasAnchor" number="3.1.6">
+<h3><span class="header-section-number">3.1.6</span> Folder<a href="configuration-and-setup-15.html#folder" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>What is true regarding using subfolders to organize reports and dashboards in Lightning Experience?</p>
+<ul>
+<li><p>Subfolders can be created in user-created folders.</p></li>
+<li><p>A hierarchy of subfolders can be created to represent a logicla structure.</p></li>
+</ul>
+<p>The Sales manager asked the Salesforce Administrator how she can share dashboards and reports with particular users. What is true regarding the sharing of Reports and Dashboards?</p>
+<ul>
+<li>For a user to view a report or dashboard, the folder needs to be shared with the user.</li>
+</ul>
+<p><img src="images/clipboard-1151620343.png" /></p>
+<p>Which can be stored and accessed in folders?</p>
+<ul>
+<li><p>Reports</p></li>
+<li><p>Dashboards</p></li>
+<li><p>Email Templates</p></li>
+</ul>
+</div>
+<div id="files" class="section level3 hasAnchor" number="3.1.7">
+<h3><span class="header-section-number">3.1.7</span> Files<a href="configuration-and-setup-15.html#files" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="library" class="section level5 hasAnchor" number="3.1.7.0.1">
+<h5><span class="header-section-number">3.1.7.0.1</span> Library<a href="configuration-and-setup-15.html#library" class="anchor-section" aria-label="Anchor link to header"></a></h5>
+<p>A Sales Manager wants to add a PowerPoint file to a new Content Library but not make it visible to other sales users until a later time. What can be done to achieve this?</p>
+<ul>
+<li>Add the file to the library but not add any library members.</li>
+</ul>
+<p>To access a file in a library, users need to be members of the library (either as individual users or part of a public group). If the sales users will need to have access to the file at a later date, the file can be added to the library and then the sales public group can be added as members with the appropriate access type at a later date.</p>
+<p>When adding users as members to a library, the access type must be selected at the same time. There is no option to set a date when the file should become visible. Disabling the object permissions for the user’s profile will remove their access to other files and libraries.</p>
+<p><img src="images/clipboard-924549988.png" /></p>
+</div>
+</div>
+<div id="restricction-rule" class="section level3 hasAnchor" number="3.1.8">
+<h3><span class="header-section-number">3.1.8</span> Restricction Rule<a href="configuration-and-setup-15.html#restricction-rule" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>ABC industry company uses a custom object, Project, to manage Sales and Service project records. The Project object has a master-detail relationship with Account, making it the child object. The Account object has an OWD setting of Public Read Only. Service projects, distinguished by a ticked ‘Service/Support’ checkbox, must be accessible to support agents. Sales projects contain sensitive data and should not be accessed by support agents. Which data security feature can best achieve this requirement?</p>
+<ul>
+<li>Restriction Rules</li>
+</ul>
+<p>Restriction rules can be used to control and limit the access of a group of users to a subset of records based on record and user criteria. It is available for custom objects, external objects, and some standard objects such as contracts, tasks, and events. In this case, a restriction rule can be created on the Project custom object. Using the ‘Service/Support’ checkbox and the Service Rep role ID as criteria, the records accessible to the support agents can be filtered.</p>
+<p>Sharing rules only allow record access to be extended across the role hierarchy, sharing records owned by one role with users in another role at the same level; they cannot restrict record access. Permission sets can be used to open up record access and not limit it. Public groups can be used for sharing records between members.</p>
+<p><img src="images/clipboard-766700612.png" /></p>
+<p>DEF, a multinational company, has sales representatives from various regions using a shared Unlimited edition org. The users are broadly classified as belonging to North, South, East, and West regions, identified by a custom ‘Region’ picklist on their User record.</p>
+<p>Due to various sharing mechanisms, users from different regions can access unnecessary Event records with sensitive information, such as those working on the same Account record. Which of the following should the Salesforce Administrator use to restrict the visibility and access of the events based on their region?</p>
+<ul>
+<li>RESTRICTION RULES</li>
+</ul>
+<p><img src="images/clipboard-3093577647.png" /></p>
+<p>A restriction rule defined on the Event object helps sales representatives view and access only the Event records relevant to them. Since there is already a custom single picklist on the User object that determines the region of the sales representative, it can be used in the restriction rule’s criteria to match with any field that represents the region related to the Event. While only two restriction rules can be active for an object at a time in Enterprise and Developer editions, up to five restriction rules can be active per object in Performance and Unlimited editions. Note that when using a (single-select) picklist for a user or record criteria, multiple picklist values can be selected or added to the condition.</p>
+<p>A scoping rule only filters the default visibility of events and does not restrict access to these records. Assignment rules cannot be used for this scenario as there is no need to change the assignment of these records. Criteria-based sharing rules provide access to records and do not restrict the same.</p>
+</div>
+<div id="my-domain" class="section level3 hasAnchor" number="3.1.9">
+<h3><span class="header-section-number">3.1.9</span> My Domain<a href="configuration-and-setup-15.html#my-domain" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The leadership of a large online apparel company wishes to enable the My Domain feature in Salesforce. What does the Administrator need to consider before enabling the My Domain feature?</p>
 <p>Choose 2 answers.</p>
-<div id="radio_RZBLOWTXXE" class="webex-radiogroup">
-<label><input type="radio" autocomplete="off" name="radio_RZBLOWTXXE" value="answer"></input> <span>A. A My Domain request can be reverted deploying a new domain.</span></label><label><input type="radio" autocomplete="off" name="radio_RZBLOWTXXE" value="answer"></input> <span>B. Visualforce page URLs will change.</span></label><label><input type="radio" autocomplete="off" name="radio_RZBLOWTXXE" value=""></input> <span>C. User will not be able to log in from <a href="https://login.salesforce.com" class="uri">https://login.salesforce.com</a></span></label><label><input type="radio" autocomplete="off" name="radio_RZBLOWTXXE" value=""></input> <span>D. My Domain cannot be used in a sandbox environment.</span></label>
+<div id="radio_DDKEKQIDBI" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_DDKEKQIDBI" value="answer"></input> <span>A. A My Domain request can be reverted deploying a new domain.</span></label><label><input type="radio" autocomplete="off" name="radio_DDKEKQIDBI" value="answer"></input> <span>B. Visualforce page URLs will change.</span></label><label><input type="radio" autocomplete="off" name="radio_DDKEKQIDBI" value=""></input> <span>C. User will not be able to log in from <a href="https://login.salesforce.com" class="uri">https://login.salesforce.com</a></span></label><label><input type="radio" autocomplete="off" name="radio_DDKEKQIDBI" value=""></input> <span>D. My Domain cannot be used in a sandbox environment.</span></label>
 </div>
 <p><br></p>
 <div class="webex-solution">
@@ -219,13 +429,13 @@ Check
 <p><strong>Correct Answer is: D.</strong></p>
 </div>
 </div>
-<div id="field-level-security" class="section level3 hasAnchor" number="3.1.7">
-<h3><span class="header-section-number">3.1.7</span> Field-Level Security<a href="configuration-and-setup-15.html#field-level-security" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="field-level-security" class="section level3 hasAnchor" number="3.1.10">
+<h3><span class="header-section-number">3.1.10</span> Field-Level Security<a href="configuration-and-setup-15.html#field-level-security" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li>The users with the Sales profile should no longer have access to several fields on a custoom object. The Salesforce Admin employs field-level secutiry for these fields. What should the Salesforce Administrator consider before changing the page layout and field-level secutiry settings? Choose 2 answers.</li>
 </ul>
-<div id="radio_UIMSRHSUBI" class="webex-radiogroup">
-<label><input type="radio" autocomplete="off" name="radio_UIMSRHSUBI" value="answer"></input> <span>A. Fields can be set as hidden in the page layout but users will still be able to access the fields in reports, search, and list views.</span></label><label><input type="radio" autocomplete="off" name="radio_UIMSRHSUBI" value=""></input> <span>B. If a field is set be read-onlye using field.level secutiry for a user's profile but the user has edit access to the object, then the user can update the field.</span></label><label><input type="radio" autocomplete="off" name="radio_UIMSRHSUBI" value="answer"></input> <span>C. If a field is hidden using field-level secutiry, it soes not appear in page layouts, search results, related lists, list views, or reports.</span></label><label><input type="radio" autocomplete="off" name="radio_UIMSRHSUBI" value=""></input> <span>D. If a field is hidden field-level security, it does appear in page layouts, search results, related lists, and list views but it will appear in reports.</span></label>
+<div id="radio_WBHRHBMMKJ" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_WBHRHBMMKJ" value="answer"></input> <span>A. Fields can be set as hidden in the page layout but users will still be able to access the fields in reports, search, and list views.</span></label><label><input type="radio" autocomplete="off" name="radio_WBHRHBMMKJ" value=""></input> <span>B. If a field is set be read-onlye using field.level secutiry for a user's profile but the user has edit access to the object, then the user can update the field.</span></label><label><input type="radio" autocomplete="off" name="radio_WBHRHBMMKJ" value="answer"></input> <span>C. If a field is hidden using field-level secutiry, it soes not appear in page layouts, search results, related lists, list views, or reports.</span></label><label><input type="radio" autocomplete="off" name="radio_WBHRHBMMKJ" value=""></input> <span>D. If a field is hidden field-level security, it does appear in page layouts, search results, related lists, and list views but it will appear in reports.</span></label>
 </div>
 <p><br></p>
 <div class="webex-solution">
@@ -235,13 +445,13 @@ Check
 <p><strong>Correct Answer is: A and C.</strong></p>
 </div>
 </div>
-<div id="multi-factor-authentication" class="section level3 hasAnchor" number="3.1.8">
-<h3><span class="header-section-number">3.1.8</span> Multi-Factor Authentication<a href="configuration-and-setup-15.html#multi-factor-authentication" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="multi-factor-authentication" class="section level3 hasAnchor" number="3.1.11">
+<h3><span class="header-section-number">3.1.11</span> Multi-Factor Authentication<a href="configuration-and-setup-15.html#multi-factor-authentication" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li>Cosmic Supermarket would like to allow its employees to log in to Salesforce using their Google credentials. A Salesforce admin of the company is required to configure single sing-on (SSO) using Google as the third-party authentication provider. However, the employees should be required to prove their identity using multi-factor authentication (MFA). Which of the following are valid considerations related to this use case? Choose 2 answers.</li>
 </ul>
-<div id="radio_OAEPQELEHA" class="webex-radiogroup">
-<label><input type="radio" autocomplete="off" name="radio_OAEPQELEHA" value="answer"></input> <span>A. MFA should be in the 'High Assurance' column on the 'Session Settings' page in Setup </span></label><label><input type="radio" autocomplete="off" name="radio_OAEPQELEHA" value=""></input> <span>B. A managed package must be installed to set up multi-factor when Google is used as the third-party authentication provider. </span></label><label><input type="radio" autocomplete="off" name="radio_OAEPQELEHA" value="answer"></input> <span>C. MFA can be configured for users by setting the 'Session Secutiry Level Requiered at Login' in their profiles.</span></label><label><input type="radio" autocomplete="off" name="radio_OAEPQELEHA" value=""></input> <span>D. By default, MFA is enforced for users who log in through an authentication provider that supports single sign-on (SSO)</span></label>
+<div id="radio_RISPCQZJGQ" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_RISPCQZJGQ" value="answer"></input> <span>A. MFA should be in the 'High Assurance' column on the 'Session Settings' page in Setup </span></label><label><input type="radio" autocomplete="off" name="radio_RISPCQZJGQ" value=""></input> <span>B. A managed package must be installed to set up multi-factor when Google is used as the third-party authentication provider. </span></label><label><input type="radio" autocomplete="off" name="radio_RISPCQZJGQ" value="answer"></input> <span>C. MFA can be configured for users by setting the 'Session Secutiry Level Requiered at Login' in their profiles.</span></label><label><input type="radio" autocomplete="off" name="radio_RISPCQZJGQ" value=""></input> <span>D. By default, MFA is enforced for users who log in through an authentication provider that supports single sign-on (SSO)</span></label>
 </div>
 <p><br></p>
 <div class="webex-solution">
@@ -254,7 +464,43 @@ Check
 <img src="images/clipboard-3710518353.png" alt="" />
 <div class="figcaption"><img src="images/clipboard-4253108297.png" /></div>
 </div>
+</div>
+<div id="organization-wide-default-setting" class="section level3 hasAnchor" number="3.1.12">
+<h3><span class="header-section-number">3.1.12</span> Organization Wide-Default Setting<a href="configuration-and-setup-15.html#organization-wide-default-setting" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Only Cases and Leads have organization-wide default sharing options of ‘Public Read/Write/Transfer’. Custom objects can have ‘Private’, ‘Public Read Only’, ‘Public Read/Write’, and ‘Controlled by Parent’. Contacts and Orders also have the ‘Controlled by Parent’ option.</p>
+<p><img src="images/clipboard-4182762947.png" /></p>
+</div>
+<div id="sharing-setting" class="section level3 hasAnchor" number="3.1.13">
+<h3><span class="header-section-number">3.1.13</span> Sharing Setting<a href="configuration-and-setup-15.html#sharing-setting" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The ‘Controlled by Parent’ sharing setting should be used for the Contact object since it would grant account owners edit access to all related contacts. Access to contacts can be specified with an OWD sharing setting.</p>
+<p>There are different options such as : ‘Controlled by Parent’ -&gt; This means that the access to the contacts will be controlled by the access the user has to the parent, in this case, the Account.</p>
+<p>‘Public Read/Write’ -&gt; Using this setting would grant read/write access to all contacts for all users.</p>
+<p>‘Private’ -&gt; If the sharing setting is set to private, a criteria-based sharing rule would need to be used to give access based on the owner of the contact account.</p>
+<p><img src="images/clipboard-1353064516.png" /></p>
+<p>The Salesforce Administrator of ABC has set the organization-wide default sharing setting of the Account object to ‘Private’. The company uses Sales Territories and has an active territory model with the following territories: Canada, Northeast, Southwest, and California. Account records owned by users who are assigned to the California territory need to be shared with all the users in the Northeast territory. They should have ‘Read’ access to the account records. What solution should be used to accomplish this?</p>
+<ul>
+<li>A sharing rule based on record ownership should be created to share te account records.</li>
+</ul>
+<p><img src="images/clipboard-2842301152.png" /></p>
+</div>
+<div id="object-manager" class="section level3 hasAnchor" number="3.1.14">
+<h3><span class="header-section-number">3.1.14</span> Object Manager<a href="configuration-and-setup-15.html#object-manager" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Field-level security can be set for a profile to control which fields are read-only and/or editable. Fields can be read-only on a page layout.</p>
+<p>Assigning the minimum access profile is unnecessary and would interfere with the other permissions and accesses that those users currently have via their profile. Although a permission set can be used to extend users’ access without modifying their profile, it can only be assigned to individual users and not profiles.</p>
+<div class="float">
+<img src="images/clipboard-1007689119.png" alt="" />
+<div class="figcaption"><img src="images/clipboard-2621668081.png" /></div>
+</div>
+<div id="email-template" class="section level4 hasAnchor" number="3.1.14.1">
+<h4><span class="header-section-number">3.1.14.1</span> Email Template<a href="configuration-and-setup-15.html#email-template" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Worldwide Containers uses Lightning Experience. The company has a Sales &amp; Marketing email template folder, which only contains the Sales subfolder and Marketing subfolder. Each of these subfolders stores email templates that were created by the Marketing Manager. If the Marketing department hires a new intern that needs to modify all the email templates in both subfolders, what’s the most efficient action that the Salesforce Administrator can take to share these templates with the intern?</p>
+<ul>
+<li>Grant Edit access to the Sales &amp; Marketing email template folder.</li>
+</ul>
+<p><img src="images/clipboard-162107508.png" /></p>
+<p><img src="images/clipboard-623503743.png" /></p>
 
+</div>
 </div>
 </div>
 </div>
@@ -469,8 +715,8 @@ window.onload = function() {
           </div>
         </div>
       </div>
-<a href="data-analytics-managment-17.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="data-analytics-managment-17.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="miscellaneous.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
