@@ -430,7 +430,15 @@ Assigning the minimum access profile is unnecessary and would interfere with the
 
 ![![](images/clipboard-2621668081.png)](images/clipboard-1007689119.png)
 
-#### Email Template
+#### Opportunity Team Member
+
+ABC Technologies often needs several sales reps working on the same opportunities and requests the administrator to reflect this in the Salesforce org. What is true regarding Opportunity Teams?
+
+- The owner of the opportunity or users above the owner in the role hierarchy can manage opportunity team members.
+
+![](images/clipboard-4068566413.png)
+
+### Email Template
 
 Worldwide Containers uses Lightning Experience. The company has a Sales & Marketing email template folder, which only contains the Sales subfolder and Marketing subfolder. Each of these subfolders stores email templates that were created by the Marketing Manager. If the Marketing department hires a new intern that needs to modify all the email templates in both subfolders, what's the most efficient action that the Salesforce Administrator can take to share these templates with the intern?
 
