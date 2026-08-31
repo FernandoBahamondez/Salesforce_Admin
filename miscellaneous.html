@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>4 Miscellaneous | Salesforce Admin</title>
-  <meta name="description" content="4 Miscellaneous | Salesforce Admin" />
+  <title>5 Miscellaneous | Salesforce Admin</title>
+  <meta name="description" content="5 Miscellaneous | Salesforce Admin" />
   <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="4 Miscellaneous | Salesforce Admin" />
+  <meta property="og:title" content="5 Miscellaneous | Salesforce Admin" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="4 Miscellaneous | Salesforce Admin" />
+  <meta name="twitter:title" content="5 Miscellaneous | Salesforce Admin" />
   
   
   
@@ -29,7 +29,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="configuration-and-setup-15.html"/>
+<link rel="prev" href="automation.html"/>
 
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -111,11 +111,28 @@
 <li class="chapter" data-level="3.1.12" data-path="configuration-and-setup-15.html"><a href="configuration-and-setup-15.html#organization-wide-default-setting"><i class="fa fa-check"></i><b>3.1.12</b> Organization Wide-Default Setting</a></li>
 <li class="chapter" data-level="3.1.13" data-path="configuration-and-setup-15.html"><a href="configuration-and-setup-15.html#sharing-setting"><i class="fa fa-check"></i><b>3.1.13</b> Sharing Setting</a></li>
 <li class="chapter" data-level="3.1.14" data-path="configuration-and-setup-15.html"><a href="configuration-and-setup-15.html#object-manager"><i class="fa fa-check"></i><b>3.1.14</b> Object Manager</a></li>
+<li class="chapter" data-level="3.1.15" data-path="configuration-and-setup-15.html"><a href="configuration-and-setup-15.html#email-template"><i class="fa fa-check"></i><b>3.1.15</b> Email Template</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="miscellaneous.html"><a href="miscellaneous.html"><i class="fa fa-check"></i><b>4</b> Miscellaneous</a>
+<li class="chapter" data-level="4" data-path="automation.html"><a href="automation.html"><i class="fa fa-check"></i><b>4</b> Automation</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="miscellaneous.html"><a href="miscellaneous.html#actions-plans"><i class="fa fa-check"></i><b>4.1</b> Actions Plans</a></li>
+<li class="chapter" data-level="4.1" data-path="automation.html"><a href="automation.html#approval-processes"><i class="fa fa-check"></i><b>4.1</b> Approval Processes</a></li>
+<li class="chapter" data-level="4.2" data-path="automation.html"><a href="automation.html#workflow-rule"><i class="fa fa-check"></i><b>4.2</b> Workflow Rule</a></li>
+<li class="chapter" data-level="4.3" data-path="automation.html"><a href="automation.html#case-escalation-rule"><i class="fa fa-check"></i><b>4.3</b> Case Escalation Rule</a></li>
+<li class="chapter" data-level="4.4" data-path="automation.html"><a href="automation.html#email-alert"><i class="fa fa-check"></i><b>4.4</b> Email Alert</a></li>
+<li class="chapter" data-level="4.5" data-path="automation.html"><a href="automation.html#flow"><i class="fa fa-check"></i><b>4.5</b> Flow</a></li>
+<li class="chapter" data-level="4.6" data-path="automation.html"><a href="automation.html#flow-builder"><i class="fa fa-check"></i><b>4.6</b> Flow Builder</a>
+<ul>
+<li class="chapter" data-level="4.6.1" data-path="automation.html"><a href="automation.html#entry-condition"><i class="fa fa-check"></i><b>4.6.1</b> Entry Condition</a></li>
+<li class="chapter" data-level="4.6.2" data-path="automation.html"><a href="automation.html#loop-element"><i class="fa fa-check"></i><b>4.6.2</b> Loop Element</a></li>
+<li class="chapter" data-level="4.6.3" data-path="automation.html"><a href="automation.html#time-data-type"><i class="fa fa-check"></i><b>4.6.3</b> Time Data Type</a></li>
+<li class="chapter" data-level="4.6.4" data-path="automation.html"><a href="automation.html#apex-based-action-element"><i class="fa fa-check"></i><b>4.6.4</b> Apex-Based Action Element</a></li>
+<li class="chapter" data-level="4.6.5" data-path="automation.html"><a href="automation.html#a-record-triggered-flow"><i class="fa fa-check"></i><b>4.6.5</b> A record-triggered flow</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="miscellaneous.html"><a href="miscellaneous.html"><i class="fa fa-check"></i><b>5</b> Miscellaneous</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="miscellaneous.html"><a href="miscellaneous.html#actions-plans"><i class="fa fa-check"></i><b>5.1</b> Actions Plans</a></li>
 </ul></li>
 </ul>
 
@@ -134,10 +151,10 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="miscellaneous" class="section level1 hasAnchor" number="4">
-<h1><span class="header-section-number">4</span> Miscellaneous<a href="miscellaneous.html#miscellaneous" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div id="actions-plans" class="section level2 hasAnchor" number="4.1">
-<h2><span class="header-section-number">4.1</span> Actions Plans<a href="miscellaneous.html#actions-plans" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="miscellaneous" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number">5</span> Miscellaneous<a href="miscellaneous.html#miscellaneous" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="actions-plans" class="section level2 hasAnchor" number="5.1">
+<h2><span class="header-section-number">5.1</span> Actions Plans<a href="miscellaneous.html#actions-plans" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The important to know the basic about that.</p>
 
 </div>
@@ -353,7 +370,7 @@ window.onload = function() {
           </div>
         </div>
       </div>
-<a href="configuration-and-setup-15.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="automation.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
     </div>
   </div>

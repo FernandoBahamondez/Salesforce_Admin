@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Page not found | Salesforce Admin</title>
-  <meta name="description" content="Page not found | Salesforce Admin" />
+  <title>4 Automation | Salesforce Admin</title>
+  <meta name="description" content="4 Automation | Salesforce Admin" />
   <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Page not found | Salesforce Admin" />
+  <meta property="og:title" content="4 Automation | Salesforce Admin" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Page not found | Salesforce Admin" />
+  <meta name="twitter:title" content="4 Automation | Salesforce Admin" />
   
   
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-
+<link rel="prev" href="configuration-and-setup-15.html"/>
+<link rel="next" href="miscellaneous.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -151,11 +151,118 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="page-not-found" class="section level1">
-<h1>Page not found</h1>
-<p>The page you requested cannot be found (perhaps it was moved or renamed).</p>
-<p>You may want to try searching to find the page's new location, or use
-the table of contents to find the page you are looking for.</p>
+<div id="automation" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">4</span> Automation<a href="automation.html#automation" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p><img src="images/clipboard-2158386340.png" /></p>
+<div id="approval-processes" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> Approval Processes<a href="automation.html#approval-processes" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>ABC Company uses an approval process in Salesforce to manage the leave applications of its employees. When a leave request is approved by a manager, the leave details should be submitted to an external system, which is an employee portal used internally in the company. Which of the following actions should be used to achieve this requirement?</p>
+<ul>
+<li>Outbound Message</li>
+</ul>
+<p><img src="images/clipboard-2365181077.png" /></p>
+<p>An approval process can be used to send an outbound message when an approval request is approved. For example, an Outbound Message action can be added to the Final Rejection Actions of the approval process. When the manager approves the request, the outbound message is automatically submitted to a specified endpoint URL that is associated with the external system.</p>
+<p>An approval process is also capable of creating a task, sending an email alert, and performing a field update, but these actions cannot be used to send information to an external system.</p>
+</div>
+<div id="workflow-rule" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> Workflow Rule<a href="automation.html#workflow-rule" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In a business requirement gathering session, the Vice President of Sales asks the Salesforce Administrator when workflow rules can be triggered. Which are correct operations used to evaluate criteria?</p>
+<ul>
+<li><p>When a record is UPDATED.</p></li>
+<li><p>When a record is CREATED.</p></li>
+</ul>
+<p><img src="images/clipboard-3234376034.png" /></p>
+</div>
+<div id="case-escalation-rule" class="section level2 hasAnchor" number="4.3">
+<h2><span class="header-section-number">4.3</span> Case Escalation Rule<a href="automation.html#case-escalation-rule" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>ABC Computing uses Salesforce for managing customer support. There are more than 100 support cases open in its service cloud application. The Support Manager wants to ensure that if the support engineer does not start working on a case after 24 hours, an email should be generated for the support lead and the manager himself. What is the best way for the administrator to achieve this?</p>
+<ul>
+<li>Create an escalation rule to generate an email.</li>
+</ul>
+<p><img src="images/clipboard-2576816762.png" /></p>
+</div>
+<div id="email-alert" class="section level2 hasAnchor" number="4.4">
+<h2><span class="header-section-number">4.4</span> Email Alert<a href="automation.html#email-alert" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>What does the administrator need to be aware of when using Email Alerts?<br />
+</p>
+<ul>
+<li>Email alerts use email template that need to be set up previously.</li>
+</ul>
+<p><img src="images/clipboard-2858925183.png" /></p>
+</div>
+<div id="flow" class="section level2 hasAnchor" number="4.5">
+<h2><span class="header-section-number">4.5</span> Flow<a href="automation.html#flow" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+</div>
+<div id="flow-builder" class="section level2 hasAnchor" number="4.6">
+<h2><span class="header-section-number">4.6</span> Flow Builder<a href="automation.html#flow-builder" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>When a sales deal with a high dollar value reaches 80% probability, a notification should be sent to the Sales Director and a task should be created. Which tool should a Salesforce Administrator use to meet this requirement?</p>
+<ul>
+<li>Flow Builder.</li>
+</ul>
+<div id="entry-condition" class="section level3 hasAnchor" number="4.6.1">
+<h3><span class="header-section-number">4.6.1</span> Entry Condition<a href="automation.html#entry-condition" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>When specifying entry conditions for a record-triggered flow, which of the following options can be used in the condition requirements?</p>
+<ul>
+<li><p>A formula</p></li>
+<li><p>A combination of field conditions</p></li>
+</ul>
+<p><img src="images/clipboard-658374321.png" /></p>
+</div>
+<div id="loop-element" class="section level3 hasAnchor" number="4.6.2">
+<h3><span class="header-section-number">4.6.2</span> Loop Element<a href="automation.html#loop-element" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>When the Rating of an account is set to “Cold”, a record-triggered flow should update a certain field in all its related contacts. Which elements demonstrates an efficient implementation of Logic Elements in Flow Builder to meet the requirement?</p>
+<ul>
+<li><p>Use the Assignment Element to set the value of a Contact field.</p></li>
+<li><p>Use the Loop Element to iterate through each Contact record.</p></li>
+</ul>
+<p><img src="images/clipboard-1283018251.png" /></p>
+</div>
+<div id="time-data-type" class="section level3 hasAnchor" number="4.6.3">
+<h3><span class="header-section-number">4.6.3</span> Time Data Type<a href="automation.html#time-data-type" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A Salesforce Admin wants to build a flow that sends an automated email reminder 30 minutes before a scheduled daily event, regardless of the date. The event time is stored in a custom Time field on the record. How can the System Admin make this requirement easier to implement using Flow Builder?</p>
+<ul>
+<li>Store the time in a resource using the Time data type to directly compare times.</li>
+</ul>
+<p>The Time data type in Flow Builder resources enables working with exact times of day (such as 5:30 PM or 09:00 AM) in flow elements like Assignment, Decision, and Wait, using built-in time functions such as HOUR(), MINUTE(), and TIMEVALUE(). By using the Time data type directly, implementing clean, precise, and scalable time-sensitive automations is straightforward.</p>
+<p>Using a Date field to extract and compare time requires additional formula manipulation and doesn’t take advantage of the new Time data type, which simplifies this exact use case. Converting times to text strings and comparing them using string functions is error-prone and not reliable for accurate time logic, as well as unnecessary since the Time data type is supported. While Scheduled Flows can be used to run logic at fixed intervals, they are inefficient for time-specific use cases when compared to using Time fields and flow formulas. Relying on text-based filtering in scheduled flows is no longer necessary, as it is a workaround that is no longer required.</p>
+</div>
+<div id="apex-based-action-element" class="section level3 hasAnchor" number="4.6.4">
+<h3><span class="header-section-number">4.6.4</span> Apex-Based Action Element<a href="automation.html#apex-based-action-element" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A Salesforce Administrator wants to convert a lead automatically based on certain criteria and send an email to the related contact one day after lead conversion. How can this be achieved?</p>
+<ul>
+<li><p>Use a scheduled path on a record-triggered flow to send the email one day after the lead conversion.</p></li>
+<li><p>Use a record-triggered flow using an Apex-based Action element to perform the lead conversion.</p></li>
+</ul>
+</div>
+<div id="a-record-triggered-flow" class="section level3 hasAnchor" number="4.6.5">
+<h3><span class="header-section-number">4.6.5</span> A record-triggered flow<a href="automation.html#a-record-triggered-flow" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A company wants to automatically notify lead owners if a lead has not been converted 10 days after its creation. Which Flow-based automation solution is most appropriate to achieve this?</p>
+<ul>
+<li>Add a scheduled path to a record-triggered flow that sends an email alert 10 days after lead creation.</li>
+</ul>
+<p>A record-triggered flow allows you to add a scheduled path that delays an action (like sending an email) for a set period. In this case, 10 days after the record is created. The flow can also include a condition to check if the lead is still unconverted before sending the alert.</p>
+<p>Validation rules are used to enforce data entry criteria at the time a record is created or edited. They cannot send emails or initiate actions, they simply block the record from being saved if conditions are not met.</p>
+<p>A screen flow is meant for user interaction, it requires someone to launch and complete the flow manually. Screen flows are not designed to run automatically or schedule actions without user input. This makes it unsuitable for time-based automation like this scenario.</p>
+<p>While it’s technically possible to use a flow to create a task after 10 days, the scenario specifically asks for an email notification. Assigning a task doesn’t send an email unless further setup is done (e.g., task reminders or email alerts), which adds complexity. Sending an email directly via flow is more straightforward and aligned with the goal.</p>
+<p>A sales rep should be sent an email if a high priority case is created for an account that they own. Which is the best option can be used to address the requirement?</p>
+<ul>
+<li>Create a record-triggered flow to send email alert to the account owner.</li>
+</ul>
+<p><img src="images/clipboard-3665052185.png" /></p>
+<p>A Salesforce administrator is required to build a flow that will send an email alert to the Sales Director when an opportunity is created or updated with an amount that is greater than $100,000. If the stage of the opportunity is still in ‘Prospecting’ after 10 days, an email reminder should be sent to the opportunity owner. Which options represents a valid configuration for meeting the requirement?</p>
+<ul>
+<li>Use a Run Immediately path in a record-triggered flow for the first email and a Scheduled path for the second email.</li>
+</ul>
+<p><img src="images/clipboard-2510487433.png" /></p>
+<p>The customer service agents of ABC Solutions use a Chatter group to share recommendations related to support. A service manager is the owner of the group. The Salesforce Administrator of the company has been asked to automate the creation of a post on the manager’s Chatter feed whenever the number of members in the Chatter group increases or decreases. Which automation tool would be best to use for the requirement?</p>
+<ul>
+<li>Record-triggered flow</li>
+</ul>
+<p><img src="images/clipboard-3405978817.png" /></p>
+<p><img src="images/clipboard-908264789.png" /></p>
+
+</div>
+</div>
 </div>
 <script>
 
@@ -368,8 +475,8 @@ window.onload = function() {
           </div>
         </div>
       </div>
-
-
+<a href="configuration-and-setup-15.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="miscellaneous.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
