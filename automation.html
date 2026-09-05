@@ -123,12 +123,25 @@
 <li class="chapter" data-level="4.5" data-path="automation.html"><a href="automation.html#flow"><i class="fa fa-check"></i><b>4.5</b> Flow</a></li>
 <li class="chapter" data-level="4.6" data-path="automation.html"><a href="automation.html#flow-builder"><i class="fa fa-check"></i><b>4.6</b> Flow Builder</a>
 <ul>
-<li class="chapter" data-level="4.6.1" data-path="automation.html"><a href="automation.html#entry-condition"><i class="fa fa-check"></i><b>4.6.1</b> Entry Condition</a></li>
-<li class="chapter" data-level="4.6.2" data-path="automation.html"><a href="automation.html#loop-element"><i class="fa fa-check"></i><b>4.6.2</b> Loop Element</a></li>
-<li class="chapter" data-level="4.6.3" data-path="automation.html"><a href="automation.html#time-data-type"><i class="fa fa-check"></i><b>4.6.3</b> Time Data Type</a></li>
-<li class="chapter" data-level="4.6.4" data-path="automation.html"><a href="automation.html#apex-based-action-element"><i class="fa fa-check"></i><b>4.6.4</b> Apex-Based Action Element</a></li>
-<li class="chapter" data-level="4.6.5" data-path="automation.html"><a href="automation.html#a-record-triggered-flow"><i class="fa fa-check"></i><b>4.6.5</b> A record-triggered flow</a></li>
+<li class="chapter" data-level="4.6.1" data-path="automation.html"><a href="automation.html#elements"><i class="fa fa-check"></i><b>4.6.1</b> Elements</a></li>
+<li class="chapter" data-level="4.6.2" data-path="automation.html"><a href="automation.html#connectors"><i class="fa fa-check"></i><b>4.6.2</b> Connectors</a></li>
+<li class="chapter" data-level="4.6.3" data-path="automation.html"><a href="automation.html#resources."><i class="fa fa-check"></i><b>4.6.3</b> Resources.</a></li>
+<li class="chapter" data-level="4.6.4" data-path="automation.html"><a href="automation.html#new-resource"><i class="fa fa-check"></i><b>4.6.4</b> New Resource</a></li>
+<li class="chapter" data-level="4.6.5" data-path="automation.html"><a href="automation.html#screen-components"><i class="fa fa-check"></i><b>4.6.5</b> Screen Components</a></li>
+<li class="chapter" data-level="4.6.6" data-path="automation.html"><a href="automation.html#screen-flow"><i class="fa fa-check"></i><b>4.6.6</b> Screen Flow</a></li>
+<li class="chapter" data-level="4.6.7" data-path="automation.html"><a href="automation.html#entry-condition"><i class="fa fa-check"></i><b>4.6.7</b> Entry Condition</a></li>
+<li class="chapter" data-level="4.6.8" data-path="automation.html"><a href="automation.html#loop-element"><i class="fa fa-check"></i><b>4.6.8</b> Loop Element</a></li>
+<li class="chapter" data-level="4.6.9" data-path="automation.html"><a href="automation.html#time-data-type"><i class="fa fa-check"></i><b>4.6.9</b> Time Data Type</a></li>
+<li class="chapter" data-level="4.6.10" data-path="automation.html"><a href="automation.html#apex-based-action-element"><i class="fa fa-check"></i><b>4.6.10</b> Apex-Based Action Element</a></li>
+<li class="chapter" data-level="4.6.11" data-path="automation.html"><a href="automation.html#a-record-triggered-flow"><i class="fa fa-check"></i><b>4.6.11</b> A record-triggered flow</a></li>
+<li class="chapter" data-level="4.6.12" data-path="automation.html"><a href="automation.html#scheduled-path"><i class="fa fa-check"></i><b>4.6.12</b> Scheduled Path</a></li>
+<li class="chapter" data-level="4.6.13" data-path="automation.html"><a href="automation.html#outcomes"><i class="fa fa-check"></i><b>4.6.13</b> Outcomes</a></li>
+<li class="chapter" data-level="4.6.14" data-path="automation.html"><a href="automation.html#subflow"><i class="fa fa-check"></i><b>4.6.14</b> Subflow</a></li>
 </ul></li>
+<li class="chapter" data-level="4.7" data-path="automation.html"><a href="automation.html#how-to-run-the-flow"><i class="fa fa-check"></i><b>4.7</b> How to Run the Flow?</a></li>
+<li class="chapter" data-level="4.8" data-path="automation.html"><a href="automation.html#use-a-prebuilt-flow-named"><i class="fa fa-check"></i><b>4.8</b> Use a prebuilt flow named:</a></li>
+<li class="chapter" data-level="4.9" data-path="automation.html"><a href="automation.html#debug-option"><i class="fa fa-check"></i><b>4.9</b> Debug Option</a></li>
+<li class="chapter" data-level="4.10" data-path="automation.html"><a href="automation.html#view-test"><i class="fa fa-check"></i><b>4.10</b> View Test</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="miscellaneous.html"><a href="miscellaneous.html"><i class="fa fa-check"></i><b>5</b> Miscellaneous</a>
 <ul>
@@ -195,21 +208,73 @@
 </div>
 <div id="flow-builder" class="section level2 hasAnchor" number="4.6">
 <h2><span class="header-section-number">4.6</span> Flow Builder<a href="automation.html#flow-builder" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>When a sales deal with a high dollar value reaches 80% probability, a notification should be sent to the Sales Director and a task should be created. Which tool should a Salesforce Administrator use to meet this requirement?</p>
+<p>The core building blocks of a flow are:</p>
+<div id="elements" class="section level3 hasAnchor" number="4.6.1">
+<h3><span class="header-section-number">4.6.1</span> Elements<a href="automation.html#elements" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Elements define the individual actions or logic within the flow.</p>
+</div>
+<div id="connectors" class="section level3 hasAnchor" number="4.6.2">
+<h3><span class="header-section-number">4.6.2</span> Connectors<a href="automation.html#connectors" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Connectors establish the paths between elements.</p>
+<p>Fault Connector.</p>
+<p><img src="images/clipboard-3360759431.png" /></p>
+<div id="get-record---not-in" class="section level4 hasAnchor" number="4.6.2.1">
+<h4><span class="header-section-number">4.6.2.1</span> Get Record - Not In<a href="automation.html#get-record---not-in" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>A collection variable in a flow contains a list of names of supported shipping countries. A list of accounts needs to be generated where their Shipping Country does not exist in the supported shipping countries. How should this requirement be implemented in the flow?</p>
+<ul>
+<li>Use the ‘Get Records’ element and query the accounts using the ‘Not in’ operator.</li>
+</ul>
+<p><img src="images/clipboard-404116776.png" /></p>
+</div>
+</div>
+<div id="resources." class="section level3 hasAnchor" number="4.6.3">
+<h3><span class="header-section-number">4.6.3</span> Resources.<a href="automation.html#resources." class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Resources store and reference values used throughout the flow.<br />
+<br />
+Stages are used in features such as Path or Approval Processes, but they are not part of the Flow Builder design structure.</p>
+<p><img src="images/clipboard-3869046690.png" /></p>
+<ul>
+<li><p>When a sales deal with a high dollar value reaches 80% probability, a notification should be sent to the Sales Director and a task should be created. Which tool should a Salesforce Administrator use to meet this requirement?</p>
 <ul>
 <li>Flow Builder.</li>
+</ul></li>
 </ul>
-<div id="entry-condition" class="section level3 hasAnchor" number="4.6.1">
-<h3><span class="header-section-number">4.6.1</span> Entry Condition<a href="automation.html#entry-condition" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+</div>
+<div id="new-resource" class="section level3 hasAnchor" number="4.6.4">
+<h3><span class="header-section-number">4.6.4</span> New Resource<a href="automation.html#new-resource" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><p>Record Variable<br />
+</p>
+<p>A ‘Record Variable’ can be used to create a single record when choosing the ‘Use all values from a record’ option in the ‘Create Records’ element for setting record fields. Another option for setting record fields is to use separate resources and literal values.</p>
+<p>A Constant or ID Variable is not necessary to create a new record. In fact, it should be ensured that the ID is blank in the record variable. After the flow creates the records, ID is set to match the record that was created. It is also not required to use a screen element to create records.</p></li>
+<li><p>RecordId.</p></li>
+</ul>
+<p>Which statements are true abount the ‘Variable’ resource type available in the Flow Builder?</p>
+<ol style="list-style-type: decimal">
+<li>It can hold values that can be changed at any point in the flow.</li>
+<li>It can hold multiple field values for multiple records if configured.</li>
+</ol>
+<p><img src="images/clipboard-414363371.png" /></p>
+<p><img src="images/clipboard-1384221186.png" /></p>
+</div>
+<div id="screen-components" class="section level3 hasAnchor" number="4.6.5">
+<h3><span class="header-section-number">4.6.5</span> Screen Components<a href="automation.html#screen-components" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+</div>
+<div id="screen-flow" class="section level3 hasAnchor" number="4.6.6">
+<h3><span class="header-section-number">4.6.6</span> Screen Flow<a href="automation.html#screen-flow" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+</div>
+<div id="entry-condition" class="section level3 hasAnchor" number="4.6.7">
+<h3><span class="header-section-number">4.6.7</span> Entry Condition<a href="automation.html#entry-condition" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>When specifying entry conditions for a record-triggered flow, which of the following options can be used in the condition requirements?</p>
 <ul>
 <li><p>A formula</p></li>
 <li><p>A combination of field conditions</p></li>
 </ul>
 <p><img src="images/clipboard-658374321.png" /></p>
+<p><img src="images/clipboard-1095249260.png" /></p>
 </div>
-<div id="loop-element" class="section level3 hasAnchor" number="4.6.2">
-<h3><span class="header-section-number">4.6.2</span> Loop Element<a href="automation.html#loop-element" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="loop-element" class="section level3 hasAnchor" number="4.6.8">
+<h3><span class="header-section-number">4.6.8</span> Loop Element<a href="automation.html#loop-element" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>When the Rating of an account is set to “Cold”, a record-triggered flow should update a certain field in all its related contacts. Which elements demonstrates an efficient implementation of Logic Elements in Flow Builder to meet the requirement?</p>
 <ul>
 <li><p>Use the Assignment Element to set the value of a Contact field.</p></li>
@@ -217,8 +282,8 @@
 </ul>
 <p><img src="images/clipboard-1283018251.png" /></p>
 </div>
-<div id="time-data-type" class="section level3 hasAnchor" number="4.6.3">
-<h3><span class="header-section-number">4.6.3</span> Time Data Type<a href="automation.html#time-data-type" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="time-data-type" class="section level3 hasAnchor" number="4.6.9">
+<h3><span class="header-section-number">4.6.9</span> Time Data Type<a href="automation.html#time-data-type" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>A Salesforce Admin wants to build a flow that sends an automated email reminder 30 minutes before a scheduled daily event, regardless of the date. The event time is stored in a custom Time field on the record. How can the System Admin make this requirement easier to implement using Flow Builder?</p>
 <ul>
 <li>Store the time in a resource using the Time data type to directly compare times.</li>
@@ -226,16 +291,16 @@
 <p>The Time data type in Flow Builder resources enables working with exact times of day (such as 5:30 PM or 09:00 AM) in flow elements like Assignment, Decision, and Wait, using built-in time functions such as HOUR(), MINUTE(), and TIMEVALUE(). By using the Time data type directly, implementing clean, precise, and scalable time-sensitive automations is straightforward.</p>
 <p>Using a Date field to extract and compare time requires additional formula manipulation and doesn’t take advantage of the new Time data type, which simplifies this exact use case. Converting times to text strings and comparing them using string functions is error-prone and not reliable for accurate time logic, as well as unnecessary since the Time data type is supported. While Scheduled Flows can be used to run logic at fixed intervals, they are inefficient for time-specific use cases when compared to using Time fields and flow formulas. Relying on text-based filtering in scheduled flows is no longer necessary, as it is a workaround that is no longer required.</p>
 </div>
-<div id="apex-based-action-element" class="section level3 hasAnchor" number="4.6.4">
-<h3><span class="header-section-number">4.6.4</span> Apex-Based Action Element<a href="automation.html#apex-based-action-element" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="apex-based-action-element" class="section level3 hasAnchor" number="4.6.10">
+<h3><span class="header-section-number">4.6.10</span> Apex-Based Action Element<a href="automation.html#apex-based-action-element" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>A Salesforce Administrator wants to convert a lead automatically based on certain criteria and send an email to the related contact one day after lead conversion. How can this be achieved?</p>
 <ul>
 <li><p>Use a scheduled path on a record-triggered flow to send the email one day after the lead conversion.</p></li>
 <li><p>Use a record-triggered flow using an Apex-based Action element to perform the lead conversion.</p></li>
 </ul>
 </div>
-<div id="a-record-triggered-flow" class="section level3 hasAnchor" number="4.6.5">
-<h3><span class="header-section-number">4.6.5</span> A record-triggered flow<a href="automation.html#a-record-triggered-flow" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="a-record-triggered-flow" class="section level3 hasAnchor" number="4.6.11">
+<h3><span class="header-section-number">4.6.11</span> A record-triggered flow<a href="automation.html#a-record-triggered-flow" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>A company wants to automatically notify lead owners if a lead has not been converted 10 days after its creation. Which Flow-based automation solution is most appropriate to achieve this?</p>
 <ul>
 <li>Add a scheduled path to a record-triggered flow that sends an email alert 10 days after lead creation.</li>
@@ -260,8 +325,52 @@
 </ul>
 <p><img src="images/clipboard-3405978817.png" /></p>
 <p><img src="images/clipboard-908264789.png" /></p>
-
+<p>A Salesforce administrator is building a record-triggered flow that needs to automatically add line items to an opportunity. In addition, based on the value of a custom field on the opportunity record, the flow should update records of an external object stored on the Heroku platform. However, an error is encountered when the flow tries to create Salesforce records and update the external records in the same transaction. Which should be used to resolve the issue?</p>
+<ul>
+<li>Update the external object’s records using an asynchronous path.</li>
+</ul>
+<p><img src="images/clipboard-2571416116.png" /></p>
 </div>
+<div id="scheduled-path" class="section level3 hasAnchor" number="4.6.12">
+<h3><span class="header-section-number">4.6.12</span> Scheduled Path<a href="automation.html#scheduled-path" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+</div>
+<div id="outcomes" class="section level3 hasAnchor" number="4.6.13">
+<h3><span class="header-section-number">4.6.13</span> Outcomes<a href="automation.html#outcomes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="only-if-the-record-that-triggered-the-flow-to-run-is-updated-to-meet-the-condition-requirements" class="section level4 hasAnchor" number="4.6.13.1">
+<h4><span class="header-section-number">4.6.13.1</span> ‘Only if the record that triggered the flow to run is updated to meet the condition requirements’<a href="automation.html#only-if-the-record-that-triggered-the-flow-to-run-is-updated-to-meet-the-condition-requirements" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+</div>
+</div>
+<div id="subflow" class="section level3 hasAnchor" number="4.6.14">
+<h3><span class="header-section-number">4.6.14</span> Subflow<a href="automation.html#subflow" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+</div>
+</div>
+<div id="how-to-run-the-flow" class="section level2 hasAnchor" number="4.7">
+<h2><span class="header-section-number">4.7</span> How to Run the Flow?<a href="automation.html#how-to-run-the-flow" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>System Context Without Sharing-Access All Data.</li>
+</ul>
+<p>A flow can be set to run in a system context without sharing. That means that the object-level permissions and field-level security of the running user will be ignored, as well as organization-wide default sharing settings, role hierarchies, sharing rules, manual sharing, teams, and territories.</p>
+<p>Although an invocable Apex method can be used, it is not necessary as a declarative solution is available. The ‘Grant Access Using Hierarchies’ option, which is enabled by default for all objects, will provide access to records owned and shared by subordinates of the current user in the role hierarchy. But, it cannot open up access to records owned and shared by users above the current user in the role hierarchy. A configuration to run a Lightning page as a specific user is not available.</p>
+</div>
+<div id="use-a-prebuilt-flow-named" class="section level2 hasAnchor" number="4.8">
+<h2><span class="header-section-number">4.8</span> Use a prebuilt flow named:<a href="automation.html#use-a-prebuilt-flow-named" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="create-a-case-and-customize-it-if-required." class="section level4 hasAnchor" number="4.8.0.1">
+<h4><span class="header-section-number">4.8.0.1</span> ‘Create a Case’ and customize it if required.<a href="automation.html#create-a-case-and-customize-it-if-required." class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>A prebuilt flow named ‘Create a Case’ can be utilized for this requirement. If necessary, it can be customized based on the requirements and saved as a new flow. It uses elements including Screen, Get Records, Create Records, Decision, and Assignment. An agent can use this flow to capture a customer’s name, find an existing contact, create a new contact, obtain case details, and create a case.</p>
+<p>Although a custom flow can be built, it is easier to use a prebuilt flow that already meets the requirements and customize it if required. There is no prebuilt flow named ‘Auto Case Creator’. A custom flow that contains elements including Screen, Loop, and Update Records would not meet the requirements.</p>
+</div>
+</div>
+<div id="debug-option" class="section level2 hasAnchor" number="4.9">
+<h2><span class="header-section-number">4.9</span> Debug Option<a href="automation.html#debug-option" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>Run flow in rollback mode</li>
+</ul>
+</div>
+<div id="view-test" class="section level2 hasAnchor" number="4.10">
+<h2><span class="header-section-number">4.10</span> View Test<a href="automation.html#view-test" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A Salesforce Administrator has created a record-triggered flow that will be used to set a ‘Status’ field of an account to ‘Premium’ if the record meets certain conditions. Which of the options below represents a valid step for creating automated flow tests in Flow Builder to verify the flow’s expected behavior?</p>
+<p><img src="images/clipboard-797791572.png" /></p>
+
 </div>
 </div>
 <script>
