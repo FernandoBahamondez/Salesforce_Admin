@@ -44,19 +44,31 @@ What does the administrator need to be aware of when using Email Alerts?\
 
 ## Flow Builder
 
-The core building blocks of a flow are:
+### The core building blocks of a flow are:
 
 ### Elements
 
 Elements define the individual actions or logic within the flow.
 
+### Wait ....
+
+A system administrator is building a complex flow for an order management application. Based on the use case, it involves various automated processes from different systems and decision points to manage orders efficiently. If a flow should be paused and resumed only at a specified date and time, which wait element in Flow Builder can be used?
+
+- Wait for Conditions
+
+- Wait Until Date
+
 ### Connectors
 
 Connectors establish the paths between elements.
 
-Fault Connector.
+#### Fault Connector.
 
 ![](images/clipboard-3360759431.png)
+
+#### Custom Error Message
+
+![](images/clipboard-1427364972.png)
 
 #### Get Record - Not In
 
@@ -77,6 +89,18 @@ Stages are used in features such as Path or Approval Processes, but they are not
 - When a sales deal with a high dollar value reaches 80% probability, a notification should be sent to the Sales Director and a task should be created. Which tool should a Salesforce Administrator use to meet this requirement?
 
   - Flow Builder.
+
+### Data Transform
+
+A Salesforce Admin is building a screen flow to power a dynamic partner onboarding experience. The admin is using a Data Graph to retrieve consolidated partner data from multiple objects and sources. The next step is to transform that unified data into a format that can be easily displayed on a screen component and later updated in Salesforce. Which Flow feature supports this requirement?
+
+- Use a Data Transform element to reshape the Data Graph output in Flow Builder.
+
+  The Transform (Data Transform) element in Flow Builder allows you to manipulate the structure of Data Graph output—such as reshaping, filtering, or reorganizing fields—so the data can be easily used in screen components, record updates, or stored in collections. This eliminates the need for manually mapping fields or using multiple assignment elements when working with complex, nested data returned by a Data Graph.
+
+  Custom Metadata Types are used for storing configuration or reference data, not for handling or transforming runtime data like the output from a Data Graph. External Services are used to connect to external APIs via schema-based integrations, not to transform internal Salesforce data retrieved from Data Graphs. While the Assignment element can be used for simple variable updates, it is not intended for complex data transformation or restructuring hierarchical graph data.
+
+  This makes the Data Transform element the most efficient and purpose-built solution when working with Data Graphs in flows.
 
 ### New Resource
 
@@ -214,3 +238,7 @@ Although a custom flow can be built, it is easier to use a prebuilt flow that al
 A Salesforce Administrator has created a record-triggered flow that will be used to set a 'Status' field of an account to 'Premium' if the record meets certain conditions. Which of the options below represents a valid step for creating automated flow tests in Flow Builder to verify the flow's expected behavior?
 
 ![](images/clipboard-797791572.png)
+
+## Error and Warning Pane
+
+![](images/clipboard-198664950.png)
