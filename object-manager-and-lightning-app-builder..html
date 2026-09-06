@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Salesforce Admin</title>
-  <meta name="description" content="Salesforce Admin" />
+  <title>5 Object Manager and Lightning App Builder. | Salesforce Admin</title>
+  <meta name="description" content="5 Object Manager and Lightning App Builder. | Salesforce Admin" />
   <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Salesforce Admin" />
+  <meta property="og:title" content="5 Object Manager and Lightning App Builder. | Salesforce Admin" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Salesforce Admin" />
+  <meta name="twitter:title" content="5 Object Manager and Lightning App Builder. | Salesforce Admin" />
   
   
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="study-guide.html"/>
+<link rel="prev" href="automation.html"/>
+<link rel="next" href="object-manager-1.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -177,27 +177,90 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Salesforce Admin</h1>
-<p class="author"><em>Fernando Bahamóndez Torres</em></p>
-</div>
-<div id="welcome" class="section level1 unnumbered hasAnchor">
-<h1>Welcome!<a href="index.html#welcome" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>This is a Study guide to prepare to the Salesforce Admin Exam.</p>
-<p>Actually the weight about the Exam is:</p>
+<div id="object-manager-and-lightning-app-builder." class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number">5</span> Object Manager and Lightning App Builder.<a href="object-manager-and-lightning-app-builder..html#object-manager-and-lightning-app-builder." class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>17 Question - Objective 1</p>
+<div id="lookup-filter" class="section level2 hasAnchor" number="5.1">
+<h2><span class="header-section-number">5.1</span> Lookup Filter<a href="object-manager-and-lightning-app-builder..html#lookup-filter" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A Salesforce administrator in an org with thousands of account records needs to implement lookup filters on several fields on the Account object. Which are true regarding lookup filters in Lightning Experience?</p>
 <ul>
-<li><strong>Agentforce= 8%</strong> &lt;– New topic!</li>
-<li>Data and Analytics Managment = 17 %</li>
-<li>Configuration and Setup = 15 %</li>
-<li>Automation = 15%</li>
-<li>Object Manager and Lightning App Builder = 15 %</li>
-<li>Sales and Marketing Applications = 10%</li>
-<li>Service and Support Applications = 10 %</li>
-<li>Productivity and Collaboration = 10%</li>
+<li><p>Lookup filters are still required in Lightning Experience even if they are specified as optional.</p></li>
+<li><p>Lookup filter can reference fields on records related to the target object.</p></li>
 </ul>
-<p>This document is trying to help me, another way to study and also to share with people how like to go deeper to the platform.</p>
-<p>The concept behind this project is trying to going deeper to every layer, on which can visualize like this image:</p>
-<p><img src="images/base_libro_3.svg" width="900" /></p>
+<p><img src="images/clipboard-3548368544.png" /></p>
+<p><img src="images/clipboard-2262006298.png" /></p>
+<p>The Support Director of ABC company has asked the Salesforce Administrator to add a filter to the ‘Contact’ field on case records. The field should only allow contacts to be selected if they are associated with the account in the ‘Account Name’ field. What is the best way to meet this requirement?</p>
+<ul>
+<li>Create a dependent lookup on the contact field that references the account field.</li>
+</ul>
+<p><img src="images/clipboard-290164880.png" /></p>
+</div>
+<div id="contact-with-multiple-companies." class="section level2 hasAnchor" number="5.2">
+<h2><span class="header-section-number">5.2</span> Contact with multiple companies.<a href="object-manager-and-lightning-app-builder..html#contact-with-multiple-companies." class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A sales manager often finds that a contact has a relationship with multiple companies and would like to keep track of these relationships.<br />
+How can a Salesforce Administrator enable this?</p>
+<ul>
+<li><p>Add the Related Accounts related list to the Contact page layout,<br />
+add the Related Contacs related list on the account page layout,<br />
+and remove the existing Contacts related list on the Account page layout.</p></li>
+<li><p>Enable the ‘Contacts to Multiple Accounts’ feature.</p></li>
+</ul>
+<p><img src="images/clipboard-1632216220.png" /></p>
+<p><img src="images/clipboard-3504932195.png" /></p>
+<p><img src="images/clipboard-2031801299.png" /></p>
+<p>In order to allow multiple accounts to be associated with a contact, the ‘Contacts to Multiple Account’ feature must be enabled. After the feature has been enabled, the Related Accounts related list must be added to the Contact page layout and the Related Contacts related list added to the account page layout. The existing Contacts related list on the Account object can be removed as the Related Contacts related list will include direct and indirect contacts.</p>
+</div>
+<div id="account-settings" class="section level2 hasAnchor" number="5.3">
+<h2><span class="header-section-number">5.3</span> Account Settings<a href="object-manager-and-lightning-app-builder..html#account-settings" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Josh Davis is the Warehouse Management Director at Express Logistics and Transport. He is also a partner at 123 Warehousing. Express Logistics and Transport is the account found on his contact record details page, but his contact record is also related to the 123 Warehousing account. How would this be represented in Salesforce if ‘Contacts to Multiple Accounts’ is enabled?</p>
+<ul>
+<li>Josh would be a direct contact at Express Logistics and Transport,<br />
+and an indirect contact at 123 Warehousing.</li>
+</ul>
+<p><img src="images/clipboard-926679499.png" /></p>
+<p>Allow user to relate a contact to multiple accounts</p>
+<p><img src="images/clipboard-1062904011.png" /></p>
+</div>
+<div id="account" class="section level2 hasAnchor" number="5.4">
+<h2><span class="header-section-number">5.4</span> Account<a href="object-manager-and-lightning-app-builder..html#account" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In an initial meeting with the purpose of setting up a new Salesforce org, the administrator, Sarah, is asked what Accounts can represent. What would she be correct in stating?</p>
+<ul>
+<li><p>Individual consumers</p></li>
+<li><p>Competitors</p></li>
+<li><p>Companies you do business with</p></li>
+</ul>
+</div>
+<div id="master-detail-relationship-lookup-relationship" class="section level2 hasAnchor" number="5.5">
+<h2><span class="header-section-number">5.5</span> Master-Detail Relationship | Lookup Relationship<a href="object-manager-and-lightning-app-builder..html#master-detail-relationship-lookup-relationship" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A Salesforce Administrator is considering whether to use a lookup or master-detail relationship. Which of the following are valid capabilities of a lookup relationship but not a master-detail relationship?</p>
+<ul>
+<li><p>The lookup field does not need to be a required field on the page layout.</p></li>
+<li><p>The related record can have a different owner than the parent record.</p></li>
+</ul>
+<p><img src="images/clipboard-4216535358.png" /></p>
+<p>When using master-detail relationships, the child record inherits the record owner of the parent record. On the other hand, in lookup relationships, the child record can have a different owner.</p>
+<p>Lookup relationship fields do not need to be marked as required on the page layout. Roll-up summary fields can only be added to the parent object in a master-detail relationship. Lookup relationships do not support creating roll-up summary fields.</p>
+<p>In a lookup relationship, if a parent record is deleted, the child records are only deleted when the option to ‘Delete this record also’ is selected, which is only available if a custom object contains the lookup relationship.</p>
+</div>
+<div id="many-to-many" class="section level2 hasAnchor" number="5.6">
+<h2><span class="header-section-number">5.6</span> Many-to-many<a href="object-manager-and-lightning-app-builder..html#many-to-many" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A Salesforce Administrator has defined a new custom object and has identified that it needs to have a many-to-many relationship with 5 different standard objects. What considerations should the Salesforce Administrator keep in mind when designing the solution?</p>
+<ul>
+<li>It depends on the remaining custom object quota left in the org.</li>
+</ul>
+<p>The limitation of two master-detail relationships per object has no effect on the number of many-to-many relationships an object can have. In a many-to-many relationship, the master-detail relationships are created on the child junction object and not the parent object itself. This means that all that is needed to be done is to create more junction objects, with each having a maximum of two master-detail relationship fields. In this case, five new junction objects are needed and the object limits of the org must be taken into consideration.</p>
+<p><img src="images/clipboard-1819922532.png" /></p>
+<p>Which of the following are required to model a many-to-many relationship between two custom objects?</p>
+<ul>
+<li><p>A Junction object</p></li>
+<li><p>Master-detail relationship.</p></li>
+</ul>
+<p>Master-detail relationships are used to model many-to-many relationships between two objects. A junction object is a custom object with two master-detail relationships and is used to connect the two objects that are related to each other.</p>
+<p>Both of these are necessary to build a many-to-many relationship between two custom objects. A junction object is a custom object used to connect the two objects that should have the many-to-many relationship. The junction object contains a Master-Detail field for each of the two objects. In each of these fields, one of the objects in the many-to-many relationship is the “Master” and the junction object is the “Detail.”</p>
+<p>A lookup relationship does not have to be populated and therefore cannot be used to <em>require</em> a connection to both objects on a junction object. A hierarchical relationship is only for the user object and allows for the creation of a reporting structure within the user object.</p>
+<p><img src="images/clipboard-153661623.png" /></p>
+
+</div>
 </div>
 <script>
 
@@ -410,8 +473,8 @@ window.onload = function() {
           </div>
         </div>
       </div>
-
-<a href="study-guide.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="automation.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="object-manager-1.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

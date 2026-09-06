@@ -30,7 +30,7 @@
   
   
 <link rel="prev" href="configuration-and-setup-15.html"/>
-<link rel="next" href="miscellaneous.html"/>
+<link rel="next" href="object-manager-and-lightning-app-builder..html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -123,29 +123,42 @@
 <li class="chapter" data-level="4.5" data-path="automation.html"><a href="automation.html#flow"><i class="fa fa-check"></i><b>4.5</b> Flow</a></li>
 <li class="chapter" data-level="4.6" data-path="automation.html"><a href="automation.html#flow-builder"><i class="fa fa-check"></i><b>4.6</b> Flow Builder</a>
 <ul>
-<li class="chapter" data-level="4.6.1" data-path="automation.html"><a href="automation.html#elements"><i class="fa fa-check"></i><b>4.6.1</b> Elements</a></li>
-<li class="chapter" data-level="4.6.2" data-path="automation.html"><a href="automation.html#connectors"><i class="fa fa-check"></i><b>4.6.2</b> Connectors</a></li>
-<li class="chapter" data-level="4.6.3" data-path="automation.html"><a href="automation.html#resources."><i class="fa fa-check"></i><b>4.6.3</b> Resources.</a></li>
-<li class="chapter" data-level="4.6.4" data-path="automation.html"><a href="automation.html#new-resource"><i class="fa fa-check"></i><b>4.6.4</b> New Resource</a></li>
-<li class="chapter" data-level="4.6.5" data-path="automation.html"><a href="automation.html#screen-components"><i class="fa fa-check"></i><b>4.6.5</b> Screen Components</a></li>
-<li class="chapter" data-level="4.6.6" data-path="automation.html"><a href="automation.html#screen-flow"><i class="fa fa-check"></i><b>4.6.6</b> Screen Flow</a></li>
-<li class="chapter" data-level="4.6.7" data-path="automation.html"><a href="automation.html#entry-condition"><i class="fa fa-check"></i><b>4.6.7</b> Entry Condition</a></li>
-<li class="chapter" data-level="4.6.8" data-path="automation.html"><a href="automation.html#loop-element"><i class="fa fa-check"></i><b>4.6.8</b> Loop Element</a></li>
-<li class="chapter" data-level="4.6.9" data-path="automation.html"><a href="automation.html#time-data-type"><i class="fa fa-check"></i><b>4.6.9</b> Time Data Type</a></li>
-<li class="chapter" data-level="4.6.10" data-path="automation.html"><a href="automation.html#apex-based-action-element"><i class="fa fa-check"></i><b>4.6.10</b> Apex-Based Action Element</a></li>
-<li class="chapter" data-level="4.6.11" data-path="automation.html"><a href="automation.html#a-record-triggered-flow"><i class="fa fa-check"></i><b>4.6.11</b> A record-triggered flow</a></li>
-<li class="chapter" data-level="4.6.12" data-path="automation.html"><a href="automation.html#scheduled-path"><i class="fa fa-check"></i><b>4.6.12</b> Scheduled Path</a></li>
-<li class="chapter" data-level="4.6.13" data-path="automation.html"><a href="automation.html#outcomes"><i class="fa fa-check"></i><b>4.6.13</b> Outcomes</a></li>
-<li class="chapter" data-level="4.6.14" data-path="automation.html"><a href="automation.html#subflow"><i class="fa fa-check"></i><b>4.6.14</b> Subflow</a></li>
+<li class="chapter" data-level="4.6.1" data-path="automation.html"><a href="automation.html#the-core-building-blocks-of-a-flow-are"><i class="fa fa-check"></i><b>4.6.1</b> The core building blocks of a flow are:</a></li>
+<li class="chapter" data-level="4.6.2" data-path="automation.html"><a href="automation.html#elements"><i class="fa fa-check"></i><b>4.6.2</b> Elements</a></li>
+<li class="chapter" data-level="4.6.3" data-path="automation.html"><a href="automation.html#wait-."><i class="fa fa-check"></i><b>4.6.3</b> Wait ….</a></li>
+<li class="chapter" data-level="4.6.4" data-path="automation.html"><a href="automation.html#connectors"><i class="fa fa-check"></i><b>4.6.4</b> Connectors</a></li>
+<li class="chapter" data-level="4.6.5" data-path="automation.html"><a href="automation.html#resources."><i class="fa fa-check"></i><b>4.6.5</b> Resources.</a></li>
+<li class="chapter" data-level="4.6.6" data-path="automation.html"><a href="automation.html#data-transform"><i class="fa fa-check"></i><b>4.6.6</b> Data Transform</a></li>
+<li class="chapter" data-level="4.6.7" data-path="automation.html"><a href="automation.html#new-resource"><i class="fa fa-check"></i><b>4.6.7</b> New Resource</a></li>
+<li class="chapter" data-level="4.6.8" data-path="automation.html"><a href="automation.html#screen-components"><i class="fa fa-check"></i><b>4.6.8</b> Screen Components</a></li>
+<li class="chapter" data-level="4.6.9" data-path="automation.html"><a href="automation.html#screen-flow"><i class="fa fa-check"></i><b>4.6.9</b> Screen Flow</a></li>
+<li class="chapter" data-level="4.6.10" data-path="automation.html"><a href="automation.html#entry-condition"><i class="fa fa-check"></i><b>4.6.10</b> Entry Condition</a></li>
+<li class="chapter" data-level="4.6.11" data-path="automation.html"><a href="automation.html#loop-element"><i class="fa fa-check"></i><b>4.6.11</b> Loop Element</a></li>
+<li class="chapter" data-level="4.6.12" data-path="automation.html"><a href="automation.html#time-data-type"><i class="fa fa-check"></i><b>4.6.12</b> Time Data Type</a></li>
+<li class="chapter" data-level="4.6.13" data-path="automation.html"><a href="automation.html#apex-based-action-element"><i class="fa fa-check"></i><b>4.6.13</b> Apex-Based Action Element</a></li>
+<li class="chapter" data-level="4.6.14" data-path="automation.html"><a href="automation.html#a-record-triggered-flow"><i class="fa fa-check"></i><b>4.6.14</b> A record-triggered flow</a></li>
+<li class="chapter" data-level="4.6.15" data-path="automation.html"><a href="automation.html#scheduled-path"><i class="fa fa-check"></i><b>4.6.15</b> Scheduled Path</a></li>
+<li class="chapter" data-level="4.6.16" data-path="automation.html"><a href="automation.html#outcomes"><i class="fa fa-check"></i><b>4.6.16</b> Outcomes</a></li>
+<li class="chapter" data-level="4.6.17" data-path="automation.html"><a href="automation.html#subflow"><i class="fa fa-check"></i><b>4.6.17</b> Subflow</a></li>
 </ul></li>
 <li class="chapter" data-level="4.7" data-path="automation.html"><a href="automation.html#how-to-run-the-flow"><i class="fa fa-check"></i><b>4.7</b> How to Run the Flow?</a></li>
 <li class="chapter" data-level="4.8" data-path="automation.html"><a href="automation.html#use-a-prebuilt-flow-named"><i class="fa fa-check"></i><b>4.8</b> Use a prebuilt flow named:</a></li>
 <li class="chapter" data-level="4.9" data-path="automation.html"><a href="automation.html#debug-option"><i class="fa fa-check"></i><b>4.9</b> Debug Option</a></li>
 <li class="chapter" data-level="4.10" data-path="automation.html"><a href="automation.html#view-test"><i class="fa fa-check"></i><b>4.10</b> View Test</a></li>
+<li class="chapter" data-level="4.11" data-path="automation.html"><a href="automation.html#error-and-warning-pane"><i class="fa fa-check"></i><b>4.11</b> Error and Warning Pane</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="miscellaneous.html"><a href="miscellaneous.html"><i class="fa fa-check"></i><b>5</b> Miscellaneous</a>
+<li class="chapter" data-level="5" data-path="object-manager-and-lightning-app-builder..html"><a href="object-manager-and-lightning-app-builder..html"><i class="fa fa-check"></i><b>5</b> Object Manager and Lightning App Builder.</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="miscellaneous.html"><a href="miscellaneous.html#actions-plans"><i class="fa fa-check"></i><b>5.1</b> Actions Plans</a></li>
+<li class="chapter" data-level="5.1" data-path="object-manager-and-lightning-app-builder..html"><a href="object-manager-and-lightning-app-builder..html#lookup-filter"><i class="fa fa-check"></i><b>5.1</b> Lookup Filter</a></li>
+<li class="chapter" data-level="5.2" data-path="object-manager-and-lightning-app-builder..html"><a href="object-manager-and-lightning-app-builder..html#contact-with-multiple-companies."><i class="fa fa-check"></i><b>5.2</b> Contact with multiple companies.</a></li>
+<li class="chapter" data-level="5.3" data-path="object-manager-and-lightning-app-builder..html"><a href="object-manager-and-lightning-app-builder..html#account-settings"><i class="fa fa-check"></i><b>5.3</b> Account Settings</a></li>
+<li class="chapter" data-level="5.4" data-path="object-manager-and-lightning-app-builder..html"><a href="object-manager-and-lightning-app-builder..html#account"><i class="fa fa-check"></i><b>5.4</b> Account</a></li>
+<li class="chapter" data-level="5.5" data-path="object-manager-and-lightning-app-builder..html"><a href="object-manager-and-lightning-app-builder..html#master-detail-relationship-lookup-relationship"><i class="fa fa-check"></i><b>5.5</b> Master-Detail Relationship | Lookup Relationship</a></li>
+<li class="chapter" data-level="5.6" data-path="object-manager-and-lightning-app-builder..html"><a href="object-manager-and-lightning-app-builder..html#many-to-many"><i class="fa fa-check"></i><b>5.6</b> Many-to-many</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="object-manager-1.html"><a href="object-manager-1.html"><i class="fa fa-check"></i><b>6</b> Object Manager</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="object-manager-1.html"><a href="object-manager-1.html#actions-plans"><i class="fa fa-check"></i><b>6.1</b> Actions Plans</a></li>
 </ul></li>
 </ul>
 
@@ -208,18 +221,34 @@
 </div>
 <div id="flow-builder" class="section level2 hasAnchor" number="4.6">
 <h2><span class="header-section-number">4.6</span> Flow Builder<a href="automation.html#flow-builder" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>The core building blocks of a flow are:</p>
-<div id="elements" class="section level3 hasAnchor" number="4.6.1">
-<h3><span class="header-section-number">4.6.1</span> Elements<a href="automation.html#elements" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="the-core-building-blocks-of-a-flow-are" class="section level3 hasAnchor" number="4.6.1">
+<h3><span class="header-section-number">4.6.1</span> The core building blocks of a flow are:<a href="automation.html#the-core-building-blocks-of-a-flow-are" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+</div>
+<div id="elements" class="section level3 hasAnchor" number="4.6.2">
+<h3><span class="header-section-number">4.6.2</span> Elements<a href="automation.html#elements" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Elements define the individual actions or logic within the flow.</p>
 </div>
-<div id="connectors" class="section level3 hasAnchor" number="4.6.2">
-<h3><span class="header-section-number">4.6.2</span> Connectors<a href="automation.html#connectors" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="wait-." class="section level3 hasAnchor" number="4.6.3">
+<h3><span class="header-section-number">4.6.3</span> Wait ….<a href="automation.html#wait-." class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A system administrator is building a complex flow for an order management application. Based on the use case, it involves various automated processes from different systems and decision points to manage orders efficiently. If a flow should be paused and resumed only at a specified date and time, which wait element in Flow Builder can be used?</p>
+<ul>
+<li><p>Wait for Conditions</p></li>
+<li><p>Wait Until Date</p></li>
+</ul>
+</div>
+<div id="connectors" class="section level3 hasAnchor" number="4.6.4">
+<h3><span class="header-section-number">4.6.4</span> Connectors<a href="automation.html#connectors" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Connectors establish the paths between elements.</p>
-<p>Fault Connector.</p>
+<div id="fault-connector." class="section level4 hasAnchor" number="4.6.4.1">
+<h4><span class="header-section-number">4.6.4.1</span> Fault Connector.<a href="automation.html#fault-connector." class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p><img src="images/clipboard-3360759431.png" /></p>
-<div id="get-record---not-in" class="section level4 hasAnchor" number="4.6.2.1">
-<h4><span class="header-section-number">4.6.2.1</span> Get Record - Not In<a href="automation.html#get-record---not-in" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+</div>
+<div id="custom-error-message" class="section level4 hasAnchor" number="4.6.4.2">
+<h4><span class="header-section-number">4.6.4.2</span> Custom Error Message<a href="automation.html#custom-error-message" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><img src="images/clipboard-1427364972.png" /></p>
+</div>
+<div id="get-record---not-in" class="section level4 hasAnchor" number="4.6.4.3">
+<h4><span class="header-section-number">4.6.4.3</span> Get Record - Not In<a href="automation.html#get-record---not-in" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>A collection variable in a flow contains a list of names of supported shipping countries. A list of accounts needs to be generated where their Shipping Country does not exist in the supported shipping countries. How should this requirement be implemented in the flow?</p>
 <ul>
 <li>Use the ‘Get Records’ element and query the accounts using the ‘Not in’ operator.</li>
@@ -227,8 +256,8 @@
 <p><img src="images/clipboard-404116776.png" /></p>
 </div>
 </div>
-<div id="resources." class="section level3 hasAnchor" number="4.6.3">
-<h3><span class="header-section-number">4.6.3</span> Resources.<a href="automation.html#resources." class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="resources." class="section level3 hasAnchor" number="4.6.5">
+<h3><span class="header-section-number">4.6.5</span> Resources.<a href="automation.html#resources." class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Resources store and reference values used throughout the flow.<br />
 <br />
 Stages are used in features such as Path or Approval Processes, but they are not part of the Flow Builder design structure.</p>
@@ -240,8 +269,18 @@ Stages are used in features such as Path or Approval Processes, but they are not
 </ul></li>
 </ul>
 </div>
-<div id="new-resource" class="section level3 hasAnchor" number="4.6.4">
-<h3><span class="header-section-number">4.6.4</span> New Resource<a href="automation.html#new-resource" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="data-transform" class="section level3 hasAnchor" number="4.6.6">
+<h3><span class="header-section-number">4.6.6</span> Data Transform<a href="automation.html#data-transform" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A Salesforce Admin is building a screen flow to power a dynamic partner onboarding experience. The admin is using a Data Graph to retrieve consolidated partner data from multiple objects and sources. The next step is to transform that unified data into a format that can be easily displayed on a screen component and later updated in Salesforce. Which Flow feature supports this requirement?</p>
+<ul>
+<li><p>Use a Data Transform element to reshape the Data Graph output in Flow Builder.</p>
+<p>The Transform (Data Transform) element in Flow Builder allows you to manipulate the structure of Data Graph output—such as reshaping, filtering, or reorganizing fields—so the data can be easily used in screen components, record updates, or stored in collections. This eliminates the need for manually mapping fields or using multiple assignment elements when working with complex, nested data returned by a Data Graph.</p>
+<p>Custom Metadata Types are used for storing configuration or reference data, not for handling or transforming runtime data like the output from a Data Graph. External Services are used to connect to external APIs via schema-based integrations, not to transform internal Salesforce data retrieved from Data Graphs. While the Assignment element can be used for simple variable updates, it is not intended for complex data transformation or restructuring hierarchical graph data.</p>
+<p>This makes the Data Transform element the most efficient and purpose-built solution when working with Data Graphs in flows.</p></li>
+</ul>
+</div>
+<div id="new-resource" class="section level3 hasAnchor" number="4.6.7">
+<h3><span class="header-section-number">4.6.7</span> New Resource<a href="automation.html#new-resource" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li><p>Record Variable<br />
 </p>
@@ -257,14 +296,14 @@ Stages are used in features such as Path or Approval Processes, but they are not
 <p><img src="images/clipboard-414363371.png" /></p>
 <p><img src="images/clipboard-1384221186.png" /></p>
 </div>
-<div id="screen-components" class="section level3 hasAnchor" number="4.6.5">
-<h3><span class="header-section-number">4.6.5</span> Screen Components<a href="automation.html#screen-components" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="screen-components" class="section level3 hasAnchor" number="4.6.8">
+<h3><span class="header-section-number">4.6.8</span> Screen Components<a href="automation.html#screen-components" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 </div>
-<div id="screen-flow" class="section level3 hasAnchor" number="4.6.6">
-<h3><span class="header-section-number">4.6.6</span> Screen Flow<a href="automation.html#screen-flow" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="screen-flow" class="section level3 hasAnchor" number="4.6.9">
+<h3><span class="header-section-number">4.6.9</span> Screen Flow<a href="automation.html#screen-flow" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 </div>
-<div id="entry-condition" class="section level3 hasAnchor" number="4.6.7">
-<h3><span class="header-section-number">4.6.7</span> Entry Condition<a href="automation.html#entry-condition" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="entry-condition" class="section level3 hasAnchor" number="4.6.10">
+<h3><span class="header-section-number">4.6.10</span> Entry Condition<a href="automation.html#entry-condition" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>When specifying entry conditions for a record-triggered flow, which of the following options can be used in the condition requirements?</p>
 <ul>
 <li><p>A formula</p></li>
@@ -273,8 +312,8 @@ Stages are used in features such as Path or Approval Processes, but they are not
 <p><img src="images/clipboard-658374321.png" /></p>
 <p><img src="images/clipboard-1095249260.png" /></p>
 </div>
-<div id="loop-element" class="section level3 hasAnchor" number="4.6.8">
-<h3><span class="header-section-number">4.6.8</span> Loop Element<a href="automation.html#loop-element" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="loop-element" class="section level3 hasAnchor" number="4.6.11">
+<h3><span class="header-section-number">4.6.11</span> Loop Element<a href="automation.html#loop-element" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>When the Rating of an account is set to “Cold”, a record-triggered flow should update a certain field in all its related contacts. Which elements demonstrates an efficient implementation of Logic Elements in Flow Builder to meet the requirement?</p>
 <ul>
 <li><p>Use the Assignment Element to set the value of a Contact field.</p></li>
@@ -282,8 +321,8 @@ Stages are used in features such as Path or Approval Processes, but they are not
 </ul>
 <p><img src="images/clipboard-1283018251.png" /></p>
 </div>
-<div id="time-data-type" class="section level3 hasAnchor" number="4.6.9">
-<h3><span class="header-section-number">4.6.9</span> Time Data Type<a href="automation.html#time-data-type" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="time-data-type" class="section level3 hasAnchor" number="4.6.12">
+<h3><span class="header-section-number">4.6.12</span> Time Data Type<a href="automation.html#time-data-type" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>A Salesforce Admin wants to build a flow that sends an automated email reminder 30 minutes before a scheduled daily event, regardless of the date. The event time is stored in a custom Time field on the record. How can the System Admin make this requirement easier to implement using Flow Builder?</p>
 <ul>
 <li>Store the time in a resource using the Time data type to directly compare times.</li>
@@ -291,16 +330,16 @@ Stages are used in features such as Path or Approval Processes, but they are not
 <p>The Time data type in Flow Builder resources enables working with exact times of day (such as 5:30 PM or 09:00 AM) in flow elements like Assignment, Decision, and Wait, using built-in time functions such as HOUR(), MINUTE(), and TIMEVALUE(). By using the Time data type directly, implementing clean, precise, and scalable time-sensitive automations is straightforward.</p>
 <p>Using a Date field to extract and compare time requires additional formula manipulation and doesn’t take advantage of the new Time data type, which simplifies this exact use case. Converting times to text strings and comparing them using string functions is error-prone and not reliable for accurate time logic, as well as unnecessary since the Time data type is supported. While Scheduled Flows can be used to run logic at fixed intervals, they are inefficient for time-specific use cases when compared to using Time fields and flow formulas. Relying on text-based filtering in scheduled flows is no longer necessary, as it is a workaround that is no longer required.</p>
 </div>
-<div id="apex-based-action-element" class="section level3 hasAnchor" number="4.6.10">
-<h3><span class="header-section-number">4.6.10</span> Apex-Based Action Element<a href="automation.html#apex-based-action-element" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="apex-based-action-element" class="section level3 hasAnchor" number="4.6.13">
+<h3><span class="header-section-number">4.6.13</span> Apex-Based Action Element<a href="automation.html#apex-based-action-element" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>A Salesforce Administrator wants to convert a lead automatically based on certain criteria and send an email to the related contact one day after lead conversion. How can this be achieved?</p>
 <ul>
 <li><p>Use a scheduled path on a record-triggered flow to send the email one day after the lead conversion.</p></li>
 <li><p>Use a record-triggered flow using an Apex-based Action element to perform the lead conversion.</p></li>
 </ul>
 </div>
-<div id="a-record-triggered-flow" class="section level3 hasAnchor" number="4.6.11">
-<h3><span class="header-section-number">4.6.11</span> A record-triggered flow<a href="automation.html#a-record-triggered-flow" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="a-record-triggered-flow" class="section level3 hasAnchor" number="4.6.14">
+<h3><span class="header-section-number">4.6.14</span> A record-triggered flow<a href="automation.html#a-record-triggered-flow" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>A company wants to automatically notify lead owners if a lead has not been converted 10 days after its creation. Which Flow-based automation solution is most appropriate to achieve this?</p>
 <ul>
 <li>Add a scheduled path to a record-triggered flow that sends an email alert 10 days after lead creation.</li>
@@ -331,17 +370,17 @@ Stages are used in features such as Path or Approval Processes, but they are not
 </ul>
 <p><img src="images/clipboard-2571416116.png" /></p>
 </div>
-<div id="scheduled-path" class="section level3 hasAnchor" number="4.6.12">
-<h3><span class="header-section-number">4.6.12</span> Scheduled Path<a href="automation.html#scheduled-path" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="scheduled-path" class="section level3 hasAnchor" number="4.6.15">
+<h3><span class="header-section-number">4.6.15</span> Scheduled Path<a href="automation.html#scheduled-path" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 </div>
-<div id="outcomes" class="section level3 hasAnchor" number="4.6.13">
-<h3><span class="header-section-number">4.6.13</span> Outcomes<a href="automation.html#outcomes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div id="only-if-the-record-that-triggered-the-flow-to-run-is-updated-to-meet-the-condition-requirements" class="section level4 hasAnchor" number="4.6.13.1">
-<h4><span class="header-section-number">4.6.13.1</span> ‘Only if the record that triggered the flow to run is updated to meet the condition requirements’<a href="automation.html#only-if-the-record-that-triggered-the-flow-to-run-is-updated-to-meet-the-condition-requirements" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<div id="outcomes" class="section level3 hasAnchor" number="4.6.16">
+<h3><span class="header-section-number">4.6.16</span> Outcomes<a href="automation.html#outcomes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="only-if-the-record-that-triggered-the-flow-to-run-is-updated-to-meet-the-condition-requirements" class="section level4 hasAnchor" number="4.6.16.1">
+<h4><span class="header-section-number">4.6.16.1</span> ‘Only if the record that triggered the flow to run is updated to meet the condition requirements’<a href="automation.html#only-if-the-record-that-triggered-the-flow-to-run-is-updated-to-meet-the-condition-requirements" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 </div>
 </div>
-<div id="subflow" class="section level3 hasAnchor" number="4.6.14">
-<h3><span class="header-section-number">4.6.14</span> Subflow<a href="automation.html#subflow" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="subflow" class="section level3 hasAnchor" number="4.6.17">
+<h3><span class="header-section-number">4.6.17</span> Subflow<a href="automation.html#subflow" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 </div>
 </div>
 <div id="how-to-run-the-flow" class="section level2 hasAnchor" number="4.7">
@@ -370,6 +409,10 @@ Stages are used in features such as Path or Approval Processes, but they are not
 <h2><span class="header-section-number">4.10</span> View Test<a href="automation.html#view-test" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>A Salesforce Administrator has created a record-triggered flow that will be used to set a ‘Status’ field of an account to ‘Premium’ if the record meets certain conditions. Which of the options below represents a valid step for creating automated flow tests in Flow Builder to verify the flow’s expected behavior?</p>
 <p><img src="images/clipboard-797791572.png" /></p>
+</div>
+<div id="error-and-warning-pane" class="section level2 hasAnchor" number="4.11">
+<h2><span class="header-section-number">4.11</span> Error and Warning Pane<a href="automation.html#error-and-warning-pane" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><img src="images/clipboard-198664950.png" /></p>
 
 </div>
 </div>
@@ -585,7 +628,7 @@ window.onload = function() {
         </div>
       </div>
 <a href="configuration-and-setup-15.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="miscellaneous.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="object-manager-and-lightning-app-builder..html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
