@@ -98,5 +98,5 @@ dynamic-form
 new-line-of-business
 count-type-roll-up-summary
 campaign
-object-manager-1
+miscellaneous
 actions-plans
