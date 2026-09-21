@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>6 Service and Support Applications | Salesforce Admin</title>
+  <meta name="description" content="6 Service and Support Applications | Salesforce Admin" />
+  <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="6 Service and Support Applications | Salesforce Admin" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="6 Service and Support Applications | Salesforce Admin" />
+  
+  
+  
+
+<meta name="author" content="Fernando Bahamóndez Torres" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="object-manager-and-lightning-app-builder..html"/>
+<link rel="next" href="miscellaneous.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="include/webex.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome!</a></li>
+<li class="chapter" data-level="" data-path="study-guide.html"><a href="study-guide.html"><i class="fa fa-check"></i>Study Guide</a></li>
+<li class="chapter" data-level="1" data-path="agentforce-8.html"><a href="agentforce-8.html"><i class="fa fa-check"></i><b>1</b> Agentforce 8%</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="agentforce-8.html"><a href="agentforce-8.html#fundamentals"><i class="fa fa-check"></i><b>1.1</b> Fundamentals</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="agentforce-8.html"><a href="agentforce-8.html#ai-sales-agents"><i class="fa fa-check"></i><b>1.1.1</b> AI Sales Agents</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="agentforce-8.html"><a href="agentforce-8.html#qa"><i class="fa fa-check"></i>Q&amp;A</a>
+<ul>
+<li class="chapter" data-level="" data-path="agentforce-8.html"><a href="agentforce-8.html#agentforce---builder-tools"><i class="fa fa-check"></i>Agentforce - Builder Tools</a></li>
+<li class="chapter" data-level="1.1.2" data-path="agentforce-8.html"><a href="agentforce-8.html#explain-the-various-organization-security-controls"><i class="fa fa-check"></i><b>1.1.2</b> Explain the various organization security controls</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="data-analytics-managment-17.html"><a href="data-analytics-managment-17.html"><i class="fa fa-check"></i><b>2</b> Data &amp; Analytics Managment 17%</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="data-analytics-managment-17.html"><a href="data-analytics-managment-17.html#questions"><i class="fa fa-check"></i><b>2.1</b> Questions</a>
+<ul>
+<li class="chapter" data-level="" data-path="data-analytics-managment-17.html"><a href="data-analytics-managment-17.html#describe-the-considerations-when-importing-updating-transferring-mass-deleting-exporting-and-backing-up-data."><i class="fa fa-check"></i><em>Describe the considerations when importing, updating, transferring, mass deleting, exporting and backing up data.</em></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="configuration-and-setup-15.html"><a href="configuration-and-setup-15.html"><i class="fa fa-check"></i><b>3</b> Configuration and Setup 15%</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="configuration-and-setup-15.html"><a href="configuration-and-setup-15.html#fundamentals-1"><i class="fa fa-check"></i><b>3.1</b> Fundamentals</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="configuration-and-setup-15.html"><a href="configuration-and-setup-15.html#general-settings"><i class="fa fa-check"></i><b>3.1.1</b> General Settings</a></li>
+<li class="chapter" data-level="3.1.2" data-path="configuration-and-setup-15.html"><a href="configuration-and-setup-15.html#multiple-currencies"><i class="fa fa-check"></i><b>3.1.2</b> Multiple Currencies</a></li>
+<li class="chapter" data-level="3.1.3" data-path="configuration-and-setup-15.html"><a href="configuration-and-setup-15.html#user-interface"><i class="fa fa-check"></i><b>3.1.3</b> User Interface</a></li>
+<li class="chapter" data-level="3.1.4" data-path="configuration-and-setup-15.html"><a href="configuration-and-setup-15.html#einstein-search"><i class="fa fa-check"></i><b>3.1.4</b> Einstein Search</a></li>
+<li class="chapter" data-level="3.1.5" data-path="configuration-and-setup-15.html"><a href="configuration-and-setup-15.html#user"><i class="fa fa-check"></i><b>3.1.5</b> User</a></li>
+<li class="chapter" data-level="3.1.6" data-path="configuration-and-setup-15.html"><a href="configuration-and-setup-15.html#folder"><i class="fa fa-check"></i><b>3.1.6</b> Folder</a></li>
+<li class="chapter" data-level="3.1.7" data-path="configuration-and-setup-15.html"><a href="configuration-and-setup-15.html#files"><i class="fa fa-check"></i><b>3.1.7</b> Files</a></li>
+<li class="chapter" data-level="3.1.8" data-path="configuration-and-setup-15.html"><a href="configuration-and-setup-15.html#restricction-rule"><i class="fa fa-check"></i><b>3.1.8</b> Restricction Rule</a></li>
+<li class="chapter" data-level="3.1.9" data-path="configuration-and-setup-15.html"><a href="configuration-and-setup-15.html#my-domain"><i class="fa fa-check"></i><b>3.1.9</b> My Domain</a></li>
+<li class="chapter" data-level="3.1.10" data-path="configuration-and-setup-15.html"><a href="configuration-and-setup-15.html#field-level-security"><i class="fa fa-check"></i><b>3.1.10</b> Field-Level Security</a></li>
+<li class="chapter" data-level="3.1.11" data-path="configuration-and-setup-15.html"><a href="configuration-and-setup-15.html#multi-factor-authentication"><i class="fa fa-check"></i><b>3.1.11</b> Multi-Factor Authentication</a></li>
+<li class="chapter" data-level="3.1.12" data-path="configuration-and-setup-15.html"><a href="configuration-and-setup-15.html#organization-wide-default-setting"><i class="fa fa-check"></i><b>3.1.12</b> Organization Wide-Default Setting</a></li>
+<li class="chapter" data-level="3.1.13" data-path="configuration-and-setup-15.html"><a href="configuration-and-setup-15.html#sharing-setting"><i class="fa fa-check"></i><b>3.1.13</b> Sharing Setting</a></li>
+<li class="chapter" data-level="3.1.14" data-path="configuration-and-setup-15.html"><a href="configuration-and-setup-15.html#object-manager"><i class="fa fa-check"></i><b>3.1.14</b> Object Manager</a></li>
+<li class="chapter" data-level="3.1.15" data-path="configuration-and-setup-15.html"><a href="configuration-and-setup-15.html#email-template"><i class="fa fa-check"></i><b>3.1.15</b> Email Template</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="automation.html"><a href="automation.html"><i class="fa fa-check"></i><b>4</b> Automation</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="automation.html"><a href="automation.html#approval-processes"><i class="fa fa-check"></i><b>4.1</b> Approval Processes</a></li>
+<li class="chapter" data-level="4.2" data-path="automation.html"><a href="automation.html#workflow-rule"><i class="fa fa-check"></i><b>4.2</b> Workflow Rule</a></li>
+<li class="chapter" data-level="4.3" data-path="automation.html"><a href="automation.html#case-escalation-rule"><i class="fa fa-check"></i><b>4.3</b> Case Escalation Rule</a></li>
+<li class="chapter" data-level="4.4" data-path="automation.html"><a href="automation.html#email-alert"><i class="fa fa-check"></i><b>4.4</b> Email Alert</a></li>
+<li class="chapter" data-level="4.5" data-path="automation.html"><a href="automation.html#flow"><i class="fa fa-check"></i><b>4.5</b> Flow</a></li>
+<li class="chapter" data-level="4.6" data-path="automation.html"><a href="automation.html#flow-builder"><i class="fa fa-check"></i><b>4.6</b> Flow Builder</a>
+<ul>
+<li class="chapter" data-level="4.6.1" data-path="automation.html"><a href="automation.html#the-core-building-blocks-of-a-flow-are"><i class="fa fa-check"></i><b>4.6.1</b> The core building blocks of a flow are:</a></li>
+<li class="chapter" data-level="4.6.2" data-path="automation.html"><a href="automation.html#elements"><i class="fa fa-check"></i><b>4.6.2</b> Elements</a></li>
+<li class="chapter" data-level="4.6.3" data-path="automation.html"><a href="automation.html#wait-."><i class="fa fa-check"></i><b>4.6.3</b> Wait ….</a></li>
+<li class="chapter" data-level="4.6.4" data-path="automation.html"><a href="automation.html#connectors"><i class="fa fa-check"></i><b>4.6.4</b> Connectors</a></li>
+<li class="chapter" data-level="4.6.5" data-path="automation.html"><a href="automation.html#resources."><i class="fa fa-check"></i><b>4.6.5</b> Resources.</a></li>
+<li class="chapter" data-level="4.6.6" data-path="automation.html"><a href="automation.html#data-transform"><i class="fa fa-check"></i><b>4.6.6</b> Data Transform</a></li>
+<li class="chapter" data-level="4.6.7" data-path="automation.html"><a href="automation.html#new-resource"><i class="fa fa-check"></i><b>4.6.7</b> New Resource</a></li>
+<li class="chapter" data-level="4.6.8" data-path="automation.html"><a href="automation.html#screen-components"><i class="fa fa-check"></i><b>4.6.8</b> Screen Components</a></li>
+<li class="chapter" data-level="4.6.9" data-path="automation.html"><a href="automation.html#screen-flow"><i class="fa fa-check"></i><b>4.6.9</b> Screen Flow</a></li>
+<li class="chapter" data-level="4.6.10" data-path="automation.html"><a href="automation.html#entry-condition"><i class="fa fa-check"></i><b>4.6.10</b> Entry Condition</a></li>
+<li class="chapter" data-level="4.6.11" data-path="automation.html"><a href="automation.html#loop-element"><i class="fa fa-check"></i><b>4.6.11</b> Loop Element</a></li>
+<li class="chapter" data-level="4.6.12" data-path="automation.html"><a href="automation.html#time-data-type"><i class="fa fa-check"></i><b>4.6.12</b> Time Data Type</a></li>
+<li class="chapter" data-level="4.6.13" data-path="automation.html"><a href="automation.html#apex-based-action-element"><i class="fa fa-check"></i><b>4.6.13</b> Apex-Based Action Element</a></li>
+<li class="chapter" data-level="4.6.14" data-path="automation.html"><a href="automation.html#a-record-triggered-flow"><i class="fa fa-check"></i><b>4.6.14</b> A record-triggered flow</a></li>
+<li class="chapter" data-level="4.6.15" data-path="automation.html"><a href="automation.html#scheduled-path"><i class="fa fa-check"></i><b>4.6.15</b> Scheduled Path</a></li>
+<li class="chapter" data-level="4.6.16" data-path="automation.html"><a href="automation.html#outcomes"><i class="fa fa-check"></i><b>4.6.16</b> Outcomes</a></li>
+<li class="chapter" data-level="4.6.17" data-path="automation.html"><a href="automation.html#subflow"><i class="fa fa-check"></i><b>4.6.17</b> Subflow</a></li>
+</ul></li>
+<li class="chapter" data-level="4.7" data-path="automation.html"><a href="automation.html#how-to-run-the-flow"><i class="fa fa-check"></i><b>4.7</b> How to Run the Flow?</a></li>
+<li class="chapter" data-level="4.8" data-path="automation.html"><a href="automation.html#use-a-prebuilt-flow-named"><i class="fa fa-check"></i><b>4.8</b> Use a prebuilt flow named:</a></li>
+<li class="chapter" data-level="4.9" data-path="automation.html"><a href="automation.html#debug-option"><i class="fa fa-check"></i><b>4.9</b> Debug Option</a></li>
+<li class="chapter" data-level="4.10" data-path="automation.html"><a href="automation.html#view-test"><i class="fa fa-check"></i><b>4.10</b> View Test</a></li>
+<li class="chapter" data-level="4.11" data-path="automation.html"><a href="automation.html#error-and-warning-pane"><i class="fa fa-check"></i><b>4.11</b> Error and Warning Pane</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="object-manager-and-lightning-app-builder..html"><a href="object-manager-and-lightning-app-builder..html"><i class="fa fa-check"></i><b>5</b> Object Manager and Lightning App Builder.</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="object-manager-and-lightning-app-builder..html"><a href="object-manager-and-lightning-app-builder..html#question---objective-1"><i class="fa fa-check"></i><b>5.1</b> 17 Question - Objective 1</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="object-manager-and-lightning-app-builder..html"><a href="object-manager-and-lightning-app-builder..html#lookup-filter"><i class="fa fa-check"></i><b>5.1.1</b> Lookup Filter</a></li>
+<li class="chapter" data-level="5.1.2" data-path="object-manager-and-lightning-app-builder..html"><a href="object-manager-and-lightning-app-builder..html#contact-with-multiple-companies."><i class="fa fa-check"></i><b>5.1.2</b> Contact with multiple companies.</a></li>
+<li class="chapter" data-level="5.1.3" data-path="object-manager-and-lightning-app-builder..html"><a href="object-manager-and-lightning-app-builder..html#account-settings"><i class="fa fa-check"></i><b>5.1.3</b> Account Settings</a></li>
+<li class="chapter" data-level="5.1.4" data-path="object-manager-and-lightning-app-builder..html"><a href="object-manager-and-lightning-app-builder..html#account"><i class="fa fa-check"></i><b>5.1.4</b> Account</a></li>
+<li class="chapter" data-level="5.1.5" data-path="object-manager-and-lightning-app-builder..html"><a href="object-manager-and-lightning-app-builder..html#master-detail-relationship-lookup-relationship"><i class="fa fa-check"></i><b>5.1.5</b> Master-Detail Relationship | Lookup Relationship</a></li>
+<li class="chapter" data-level="5.1.6" data-path="object-manager-and-lightning-app-builder..html"><a href="object-manager-and-lightning-app-builder..html#many-to-many"><i class="fa fa-check"></i><b>5.1.6</b> Many-to-many</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="object-manager-and-lightning-app-builder..html"><a href="object-manager-and-lightning-app-builder..html#question---objective-2"><i class="fa fa-check"></i><b>5.2</b> 35 Question - Objective 2</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="object-manager-and-lightning-app-builder..html"><a href="object-manager-and-lightning-app-builder..html#changing-the-field-type-of-custom-field"><i class="fa fa-check"></i><b>5.2.1</b> Changing the field type of custom field</a></li>
+<li class="chapter" data-level="5.2.2" data-path="object-manager-and-lightning-app-builder..html"><a href="object-manager-and-lightning-app-builder..html#create-a-cross-object-formula-field"><i class="fa fa-check"></i><b>5.2.2</b> Create a cross-object formula field</a></li>
+<li class="chapter" data-level="5.2.3" data-path="object-manager-and-lightning-app-builder..html"><a href="object-manager-and-lightning-app-builder..html#page-layout-editor"><i class="fa fa-check"></i><b>5.2.3</b> Page Layout Editor</a></li>
+<li class="chapter" data-level="5.2.4" data-path="object-manager-and-lightning-app-builder..html"><a href="object-manager-and-lightning-app-builder..html#controlling-field-in-a-field-dependency"><i class="fa fa-check"></i><b>5.2.4</b> Controlling field in a field dependency</a></li>
+<li class="chapter" data-level="5.2.5" data-path="object-manager-and-lightning-app-builder..html"><a href="object-manager-and-lightning-app-builder..html#dependent-field-in-a-field-dependency"><i class="fa fa-check"></i><b>5.2.5</b> Dependent field in a field dependency</a></li>
+<li class="chapter" data-level="5.2.6" data-path="object-manager-and-lightning-app-builder..html"><a href="object-manager-and-lightning-app-builder..html#implementing-universal-required-field"><i class="fa fa-check"></i><b>5.2.6</b> Implementing Universal Required Field</a></li>
+<li class="chapter" data-level="5.2.7" data-path="object-manager-and-lightning-app-builder..html"><a href="object-manager-and-lightning-app-builder..html#list-view-sharing-settings"><i class="fa fa-check"></i><b>5.2.7</b> List View sharing settings</a></li>
+<li class="chapter" data-level="5.2.8" data-path="object-manager-and-lightning-app-builder..html"><a href="object-manager-and-lightning-app-builder..html#delete-custom-field"><i class="fa fa-check"></i><b>5.2.8</b> Delete custom field</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="object-manager-and-lightning-app-builder..html"><a href="object-manager-and-lightning-app-builder..html#question---objective-3"><i class="fa fa-check"></i><b>5.3</b> 16 Question - Objective 3</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="object-manager-and-lightning-app-builder..html"><a href="object-manager-and-lightning-app-builder..html#business-process"><i class="fa fa-check"></i><b>5.3.1</b> Business Process</a></li>
+<li class="chapter" data-level="5.3.2" data-path="object-manager-and-lightning-app-builder..html"><a href="object-manager-and-lightning-app-builder..html#new-picklist-value"><i class="fa fa-check"></i><b>5.3.2</b> New Picklist Value</a></li>
+<li class="chapter" data-level="5.3.3" data-path="object-manager-and-lightning-app-builder..html"><a href="object-manager-and-lightning-app-builder..html#priorvalue"><i class="fa fa-check"></i><b>5.3.3</b> PRIORVALUE</a></li>
+<li class="chapter" data-level="5.3.4" data-path="object-manager-and-lightning-app-builder..html"><a href="object-manager-and-lightning-app-builder..html#record-type"><i class="fa fa-check"></i><b>5.3.4</b> Record Type</a></li>
+<li class="chapter" data-level="5.3.5" data-path="object-manager-and-lightning-app-builder..html"><a href="object-manager-and-lightning-app-builder..html#dynamic-form"><i class="fa fa-check"></i><b>5.3.5</b> Dynamic Form</a></li>
+<li class="chapter" data-level="5.3.6" data-path="object-manager-and-lightning-app-builder..html"><a href="object-manager-and-lightning-app-builder..html#new-line-of-business"><i class="fa fa-check"></i><b>5.3.6</b> New Line of Business</a></li>
+<li class="chapter" data-level="5.3.7" data-path="object-manager-and-lightning-app-builder..html"><a href="object-manager-and-lightning-app-builder..html#count-type-roll-up-summary"><i class="fa fa-check"></i><b>5.3.7</b> Count Type Roll-UP summary</a></li>
+<li class="chapter" data-level="5.3.8" data-path="object-manager-and-lightning-app-builder..html"><a href="object-manager-and-lightning-app-builder..html#campaign"><i class="fa fa-check"></i><b>5.3.8</b> Campaign</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="service-and-support-applications.html"><a href="service-and-support-applications.html"><i class="fa fa-check"></i><b>6</b> Service and Support Applications</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="service-and-support-applications.html"><a href="service-and-support-applications.html#queues"><i class="fa fa-check"></i><b>6.1</b> Queues</a></li>
+<li class="chapter" data-level="6.2" data-path="service-and-support-applications.html"><a href="service-and-support-applications.html#case-assignment-rules"><i class="fa fa-check"></i><b>6.2</b> Case Assignment Rules</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="service-and-support-applications.html"><a href="service-and-support-applications.html#auto-response-rule"><i class="fa fa-check"></i><b>6.2.1</b> Auto-Response Rule</a></li>
+<li class="chapter" data-level="6.2.2" data-path="service-and-support-applications.html"><a href="service-and-support-applications.html#delete-cases"><i class="fa fa-check"></i><b>6.2.2</b> Delete Cases</a></li>
+<li class="chapter" data-level="6.2.3" data-path="service-and-support-applications.html"><a href="service-and-support-applications.html#record-triggered-flow"><i class="fa fa-check"></i><b>6.2.3</b> Record-triggered flow</a></li>
+<li class="chapter" data-level="6.2.4" data-path="service-and-support-applications.html"><a href="service-and-support-applications.html#compact-feed-view"><i class="fa fa-check"></i><b>6.2.4</b> Compact feed view</a></li>
+<li class="chapter" data-level="6.2.5" data-path="service-and-support-applications.html"><a href="service-and-support-applications.html#macros"><i class="fa fa-check"></i><b>6.2.5</b> Macros</a></li>
+<li class="chapter" data-level="6.2.6" data-path="service-and-support-applications.html"><a href="service-and-support-applications.html#addition-a-report-chart-in-service-console-in-classic"><i class="fa fa-check"></i><b>6.2.6</b> Addition a Report Chart in Service Console in Classic</a></li>
+<li class="chapter" data-level="6.2.7" data-path="service-and-support-applications.html"><a href="service-and-support-applications.html#web-to-case"><i class="fa fa-check"></i><b>6.2.7</b> Web-to-case</a></li>
+<li class="chapter" data-level="6.2.8" data-path="service-and-support-applications.html"><a href="service-and-support-applications.html#email---within-company-guidelines"><i class="fa fa-check"></i><b>6.2.8</b> Email - Within company guidelines</a></li>
+<li class="chapter" data-level="6.2.9" data-path="service-and-support-applications.html"><a href="service-and-support-applications.html#case-feed-visible"><i class="fa fa-check"></i><b>6.2.9</b> Case Feed Visible</a></li>
+<li class="chapter" data-level="6.2.10" data-path="service-and-support-applications.html"><a href="service-and-support-applications.html#action-and-escalation-rule"><i class="fa fa-check"></i><b>6.2.10</b> Action and escalation rule</a></li>
+<li class="chapter" data-level="6.2.11" data-path="service-and-support-applications.html"><a href="service-and-support-applications.html#parent-case"><i class="fa fa-check"></i><b>6.2.11</b> Parent Case</a></li>
+<li class="chapter" data-level="6.2.12" data-path="service-and-support-applications.html"><a href="service-and-support-applications.html#case-contact-roles"><i class="fa fa-check"></i><b>6.2.12</b> Case | Contact Roles</a></li>
+<li class="chapter" data-level="6.2.13" data-path="service-and-support-applications.html"><a href="service-and-support-applications.html#flow-1"><i class="fa fa-check"></i><b>6.2.13</b> Flow</a></li>
+<li class="chapter" data-level="6.2.14" data-path="service-and-support-applications.html"><a href="service-and-support-applications.html#web-to-case-1"><i class="fa fa-check"></i><b>6.2.14</b> Web-to-Case</a></li>
+<li class="chapter" data-level="6.2.15" data-path="service-and-support-applications.html"><a href="service-and-support-applications.html#case-escalation-rule-1"><i class="fa fa-check"></i><b>6.2.15</b> Case Escalation Rule</a></li>
+<li class="chapter" data-level="6.2.16" data-path="service-and-support-applications.html"><a href="service-and-support-applications.html#case-actions"><i class="fa fa-check"></i><b>6.2.16</b> Case Actions</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="service-and-support-applications.html"><a href="service-and-support-applications.html#omni-channel"><i class="fa fa-check"></i><b>6.3</b> Omni-Channel</a></li>
+<li class="chapter" data-level="6.4" data-path="service-and-support-applications.html"><a href="service-and-support-applications.html#support-process"><i class="fa fa-check"></i><b>6.4</b> Support Process</a></li>
+<li class="chapter" data-level="6.5" data-path="service-and-support-applications.html"><a href="service-and-support-applications.html#open-cti"><i class="fa fa-check"></i><b>6.5</b> Open CTI</a></li>
+<li class="chapter" data-level="6.6" data-path="service-and-support-applications.html"><a href="service-and-support-applications.html#email-to-case"><i class="fa fa-check"></i><b>6.6</b> Email-to-Case</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="miscellaneous.html"><a href="miscellaneous.html"><i class="fa fa-check"></i><b>7</b> Miscellaneous</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="miscellaneous.html"><a href="miscellaneous.html#actions-plans"><i class="fa fa-check"></i><b>7.1</b> Actions Plans</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Salesforce Admin</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="service-and-support-applications" class="section level1 hasAnchor" number="6">
+<h1><span class="header-section-number">6</span> Service and Support Applications<a href="service-and-support-applications.html#service-and-support-applications" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>40 Questions:</p>
+<div id="queues" class="section level2 hasAnchor" number="6.1">
+<h2><span class="header-section-number">6.1</span> Queues<a href="service-and-support-applications.html#queues" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Which of the following can a Case Queue be used for?</p>
+<ul>
+<li>Manage your support workload.</li>
+</ul>
+<p><img src="images/clipboard-2687854291.png" /></p>
+<p>Which of these features are used to manage cases?</p>
+<ul>
+<li><p>Case Teams</p></li>
+<li><p>Email-to-Case</p></li>
+</ul>
+<p><img src="images/clipboard-3484325295.png" /></p>
+<p><img src="images/clipboard-615013288.png" /></p>
+<p>The Director of Support Operations at Cosmic Computers would like to create three different teams of support representatives who can work on low, medium and high priority cases separately. She would like to ensure that support representatives can view and work on cases assigned to their team. Which solution should be recommended for this requirement?</p>
+<ul>
+<li>Create different queues for low, medium and high priority cases.</li>
+</ul>
+<p><em>Queues can be created in Salesforce to allow groups of support agents to manage case workload more efficiently.</em></p>
+<p><em>Cases can be assigned to a queue using a case assignment rule so that queue members can work on them. Members of a queue can take ownership of any case in the queue. Since a list view is automatically created for a queue, there is no need to create or customize a list view separately.</em></p>
+<p><img src="images/clipboard-4028526358.png" /></p>
+<p>What is true regarding queues?</p>
+<ul>
+<li><p>A list view is automatically created when a queue is craeted for Cases, Leads, or custom objects.</p></li>
+<li><p>Custom object records can be assigned to a queue.</p></li>
+<li><p>Records can be placed in a queue manually or via an assignment rule.</p></li>
+</ul>
+<p><em>Standard objects such as Cases, Leads, Orders, Service Contracts, and Knowledge Article Versions, as well as custom objects, can be assigned to queues. List views are automatically created for Cases, Leads, and custom objects when a queue is created for those objects. Records can be placed in a queue manually by a user. For leads and cases, assignment rules can be created to automate this process based on records meeting defined criteria.</em></p>
+<p><em>Only members of a queue can accept records from that queue and take ownership.</em></p>
+<p><img src="images/clipboard-1134138100.png" width="461" /></p>
+<p><img src="images/clipboard-516072226.png" width="599" /></p>
+<p><img src="images/clipboard-1881088664.png" width="476" /></p>
+</div>
+<div id="case-assignment-rules" class="section level2 hasAnchor" number="6.2">
+<h2><span class="header-section-number">6.2</span> Case Assignment Rules<a href="service-and-support-applications.html#case-assignment-rules" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Tim works for a Support Center that is looking to streamline their case management. Currently, all cases are routed to a single user who then manually assigns them to support reps. The support center handles all cases based on the Geography field selected on the case. Which of the following combination of configuration options could Tim suggest to help automate their Case Management?</p>
+<ul>
+<li><p>Creating a Case Assignment Rule</p></li>
+<li><p>Setting up queues based on Geography</p></li>
+</ul>
+<p>The requirement here is to automate the assignment of the records instead of leaving it to the one user. Email notifications, while useful, would not help automate the case management process in this case, as the user would still have to route cases. An approval process may help automate the process, but not in tandem with any of the other options provided. The Case Assignment rule is a built-in automation within Salesforce to automate the assignment of case.</p>
+<p><img src="images/clipboard-2263344646.png" /></p>
+<div id="auto-response-rule" class="section level3 hasAnchor" number="6.2.1">
+<h3><span class="header-section-number">6.2.1</span> Auto-Response Rule<a href="service-and-support-applications.html#auto-response-rule" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>What situations can trigger an auto-response rule?</p>
+<ul>
+<li><p>Web-to-Case submission</p></li>
+<li><p>Customer Portal Case submission</p></li>
+<li><p>Email-to-Case submission</p></li>
+</ul>
+<p><img src="images/clipboard-276255922.png" /></p>
+<p>What is true regarding auto-response rules?<br />
+</p>
+<ul>
+<li><p>Auto-response rule apply to cases and leads.</p></li>
+<li><p>Different email templates can be used for different criteria.</p></li>
+</ul>
+<p><img src="images/clipboard-1673186597.png" /></p>
+<p><img src="images/clipboard-922078806.png" /></p>
+</div>
+<div id="delete-cases" class="section level3 hasAnchor" number="6.2.2">
+<h3><span class="header-section-number">6.2.2</span> Delete Cases<a href="service-and-support-applications.html#delete-cases" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Ethan Hunt is a Salesforce Administrator. During a meeting with the support team, he received a request to delete a number of cases. What would he have communicated regarding the impact of deleting cases?</p>
+<ul>
+<li>All related events, tasks, case comments, and attachments are deleted.</li>
+</ul>
+<p>When a case is deleted, all related events and tasks, case comments, and attachments are also deleted. Associated contacts, accounts, and solutions are not deleted.</p>
+</div>
+<div id="record-triggered-flow" class="section level3 hasAnchor" number="6.2.3">
+<h3><span class="header-section-number">6.2.3</span> Record-triggered flow<a href="service-and-support-applications.html#record-triggered-flow" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Shelly is a Salesforce Administrator who works for the TPI support center that uses cases to manage support issues. TPI’s support manager has noticed that after a case is created, support reps are looking up the tier of the related account and setting the case resolution date accordingly. For example, if the account tier is silver, the resolution date should be set to 14 days, whereas a gold tier account should have a resolution date set to 7 days. Which of the following could Shelly use to save time in this process?</p>
+<ul>
+<li>Record-triggered flow to update the resolution date based on account tier.</li>
+</ul>
+<p><img src="images/clipboard-1525027773.png" /></p>
+<p><img src="images/clipboard-1000243137.png" /></p>
+</div>
+<div id="compact-feed-view" class="section level3 hasAnchor" number="6.2.4">
+<h3><span class="header-section-number">6.2.4</span> Compact feed view<a href="service-and-support-applications.html#compact-feed-view" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>How can an administrator allow users to see more information with less scrolling in a feed-based page layout when working with Cases in the Service console?</p>
+<ul>
+<li>Enable compact feed view in the console.</li>
+</ul>
+<p><img src="images/clipboard-2334739346.png" /></p>
+</div>
+<div id="macros" class="section level3 hasAnchor" number="6.2.5">
+<h3><span class="header-section-number">6.2.5</span> Macros<a href="service-and-support-applications.html#macros" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>How can support agents, who use the Case Feed, complete repetitive tasks quickly and consistently?<br />
+</p>
+<ul>
+<li>Use macros in the Case Feed.</li>
+</ul>
+<p><img src="images/clipboard-3987789080.png" /></p>
+<div id="bulk-macros" class="section level4 hasAnchor" number="6.2.5.1">
+<h4><span class="header-section-number">6.2.5.1</span> Bulk Macros<a href="service-and-support-applications.html#bulk-macros" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>In order to improve efficiency and automate actions on cases, a Salesforce administrator is considering the use of bulk macros. Which of the following statements are true regarding the use of bulk macros?</p>
+<ul>
+<li><p>Bulk macros can update field values on multiple records.</p></li>
+<li><p>Bulk macros can send emails to contacts on selected records</p></li>
+</ul>
+<p><img src="images/clipboard-3917465110.png" /></p>
+<p><strong><em>Bulk macros can be only run on records of Account, Case, Contact, and Lead objects. A bulk macro can only be run on records in one object list view at a time. Bulk macros can send emails or update field values for multiple records.</em></strong></p>
+<p><em>To run Bulk Macros, it is necessary to enable Enhanced Lists setting in User Interface Settings within the org.</em></p>
+<p>Service agents working on cases often need to request more information from customers in order to properly resolve cases. In these instances, they need to update the case status to ‘On Hold’ and send an email to the customer. They find that they usually do this several times during the day and would like a way to do it more efficiently. Which is the quickest way to address this requirement?</p>
+<ul>
+<li>Use a prebuilt macro</li>
+</ul>
+<p><img src="images/clipboard-1357473389.png" /></p>
+<p><img src="images/clipboard-3235156656.png" /></p>
+<p><em>Repetitive tasks can be made more efficient by using macros. Although a macro can be created, there is a prebuilt macro that will change the case status to ‘On Hold’ and send an email to the listed email in the case.</em></p>
+<p><em>A “Hold” quick action does not exist. Although Lightning Sync is used to connect a Salesforce org to Microsoft or Google applications, it can neither be used to automatically send emails to customers nor update fields in the Case object.</em></p>
+<p>The support department of Cosmic Supermart Online receives several emails from customers asking about the company’s return policy. The support director would like to allow support agents to automate the process of sending a reply to these customers using Quick Text. The agents use a Service Console app in Lightning Experience. What should be added to the Utility bar of the app to fulfill this requirement?</p>
+<ul>
+<li>Macros</li>
+</ul>
+<p><em>Macros can be used to automate repetitive tasks in a Service Console, such as sending an email to a customer. A macro allows inserting quick text, using email templates, adding email attachments, etc.</em></p>
+<p><em>A flow would require interaction by the agents as only active screen flows can be utilized for the Flow utility item. Chatter Publisher cannot automate tasks. Omni-Channel is used to route work items to agents automatically and cannot be used for automating tasks performed in a console app.</em></p>
+<p><img src="images/clipboard-1161826555.png" /></p>
+<p><img src="images/clipboard-1386736543.png" /></p>
+</div>
+</div>
+<div id="addition-a-report-chart-in-service-console-in-classic" class="section level3 hasAnchor" number="6.2.6">
+<h3><span class="header-section-number">6.2.6</span> Addition a Report Chart in Service Console in Classic<a href="service-and-support-applications.html#addition-a-report-chart-in-service-console-in-classic" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>What is true regarding the addition of a report chart to the Service Console in Classic?</p>
+<ul>
+<li><p>The source report must contain a chart.</p></li>
+<li><p>The source report of the cart must be a Summary or Matrix report</p></li>
+<li><p>The report chart must be added to the page layout of the object from which to display the chart.</p></li>
+</ul>
+</div>
+<div id="web-to-case" class="section level3 hasAnchor" number="6.2.7">
+<h3><span class="header-section-number">6.2.7</span> Web-to-case<a href="service-and-support-applications.html#web-to-case" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Customers receive case email notifications whenever case creation fails after they submit a Web-to-Case form. A customer is requesting for these to not contain sensitive data related to the cases entered. How can a Salesforce Administrator make sure that sensitive information is kept private?</p>
+<ul>
+<li>Enable the ‘Hide Record Information’ setting</li>
+</ul>
+<p><img src="images/clipboard-803768597.png" /></p>
+<p>Cosmic Electronics is revamping its website to improve the customer support experience by adding a support page with a web form that can be used to submit cases. Which of the following are some of the best practices to be followed while configuring Web-to-Case to create an effective web support channel?</p>
+<ul>
+<li><p>Create queues</p></li>
+<li><p>Create custom case fields</p></li>
+<li><p>Create a case assignment rule</p></li>
+</ul>
+<p><em>Custom case fields can be created to add additional information to cases created from web forms filled by customers. Queues can be created with a case assignment rule to assign the cases created through Web-to-Case to specific groups of support agents within the company.</em></p>
+<p><em>Macros can be used for automating case management but do not constitute an important design consideration for creating a web channel. Also, reCaptcha verification can be made required in Web-to-Case Settings in order to reject any case without the reCAPTCHA verification. This prevents spam cases from being created.</em></p>
+<p><img src="images/clipboard-3378829250.png" width="364" /></p>
+</div>
+<div id="email---within-company-guidelines" class="section level3 hasAnchor" number="6.2.8">
+<h3><span class="header-section-number">6.2.8</span> Email - Within company guidelines<a href="service-and-support-applications.html#email---within-company-guidelines" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Cosmic Solutions wants to ensure that emails that are sent out to customers by support agents are within company guidelines. They would like their Support Managers to approve emails. How would they achieve this?</p>
+<ul>
+<li><p>Create an Approval Process</p></li>
+<li><p>Enable Draft Emails</p></li>
+<li><p>Create a Send Action</p></li>
+</ul>
+<p><img src="images/clipboard-1585192360.png" /></p>
+<p>To allow an Approval Process for draft emails, ‘Enable Draft Emails’ must be checked in Support Settings, a Send Action must be created, and an Approval Process must be set up. This setup will notify a manager when an email draft needs to be approved and allow the manager to approve an email in the Case Feed. The email will be sent to the client if approved, and if not approved, the manager can add the explanation to the feed. No further permissions need to be enabled for managers.</p>
+</div>
+<div id="case-feed-visible" class="section level3 hasAnchor" number="6.2.9">
+<h3><span class="header-section-number">6.2.9</span> Case Feed Visible<a href="service-and-support-applications.html#case-feed-visible" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A service manager requested that users be given the ability to make items from their case feed visible to customers. Aside from requesting for the feature from Salesforce, what permissions should the Salesforce Administrator grant the users to make this possible?</p>
+<ul>
+<li><p>Edit Posts on Records I Own.</p></li>
+<li><p>Edit My Own Posts</p></li>
+</ul>
+<p><em>Users can be given the ability to make their case feed items visible to external users. To enable this feature, it must first be requested from Salesforce. The Salesforce Administrator would also need to make sure that the compact case feed and community case feed are enabled in the organization. Users who need this feature should have the ‘Edit My Own Posts’ and ‘Edit Posts on Records I Own’ permissions enabled in their profiles.</em></p>
+<p><em>The ‘Modify All Data’ permission is a powerful permission used by Salesforce Administrators that gives them the ability to modify all apps and data regardless of whether these are shared with them or not. The ‘Can Approve Feed Post and Comment’ allows authors and moderators to manage posts and comments that are pending review in a community.</em></p>
+<p><img src="images/clipboard-3861936846.png" /></p>
+</div>
+<div id="action-and-escalation-rule" class="section level3 hasAnchor" number="6.2.10">
+<h3><span class="header-section-number">6.2.10</span> Action and escalation rule<a href="service-and-support-applications.html#action-and-escalation-rule" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><br />
+SystemSilo Inc. wants to make sure that cases which require installation are assigned to level 3 support reps.<br />
+Additionally, they also requested that a notification be sent to the manager every time a platinum priority case is unresolved 3 hours after being opened.<br />
+What can a Salesforce Administrator do to fulfill these requirements?</p>
+<ul>
+<li><p>Set up a case assignment rule that includes automatically assigning installation cases to a level 3 support rep.</p></li>
+<li><p>Add an action to an escalation rule that sends a notification to the manager about unresolved platinum prioirity cases 3 hours after case creation.</p></li>
+</ul>
+<p><em>Case assignment rules are used to define how specific cases are assigned to particular queues or users. Escalation rules are used to reassign cases or notify users when cases that meet specific criteria remain unresolved.</em></p>
+<p><em>Updating a field is not possible using an escalation rule. Although it is technically possible to meet the requirement using Flow Builder, it is not necessary, as escalation rules and assignment rules are specifically designed for these types of automation requirements out of the box.</em></p>
+<p><img src="images/clipboard-781720006.png" /></p>
+<p><img src="images/clipboard-1649897321.png" /></p>
+</div>
+<div id="parent-case" class="section level3 hasAnchor" number="6.2.11">
+<h3><span class="header-section-number">6.2.11</span> Parent Case<a href="service-and-support-applications.html#parent-case" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Cosmic Solutions would like to understand the relationships between cases and be able to view these relationships. How would they create a relationship between the two cases?</p>
+<ul>
+<li>Add one of the cases as a parent of a related case using the Parent Case field.</li>
+</ul>
+<p><em>To create relationships between cases, the Parent Case lookup field can be populated. Once case relationships have been created, these can be viewed by clicking ‘View Case Hierarchy’ on a case. There is no Case Relationships related list, Related Case field, and no ability to select cases in a list view to relate them.</em></p>
+<p><img src="images/clipboard-3510657947.png" /></p>
+</div>
+<div id="case-contact-roles" class="section level3 hasAnchor" number="6.2.12">
+<h3><span class="header-section-number">6.2.12</span> Case | Contact Roles<a href="service-and-support-applications.html#case-contact-roles" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Cosmic Solutions often has multiple contacts involved in a case. Which of the following is the most efficient way to show them in a case record?</p>
+<ul>
+<li>Using Case Contact Roles</li>
+</ul>
+<p><img src="images/clipboard-375026149.png" /></p>
+<p><em>Case Contact Roles can be used to record the roles that different people have while working on a case. The Contact Role related list can be added to the Case page layout, and the role can be defined.</em></p>
+</div>
+<div id="flow-1" class="section level3 hasAnchor" number="6.2.13">
+<h3><span class="header-section-number">6.2.13</span> Flow<a href="service-and-support-applications.html#flow-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Cosmic Solutions provides call center services for the business-to-consumer needs of various enterprises throughout the country. The management is considering the use of a flow for automating the case management process while a support agent is on a call with a customer. Which of the following are typical use cases of flow for case management in a contact center?</p>
+<ul>
+<li><p>Provide a series of prompts for troubleshooting customer issues.</p></li>
+<li><p>Create follow-up tasks.</p></li>
+</ul>
+<p><img src="images/clipboard-2968048367.png" /></p>
+<p><em>Flows can be used for designing wizards for customer interaction, such as a series of prompts (using a screen flow component) that gives agents step-by-step guidance for troubleshooting issues. Follow-up tasks can be created using flows.</em></p>
+<p><em>A flow is not required to implement case milestones and milestone actions because there is an out-of-the-box solution that meets this use case. Cases can be escalated by creating a case escalation rule.</em></p>
+</div>
+<div id="web-to-case-1" class="section level3 hasAnchor" number="6.2.14">
+<h3><span class="header-section-number">6.2.14</span> Web-to-Case<a href="service-and-support-applications.html#web-to-case-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>When a case is created via web-to-case, an email should be sent to the customer acknowledging the case and notifying them of when they can expect to receive a response based on their service level. How can this be configured?</p>
+<ul>
+<li>Use auto-response rules with multiple rule entries.</li>
+</ul>
+<p><img src="images/clipboard-2902145265.png" /></p>
+<p><em>Auto-response rules are designed to send automated acknowledgment emails when cases (or leads) are created. Multiple rule entries can be defined for different service levels or criteria, each using a corresponding email template.</em></p>
+<p><em>A record-triggered flow could send an email, but it is not purpose-built for handling incoming case submissions and does not provide the same flexibility or efficiency as auto-response rules. Case assignment rules determine ownership rather than sending notifications, and an Apex trigger would be unnecessarily complex for a requirement that can be met declaratively.</em></p>
+<p>What is true regarding Web-to-Case?</p>
+<ul>
+<li><p>Cases created from Web-to-Case are linked to the relevant contact and account based on the customer email address.</p></li>
+<li><p>Case creation will fail if case validation rules fail when processing a Web-to-Case submission.</p></li>
+</ul>
+<p><em>Validation rules are run before creating records submitted via Web-to-Case, and only records that have valid values are created. Assignment rules can be used to assign cases submitted via Web-to-Case to a specific queue or users, based on specific criteria. When cases do not match any of the assignment rule criteria, they are assigned to the Default Case Owner. New Web cases use the default status in the Case Status picklist values. The default value for the Origin field can be selected when setting up Web-to-Case.</em></p>
+<p><img src="images/clipboard-2589137412.png" /></p>
+<p>Which of the following are true about configuring Web-to-Case?</p>
+<ul>
+<li><p>A default response template may be selected</p></li>
+<li><p>HTML code must be generated and be added to multiple websites</p></li>
+<li><p>A default case owner must be selected</p></li>
+</ul>
+<p><em>Case assignment rules can be used to automatically assign web-generated cases to users or queues based on specific criteria in those cases. Cases that do not match any of the assignment rule criteria are assigned to the Default Case Owner specified in Support Settings.</em></p>
+<p><em>The maximum number of cases that can be created is 5,000 daily and this daily-limit is set by Salesforce and cannot be changed. Any additional requests beyond this daily limit will be queued and processed on the following day. Both standard and custom case fields can be captured on the web form.</em></p>
+<p><img src="images/clipboard-2792379391.png" /></p>
+<p><img src="images/clipboard-2213410006.png" /></p>
+<p><img src="images/clipboard-4263552031.png" /></p>
+</div>
+<div id="case-escalation-rule-1" class="section level3 hasAnchor" number="6.2.15">
+<h3><span class="header-section-number">6.2.15</span> Case Escalation Rule<a href="service-and-support-applications.html#case-escalation-rule-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A support manager at Cosmic Freight Tools would like to be informed when a support agent working under her fails to resolve a low priority case within 48 hours. She would also like to automatically assign the case to a different support agent who reports to her. Which Service Cloud solution can be utilized for this requirement?</p>
+<ul>
+<li>Create an escalation rule that assigns the case to another user and automatically sends an email notification to the manager.</li>
+</ul>
+<p><img src="images/clipboard-2654307787.png" /></p>
+<p><em>An Escalation Rule is the standard, purpose-built Service Cloud solution for time-based actions on Cases, such as reassignment and notification. It is the best declarative option for this requirement.</em></p>
+<p><em>Case Assignment Rules are used only for initial routing.</em></p>
+<p><em>Auto-Response Rules are for customer notifications. While Record-Triggered Flows can handle time-based actions, using separate Flows or relying on them for core Case Escalation logic is less efficient and deviates from the Escalation Rule feature’s best practices.</em></p>
+<p>Which feature can be used to alert the support manager via email if a gold customer and high-priority case has not been closed within the SLA response time after two hours from case creation?</p>
+<ul>
+<li>Case Escalation Rules</li>
+</ul>
+<p><em>Escalation rules can be used to define the criteria for automated flagging a case and notifying certain users and additional email addresses at the time specified for the rule. Another escalation action can also be configured such as case auto-reassignment.</em></p>
+<p><em>Case Assignment Rules are used to define criteria for automating the assignment of cases to appropriate users or queues. Case object settings are composed of configurations related to customizing case fields, page layouts, and other object settings. Case queues are used to temporarily hold cases to help prioritize, distribute, and assign records to queue members.</em></p>
+<p><img src="images/clipboard-350117896.png" /></p>
+</div>
+<div id="case-actions" class="section level3 hasAnchor" number="6.2.16">
+<h3><span class="header-section-number">6.2.16</span> Case Actions<a href="service-and-support-applications.html#case-actions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Which of the following are true regarding automated case actions in Salesforce?</p>
+<ul>
+<li><p>When a case is automatically assigned using a case assignment rule, the automated case user is listed in the ‘Case History’ related list.</p></li>
+<li><p>When a case is created through Web-to-Case, the automated case user is listed in the ‘Case History’ related lists.</p></li>
+</ul>
+<p><img src="images/clipboard-524422109.png" /></p>
+<p><img src="images/clipboard-2755161103.png" /></p>
+<p><em>The automated case user is listed in the ‘Case History’ related list for all automated case changes in Salesforce. For example, automated case changes can occur when a case is assigned using an assignment rule, when a case is escalated, or when a case is created through Web-to-Case or On-Demand Email-to-Case.</em></p>
+</div>
+</div>
+<div id="omni-channel" class="section level2 hasAnchor" number="6.3">
+<h2><span class="header-section-number">6.3</span> Omni-Channel<a href="service-and-support-applications.html#omni-channel" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The management at Cosmic Fix would like to make the case routing process more efficient in Service Cloud because some agents receive more volume of cases than others. They want to make sure that cases are routed to agents with proper skills while considering the number of cases the agents can handle at a time. Which feature can resolve the case routing issue?</p>
+<ul>
+<li>Omni-Channel</li>
+</ul>
+<p><em>Omni-Channel can be used to route cases to support agents efficiently based on the size of work and the agent’s capacity. For example, if the size of a case is five and an agent’s capacity to handle work is ten, then it ensures that the agent has two cases to work on at any given time. A service channel, queue, and routing configuration can be set up to route cases to support agents.</em></p>
+<p><em>Case assignment rules can be used to assign cases to support agents based on certain criteria, but they do not ensure that cases are routed based on the amount of work a support agent has or can handle at any given time. Queues are used for combined ownership of cases and allow groups of users to manage workload more efficiently, but they do not assign or route cases automatically. However, Omni-Channel does make use of queues to route work items. Service Console provides an interface that increases the efficiency of support agents while working on cases, but it does not help in routing cases.</em></p>
+<p><img src="images/clipboard-655319539.png" /></p>
+<p>Cosmic Global wants to implement an automatic and dynamic chat routing that assigns chat requests to the correct agent based on the customers’ language: English, Japanese, or French. Once the agent accepts the request, the related contact and case records must also open in new tabs. Which of the following can best address the requirements?</p>
+<ul>
+<li>Omni-channel flow</li>
+</ul>
+<p><em>An Omni-Channel flow includes Omni-Channel functionality within a Salesforce flow. It unifies routing setup for voice calls (beta), chats, messaging (beta), leads, and custom objects. It can be configured to launch when a customer starts a chat, voice, or messaging conversation. The flow can execute a ‘Route Work’ action to assign single or multiple work records to a queue, skills, or agent. In this scenario, a decision element could be used to check the customers’ language and route the work accordingly. The ‘Check Availability for Routing’ action can be used to identify the number of agents online to make better routing decisions. In addition, a ‘Screen Pop’ action can be added to an Omni-Channel flow to automatically open records on the agent’s screen when work is routed to the agent.</em></p>
+<p><em>Queues can represent language skills in queue-based routing. However, a separate mechanism must be used to prompt screen pops (e.g. flow or Apex). Data Loader cannot route chat requests. A programmatic approach using Apex classes and triggers can also satisfy the requirements, but a declarative solution is always preferred if available.</em></p>
+<p><img src="images/clipboard-933125158.png" /></p>
+</div>
+<div id="support-process" class="section level2 hasAnchor" number="6.4">
+<h2><span class="header-section-number">6.4</span> Support Process<a href="service-and-support-applications.html#support-process" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Cosmic Computer Support provides repair services for both computer hardware and software problems. They need to differentiate between the two with different record types and support processes depending on whether the problem is hardware or software-related. Which of the following statements is correct?</p>
+<ul>
+<li>At least one Support Process must exist before a Case record type can be created.</li>
+</ul>
+<p><em>Cases can be created without Case record types or Support Processes existing. Support Processes are associated with Case objects to define the specific steps and status values that a case goes through. When a new Case record type is being created, it needs to be associated with an existing Support Process. This ensures that cases of that record type follow the predefined steps and status values outlined in the associated Support Process. Therefore, you typically create Support Processes first and then associate them with Case record types.</em></p>
+<p><img src="images/clipboard-1169889502.png" /></p>
+</div>
+<div id="open-cti" class="section level2 hasAnchor" number="6.5">
+<h2><span class="header-section-number">6.5</span> Open CTI<a href="service-and-support-applications.html#open-cti" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Cosmic Furniture Solutions is considering the use of Salesforce for providing phone support to customers. The company currently has an on-premise telephony system which is already being used for telemarketing and other needs. What are some of the benefits of using Open CTI for integrating the telephony system with Salesforce?</p>
+<ul>
+<li><p>Telephone numbers on records become clickable links for outbound calls.</p></li>
+<li><p>Screen pops displays call information with the associated record during incoming calls.</p></li>
+<li><p>Calls can be made or received from the Salesforce user interface using a customizable softphone.</p></li>
+</ul>
+<p><em>Open CTI implementation provides several benefits such as:<br />
+1. Click-to-dial functionality<br />
+2. Customizable softphone<br />
+3. Screen-pop.</em></p>
+<p><em>Since Open CTI is cloud-based, a separate CTI adapter installation is not required. Also, it allows the use of softphones on any web browser that supports HTML5.</em></p>
+<p><em>Aside from displaying call information with the associated record during incoming calls, Screen pop actions can be created in Salesforce to automatically open up to three related records based on the customer’s data.</em></p>
+</div>
+<div id="email-to-case" class="section level2 hasAnchor" number="6.6">
+<h2><span class="header-section-number">6.6</span> Email-to-Case<a href="service-and-support-applications.html#email-to-case" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Cosmic Innovation has recently started using Service Cloud for case management and has set up Email-to-Case to automatically create cases from email messages sent by customers. A training developer hired by the company is creating a training manual for its support agents. It should include detailed instructions about using various Service Cloud features, including the email publisher in the case feed to answer customer questions. Which of the following capabilities should the training developer keep in mind while creating content about working with emails in Lightning Experience?</p>
+<ul>
+<li><p>A table can be added to the body, and its content can be styled using the email composer’s actions menu.}</p></li>
+<li><p>An email and its merge fields can be previewed before the email is sent to the customer.</p></li>
+<li><p>When a user composes, replies, or forwards an email, its working draft is saved every few seconds.</p></li>
+</ul>
+<p><em>When using the email publisher in the case feed in Lightning Experience, a working draft is saved every few seconds when a user composes, replies, or forwards an email. They can leave it and return to it at any time. Email Drafts need to be enabled by Admins and there can be only one draft per case. Previewing an email and its merge fields before sending it is possible. A table can be added by clicking an icon in the email composer’s action menu. The content of a table can be styled. It is also possible to insert images and edit the table’s cell spacing, padding, and alignment.</em></p>
+<p><em>Images can only be embedded by copy and pasting, providing an image URL, and browsing for or uploading Salesforce Files. A user can look up contact email addresses by clicking the lookup icon in the To, CC, or BCC field. However, they can only filter contacts by account contacts and internal users.</em></p>
+<p><img src="images/clipboard-1887164242.png" /></p>
+<p><img src="images/clipboard-198227992.png" /></p>
+<p><img src="images/clipboard-172806246.png" /></p>
+
+</div>
+</div>
+<script>
+
+/* update total correct if #webex-total_correct exists */
+update_total_correct = function() {
+  console.log("webex: update total_correct");
+
+  var t = document.getElementsByClassName("webex-total_correct");
+  for (var i = 0; i < t.length; i++) {
+    p = t[i].parentElement;
+    var correct = p.getElementsByClassName("webex-correct").length;
+    var solvemes = p.getElementsByClassName("webex-solveme").length;
+    var radiogroups = p.getElementsByClassName("webex-radiogroup").length;
+    var selects = p.getElementsByClassName("webex-select").length;
+
+    t[i].innerHTML = correct + " of " + (solvemes + radiogroups + selects) + " correct";
+  }
+}
+
+/* webex-solution button toggling function */
+b_func = function() {
+  console.log("webex: toggle hide");
+
+  var cl = this.parentElement.classList;
+  if (cl.contains('open')) {
+    cl.remove("open");
+  } else {
+    cl.add("open");
+  }
+}
+
+/* check answers */
+check_func = function() {
+  console.log("webex: check answers");
+
+  var cl = this.parentElement.classList;
+  if (cl.contains('unchecked')) {
+    cl.remove("unchecked");
+    this.innerHTML = "Hide Answers";
+  } else {
+    cl.add("unchecked");
+    this.innerHTML = "Show Answers";
+  }
+}
+
+/* function for checking solveme answers */
+solveme_func = function(e) {
+  console.log("webex: check solveme");
+
+  var real_answers = JSON.parse(this.dataset.answer);
+  var my_answer = this.value;
+  var cl = this.classList;
+  if (cl.contains("ignorecase")) {
+    my_answer = my_answer.toLowerCase();
+  }
+  if (cl.contains("nospaces")) {
+    my_answer = my_answer.replace(/ /g, "")
+  }
+
+  if (my_answer == "") {
+    cl.remove("webex-correct");
+    cl.remove("webex-incorrect");
+  } else if (real_answers.includes(my_answer)) {
+    cl.add("webex-correct");
+    cl.remove("webex-incorrect");
+  } else {
+    cl.add("webex-incorrect");
+    cl.remove("webex-correct");
+  }
+
+  // match numeric answers within a specified tolerance
+  if(this.dataset.tol > 0){
+    var tol = JSON.parse(this.dataset.tol);
+    var matches = real_answers.map(x => Math.abs(x - my_answer) < tol)
+    if (matches.reduce((a, b) => a + b, 0) > 0) {
+      cl.add("webex-correct");
+    } else {
+      cl.remove("webex-correct");
+    }
+  }
+
+  // added regex bit
+  if (cl.contains("regex")){
+    answer_regex = RegExp(real_answers.join("|"))
+    if (answer_regex.test(my_answer)) {
+      cl.add("webex-correct");
+    }
+  }
+
+  update_total_correct();
+}
+
+/* function for checking select answers */
+select_func = function(e) {
+  console.log("webex: check select");
+
+  var cl = this.classList
+
+  /* add style */
+  cl.remove("webex-incorrect");
+  cl.remove("webex-correct");
+  if (this.value == "answer") {
+    cl.add("webex-correct");
+  } else if (this.value != "blank") {
+    cl.add("webex-incorrect");
+  }
+
+  update_total_correct();
+}
+
+/* function for checking radiogroups answers */
+radiogroups_func = function(e) {
+  console.log("webex: check radiogroups");
+
+  var checked_button = document.querySelector('input[name=' + this.id + ']:checked');
+  var cl = checked_button.parentElement.classList;
+  var labels = checked_button.parentElement.parentElement.children;
+
+  /* get rid of styles */
+  for (i = 0; i < labels.length; i++) {
+    labels[i].classList.remove("webex-incorrect");
+    labels[i].classList.remove("webex-correct");
+  }
+
+  /* add style */
+  if (checked_button.value == "answer") {
+    cl.add("webex-correct");
+  } else {
+    cl.add("webex-incorrect");
+  }
+
+  update_total_correct();
+}
+
+window.onload = function() {
+  console.log("webex onload");
+  /* set up solution buttons */
+  var buttons = document.getElementsByTagName("button");
+
+  for (var i = 0; i < buttons.length; i++) {
+    if (buttons[i].parentElement.classList.contains('webex-solution')) {
+      buttons[i].onclick = b_func;
+    }
+  }
+
+  var check_sections = document.getElementsByClassName("webex-check");
+  console.log("check:", check_sections.length);
+  for (var i = 0; i < check_sections.length; i++) {
+    check_sections[i].classList.add("unchecked");
+
+    let btn = document.createElement("button");
+    btn.innerHTML = "Show Answers";
+    btn.classList.add("webex-check-button");
+    btn.onclick = check_func;
+    check_sections[i].appendChild(btn);
+
+    let spn = document.createElement("span");
+    spn.classList.add("webex-total_correct");
+    check_sections[i].appendChild(spn);
+  }
+
+  /* set up webex-solveme inputs */
+  var solveme = document.getElementsByClassName("webex-solveme");
+
+  for (var i = 0; i < solveme.length; i++) {
+    /* make sure input boxes don't auto-anything */
+    solveme[i].setAttribute("autocomplete","off");
+    solveme[i].setAttribute("autocorrect", "off");
+    solveme[i].setAttribute("autocapitalize", "off");
+    solveme[i].setAttribute("spellcheck", "false");
+    solveme[i].value = "";
+
+    /* adjust answer for ignorecase or nospaces */
+    var cl = solveme[i].classList;
+    var real_answer = solveme[i].dataset.answer;
+    if (cl.contains("ignorecase")) {
+      real_answer = real_answer.toLowerCase();
+    }
+    if (cl.contains("nospaces")) {
+      real_answer = real_answer.replace(/ /g, "");
+    }
+    solveme[i].dataset.answer = real_answer;
+
+    /* attach checking function */
+    solveme[i].onkeyup = solveme_func;
+    solveme[i].onchange = solveme_func;
+
+    solveme[i].insertAdjacentHTML("afterend", " <span class='webex-icon'></span>")
+  }
+
+  /* set up radiogroups */
+  var radiogroups = document.getElementsByClassName("webex-radiogroup");
+  for (var i = 0; i < radiogroups.length; i++) {
+    radiogroups[i].onchange = radiogroups_func;
+  }
+
+  /* set up selects */
+  var selects = document.getElementsByClassName("webex-select");
+  for (var i = 0; i < selects.length; i++) {
+    selects[i].onchange = select_func;
+    selects[i].insertAdjacentHTML("afterend", " <span class='webex-icon'></span>")
+  }
+
+  update_total_correct();
+}
+
+</script>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="object-manager-and-lightning-app-builder..html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="miscellaneous.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": null,
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "subsection"
+  }
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
