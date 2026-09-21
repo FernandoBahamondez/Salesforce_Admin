@@ -107,3 +107,10 @@ question---objective-3
 business-process
 new-picklist-value
 object-manager-1
+priorvalue
+record-type
+dynamic-form
+new-line-of-business
+count-type-roll-up-summary
+campaign
+service-and-support-applications
