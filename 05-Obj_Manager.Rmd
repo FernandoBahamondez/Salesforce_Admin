@@ -299,10 +299,10 @@ A new record type and page layout are required in order to keep the information 
 
 ### Count Type Roll-UP summary
 
-The administrator has created two custom objects, Job and Job Applications. \
-The objects have a master-detail relationship. \
-HR users would like to be able to see how many applications there have been when they look at the Job record. \
-Other users should not have visibility to this. \
+The administrator has created two custom objects, Job and Job Applications.\
+The objects have a master-detail relationship.\
+HR users would like to be able to see how many applications there have been when they look at the Job record.\
+Other users should not have visibility to this.\
 How can this requirement be met?
 
 - Create a count type roll-up summary field on the Job object and use field-level security to make it visible to only users with the HR profile.
