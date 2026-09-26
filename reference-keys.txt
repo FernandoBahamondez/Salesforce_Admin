@@ -127,10 +127,15 @@ activity-settings
 roll-up-of-activities-to-a-contacts-primary-account
 enable-group-task
 allow-users-to-relate-multiple-contacts-to-task-and-events
+activity-management
+last-email-received-date-last-email-sent-date
+to-do-list
 primary-contact
 chatter
 task
 einstein-activity-capture
+prevent-automated-email-replies-and-sensitive-emails-from-being-shared
+manage-associations-between-automatically-captured-emails-and-related-records
 outlook-integration
 new-custom-object
 archived-activities
@@ -141,5 +146,11 @@ event
 conference-room
 attendees
 public-calendar
+enhanced-email
+lightning-sync
+email-to-salesforce
+email-folder
+flow-builder-1
+capabilities-of-salesforce-mobile-app
 miscellaneous
 actions-plans
