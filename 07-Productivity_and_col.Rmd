@@ -66,6 +66,66 @@ A user has asked how they can find a list of their activities as they cannot fin
 
 ![](images/clipboard-4170344224.png)
 
+## Activity Management
+
+A salesforce consultant working for Cosmic Solutions has configured Gmail Integration to improve the productivity of the sales reps who use Google Calendar to manage events. Information about the events they attend should be stored in Salesforce. Which of the following capabilities are available for manually logging events from Gmail to Salesforce?
+
+- Attendees are captured on the SF event record when an eventis manually logged.
+
+- Matching contact records are automatically selected if Salesforce is set up for shared activities.
+
+- An event can be manually logged to one lead record.
+
+\***When an event is logged manually from Gmail using Gmail Integration, any matching contact records are automatically selected if Salesforce is set up for shared activities.\
+An administrator must ensure that 'Allow Users to Relate Multiple Contacts to Tasks and Events' is enabled on the 'Activity Settings' page in Salesforce Setup.\
+It is possible to log an event to up to 50 contacts or one lead. \***
+
+***However, the integration only shows the first 15 matching records in the order the attendees appear in the event.***
+
+*All attendees from an invitation can be included on the Salesforce event record by making sure that the 'Attendees' field is available on the page layouts for the Event object in Salesforce.*
+
+*It is not possible to log events to internal users. And one can log only nonrecurring, public events.*
+
+The sales reps of Cosmic Innovation use Outlook to schedule non-recurring meetings with customers and internal users. An event representing a meeting often contains multiple customers from different organizations as attendees. Each customer has a contact record in Salesforce. The sales managers would like to view information about events attended by customers and internal users in Salesforce. Outlook Integration has been configured to allow sales reps to log Outlook events to Salesforce records. Which of the following are valid considerations for using Outlook Integration to manually log events to records in Salesforce?
+
+- An event can be logged to up to 50 contacts, but only the first 15 matching contacts are displayed.
+
+- Matching contact records are automatically selected if SF is set up for shared activities.
+
+When a user manually logs an event using Outlook Integration, all the matching contact records shown are automatically selected if Salesforce is set up for shared activities. An administrator must enable 'Allow Users to Relate Multiple Contacts to Tasks and Events' in 'Activity Settings'. An event can be logged to up to 50 contacts or one lead. Only the first 15 matching contact records are displayed in the order the attendees appear in the event. All the attendees on the event, including internal users, are listed on the event record in Salesforce. It is not possible to log an event to an internal user. However, users with a matching email address on the event are included in the related records list.
+
+<https://help.salesforce.com/s/articleView?id=sales.email_int_user_view_work_log_events.htm&type=5>
+
+### Last Email Received Date \| Last Email Sent Date
+
+Cosmic Solutions uses Einstein Activity Capture to sync emails, events, and contacts between sales users' connected Microsoft and Gmail accounts and Salesforce. For instance, emails that users send and receive are automatically captured and added to the activity timeline of related records, including accounts, contacts, and leads. The sales director would like to view a report that shows email activity metrics, such as the date when the most recent email was received and the date when the most recent email was sent. Which of the following are valid activity metric fields that can be added to a report for this requirement?
+
+- Last Email Received Date
+
+- Last Email Sent Date
+
+***‘Last Email Sent Date’ and ‘Last Email Received Date’ are valid activity metric fields currently available through Einstein Activity Capture. However, as announced in the Salesforce release notes, Activity Metrics are scheduled for retirement beginning Summer '26. Organizations should begin transitioning to supported reporting solutions such as standard reports, SOQL queries, dashboards, and APIs.***
+
+*Fields like ‘Latest Email Sent Date’ and ‘Latest Email Received Date’ are not valid and do not exist in the current reporting model.*
+
+<https://help.salesforce.com/s/articleView?language=es&id=sf.aac_activity_metrics_fields.htm&type=5>
+
+### 'To Do List'
+
+The Salesforce Administrator of Cosmic Electronics is building a custom app for account management. The administrator would like to add the utility bar to give users quick access to common productivity tools. Which actions can a user perform using the 'To Do List' item which appears by default in the utility bar?
+
+- Create labels
+
+- Reorder Tasks
+
+- Create Tasks
+
+The 'To Do List' component is a default item in the utility bar that allows users to view, sort, label, and act on their tasks, including tasks from Sales Engagement cadences. They can also re-order by dragging and dropping them. Users can create new tasks and create new labels from this component. However, the component does not allow the creation of Salesforce meetings or logging of a call.
+
+![](images/clipboard-1663714361.png)
+
+<https://help.salesforce.com/s/articleView?id=release-notes.rn_sales_productivity_to_do_list.htm&release=240&type=5>
+
 ## Primary Contact
 
 How many contacts on shared Activities can a user make as a primary contact?
@@ -164,6 +224,46 @@ Which of the following statements are true about the activity timeline in Lightn
 
 ![](images/clipboard-3634234165.png)
 
+Cosmic Technologies is a software development company that has B2B customers in several countries. Sales reps of the company primarily use Gmail to communicate with customers via email. They are already using Gmail integration to see related Salesforce data while viewing emails. However, they are currently adding inbound and outbound emails and events to related records like accounts and contacts manually in Salesforce. The sales managers would like to automate this process to improve their productivity and give them access to events via standard reports in Salesforce. Sales reps should be able to easily remove their Gmail account if they do not want it to sync with Salesforce anymore. Which feature of Sales Cloud Einstein can be used for this requirement?\
+
+- Einstein Activity Capture
+
+***Einstein Activity Capture automatically captures emails and events from a connected Gmail account and adds them to the activity timeline of related Salesforce records, such as accounts and contacts. The automatic associations done by Einstein Activity Capture can be manually overridden on the activity timeline or in the Outlook/Gmail integration. A setting called 'Only Show Events that are Salesforce Records' can be turned on by navigating to Einstein Activity Capture \| Settings in Setup to ensure that the events on the activity timeline are Salesforce records and available in standard reports.***
+
+*Einstein Activity Capture users can also delete Gmail accounts they no longer want to be connected to Salesforce. They can navigate to the 'Email and Calendar Accounts' page in their personal settings to delete an account that they no longer want to be connected.*
+
+\*Einstein Insights displays insights related to accounts and opportunities. There is no feature called Einstein Automated Emails or Einstein Email Sync.\* ![](images/clipboard-1248580846.png)
+
+![](images/clipboard-512591999.png)
+
+Cosmic Enterprises uses both Einstein Activity Capture and Outlook Integration. Emails that users send and receive are captured and added to the activity timeline of related records. Which of the following capabilities are available for Outlook integration users who are part of an Einstein Activity Capture configuration?
+
+- Users can also change the associations between a captured email
+
+### Prevent automated email replies and sensitive emails from being shared
+
+Cosmic Electronics uses Einstein Activity Capture to keep its sales reps' emails and calendar events in sync with Salesforce. Automated email replies and emails containing sensitive information are frequently added to the activity timeline of records such as contacts and opportunities. Sales reps often share them inadvertently with other users, which is against the company's data security policy. The sales director is looking for a solution to prevent the inadvertent sharing of sensitive emails. How can the company's system administrator meet this requirement?\
+
+- Ensure that the options to prevent automated email replies and sensitive emails from being shared are enabled in the Einstein Activity Capture settings.
+
+In the Einstein Activity Capture settings, two options to prevent automated email replies and sensitive emails from being shared are on by default. They can be turned off, but to meet the requirement in the given scenario, the administrator must ensure that they are turned on. There are no similar options on the 'Email Settings' page in Setup. There is also no option to enable or disable 'Sensitive Email Sharing' in the activity timeline of records. It is not necessary to contact Salesforce support to meet this requirement.
+
+![](images/clipboard-1595183048.png)
+
+### Manage Associations Between Automatically Captured Emails and Related Records
+
+Cosmic Express uses both Einstein Activity Capture and Gmail Integration. Gmail Integration users regularly access emails that are captured and added to the activity timeline of related records such as opportunities. Which of the following capabilities are available to them for managing email associations?
+
+- Users can remove associations between a captured email and its related records.
+
+- Users can add associations between a captured email and its related records.
+
+***Gmail Integration users who are part of an Einstein Activity Capture configuration can add or remove the associations between a captured email and its related records in the activity timeline. Associations can also be modified directly from the Gmail integration.***
+
+*Users cannot search for and add an association between two captured emails. It is only possible to search for and add an association to a more relevant record. There is no option to automatically manage email associations; Salesforce automatically relates emails to records.*
+
+<https://help.salesforce.com/s/articleView?id=release-notes.rn_sales_eac_manage_associations_emails_records.htm&release=238&type=5>
+
 ## Outlook Integration
 
 Global Technologies wants to give its sales representatives the ability to relate emails, contacts, and events in Microsoft Outlook and Microsoft Exchange with Salesforce records. What can be configured by a Salesforce Administrator to meet this need?
@@ -177,6 +277,20 @@ Global Technologies wants to give its sales representatives the ability to relat
 ![](images/clipboard-2351499290.png)
 
 ![](images/clipboard-2953073688.png)
+
+Which of the following are limitations of synchronizing items between Salesforce and Outlook using Lightning Sync?
+
+- Task cannot be synced
+
+- Synced contacts cannot be deleted automatically in the other calendar application.
+
+*Lightning Sync cannot be used with Outlook Integration to delete synced contacts automatically in both calendar applications. Private events can be synced, and synced events can be deleted in both Salesforce and Outlook automatically. Repeating events in Lightning Experience, called event series, can be synced by enabling the 'Sync event series' setting. Tasks cannot be synced using Lightning Sync. The Outlook Integration app can be used in order to work on Salesforce tasks from Outlook.*
+
+*Note: Lightning Sync is not available for new Salesforce customers. It is recommended to use Einstein Activity Capture, a long-term solution for syncing contacts and events between Microsoft® or Google applications and Salesforce. This question is still here as the official Salesforce exam can still have questions related to Lightning Sync.*
+
+![](images/clipboard-797404071.png)
+
+![](images/clipboard-3566420455.png)
 
 ## New Custom Object
 
@@ -303,3 +417,129 @@ The sales reps of Cosmic Solutions use Lightning Experience. One of the sales ma
 Public calendars can be used to manage group activities, such as scheduling a common event. Everyone who shares the public calendar can view, schedule, and update events without switching to Salesforce Classic.
 
 ![![](images/clipboard-3744688841.png)](images/clipboard-248816304.png)
+
+## Enhanced Email
+
+Which of the following options allows users to add Outlook emails to Salesforce as an Email Message object and not as Tasks, using Salesforce Outlook Integration?
+
+- Enhanced Email.
+
+*Enhanced Email with Outlook Integration allows users to add emails from Outlook to Salesforce records as Email Message objects instead of tasks. Email to Salesforce allows automatically logging emails from third party email applications as activities on contact and lead records in Salesforce. Lightning Email Templates can be used with Outlook Integration to ensure consistent messaging to customers in order to save time.*
+
+*Note: Lightning Sync is not supported anymore for new Salesforce customers. Einstein Activity Capture is the recommended replacement.*
+
+![](images/clipboard-2727135496.png)
+
+## Lightning Sync
+
+Which of the following can be synced between Salesforce and Microsoft Exchange using Lightning Sync?
+
+- Contacts
+
+- Events
+
+Lightning Sync can be used to sync contacts and events between Salesforce and Microsoft Exchange. Emails cannot be synced via Lightning Sync but can be attached to multiple contacts or records that allow activities such as Cases.
+
+![](images/clipboard-1019061242.png)
+
+The Sales Director of Cosmic Solutions would like to increase the productivity of sales representatives by synchronizing items between Salesforce and Outlook. Which data can be synchronized using Lightning Sync with Salesforce Outlook Integration?
+
+- Events
+
+- Contacts
+
+![](images/clipboard-858526208.png)
+
+A company has field sales reps that are always on the road and use their mobile phones with the Salesforce mobile app to manage their work. Reps also use Outlook email and calendar. The sales manager would like for the reps to synchronize repeating events between Outlook and Salesforce. The company uses Lightning Experience. What does the Salesforce Administrator need to do to support this request?
+
+- Enable 'Sync event series' in the Lightning Sync configuration.
+
+Salesforce supports the ability to synchronize repeating events between Outlook calendars and Salesforce, including the Salesforce mobile app. However, the company needs to use Lightning Experience and Lightning Sync. Repeating events created in Salesforce Classic cannot be synchronized with Outlook calendars. Also, reps cannot turn on the repeating events sync feature in the Salesforce mobile app on their own. The Salesforce Administrator has to enable it in the Lightning Sync configuration.
+
+![](images/clipboard-739479615.png)
+
+## Email to Salesforce
+
+As part of the request for Salesforce Outlook Integration, the Sales Director of the company wants sales reps to be able to create and see related Salesforce records and automatically associate emails to them from within Outlook. In addition, the emails should be logged as email objects and not as tasks within Salesforce. Aside from enabling Salesforce Outlook Integration, what other features must be enabled or set by the administrator to fulfill these requirements?
+
+- Enable Email to Salesforce
+
+- Enable Enhanced Email
+
+*Email to Salesforce is a feature which automatically relates emails to Salesforce records like contacts, leads, and opportunities. Enabling Enhanced Email would allow the reps to easily associate emails to relevant Salesforce records while still composing them. Emails would be associated as tasks in Salesforce if Enhanced Email is not enabled. Salesforce does not have an Advanced Outlook Sync feature.*
+
+*On the other hand, email application panes are used to define the layout of components in the integration side panel. A default email pane is readily available for use and customized ones are only required for more specific usage such as when some components should not be visible for selected user profiles.*
+
+![](images/clipboard-2359408280.png)
+
+## Email Folder
+
+A user is not able to find an email template when sending an email. What could be the reason for this?
+
+- The user does not have access to the Email Template folder.
+
+- The email template is not marked 'Available for Use'.
+
+Email Templates must be set to 'Available for Use' to allow users to select them. Email templates can be made accessible to all users or only certain groups or roles by setting access to the Email Template folders.
+
+![](images/clipboard-4262044361.png)
+
+## Flow Builder
+
+In Cosmic Glass Works, when a quote is accepted by the customer, a draft agreement and a follow-up task need to be created. What is the best way to cater to this requirement?
+
+- Use Flow Builder to define an agreement record and task creation process.
+
+***A record-triggered flow can be configured to automatically create a draft agreement and follow-up task when a quote is updated to an accepted status. This approach provides a declarative, efficient, and maintainable solution without requiring code.***
+
+*An approval process automates record approvals and related notifications but cannot initiate record creation based solely on the status change of the quote in this scenario. The Quote object does not have settings for automatically generating related records, and while an Apex trigger could achieve this programmatically, a flow is the preferred declarative solution for this type of automation.*
+
+![](images/clipboard-44705237.png)
+
+## Capabilities of Salesforce Mobile App
+
+Which features in the Salesforce mobile app user interface can be customized to fit a company's branding?
+
+- Brand Color
+
+- Loading page logo
+
+- Loading page color
+
+***The brand color defines the base color to use for the header, buttons, search bar and other user interface elements in the Salesforce mobile app. The logo and background color of the loading page when a user logs in can also be customized.***
+
+*Font styles and background images cannot be customized.*
+
+![](images/clipboard-454840708.png)
+
+Which device and browser combination supports the full Lightning Experience desktop site by default?
+
+- Safari on iPadOS
+
+Safari on iPadOS is the only exception that allows for the full Lightning Experience desktop experience on a mobile device. The other options will redirect users to the Salesforce Classic UI.
+
+<https://help.salesforce.com/s/articleView?language=en_US&id=000380219&type=1>
+
+![](images/clipboard-1588191324.png){width="297"}
+
+Which requirement must be met for a user to see a specific item within a Launchpad component?
+
+- The user must have the permission to view the tab associated with that item
+
+***Launchpads respect standard security. Therefore, users only see items in the Launchpad for which they have the appropriate tab visibility based on user permission settings.***
+
+*The "Modify All Data" permission is a high-level administrative permission and is not required for standard users to view navigation links. Read access permission is required for viewing custom mobile app branding (such as logo), but it does not control the visibility of Launchpad navigation items. There is no "Public" checkbox for individual items within the Launchpad.*
+
+<https://help.salesforce.com/s/articleView?language=en_US&id=xcloud.salesforce_app_launchpad.htm&type=5>
+
+![](images/clipboard-3317310981.png)
+
+When a user accesses Salesforce through a mobile phone browser on an Android device, which interface is displayed by default?
+
+- Salesforce Classic
+
+***Lightning Experience is not supported on mobile web browsers for phones. Salesforce detects the mobile user agent and redirects the user to Salesforce Classic.***
+
+*The Salesforce Mobile App interface cannot be displayed in a mobile phone browser. Lightning Web Runtime is used in Experience Cloud sites.*
+
+<https://help.salesforce.com/s/articleView?language=en_US&id=000380219&type=1>
