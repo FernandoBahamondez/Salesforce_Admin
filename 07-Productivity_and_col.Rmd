@@ -1,6 +1,6 @@
 # Productivity and Collaboration
 
-Objective 1 - 47 questions
+# Objective 1 - 47 questions
 
 ## Activity Settings
 
@@ -543,3 +543,173 @@ When a user accesses Salesforce through a mobile phone browser on an Android dev
 *The Salesforce Mobile App interface cannot be displayed in a mobile phone browser. Lightning Web Runtime is used in Experience Cloud sites.*
 
 <https://help.salesforce.com/s/articleView?language=en_US&id=000380219&type=1>
+
+# Objective 2
+
+55 Questions.
+
+## Chatter \| Describe the features
+
+The Salesforce Administrator has been asked to summarize the important features of Chatter. Which features describe Chatter correctly?
+
+- The Chatter User Profile allows a user to share important information about themselves.
+
+- Chatter Feed Tracking provides real-time notification of changes to a particular record.
+
+- A user can choose to follow individual records using Chatter.
+
+***A Chatter user can add and share details about themselves on their Chatter profile page, including adding a profile picture and a profile banner. Changes to tracked record fields are detected by feed tracking and are posted as updates in the 'What I Follow' feed.***
+
+*Chatter follows the record sharing model defined in the org, which means that users cannot see data to which they do not have access. There are several Chatter features that are available on the desktop that aren't available in the Salesforce mobile app.*
+
+![](images/clipboard-4175032696.png)
+
+![](images/clipboard-1067202181.png)
+
+![](images/clipboard-1067202181.png)
+
+One of the Sales Managers would like to discuss a sales proposal with a few selected Account Managers. They want to make sure that the discussions related to it are available in one place and remain secure. Which options should the Salesforce Administrator consider?
+
+- Create an unlisted Chatter Group
+
+- Create a private Chatter Group
+
+Any user can join a public Chatter group and the details will not remain secure. In order to ensure that the group remains secure and that no other user is able to view the discussions, a private or unlisted Chatter group can be created. Unlisted Chatter groups are more secure and offer more privacy compared to private groups, as users cannot ask to join or see the groups in list views, feeds, or search results.
+
+![](images/clipboard-1216497171.png)
+
+Which of the following are features of Chatter?
+
+- Create and join groups
+
+- Ability to share a file with other people
+
+- Follow records to be able to see changes to the records
+
+***Some features of Chatter include following records to view the changes made to them, sharing files with other people, and creating and joining groups.***
+
+*The "mute" feature can be used to stop receiving notifications about certain posts. If someone is \@mentioned on a muted post, it gets unmuted automatically. Email digests can be received on a daily or weekly basis.*
+
+![](images/clipboard-951552998.png)
+
+![](images/clipboard-2980194621.png)
+
+![](images/clipboard-3932168635.png)
+
+### Private Chatter group
+
+A sales manager is working on a proposal for a new business Opportunity and wants to share files and collaborate with his team. Only the team should have access to the information shared inside the group. What should the manager do?
+
+- Create a private Chatter group and add the team members.
+
+Information in a private Chatter group is only available to group members; the owner or manager of the group can add group members. Users cannot make requests to join an unlisted Chatter group. Files and information on the opportunity record feed are available to anybody that has access to the opportunity record.
+
+![](images/clipboard-3889531508.png)
+
+### Allow Customer Invitations
+
+Which of the following is correct for setting up a Chatter group in which customers can participate?
+
+- 'Allow Customers' Chatter group setting must be checked
+
+***Allow Customers' is a Chatter group setting that must be checked before customers can participate in the group.***
+
+*An internal user must be the owner or manager of the group to invite new members (whether internal users or customers). The Standard type group membership role does not allow this action. Membership role type can be 'Standard' or 'Admin'; the Admin role allows Chatter group management.*
+
+*Unlisted Chatter groups may also include customers.*
+
+![](images/clipboard-3821695147.png)
+
+![](images/clipboard-2274738801.png)
+
+### Mute Post
+
+A user would no longer like to receive updates about a certain post in their feed. What feature should be used?
+
+- Mute Post
+
+The 'Mute Post' feature will remove the post from the feed on the Home and Chatter tab, and also stop notifications for updates to the post.
+
+![An inside sales rep would no longer like to receive updates on a very active post in their home page feed. The Salesforce Administrator recommends muting the post. What is true regarding the 'Mute Post' feature?](images/clipboard-1002831669.png)
+
+- A muted post will be unmuted for a user who is '@mentioned' in the post.
+
+***Posts can be unmuted if the user is mentioned on the muted post.***
+
+*Muting a post removes it from the Chatter and Home page feeds but not from a group, profile, or record feed. Muted posts can be viewed using the 'Muted' filter on the side panel in Salesforce Classic. Posts can be muted using the dropdown menu or by replying to post emails with the word 'mute'.*
+
+![](images/clipboard-2145352550.png)
+
+### Rich Text
+
+What is true regarding the ability to format Chatter posts with rich text?
+
+- Formatting posts with rich text is a Chatter setting that can be enabled or disabled.
+
+- Rich text includes bold, italic, underline, bullet, and numbered lists
+
+- Rich text allows the insertion of a hyperlink or an image to a post.
+
+Allow users to compose rich text posts' is a Chatter setting that allows rich text to be added to text posts, questions, and posts with link or file attachments. It is not supported on Polls. Rich text allows Chatter posts to be formatted in bold, italics, underline, bulleted, and numbered lists. Typeface selection, and text effects like shadows and highlights are not available with rich text. Rich text also allows the insertion of hyperlinks and graphics to the post.
+
+![](images/clipboard-3342056835.png)
+
+### '\@mentions'
+
+Global Solutions has all of its Eastern Sales reps in one Chatter group. A sales rep \@mentions the group to ask a question regarding an opportunity record. What is true regarding the use of \@mention for a group on a record feed?
+
+- The group name that is @mentioned becomes a link to the group page.
+
+- A group-record relationship record is created.
+
+- The record displays in the group records related list in the group.
+
+***Using \@mention for a group on a record's feed creates a group-record relationship record, and the record displays in the Group Records related list in the group. The group name \@mentioned becomes a link to the group page.***
+
+*Only users with sharing access to the record can view the record. Users, public groups, and private groups that the user making the post is a member of can be \@mentioned.*
+
+![](images/clipboard-3924535758.png)
+
+![](images/clipboard-924930589.png)
+
+### Group
+
+The marketing team of Northern Trail Outfitters created a Chatter Group to post campaign ideas and get feedback from select employees. What Chatter group configuration would be most appropriate to allow only the group owners and managers to post to the group?
+
+- Broad Only must be enabled
+
+***The 'Broadcast Only' setting can be enabled in any Chatter group such as a private, public, or unlisted group. When enabled, only group owners and managers are allowed to post in the group. Group members, on the other hand, can only comment on the posts. This allows having more focused and relevant discussions in the group.***
+
+*The group setting for Access Type defines who can join the group but does not control who can submit posts. A 'Post Sharing' setting for Chatter groups does not exist.*
+
+![](images/clipboard-3747757705.png)
+
+### Chatter Questions
+
+A Salesforce Administrator is providing end-user training on the many features of Chatter. What is true regarding Chatter Questions that the Salesforce Administrator should include in the training?
+
+- An answer can be marked as the best answer for a Question.
+
+- Chatter Questions is available in the Chatter feed, in groups, and in records.
+
+Chatter Questions' is available in the Chatter feed, groups, and records. The person who asked the question or the moderator can select the best answer for a question. Similar questions and knowledge articles appear when a customer asks a question using the 'Question' action in the Chatter publisher.
+
+![](images/clipboard-3794572928.png)
+
+## Sharing File
+
+Which of the following statements are true about sharing files in Lightning Experience?
+
+- A file can be shared privately with specific people
+
+- File permission can be changed by file owners and collaborators
+
+- Sharing a file can be accessed through the File home page.
+
+***In Lightning Experience, a file can be shared privately to allow specific people in the company to view it. Files home can be accessed to navigate to the detail page of a file and share it. File permissions for people and groups can be changed from 'Viewer' to 'Collaborator' and conversely by file owners and collaborators.***
+
+*File permissions for people and groups can be set to 'Viewer', 'Collaborator', or 'Set by Record'. File permissions for files shared with the company can be changed to 'Viewer', 'Collaborator', or 'No Access'. A file is shared with the company when it is posted to a profile, record, public group, or a feed that all users can see.*
+
+![](images/clipboard-3256471078.png)
+
+![](images/clipboard-3285767394.png)
