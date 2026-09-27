@@ -123,6 +123,7 @@ support-process
 open-cti
 email-to-case
 productivity-and-collaboration
+objective-1---47-questions
 activity-settings
 roll-up-of-activities-to-a-contacts-primary-account
 enable-group-task
@@ -152,5 +153,15 @@ email-to-salesforce
 email-folder
 flow-builder-1
 capabilities-of-salesforce-mobile-app
+objective-2
+chatter-describe-the-features
+private-chatter-group
+allow-customer-invitations
+mute-post
+rich-text
+mentions
+group
+chatter-questions
+sharing-file
 miscellaneous
 actions-plans
