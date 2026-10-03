@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>12 Miscellaneous | Salesforce Admin</title>
-  <meta name="description" content="12 Miscellaneous | Salesforce Admin" />
+  <title>10 Sales and Marketing Applications | Salesforce Admin</title>
+  <meta name="description" content="10 Sales and Marketing Applications | Salesforce Admin" />
   <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="12 Miscellaneous | Salesforce Admin" />
+  <meta property="og:title" content="10 Sales and Marketing Applications | Salesforce Admin" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="12 Miscellaneous | Salesforce Admin" />
+  <meta name="twitter:title" content="10 Sales and Marketing Applications | Salesforce Admin" />
   
   
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="objective-2-1.html"/>
-
+<link rel="prev" href="objective-2.html"/>
+<link rel="next" href="objective-2-1.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -341,12 +341,248 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="miscellaneous" class="section level1 hasAnchor" number="12">
-<h1><span class="header-section-number">12</span> Miscellaneous<a href="miscellaneous.html#miscellaneous" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div id="actions-plans" class="section level2 hasAnchor" number="12.1">
-<h2><span class="header-section-number">12.1</span> Actions Plans<a href="miscellaneous.html#actions-plans" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>The important to know the basic about that.</p>
-
+<div id="sales-and-marketing-applications" class="section level1 hasAnchor" number="10">
+<h1><span class="header-section-number">10</span> Sales and Marketing Applications<a href="sales-and-marketing-applications.html#sales-and-marketing-applications" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Objective 1 | 40 Questions</p>
+<p>Which objects are Sales objects?</p>
+<ul>
+<li>Leads, Campaigns, Opportunities, and Orders</li>
+</ul>
+<p>Leads, Campaigns, Opportunities, and Orders are sales objects.<br />
+Case, Entitlements, Service Contracts and Knowledge are support objects.</p>
+<p><img src="images/clipboard-3872228780.png" /></p>
+<p>Which of the following are true regarding Web-to-Lead?</p>
+<ul>
+<li><p>Data entered in the web form is validated before a record is created in the Salesforce org.</p></li>
+<li><p>Standard and custom fields that need to be captured online can be selected.</p></li>
+<li><p>The default lead creator for web-generated leads can be specified.</p></li>
+</ul>
+<p><strong><em>Salesforce runs validation rules before the data entered into the web form is created as a record in the Salesforce org. Assignment rules can be used to assign leads to different users. If assignment rules are not used or do not locate an owner, the lead will be assigned to the default lead creator.</em></strong></p>
+<p><em>The maximum number of leads that can be captured per day is 500. Using reCAPTCHA can reduce the number of spam entries that otherwise would have gone through.</em></p>
+<p><img src="images/clipboard-2328358154.png" /></p>
+<p><img src="images/clipboard-30517340.png" /></p>
+<div id="product" class="section level2 hasAnchor" number="10.1">
+<h2><span class="header-section-number">10.1</span> Product<a href="sales-and-marketing-applications.html#product" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Cosmic Enterprises will be adding a new product that will be delivered once ordered but billed in quarterly installments for one year. How can this be reflected in Salesforce?</p>
+<ul>
+<li>Create a default revenue schedule for the product.</li>
+</ul>
+<p>As the product is delivered at one time but the revenue will be received in installments, a revenue schedule that defines the revenue amounts and number of installments should be created.</p>
+<p><img src="images/clipboard-1770520426.png" /></p>
+</div>
+<div id="price-books" class="section level2 hasAnchor" number="10.2">
+<h2><span class="header-section-number">10.2</span> Price Books<a href="sales-and-marketing-applications.html#price-books" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>How many standard price books can an organization have?</p>
+<ul>
+<li>1</li>
+</ul>
+<p>An organization can have only 1 standard price book. However, it can have multiple custom price books.</p>
+<p><img src="images/clipboard-723912827.png" /></p>
+</div>
+<div id="sales-process" class="section level2 hasAnchor" number="10.3">
+<h2><span class="header-section-number">10.3</span> Sales Process<a href="sales-and-marketing-applications.html#sales-process" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Jim is an administrator for Carly Automotive, a distributor of automotive spare parts. They have just launched a new line of truck parts. The sales process for these parts will be different from the process used for existing products. Managers also need to be able to view information related to the new opportunities on reports. What should Jim do to configure the opportunity object for this new product line?</p>
+<ul>
+<li>Create a new sales process and record type for truck parts.</li>
+</ul>
+<p>Since the set of opportunity statuses for the truck parts line is new or different to the set used in existing sales processes, a new sales process should be defined. This does not affect the existing sales process and allows the statuses that apply to each sales process to be viewed on the appropriate record type.</p>
+<p><img src="images/clipboard-1342074601.png" /></p>
+</div>
+<div id="opportunity-teams-and-splits" class="section level2 hasAnchor" number="10.4">
+<h2><span class="header-section-number">10.4</span> Opportunity | Teams and Splits<a href="sales-and-marketing-applications.html#opportunity-teams-and-splits" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Sarah is the manager of a team of sales reps who collaborate on Opportunities. They are each awarded an appropriate share of the total sale on each Opportunity. Which of the following features should her company implement?</p>
+<ul>
+<li><p>Opportunity Splits</p></li>
+<li><p>Opportunity Teams</p></li>
+</ul>
+<p>Opportunity Teams (Team Selling) allow defining a team that works together on opportunities. Opportunity Splits allow opportunity revenue to be split by percentage for each team member. Team members must be in the Opportunity Team in order to add them to Opportunity Splits.</p>
+<p><img src="images/clipboard-4287330019.png" /></p>
+<hr />
+<p>An organization wants to sell its products at different prices to different types of customers. How can this be set up?</p>
+<ul>
+<li>Create a price book for each customer type</li>
+</ul>
+<p><strong><em>Separate price books can be set up for different customer types. The price book can be selected when the Opportunity Products are added.</em></strong></p>
+<p><em>A flow would not be the best solution as it would apply the update to all products.</em></p>
+<p><img src="images/clipboard-470073665.png" /></p>
+</div>
+<div id="reports" class="section level2 hasAnchor" number="10.5">
+<h2><span class="header-section-number">10.5</span> Reports<a href="sales-and-marketing-applications.html#reports" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The Director of Sales wants a report that shows the Opportunity pipeline for the current and succeeding fiscal quarters. This report should be grouped by Sales Rep and Opportunity Stage. Which report format would be best to use to create this custom report?</p>
+<ul>
+<li>Matrix Report</li>
+</ul>
+<p><strong><em>A matrix report can be created and the ‘Stage’ and ‘Opportunity Owner’ fields used in column and row grouping respectively. ‘Fiscal Period’ can be used in either row or column grouping to show information by each fiscal quarter. A Matrix Report is ideal when you need to group data by rows and columns.</em></strong></p>
+<p><em>A Summary Report only groups data in a single dimension (e.g., by Sales Rep or Opportunity Stage) but not both simultaneously. A Tabular Report only displays data in a simple list without any grouping and a Joined Report combines data from multiple report types but is unnecessary for this requirement.</em></p>
+<p><img src="images/clipboard-669850543.png" /></p>
+</div>
+<div id="lead-conversion" class="section level2 hasAnchor" number="10.6">
+<h2><span class="header-section-number">10.6</span> Lead Conversion<a href="sales-and-marketing-applications.html#lead-conversion" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Which of the following are true regarding the Lead Conversion process?</p>
+<ul>
+<li><p>An Account is created if one with the same name is not found and selected.</p></li>
+<li><p>A Contact is created if one with the same name is not found and selected.</p></li>
+<li><p>If Person Accounts are enabled and the Company field does not have a value, a person account will be created.</p></li>
+</ul>
+<p><strong><em>An Account or Contact is created from lead conversion if there are no other records with the same name.</em></strong></p>
+<p><em>Creating an Opportunity on Lead conversion is optional. Custom Lead fields can only be inserted into custom fields on the Account, Contact or Opportunity.</em></p>
+<p><em>If Person Accounts are enabled and a value is not entered into the Company field, the lead is converted to a person account.</em></p>
+<p><img src="images/clipboard-3403778574.png" /></p>
+</div>
+<div id="order" class="section level2 hasAnchor" number="10.7">
+<h2><span class="header-section-number">10.7</span> Order<a href="sales-and-marketing-applications.html#order" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Next Treks is using the Orders functionality in Salesforce to track products purchased. One customer has requested to return products previously purchased as they are defective. How can this be tracked in Salesforce?</p>
+<ul>
+<li>Create a reduction order and add one order product with the original quantity.</li>
+</ul>
+<p><strong><em>Reduction orders allow tracking of product returns and relating the return to the original order. They can be enabled in ‘Order Settings’ in Setup.</em></strong></p>
+<p><em>Reduction orders are created on the detail page of the order. After creating a reduction order, it is necessary to indicate which products should be reduced as well as the corresponding quantities.</em></p>
+<p><img src="images/clipboard-1773978572.png" /></p>
+</div>
+<div id="assistant" class="section level2 hasAnchor" number="10.8">
+<h2><span class="header-section-number">10.8</span> Assistant<a href="sales-and-marketing-applications.html#assistant" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The sales reps of Cosmic Solutions would like to view certain important updates about their leads and opportunities in Salesforce as soon as they log in and over the course of the day. These updates should include overdue opportunities, leads assigned to them on the current day, and opportunities with no activity in 30 days. Which standard Lightning component can the company’s administrator add to the Home Page assigned to the sales reps for this requirement?</p>
+<ul>
+<li>Assistant</li>
+</ul>
+<p><strong><em>The ‘Assistant’ can be added to the Home page in Lightning Experience to show important updates about leads and opportunities over the course of the day. It shows the following updates:</em></strong></p>
+<p><em>1) Leads assigned to the current user today<br />
+2) Opportunities with overdue tasks<br />
+3) Opportunities with no activity in 30 days<br />
+4) Opportunities with no open activity<br />
+5) Overdue opportunities</em></p>
+<p><em>The ‘Recent Items’ component displays a set of recently viewed records. The ‘Today’s Events’ component displays the user’s next five events scheduled today and a link to the user’s calendar. There is no component called ‘Today’s Updates’.</em></p>
+<p><img src="images/clipboard-396356057.png" /></p>
+</div>
+<div id="forecast" class="section level2 hasAnchor" number="10.9">
+<h2><span class="header-section-number">10.9</span> Forecast<a href="sales-and-marketing-applications.html#forecast" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The Salesforce Administrator of Cosmic Fitness Solutions has activated a forecast type based on the ‘Amount’ and ‘Close Date’ fields on the Opportunity object. One of the sales managers has been assigned as a forecast manager. She would like to share the forecasts she can view on the Forecasts page in Lightning Experience with another sales manager. What should the Salesforce Administrator recommend for this use case?</p>
+<ul>
+<li>Use the ‘Share’ button on the Forecasts page to share the forecasts.</li>
+</ul>
+<p><strong><em>Forecast managers in a role-based forecasts hierarchy can share their forecasts page with any Salesforce user using the ‘Share’ button on the page. The access level of ‘View Only’, or ‘View and Edit’ can be selected while sharing the forecasts. Users with ‘View and Edit’ access can make adjustments.</em></strong></p>
+<p><em>It is not possible to export forecasts using a link on the Forecasts page. Building a Forecasts page is not necessary for the purpose of sharing forecasts. There is no ‘Subscribe’ feature for forecasts.</em></p>
+<p><img src="images/clipboard-342019704.png" /></p>
+<p><img src="images/clipboard-3603243916.png" /></p>
+<p>The Sales Managers at Cosmic Computing want to view Opportunities with an annual recurring revenue of more than 100,000 on their Forecasts page. ‘Annual Recurring Revenue’ is an Opportunity custom currency field. Furthermore, they want to calculate the gap-to-quota value and view it within the Forecasts page. How can this be accomplished?</p>
+<ul>
+<li><p>Add a new forecast filter within the forecast type.</p></li>
+<li><p>Create a new caulculated forecast column via Forecasts Settings.</p></li>
+</ul>
+</div>
+<div id="territory" class="section level2 hasAnchor" number="10.10">
+<h2><span class="header-section-number">10.10</span> Territory<a href="sales-and-marketing-applications.html#territory" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Cosmic Repair Solutions has set up Sales Territories in their Salesforce org. The Sales Director of the company would like to allow sales representatives to view the sales forecasts for the territories to which they are assigned. Which forecast types should be used for this requirement?</p>
+<ul>
+<li><p>Opportunity Revenue by Territory</p></li>
+<li><p>Opportunity Quantity by Territory</p></li>
+</ul>
+<p><strong><em>Sales Territories can be used with Pipeline Forecasting. Opportunity Revenue by Territory and Opportunity Quantity by Territory forecast types can be added to enable territory forecasts and allow sales users to view opportunity revenue forecasts and opportunity quantity forecasts by territory. Up to 4 forecast types can be active in Forecast Types.</em></strong></p>
+<p><em>The Opportunity Revenue forecast type allows forecasts to be based on the fields ‘Amount’, ‘Close Date’, and any custom date field on the Opportunity object.</em></p>
+<p><em>Note: In Summer ’24, Enterprise Territory Management has been renamed to Sales Territories. Users can manage territories as they previously did with Enterprise Territory Management under the name Sales Territories.</em></p>
+<p><img src="images/clipboard-3423600114.png" /></p>
+</div>
+<div id="sales-process-1" class="section level2 hasAnchor" number="10.11">
+<h2><span class="header-section-number">10.11</span> Sales Process<a href="sales-and-marketing-applications.html#sales-process-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Which are true regarding how Salesforce supports the sales process?</p>
+<ul>
+<li><p>Salesforce features include leads, campaigns, products, price books, opportunities, and quotes.</p></li>
+<li><p>Salesforce supports selling different products or services with different processes.</p></li>
+<li><p>Opportunity Teams can be used to allow a group of people working on a deal to be associated with an opportunity.</p></li>
+</ul>
+<p><strong><em>Contact Roles for opportunities track which contacts are related to the opportunity and the role they play. Contacts from other accounts can be linked to the opportunity using contact roles. It is a Customizable Campaign Influence and not Team Selling that is used to attribute a percentage of success to influential campaigns. Team Selling is a feature that allows members of an Opportunity team to work on a deal together and split generated commissions or revenue.</em></strong></p>
+<p><em>Salesforce standard objects which include Leads, Campaigns, Products, Price Books, Opportunities, and Quotes support different aspects of the sales process as a default. Different sales processes specific to the organization can also be configured for various types of products, product lines, or services. Lastly, the Opportunity Team can be configured to add multiple users to an Opportunity wherein each member of the team can be assigned roles and special access.</em></p>
+<p><img src="images/clipboard-3872945251.png" /></p>
+<p><img src="images/clipboard-202820333.png" /></p>
+<p><img src="images/clipboard-1276968253.png" /></p>
+</div>
+<div id="macros-1" class="section level2 hasAnchor" number="10.12">
+<h2><span class="header-section-number">10.12</span> Macros<a href="sales-and-marketing-applications.html#macros-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A Sales Cloud consultant has set up a console app in Lightning Experience to improve the productivity of sales reps in the organization. Which of the following should be considered for creating and running macros in the app to further improve the productivity of sales reps?</p>
+<ul>
+<li><p>Macro Builder is used to craete macros in Lightning Experience.</p></li>
+<li><p>Individual macros cannot be run on list views.</p></li>
+</ul>
+<p><strong><em>Standard objects, except ‘Campaign’, and custom objects that allow quick actions and have a customizable page layout support macros. In Lightning Experience, Macro Builder is a point-and-click tool that is used to create macros.</em></strong></p>
+<p><em>It is not possible to run individual macros on list views. Macro instructions allow using email templates and adding email attachments.</em></p>
+<div class="float">
+<img src="images/clipboard-1260331590.png" alt="" />
+<div class="figcaption"><img src="images/clipboard-4056955341.png" /></div>
+</div>
+<p><img src="images/clipboard-2221865787.png" /></p>
+</div>
+<div id="product-1" class="section level2 hasAnchor" number="10.13">
+<h2><span class="header-section-number">10.13</span> Product<a href="sales-and-marketing-applications.html#product-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Cosmic Enterprises will be adding a new product that will be delivered once ordered but billed in quarterly installments for one year. How can this be reflected in Salesforce?</p>
+<ul>
+<li>Create a default revenue schedule for the product.</li>
+</ul>
+<p>As the product is delivered at one time but the revenue will be received in installments, a revenue schedule that defines the revenue amounts and number of installments should be created.</p>
+<p><img src="images/clipboard-1770520426.png" /></p>
+<p>A sales manager contacted the Salesforce Administrator with an issue that he is not able to add a product to an opportunity. What does the Salesforce Administrator need to check?</p>
+<ul>
+<li><p>The product has been added to a price book in the currency of the opportunity, and the price book entry is active.</p></li>
+<li><p>The product is active.</p></li>
+<li><p>The product has a standard price entry in the currency of the opportunity.</p></li>
+</ul>
+<p>The ‘Active’ checkbox should be selected to ensure that a product is active before it can be added to an opportunity. Products need a standard price before they can be added to a price book, which leads to a price book entry creation. For multi-currency orgs, the opportunity Currency is tied to the currency of the associated price book entry. If there is an existing opportunity line item, the currency of the product line item to be inserted should be in conjunction with the opportunity currency. The sales price is specified for a product that is added to an opportunity or quote.</p>
+<p><img src="images/clipboard-1616913694.png" /></p>
+<p><img src="images/clipboard-839240309.png" /></p>
+<p>Galactic Sweepers offers a weekly office cleaning service that is invoiced monthly. What should be created to represent this?</p>
+<ul>
+<li>A default Quantity and Revenue Schedule</li>
+</ul>
+<p>A Revenue and Quantity Schedule is suitable if the customers receive their order on a delivery schedule and also pay for the products using a payment schedule.</p>
+<p><img src="images/clipboard-2787540283.png" /></p>
+</div>
+<div id="account-1" class="section level2 hasAnchor" number="10.14">
+<h2><span class="header-section-number">10.14</span> Account<a href="sales-and-marketing-applications.html#account-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A sales representative is currently working on an account and would like to collaborate with two other sales representatives and a partner user. These users should be able to view and edit the account for a limited period of time. What is a possible solution for this requirement?</p>
+<ul>
+<li><p>Share the account with the users using the ‘Sharing’ button.</p></li>
+<li><p>Add and remove users to the account team from the ‘Account Team’ related list.</p></li>
+</ul>
+<p><strong><em>Internal and partner users can be added to an account team in Lightning Experience. From the ‘Account Team’ related list on an account, either a team member or a default account team can be added. Team members can be given ‘Read/Write’ access to an account. The related list must be added to the account page layout by an administrator to use this functionality.</em></strong></p>
+<p><em>The ‘Sharing’ button can also be used to share a record with other users, groups, roles, and territories. A sharing rule is used to grant record access to users in groups, roles, and territories. A permission set can be used to grant additional access to objects, but it cannot be used to grant access to specific records of an object.</em></p>
+<p><img src="images/clipboard-2431077863.png" /></p>
+</div>
+<div id="lead" class="section level2 hasAnchor" number="10.15">
+<h2><span class="header-section-number">10.15</span> Lead<a href="sales-and-marketing-applications.html#lead" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="einstein-lead-scoring" class="section level3 hasAnchor" number="10.15.1">
+<h3><span class="header-section-number">10.15.1</span> Einstein Lead Scoring<a href="sales-and-marketing-applications.html#einstein-lead-scoring" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong><em>With Einstein Lead Scoring, leads can be scored separately according to their segments. Since lead and conversion history can be evaluated based on the associated marketing or advertising campaign, it will be easier to determine which campaigns prove to be more successful.</em></strong></p>
+<p><em>Einstein Activity Capture is used to connect email and calendar applications to the Salesforce org and helps reduce data entry work done by agents. Einstein Opportunity Insights evaluates opportunities and gives modeled predictions about the likelihood to close them based on data from previously closed opportunities. Campaign hierarchy is used to organize and link individual marketing campaigns together through parent and child relationships.</em></p>
+<ul>
+<li>Einstein Lead Scoring.</li>
+</ul>
+<p><img src="images/clipboard-2608002648.png" /></p>
+</div>
+</div>
+<div id="sales-pipeline-visibility-and-forecasting" class="section level2 hasAnchor" number="10.16">
+<h2><span class="header-section-number">10.16</span> Sales Pipeline Visibility and Forecasting<a href="sales-and-marketing-applications.html#sales-pipeline-visibility-and-forecasting" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+</div>
+<div id="pipeline-inspection" class="section level2 hasAnchor" number="10.17">
+<h2><span class="header-section-number">10.17</span> Pipeline Inspection<a href="sales-and-marketing-applications.html#pipeline-inspection" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The Sales Managers at Costa Gears are taking a more proactive role in managing the opportunity pipeline.<br />
+The Sales Cloud Consultant recommended that they utilize Pipeline Inspection. Which of the following capabilities are features of Pipeline Inspection?</p>
+<ul>
+<li><p>Tiered Einstein opportunity scores are displayed along with key factors and score changes.</p></li>
+<li><p>Filters can be applied to narrow the view by criteria or to help identify areas of concern.</p></li>
+<li><p>Key performance indicators for sales pipelines are displayed as metrics at the top of the page.</p></li>
+</ul>
+<p><strong><em>Pipeline Inspection is available as part of the Sales Cloud license at no extra cost with Enterprise, Performance, and Unlimited editions. It provides sales managers with better visibility of their pipeline by providing information on key metrics (based on the available number and currency fields), opportunities, and weekly changes. Metrics such as new opportunities created, increases or decreases in amounts, and overdue opportunities, can be displayed for the sales teams.</em></strong></p>
+<p><em>Pipeline views can be created using different filters to help identify areas of concern. Pipeline Inspection users who have the ‘Revenue Intelligence User’ or the ‘Revenue Intelligence Admin’ permission set can see the changes to opportunities in different forecast categories over time from the ‘Flow’ tab. Inline editing of these fields is no longer possible, aligning the list view behavior with the Opportunity page layout configuration. However, field-level security settings continue to take precedence, overriding the Opportunity page layout settings if necessary.</em></p>
+<p><em>Einstein Deal Insights, powered by Einstein’s machine learning capability, predicts the opportunities unlikely to be won in the current month. Lastly, Einstein Conversation Insights and Email Insights are also features of Pipeline Inspection. Einstein Conversation Insights and Email Insights provide sales agents with the information they need to analyze all customer interactions to track deals. These functionalities encompass suggested actions, such as reviewing call and email logs, producing call summaries for voice and video calls, and generating editable summaries to incorporate future actions and client input.</em></p>
+<p><a href="https://help.salesforce.com/s/articleView?id=sales.pipeline_inspection_drive_revenue_using_parent.htm&amp;type=5" class="uri">https://help.salesforce.com/s/articleView?id=sales.pipeline_inspection_drive_revenue_using_parent.htm&amp;type=5</a></p>
+</div>
+<div id="dynamic-highlights-panel" class="section level2 hasAnchor" number="10.18">
+<h2><span class="header-section-number">10.18</span> Dynamic Highlights Panel<a href="sales-and-marketing-applications.html#dynamic-highlights-panel" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Cosmic Beans handles several types of accounts that range from individual to corporate consumers of their world-class coffee beans. The Dynamic Highlights Panel component has been added to the Account record page. How will this configuration impact the sales team when viewing an account?</p>
+<ul>
+<li>Sales users may see different sets of fields displayed on the Dynamic Highlights Panel depending on the account.</li>
+</ul>
+<p>The Dynamic Highlights Panel component is an advanced alternative to the traditional Highlights Panel component in Lightning App Builder. While the Highlights Panel supports up to 7 fields only, the Dynamic Highlights Panel can display up to 12 fields. Unlike the fields in the Highlights Panel that are static, the fields in the Dynamic Highlights Panel support field visibility and can be displayed conditionally based on field values, device, or other criteria. While fields in the Highlights Panel are configured via the compact layout, fields in the Dynamic Highlights Panel are configured directly in Lightning App Builder.</p>
+<p><img src="images/clipboard-2190630262.png" /></p>
 </div>
 </div>
 <script>
@@ -560,8 +796,8 @@ window.onload = function() {
           </div>
         </div>
       </div>
-<a href="objective-2-1.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="objective-2.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="objective-2-1.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

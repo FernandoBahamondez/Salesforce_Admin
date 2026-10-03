@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>12 Miscellaneous | Salesforce Admin</title>
-  <meta name="description" content="12 Miscellaneous | Salesforce Admin" />
+  <title>11 Objective 2 | Salesforce Admin</title>
+  <meta name="description" content="11 Objective 2 | Salesforce Admin" />
   <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="12 Miscellaneous | Salesforce Admin" />
+  <meta property="og:title" content="11 Objective 2 | Salesforce Admin" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="12 Miscellaneous | Salesforce Admin" />
+  <meta name="twitter:title" content="11 Objective 2 | Salesforce Admin" />
   
   
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="objective-2-1.html"/>
-
+<link rel="prev" href="sales-and-marketing-applications.html"/>
+<link rel="next" href="miscellaneous.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -341,11 +341,158 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="miscellaneous" class="section level1 hasAnchor" number="12">
-<h1><span class="header-section-number">12</span> Miscellaneous<a href="miscellaneous.html#miscellaneous" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div id="actions-plans" class="section level2 hasAnchor" number="12.1">
-<h2><span class="header-section-number">12.1</span> Actions Plans<a href="miscellaneous.html#actions-plans" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>The important to know the basic about that.</p>
+<div id="objective-2-1" class="section level1 hasAnchor" number="11">
+<h1><span class="header-section-number">11</span> Objective 2<a href="objective-2-1.html#objective-2-1" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="campaign-1" class="section level2 hasAnchor" number="11.1">
+<h2><span class="header-section-number">11.1</span> Campaign<a href="objective-2-1.html#campaign-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Marketing and sales users at Global Systems Inc. would like more visibility into lead and contact participation in this year’s Trade Show. How would a Salesforce Administrator build this into the application?</p>
+<ul>
+<li>Associate the lead or contact with a campaign when they register for the event.</li>
+</ul>
+<p>Creating a custom object, cross-object formula, or requesting for customers to send their participation confirmation via email is not necessary since this can be done when leads and contacts register for the event. They can be associated to a campaign as campaign members to track their participation.</p>
+<p><img src="images/clipboard-3349309193.png" /></p>
+</div>
+<div id="campaign-management" class="section level2 hasAnchor" number="11.2">
+<h2><span class="header-section-number">11.2</span> Campaign Management<a href="objective-2-1.html#campaign-management" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Which of the following are correct regarding Campaign Management?</p>
+<ul>
+<li><p>Campaigns can be grouped together in a hierarchy</p></li>
+<li><p>Campaign member can be added from reports</p></li>
+<li><p>Campaign members can be added from a Contact or Lead list view.</p></li>
+</ul>
+<p><strong><em>A campaign hierarchy allows one to group campaigns together within a specific marketing program or initiative, which enables analyzing related marketing efforts more efficiently. It is possible to add members to a campaign from Lead, Contact, and Account tabular, summary, and matrix reports. Moreover, it is also possible to add up to 200 members to a campaign at once from Lead or Contact list views.</em></strong></p>
+<p><em>Individual campaigns can be shared to other users by clicking on the ‘Sharing’ button on a campaign record. Data Loader can be used to update a large number of campaign members, but it is also possible to update campaign member statuses from the Campaign detail page using the ‘Manage Members’ button or the ‘Campaign Members’ related list.</em></p>
+<p><img src="images/clipboard-3072555844.png" /></p>
+<div class="float">
+<img src="images/clipboard-1982677010.png" alt="" />
+<div class="figcaption"><img src="images/clipboard-2851804027.png" /></div>
+</div>
+</div>
+<div id="campaign-influence" class="section level2 hasAnchor" number="11.3">
+<h2><span class="header-section-number">11.3</span> Campaign Influence<a href="objective-2-1.html#campaign-influence" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>What does the campaign influence feature allow?</p>
+<ul>
+<li><p>Associate one primary campaign that has influenced the opportunity.</p></li>
+<li><p>Add multiple campaigns that have influenced an opportunity to the campaign related list.</p></li>
+</ul>
+<p><strong><em>Multiple campaigns that have influenced an opportunity can be added to an opportunity related list. Although multiple campaigns can be influential, only one campaign can be selected as the Primary Campaign Source on the opportunity.</em></strong></p>
+<p><em>An active campaign must first be related to a contact that is assigned a contact role on the opportunity in order for it to be automatically associated. Campaigns influence opportunities, not the other way around.</em></p>
+<p><img src="images/clipboard-532767600.png" /></p>
+<p>Instead of attributing revenue to the primary campaign associated with an opportunity, how can revenue be evenly and automatically attributed to all campaigns related to an opportunity?</p>
+<ul>
+<li><p>Use a flow to distribute revenue accordingly</p></li>
+<li><p>Create a custom campaign influence attribution model</p></li>
+</ul>
+<p>To distribute revenue between multiple campaigns, a new campaign influence attribution model would need to be created. Flow or Apex code can be used to automatically distribute revenue across the campaign influence records. The model should be locked, to prevent users from manually adding campaign influence records.</p>
+<p><img src="images/clipboard-1527157684.png" /></p>
+<p><img src="images/clipboard-3554427336.png" /></p>
+</div>
+<div id="campaign-hierarchy" class="section level2 hasAnchor" number="11.4">
+<h2><span class="header-section-number">11.4</span> Campaign Hierarchy<a href="objective-2-1.html#campaign-hierarchy" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>What is true regarding campaign hierarchies?</p>
+<ul>
+<li><p>Each campaign can have one parent campaign in the hierarchy</p></li>
+<li><p>A campaign hierarchy can be viewed by clicking the ‘View Campaign Hierarchy’ button</p></li>
+<li><p>A campaign hierarchy shows grouped campaigns within a specific marketing initiative</p></li>
+</ul>
+<p>A campaign hierarchy shows grouped campaigns within a specific marketing initiative. Each campaign can have only one parent campaign, but it can have an unlimited number of sibling campaigns. ‘View Campaign Hierarchy’ buttons on a campaign detail page can be used to view the campaign hierarchy.</p>
+<p><img src="images/clipboard-3449896885.png" /></p>
+<p><img src="images/clipboard-983687637.png" /></p>
+</div>
+<div id="data-import-wizard" class="section level2 hasAnchor" number="11.5">
+<h2><span class="header-section-number">11.5</span> Data Import Wizard<a href="objective-2-1.html#data-import-wizard" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Which of the following can be used to add or update Campaign Members from the Campaign record page?</p>
+<ul>
+<li>Data Import Wizard</li>
+</ul>
+<p><strong><em>In Lightning Experience, the ‘Manage Campaign Members’ and ‘Import Leads and Contacts’ options will navigate to the Data Import Wizard. The Data Import Wizard can be used to add or update up to 50,000 campaign members.</em></strong></p>
+<p><em>The Campaign Update Wizard is a retired functionality that has been replaced by the Data Import Wizard. Although a custom report that returns lead, contact, or account records can be used to add campaign members, it is not available by default on a campaign record page. Also, there is no Add/Update Members button on the page.</em></p>
+<p><img src="images/clipboard-607335026.png" /></p>
+</div>
+<div id="send-list-email-action" class="section level2 hasAnchor" number="11.6">
+<h2><span class="header-section-number">11.6</span> Send List Email action<a href="objective-2-1.html#send-list-email-action" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Global Insurance would like to send an email to each member of a campaign. They are using Lightning Experience. What can be suggested as the most efficient way of emailing campaign members?</p>
+<ul>
+<li>Use the Send List Email action from Campaign Member view.</li>
+</ul>
+<p>In Lightning Experience, a list email will send an individual email to each recipient in a list without manually selecting each record. It can be used from a lead or contact list view or campaign member view. In addition, list emails can be scheduled to send at a particular date and time.</p>
+<p><img src="images/clipboard-4103764558.png" /></p>
+<p>A sales representative who uses Lightning Experience would like to send a personalized email to some of the campaign members related to a campaign. Which of the following should be used by the sales representative to send a list email for this use case?</p>
+<ul>
+<li>Campaign Members related list detailed view.</li>
+</ul>
+<p><strong><em>The best option here is to use the ‘Campaign Members’ related list detailed view by clicking the ‘View All’ button at the bottom of the related list and selecting specific campaign members as recipients.</em></strong></p>
+<p><em>Campaign members can be sent a list email using the ‘Campaign Members’ related list from the Campaign page, but specific accounts, contacts, and/or leads cannot be selected individually. The same is true about using the ‘List Emails’ tab. The ‘Accounts’ tab does not allow sending a list email.</em></p>
+<p><img src="images/clipboard-3078907313.png" /></p>
+<p><img src="images/clipboard-4186151090.png" /></p>
+</div>
+<div id="lead-1" class="section level2 hasAnchor" number="11.7">
+<h2><span class="header-section-number">11.7</span> Lead<a href="objective-2-1.html#lead-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A company’s Salesforce org is currently configured to create opportunity records by default on lead conversion. The Sales Director of the company has decided that sales reps should only be responsible for converting leads into accounts and contacts. Sales reps are not permitted to create opportunity records when leads are converted, and they should not be allowed to override this rule. What is the quickest way for the Salesforce Administrator to prevent sales reps from being able to create opportunity records on lead conversion?</p>
+<ul>
+<li>The Salesforce Administrator should go to ‘Lead Settings’ under ‘Setup’ and select ‘Hide Opportunity Section of Convert Lead Window.’</li>
+</ul>
+<p><strong><em>Salesforce provides a ‘Convert Lead’ window with sections for lead conversion to account, contact, and opportunity records. Salesforce Administrators are also allowed to customize the ‘Convert Lead’ window to remove the section for the potential opportunity record. In order to remove the opportunity section, Salesforce Administrators should check the appropriate checkbox in ‘Lead Conversion Settings’ under ‘Lead Settings’.</em></strong></p>
+<p><em>The ‘Convert Lead’ window has a ‘Don’t create an opportunity upon conversion’ checkbox. Checking this box will prevent an opportunity record from being generated upon lead conversion. However, this is not the best answer because a sales rep would have to check the box on every conversion, and it is probable that sales reps would occasionally forget to do so. Removing the entire opportunity section is a more effective way to prevent the generation of opportunity records. Removing the ‘edit’ or ‘create’ permissions is not the best response because either one would restrict the actions available to the sales reps far beyond the scope of what the company wishes.</em></p>
+<p><img src="images/clipboard-1770971317.png" /></p>
+<p>What happens when a lead is converted?</p>
+<ul>
+<li><p>A name is generated automatically for the opportunity during the lead conversion process</p></li>
+<li><p>The owner of the records created can be selected right before conversion.</p></li>
+</ul>
+<p><strong><em>Users can only view converted leads if they have the ‘View and Edit Converted Leads’ permission. There is a checkbox field ‘Do not create a new opportunity upon conversion’ visible for the users during lead conversion, which makes the creation of an opportunity optional.</em></strong></p>
+<p><em>Before conversion, the owner of the newly created records can be selected using the required ‘Record Owner’ field. The ‘Company’ field in the lead record is mapped to the ‘Opportunity Name’ field, automatically generating an editable name during the lead conversion process.</em></p>
+<p><img src="images/clipboard-697817074.png" /></p>
+<p><img src="images/clipboard-4173389403.png" /></p>
+</div>
+<div id="path" class="section level2 hasAnchor" number="11.8">
+<h2><span class="header-section-number">11.8</span> Path<a href="objective-2-1.html#path" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The marketing team of Cosmic Learning Solutions uses Lightning Experience to manage campaigns in Salesforce. Each campaign has a lifecycle, and a custom picklist field is used by marketing users to specify the stage of a campaign. The Marketing Director would like to add guidance for the users, especially those who are new to the company, by providing stage-specific tips, best practices, and other company information necessary to move a campaign to the next stage. How can a Sales Cloud Consultant meet this requirement?</p>
+<ul>
+<li><p>Create a new Path using the custom picklist field for the Campaign object.</p></li>
+<li><p>Use Lightning App Builder to add the Path feature that allows visualizing and tracking the stages of campaigns.</p></li>
+</ul>
+<p><strong><em>In Lightning Experience, a Path can be created for an object to visually display steps related to a business process associated with the object and provide guidance to users. The guidance can be in the form of tips, links, best practices, or company policy information related to each stage of the business process. The fields that appear for each stage and the guidance text can be configured. After creating a Path, the ‘Path’ component needs to be added to the object’s record page using the Lightning App Builder.</em></strong></p>
+<p><em>Creating a custom Lightning component for this requirement is unnecessary since the ‘Path’ feature is already available for it. It would also require programmatic development experience and assistance from a developer. Einstein Discovery is a feature that is available for an extra cost and can provide explanations and recommendations for a Salesforce object based on data analysis. However, it cannot be used to provide specific tips and best practices or other company information that needs to be provided for each stage.</em></p>
+<div class="float">
+<img src="images/clipboard-1924016964.png" alt="" />
+<div class="figcaption"><img src="images/clipboard-2954212173.png" /></div>
+</div>
+<p><img src="images/clipboard-3683764717.png" /></p>
+</div>
+<div id="web-to-lead" class="section level2 hasAnchor" number="11.9">
+<h2><span class="header-section-number">11.9</span> Web to Lead<a href="objective-2-1.html#web-to-lead" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Fast Finance would like to enable Web-to-Lead, but is concerned about the creation of lead records that contain spam. Which of the following represents the best solution to prevent receiving spam via Web-to-Lead?</p>
+<ul>
+<li>Requier reCAPTCHA verification</li>
+</ul>
+<p><strong><em>The best solution is to prevent the lead data from entering Salesforce if it is spam. When the ‘Require reCAPTCHA Verification’ setting is enabled, leads that do not use reCAPTCHA are rejected.</em></strong></p>
+<p><em>An auto-response or validation rule would not prevent the creation of spam leads. A validation rule can check if the data entered is valid, but it would not prevent the entry of fake data. Aside from the fact that Email domain restriction is not applicable to Web-to-Lead forms, it is also not a suitable solution to identify and reject spam leads.</em></p>
+<p><img src="images/clipboard-3068380183.png" /></p>
+<p><img src="images/clipboard-1357612484.png" /></p>
+</div>
+<div id="assignment-rules" class="section level2 hasAnchor" number="11.10">
+<h2><span class="header-section-number">11.10</span> Assignment rules<a href="objective-2-1.html#assignment-rules" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>To help automate assigning records to the correct users, an administrator is asked to setup assignment rules. What must the administrator keep in mind regarding assignment rules?</p>
+<ul>
+<li>Assignment rules can assign records to users or queues</li>
+</ul>
+<p>Assignment rules can only be set up on cases and leads. Assignment rules can assign records to users or queues. Multiple rules cannot be active at one time. There can be multiple criteria that are evaluated according to the order specified within the rule. Lead assignment rules will run whether the lead is created manually, generated from a Web-to-Lead form, or imported via the Data Import Wizard or Data Loader.</p>
+<p><img src="images/clipboard-2333076511.png" /></p>
+</div>
+<div id="voip" class="section level2 hasAnchor" number="11.11">
+<h2><span class="header-section-number">11.11</span> VOIP<a href="objective-2-1.html#voip" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Modaxy Communications is a VOIP(voice over internet protocol) solutions provider.</p>
+<p>Alex, the Sales Director, wants to have inquiries regarding their new service and phone hardware bundle automatically to a team consisting of his best sales reps.</p>
+<p>What can be done to facilitate this?</p>
+<ul>
+<li><p>Set up an assignment rule that routes the new service and phone hardware bundle leads to a queue.</p></li>
+<li><p>Identify sales reps with the best sales numbers, and create a queue with those reps as members.</p></li>
+</ul>
+<p><strong><em>Lead assignment rules can be configured to automatically assign leads that match specific criteria, such as those related to the new service and phone hardware bundle, to a designated queue. Queues can include specific users (in this case, the top-performing sales reps) to ensure that qualified leads are distributed effectively.</em></strong></p>
+<p><em>A flow could technically be used to assign leads, but this would introduce unnecessary complexity since lead assignment rules are designed specifically for automated routing. A list view is a filtering tool and cannot automate assignments</em></p>
+<p><img src="images/clipboard-3459100478.png" /></p>
+<p><img src="images/clipboard-3968673528.png" /></p>
 
 </div>
 </div>
@@ -560,8 +707,8 @@ window.onload = function() {
           </div>
         </div>
       </div>
-<a href="objective-2-1.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="sales-and-marketing-applications.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="miscellaneous.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
