@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>10 Sales and Marketing Applications | Salesforce Admin</title>
-  <meta name="description" content="10 Sales and Marketing Applications | Salesforce Admin" />
+  <title>8 Objective 1 - 47 questions | Salesforce Admin</title>
+  <meta name="description" content="8 Objective 1 - 47 questions | Salesforce Admin" />
   <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="10 Sales and Marketing Applications | Salesforce Admin" />
+  <meta property="og:title" content="8 Objective 1 - 47 questions | Salesforce Admin" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="10 Sales and Marketing Applications | Salesforce Admin" />
+  <meta name="twitter:title" content="8 Objective 1 - 47 questions | Salesforce Admin" />
   
   
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="objective-2.html"/>
-<link rel="next" href="objective-2-1.html"/>
+<link rel="prev" href="productivity-and-collaboration.html"/>
+<link rel="next" href="objective-2.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -341,248 +341,441 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="sales-and-marketing-applications" class="section level1 hasAnchor" number="10">
-<h1><span class="header-section-number">10</span> Sales and Marketing Applications<a href="sales-and-marketing-applications.html#sales-and-marketing-applications" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Objective 1 | 40 Questions</p>
-<p>Which objects are Sales objects?</p>
+<div id="objective-1---47-questions" class="section level1 hasAnchor" number="8">
+<h1><span class="header-section-number">8</span> Objective 1 - 47 questions<a href="objective-1---47-questions.html#objective-1---47-questions" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="activity-settings" class="section level2 hasAnchor" number="8.1">
+<h2><span class="header-section-number">8.1</span> Activity Settings<a href="objective-1---47-questions.html#activity-settings" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="roll-up-of-activities-to-a-contacts-primary-account" class="section level3 hasAnchor" number="8.1.1">
+<h3><span class="header-section-number">8.1.1</span> Roll Up of Activities to a Contact’s Primary Account<a href="objective-1---47-questions.html#roll-up-of-activities-to-a-contacts-primary-account" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Which of the following is true about enabling the ‘Roll Up of Activities to a Contact’s Primary Account’ feature in Activity Settings?</p>
 <ul>
-<li>Leads, Campaigns, Opportunities, and Orders</li>
+<li>Related tasks and events of the contact are displayed on the contact’s primary account.</li>
 </ul>
-<p>Leads, Campaigns, Opportunities, and Orders are sales objects.<br />
-Case, Entitlements, Service Contracts and Knowledge are support objects.</p>
-<p><img src="images/clipboard-3872228780.png" /></p>
-<p>Which of the following are true regarding Web-to-Lead?</p>
-<ul>
-<li><p>Data entered in the web form is validated before a record is created in the Salesforce org.</p></li>
-<li><p>Standard and custom fields that need to be captured online can be selected.</p></li>
-<li><p>The default lead creator for web-generated leads can be specified.</p></li>
-</ul>
-<p><strong><em>Salesforce runs validation rules before the data entered into the web form is created as a record in the Salesforce org. Assignment rules can be used to assign leads to different users. If assignment rules are not used or do not locate an owner, the lead will be assigned to the default lead creator.</em></strong></p>
-<p><em>The maximum number of leads that can be captured per day is 500. Using reCAPTCHA can reduce the number of spam entries that otherwise would have gone through.</em></p>
-<p><img src="images/clipboard-2328358154.png" /></p>
-<p><img src="images/clipboard-30517340.png" /></p>
-<div id="product" class="section level2 hasAnchor" number="10.1">
-<h2><span class="header-section-number">10.1</span> Product<a href="sales-and-marketing-applications.html#product" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Cosmic Enterprises will be adding a new product that will be delivered once ordered but billed in quarterly installments for one year. How can this be reflected in Salesforce?</p>
-<ul>
-<li>Create a default revenue schedule for the product.</li>
-</ul>
-<p>As the product is delivered at one time but the revenue will be received in installments, a revenue schedule that defines the revenue amounts and number of installments should be created.</p>
-<p><img src="images/clipboard-1770520426.png" /></p>
+<p><em>When activities roll-up is enabled via the Activity Settings in an org, activities related to the contact will also be displayed in the primary account of the contact.</em></p>
+<p><em>Activity details related to the contact will always be displayed in the activity feed of the contact, whether or not the activities roll-up feature is enabled. Tasks and events related to the contact cannot be automatically assigned to the account owner using this feature. Activity field values cannot be aggregated at the related account record using this option. When the roll-up activities setting is changed, only the new activities are affected. Existing activities are only affected if they are updated in a way that triggers a recalculation of the roll-up, e.g. when an activity is closed.</em></p>
+<div class="float">
+<img src="images/clipboard-845568327.png" alt="" />
+<div class="figcaption"><img src="images/clipboard-3673361127.png" /></div>
 </div>
-<div id="price-books" class="section level2 hasAnchor" number="10.2">
-<h2><span class="header-section-number">10.2</span> Price Books<a href="sales-and-marketing-applications.html#price-books" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>How many standard price books can an organization have?</p>
+<p><img src="images/clipboard-3673361127.png" /></p>
+</div>
+<div id="enable-group-task" class="section level3 hasAnchor" number="8.1.2">
+<h3><span class="header-section-number">8.1.2</span> Enable Group Task<a href="objective-1---47-questions.html#enable-group-task" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The Sales Manager has informed the Salesforce Administrator that there is a need to be able to assign a task to a group of users. Which of the following statements are true regarding group tasks that the Salesforce Administrator should tell the Sales Manager?</p>
+<ul>
+<li><p>Each member of the group is assigned a copy of the task.</p></li>
+<li><p>Group task are enabled by default in Lightning Experience.</p></li>
+</ul>
+<p><em>When creating a task, up to 200 users can be assigned an independent copy of the same task. Groups tasks are enabled by default in Lightning Experience.</em></p>
+<p><em>Personal groups are a convenient way to organize users into groups that are meaningful, but group tasks are not only created for personal groups. Tasks are created only for the active members in public groups.</em></p>
+<p><img src="images/clipboard-314619568.png" /></p>
+<p><img src="images/clipboard-3357479498.png" /></p>
+<p>United Technologies is rolling out a large new initiative and management needs to know how many users can be added to a group task in Lightning Experience. How many users should the administrator state?</p>
+<ul>
+<li>200</li>
+</ul>
+<p>In Lightning Experience group tasks can be assigned to up to 200 users and each user will be assigned an independent copy of the task.</p>
+<p><img src="images/clipboard-2245967028.png" /></p>
+</div>
+<div id="allow-users-to-relate-multiple-contacts-to-task-and-events" class="section level3 hasAnchor" number="8.1.3">
+<h3><span class="header-section-number">8.1.3</span> Allow Users to Relate Multiple Contacts to Task and Events<a href="objective-1---47-questions.html#allow-users-to-relate-multiple-contacts-to-task-and-events" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The administrator is made aware of a requirement for sales reps to allow multiple contacts to be related to an activity. Shared Activities lets users relate events to how many contacts?</p>
+<ul>
+<li>50</li>
+</ul>
+<p>The sales reps will be able to relate up to 50 contacts to each event or task. This must first be enabled in Setup under Activity Settings.</p>
+<p><img src="images/clipboard-1115440161.png" /></p>
+<p>A user has asked how they can find a list of their activities as they cannot find an Activities tab in Lightning Experience. Which of the following options make it possible for the Salesforce Administrator to assist the user with this requirement?</p>
+<ul>
+<li><p>Advise the user to access the Tasks tab, Calendar tab, or Activity timeline.</p></li>
+<li><p>Ask a developer to create a new tab to display Activities.</p></li>
+<li><p>Look for an AppExchange app that adds an Activity tab.</p></li>
+</ul>
+<p><em>Salesforce standard functionality allows access to activities using the Activity Timeline, and the Calendar and Tasks tabs. It is also simple for a developer to create a page and a tab that lists all activities. There are also a number of AppExchange apps that add Activity tabs and views. A custom object tab cannot be created for Activities since Activities include Tasks, Events, and Calendars, which are not custom objects.</em></p>
+<p><img src="images/clipboard-2615117753.png" /></p>
+<p><img src="images/clipboard-4170344224.png" /></p>
+</div>
+</div>
+<div id="activity-management" class="section level2 hasAnchor" number="8.2">
+<h2><span class="header-section-number">8.2</span> Activity Management<a href="objective-1---47-questions.html#activity-management" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A salesforce consultant working for Cosmic Solutions has configured Gmail Integration to improve the productivity of the sales reps who use Google Calendar to manage events. Information about the events they attend should be stored in Salesforce. Which of the following capabilities are available for manually logging events from Gmail to Salesforce?</p>
+<ul>
+<li><p>Attendees are captured on the SF event record when an eventis manually logged.</p></li>
+<li><p>Matching contact records are automatically selected if Salesforce is set up for shared activities.</p></li>
+<li><p>An event can be manually logged to one lead record.</p></li>
+</ul>
+<p>*<strong>When an event is logged manually from Gmail using Gmail Integration, any matching contact records are automatically selected if Salesforce is set up for shared activities.<br />
+An administrator must ensure that ‘Allow Users to Relate Multiple Contacts to Tasks and Events’ is enabled on the ‘Activity Settings’ page in Salesforce Setup.<br />
+It is possible to log an event to up to 50 contacts or one lead. *</strong></p>
+<p><strong><em>However, the integration only shows the first 15 matching records in the order the attendees appear in the event.</em></strong></p>
+<p><em>All attendees from an invitation can be included on the Salesforce event record by making sure that the ‘Attendees’ field is available on the page layouts for the Event object in Salesforce.</em></p>
+<p><em>It is not possible to log events to internal users. And one can log only nonrecurring, public events.</em></p>
+<p>The sales reps of Cosmic Innovation use Outlook to schedule non-recurring meetings with customers and internal users. An event representing a meeting often contains multiple customers from different organizations as attendees. Each customer has a contact record in Salesforce. The sales managers would like to view information about events attended by customers and internal users in Salesforce. Outlook Integration has been configured to allow sales reps to log Outlook events to Salesforce records. Which of the following are valid considerations for using Outlook Integration to manually log events to records in Salesforce?</p>
+<ul>
+<li><p>An event can be logged to up to 50 contacts, but only the first 15 matching contacts are displayed.</p></li>
+<li><p>Matching contact records are automatically selected if SF is set up for shared activities.</p></li>
+</ul>
+<p>When a user manually logs an event using Outlook Integration, all the matching contact records shown are automatically selected if Salesforce is set up for shared activities. An administrator must enable ‘Allow Users to Relate Multiple Contacts to Tasks and Events’ in ‘Activity Settings’. An event can be logged to up to 50 contacts or one lead. Only the first 15 matching contact records are displayed in the order the attendees appear in the event. All the attendees on the event, including internal users, are listed on the event record in Salesforce. It is not possible to log an event to an internal user. However, users with a matching email address on the event are included in the related records list.</p>
+<p><a href="https://help.salesforce.com/s/articleView?id=sales.email_int_user_view_work_log_events.htm&amp;type=5" class="uri">https://help.salesforce.com/s/articleView?id=sales.email_int_user_view_work_log_events.htm&amp;type=5</a></p>
+<div id="last-email-received-date-last-email-sent-date" class="section level3 hasAnchor" number="8.2.1">
+<h3><span class="header-section-number">8.2.1</span> Last Email Received Date | Last Email Sent Date<a href="objective-1---47-questions.html#last-email-received-date-last-email-sent-date" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Cosmic Solutions uses Einstein Activity Capture to sync emails, events, and contacts between sales users’ connected Microsoft and Gmail accounts and Salesforce. For instance, emails that users send and receive are automatically captured and added to the activity timeline of related records, including accounts, contacts, and leads. The sales director would like to view a report that shows email activity metrics, such as the date when the most recent email was received and the date when the most recent email was sent. Which of the following are valid activity metric fields that can be added to a report for this requirement?</p>
+<ul>
+<li><p>Last Email Received Date</p></li>
+<li><p>Last Email Sent Date</p></li>
+</ul>
+<p><strong><em>‘Last Email Sent Date’ and ‘Last Email Received Date’ are valid activity metric fields currently available through Einstein Activity Capture. However, as announced in the Salesforce release notes, Activity Metrics are scheduled for retirement beginning Summer ’26. Organizations should begin transitioning to supported reporting solutions such as standard reports, SOQL queries, dashboards, and APIs.</em></strong></p>
+<p><em>Fields like ‘Latest Email Sent Date’ and ‘Latest Email Received Date’ are not valid and do not exist in the current reporting model.</em></p>
+<p><a href="https://help.salesforce.com/s/articleView?language=es&amp;id=sf.aac_activity_metrics_fields.htm&amp;type=5" class="uri">https://help.salesforce.com/s/articleView?language=es&amp;id=sf.aac_activity_metrics_fields.htm&amp;type=5</a></p>
+</div>
+<div id="to-do-list" class="section level3 hasAnchor" number="8.2.2">
+<h3><span class="header-section-number">8.2.2</span> ‘To Do List’<a href="objective-1---47-questions.html#to-do-list" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The Salesforce Administrator of Cosmic Electronics is building a custom app for account management. The administrator would like to add the utility bar to give users quick access to common productivity tools. Which actions can a user perform using the ‘To Do List’ item which appears by default in the utility bar?</p>
+<ul>
+<li><p>Create labels</p></li>
+<li><p>Reorder Tasks</p></li>
+<li><p>Create Tasks</p></li>
+</ul>
+<p>The ‘To Do List’ component is a default item in the utility bar that allows users to view, sort, label, and act on their tasks, including tasks from Sales Engagement cadences. They can also re-order by dragging and dropping them. Users can create new tasks and create new labels from this component. However, the component does not allow the creation of Salesforce meetings or logging of a call.</p>
+<p><img src="images/clipboard-1663714361.png" /></p>
+<p><a href="https://help.salesforce.com/s/articleView?id=release-notes.rn_sales_productivity_to_do_list.htm&amp;release=240&amp;type=5" class="uri">https://help.salesforce.com/s/articleView?id=release-notes.rn_sales_productivity_to_do_list.htm&amp;release=240&amp;type=5</a></p>
+</div>
+</div>
+<div id="primary-contact" class="section level2 hasAnchor" number="8.3">
+<h2><span class="header-section-number">8.3</span> Primary Contact<a href="objective-1---47-questions.html#primary-contact" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>How many contacts on shared Activities can a user make as a primary contact?</p>
 <ul>
 <li>1</li>
 </ul>
-<p>An organization can have only 1 standard price book. However, it can have multiple custom price books.</p>
-<p><img src="images/clipboard-723912827.png" /></p>
+<p>Only one contact can be marked as the primary. A user must designate one contact as the primary contact on the activity. If the user deletes the primary contact, the next contact on the activity’s related list becomes the new primary contact. Users can also manually edit the activity to select a primary contact.</p>
 </div>
-<div id="sales-process" class="section level2 hasAnchor" number="10.3">
-<h2><span class="header-section-number">10.3</span> Sales Process<a href="sales-and-marketing-applications.html#sales-process" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Jim is an administrator for Carly Automotive, a distributor of automotive spare parts. They have just launched a new line of truck parts. The sales process for these parts will be different from the process used for existing products. Managers also need to be able to view information related to the new opportunities on reports. What should Jim do to configure the opportunity object for this new product line?</p>
+<div id="chatter" class="section level2 hasAnchor" number="8.4">
+<h2><span class="header-section-number">8.4</span> Chatter<a href="objective-1---47-questions.html#chatter" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A SystemSilo director wants his managers to be able to create Chatter groups for their respective teams. Preferably, he wants the groups’ details to only be visible to the groups’ members and himself. He wants to be able to manage all of these groups as well. He does not want any user outside of a group to be able to delete anything on the content feed. What would a Salesforce Administrator do to accommodate this request?</p>
 <ul>
-<li>Create a new sales process and record type for truck parts.</li>
+<li><p>Enable Unlisted Groups in Chatter Settings.</p></li>
+<li><p>Ensure that the director has the ‘Manage Unlisted Groups’ permission.</p></li>
 </ul>
-<p>Since the set of opportunity statuses for the truck parts line is new or different to the set used in existing sales processes, a new sales process should be defined. This does not affect the existing sales process and allows the statuses that apply to each sales process to be viewed on the appropriate record type.</p>
-<p><img src="images/clipboard-1342074601.png" /></p>
+<p><em>Unlisted groups offer more privacy than private groups. A private group would not meet the requirements as details such as group name, description, and member list are still visible to nonmembers. The ‘View All Data’ or ‘Modify All Data’ permission is not enough to allow nonmembers to view or update unlisted groups. Only if one has the ‘Manage Unlisted Groups’ permission would a nonmember be able to access or modify unlisted groups and their files and feed content. In addition, only members of an unlisted group may be able to delete group feed content.</em></p>
+<p><img src="images/clipboard-3305193238.png" /></p>
 </div>
-<div id="opportunity-teams-and-splits" class="section level2 hasAnchor" number="10.4">
-<h2><span class="header-section-number">10.4</span> Opportunity | Teams and Splits<a href="sales-and-marketing-applications.html#opportunity-teams-and-splits" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Sarah is the manager of a team of sales reps who collaborate on Opportunities. They are each awarded an appropriate share of the total sale on each Opportunity. Which of the following features should her company implement?</p>
+<div id="task" class="section level2 hasAnchor" number="8.5">
+<h2><span class="header-section-number">8.5</span> Task<a href="objective-1---47-questions.html#task" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Where can tasks be created in Lightning Experience?</p>
 <ul>
-<li><p>Opportunity Splits</p></li>
-<li><p>Opportunity Teams</p></li>
+<li><p>‘Task’ Tab</p></li>
+<li><p>Record Pages</p></li>
+<li><p>‘Global Actions’ Menu</p></li>
 </ul>
-<p>Opportunity Teams (Team Selling) allow defining a team that works together on opportunities. Opportunity Splits allow opportunity revenue to be split by percentage for each team member. Team members must be in the Opportunity Team in order to add them to Opportunity Splits.</p>
-<p><img src="images/clipboard-4287330019.png" /></p>
-<hr />
-<p>An organization wants to sell its products at different prices to different types of customers. How can this be set up?</p>
-<ul>
-<li>Create a price book for each customer type</li>
-</ul>
-<p><strong><em>Separate price books can be set up for different customer types. The price book can be selected when the Opportunity Products are added.</em></strong></p>
-<p><em>A flow would not be the best solution as it would apply the update to all products.</em></p>
-<p><img src="images/clipboard-470073665.png" /></p>
-</div>
-<div id="reports" class="section level2 hasAnchor" number="10.5">
-<h2><span class="header-section-number">10.5</span> Reports<a href="sales-and-marketing-applications.html#reports" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>The Director of Sales wants a report that shows the Opportunity pipeline for the current and succeeding fiscal quarters. This report should be grouped by Sales Rep and Opportunity Stage. Which report format would be best to use to create this custom report?</p>
-<ul>
-<li>Matrix Report</li>
-</ul>
-<p><strong><em>A matrix report can be created and the ‘Stage’ and ‘Opportunity Owner’ fields used in column and row grouping respectively. ‘Fiscal Period’ can be used in either row or column grouping to show information by each fiscal quarter. A Matrix Report is ideal when you need to group data by rows and columns.</em></strong></p>
-<p><em>A Summary Report only groups data in a single dimension (e.g., by Sales Rep or Opportunity Stage) but not both simultaneously. A Tabular Report only displays data in a simple list without any grouping and a Joined Report combines data from multiple report types but is unnecessary for this requirement.</em></p>
-<p><img src="images/clipboard-669850543.png" /></p>
-</div>
-<div id="lead-conversion" class="section level2 hasAnchor" number="10.6">
-<h2><span class="header-section-number">10.6</span> Lead Conversion<a href="sales-and-marketing-applications.html#lead-conversion" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Which of the following are true regarding the Lead Conversion process?</p>
-<ul>
-<li><p>An Account is created if one with the same name is not found and selected.</p></li>
-<li><p>A Contact is created if one with the same name is not found and selected.</p></li>
-<li><p>If Person Accounts are enabled and the Company field does not have a value, a person account will be created.</p></li>
-</ul>
-<p><strong><em>An Account or Contact is created from lead conversion if there are no other records with the same name.</em></strong></p>
-<p><em>Creating an Opportunity on Lead conversion is optional. Custom Lead fields can only be inserted into custom fields on the Account, Contact or Opportunity.</em></p>
-<p><em>If Person Accounts are enabled and a value is not entered into the Company field, the lead is converted to a person account.</em></p>
-<p><img src="images/clipboard-3403778574.png" /></p>
-</div>
-<div id="order" class="section level2 hasAnchor" number="10.7">
-<h2><span class="header-section-number">10.7</span> Order<a href="sales-and-marketing-applications.html#order" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Next Treks is using the Orders functionality in Salesforce to track products purchased. One customer has requested to return products previously purchased as they are defective. How can this be tracked in Salesforce?</p>
-<ul>
-<li>Create a reduction order and add one order product with the original quantity.</li>
-</ul>
-<p><strong><em>Reduction orders allow tracking of product returns and relating the return to the original order. They can be enabled in ‘Order Settings’ in Setup.</em></strong></p>
-<p><em>Reduction orders are created on the detail page of the order. After creating a reduction order, it is necessary to indicate which products should be reduced as well as the corresponding quantities.</em></p>
-<p><img src="images/clipboard-1773978572.png" /></p>
-</div>
-<div id="assistant" class="section level2 hasAnchor" number="10.8">
-<h2><span class="header-section-number">10.8</span> Assistant<a href="sales-and-marketing-applications.html#assistant" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>The sales reps of Cosmic Solutions would like to view certain important updates about their leads and opportunities in Salesforce as soon as they log in and over the course of the day. These updates should include overdue opportunities, leads assigned to them on the current day, and opportunities with no activity in 30 days. Which standard Lightning component can the company’s administrator add to the Home Page assigned to the sales reps for this requirement?</p>
-<ul>
-<li>Assistant</li>
-</ul>
-<p><strong><em>The ‘Assistant’ can be added to the Home page in Lightning Experience to show important updates about leads and opportunities over the course of the day. It shows the following updates:</em></strong></p>
-<p><em>1) Leads assigned to the current user today<br />
-2) Opportunities with overdue tasks<br />
-3) Opportunities with no activity in 30 days<br />
-4) Opportunities with no open activity<br />
-5) Overdue opportunities</em></p>
-<p><em>The ‘Recent Items’ component displays a set of recently viewed records. The ‘Today’s Events’ component displays the user’s next five events scheduled today and a link to the user’s calendar. There is no component called ‘Today’s Updates’.</em></p>
-<p><img src="images/clipboard-396356057.png" /></p>
-</div>
-<div id="forecast" class="section level2 hasAnchor" number="10.9">
-<h2><span class="header-section-number">10.9</span> Forecast<a href="sales-and-marketing-applications.html#forecast" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>The Salesforce Administrator of Cosmic Fitness Solutions has activated a forecast type based on the ‘Amount’ and ‘Close Date’ fields on the Opportunity object. One of the sales managers has been assigned as a forecast manager. She would like to share the forecasts she can view on the Forecasts page in Lightning Experience with another sales manager. What should the Salesforce Administrator recommend for this use case?</p>
-<ul>
-<li>Use the ‘Share’ button on the Forecasts page to share the forecasts.</li>
-</ul>
-<p><strong><em>Forecast managers in a role-based forecasts hierarchy can share their forecasts page with any Salesforce user using the ‘Share’ button on the page. The access level of ‘View Only’, or ‘View and Edit’ can be selected while sharing the forecasts. Users with ‘View and Edit’ access can make adjustments.</em></strong></p>
-<p><em>It is not possible to export forecasts using a link on the Forecasts page. Building a Forecasts page is not necessary for the purpose of sharing forecasts. There is no ‘Subscribe’ feature for forecasts.</em></p>
-<p><img src="images/clipboard-342019704.png" /></p>
-<p><img src="images/clipboard-3603243916.png" /></p>
-<p>The Sales Managers at Cosmic Computing want to view Opportunities with an annual recurring revenue of more than 100,000 on their Forecasts page. ‘Annual Recurring Revenue’ is an Opportunity custom currency field. Furthermore, they want to calculate the gap-to-quota value and view it within the Forecasts page. How can this be accomplished?</p>
-<ul>
-<li><p>Add a new forecast filter within the forecast type.</p></li>
-<li><p>Create a new caulculated forecast column via Forecasts Settings.</p></li>
-</ul>
-</div>
-<div id="territory" class="section level2 hasAnchor" number="10.10">
-<h2><span class="header-section-number">10.10</span> Territory<a href="sales-and-marketing-applications.html#territory" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Cosmic Repair Solutions has set up Sales Territories in their Salesforce org. The Sales Director of the company would like to allow sales representatives to view the sales forecasts for the territories to which they are assigned. Which forecast types should be used for this requirement?</p>
-<ul>
-<li><p>Opportunity Revenue by Territory</p></li>
-<li><p>Opportunity Quantity by Territory</p></li>
-</ul>
-<p><strong><em>Sales Territories can be used with Pipeline Forecasting. Opportunity Revenue by Territory and Opportunity Quantity by Territory forecast types can be added to enable territory forecasts and allow sales users to view opportunity revenue forecasts and opportunity quantity forecasts by territory. Up to 4 forecast types can be active in Forecast Types.</em></strong></p>
-<p><em>The Opportunity Revenue forecast type allows forecasts to be based on the fields ‘Amount’, ‘Close Date’, and any custom date field on the Opportunity object.</em></p>
-<p><em>Note: In Summer ’24, Enterprise Territory Management has been renamed to Sales Territories. Users can manage territories as they previously did with Enterprise Territory Management under the name Sales Territories.</em></p>
-<p><img src="images/clipboard-3423600114.png" /></p>
-</div>
-<div id="sales-process-1" class="section level2 hasAnchor" number="10.11">
-<h2><span class="header-section-number">10.11</span> Sales Process<a href="sales-and-marketing-applications.html#sales-process-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Which are true regarding how Salesforce supports the sales process?</p>
-<ul>
-<li><p>Salesforce features include leads, campaigns, products, price books, opportunities, and quotes.</p></li>
-<li><p>Salesforce supports selling different products or services with different processes.</p></li>
-<li><p>Opportunity Teams can be used to allow a group of people working on a deal to be associated with an opportunity.</p></li>
-</ul>
-<p><strong><em>Contact Roles for opportunities track which contacts are related to the opportunity and the role they play. Contacts from other accounts can be linked to the opportunity using contact roles. It is a Customizable Campaign Influence and not Team Selling that is used to attribute a percentage of success to influential campaigns. Team Selling is a feature that allows members of an Opportunity team to work on a deal together and split generated commissions or revenue.</em></strong></p>
-<p><em>Salesforce standard objects which include Leads, Campaigns, Products, Price Books, Opportunities, and Quotes support different aspects of the sales process as a default. Different sales processes specific to the organization can also be configured for various types of products, product lines, or services. Lastly, the Opportunity Team can be configured to add multiple users to an Opportunity wherein each member of the team can be assigned roles and special access.</em></p>
-<p><img src="images/clipboard-3872945251.png" /></p>
-<p><img src="images/clipboard-202820333.png" /></p>
-<p><img src="images/clipboard-1276968253.png" /></p>
-</div>
-<div id="macros-1" class="section level2 hasAnchor" number="10.12">
-<h2><span class="header-section-number">10.12</span> Macros<a href="sales-and-marketing-applications.html#macros-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>A Sales Cloud consultant has set up a console app in Lightning Experience to improve the productivity of sales reps in the organization. Which of the following should be considered for creating and running macros in the app to further improve the productivity of sales reps?</p>
-<ul>
-<li><p>Macro Builder is used to craete macros in Lightning Experience.</p></li>
-<li><p>Individual macros cannot be run on list views.</p></li>
-</ul>
-<p><strong><em>Standard objects, except ‘Campaign’, and custom objects that allow quick actions and have a customizable page layout support macros. In Lightning Experience, Macro Builder is a point-and-click tool that is used to create macros.</em></strong></p>
-<p><em>It is not possible to run individual macros on list views. Macro instructions allow using email templates and adding email attachments.</em></p>
+<p>Tasks can be created by clicking the ‘New Task’ action in the ‘Global Actions’ menu. On record pages, they can be created from the ‘Activity’ tab. One can also navigate to the ‘Tasks’ tab to create a new task. The global search results page does not allow creating a new task. There is no ‘Tasks’ related list in Lightning Experience. Users use the Activity Timeline to track activities, i.e., tasks, events, and calendars.</p>
+<p><img src="images/clipboard-1823508693.png" /></p>
 <div class="float">
-<img src="images/clipboard-1260331590.png" alt="" />
-<div class="figcaption"><img src="images/clipboard-4056955341.png" /></div>
+<img src="images/clipboard-896466974.png" alt="" />
+<div class="figcaption"><img src="images/clipboard-2661590.png" /></div>
 </div>
-<p><img src="images/clipboard-2221865787.png" /></p>
-</div>
-<div id="product-1" class="section level2 hasAnchor" number="10.13">
-<h2><span class="header-section-number">10.13</span> Product<a href="sales-and-marketing-applications.html#product-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Cosmic Enterprises will be adding a new product that will be delivered once ordered but billed in quarterly installments for one year. How can this be reflected in Salesforce?</p>
+<p>What is the default behavior when tasks are overdue in Salesforce?</p>
 <ul>
-<li>Create a default revenue schedule for the product.</li>
+<li><p>The overdue task is displayed with its date in red.</p></li>
+<li><p>A reminder is displayed the next time the user logs into Salesforce.</p></li>
 </ul>
-<p>As the product is delivered at one time but the revenue will be received in installments, a revenue schedule that defines the revenue amounts and number of installments should be created.</p>
-<p><img src="images/clipboard-1770520426.png" /></p>
-<p>A sales manager contacted the Salesforce Administrator with an issue that he is not able to add a product to an opportunity. What does the Salesforce Administrator need to check?</p>
+<p>Salesforce displays a reminder for overdue tasks when a user logs in to Salesforce. An overdue task’s date is displayed in red in the activity timeline, the task list view, the task detail view, the task Kanban view, and the task split view</p>
+<p><img src="images/clipboard-301412615.png" /></p>
+<p>Which of the following are true regarding managing tasks in Lightning Experience?</p>
 <ul>
-<li><p>The product has been added to a price book in the currency of the opportunity, and the price book entry is active.</p></li>
-<li><p>The product is active.</p></li>
-<li><p>The product has a standard price entry in the currency of the opportunity.</p></li>
+<li><p>Task can be displayed in a table view.</p></li>
+<li><p>The status of a task can be changed by dragging and dropping in the Kanban view.</p></li>
 </ul>
-<p>The ‘Active’ checkbox should be selected to ensure that a product is active before it can be added to an opportunity. Products need a standard price before they can be added to a price book, which leads to a price book entry creation. For multi-currency orgs, the opportunity Currency is tied to the currency of the associated price book entry. If there is an existing opportunity line item, the currency of the product line item to be inserted should be in conjunction with the opportunity currency. The sales price is specified for a product that is added to an opportunity or quote.</p>
-<p><img src="images/clipboard-1616913694.png" /></p>
-<p><img src="images/clipboard-839240309.png" /></p>
-<p>Galactic Sweepers offers a weekly office cleaning service that is invoiced monthly. What should be created to represent this?</p>
+<p><em>In Lightning Experience, there are 3 views available: Table, Kanban, and Split. In the Kanban view, the status of the task can be updated by dragging and dropping it into another status column. In the split view, the complete list of tasks is displayed next to the detail on one task. Tasks can be deleted from the task list view.</em></p>
+<p><img src="images/clipboard-4188608599.png" /></p>
+<p><img src="images/clipboard-1936088099.png" /></p>
+<p>What is true regarding creating tasks in bulk in Lightning Experience?</p>
 <ul>
-<li>A default Quantity and Revenue Schedule</li>
+<li><p>If a taks is assigned to multiple users, a copy of the task is created for each user.</p></li>
+<li><p>When a task is created it can be assigned to multiple users and groups.</p></li>
 </ul>
-<p>A Revenue and Quantity Schedule is suitable if the customers receive their order on a delivery schedule and also pay for the products using a payment schedule.</p>
-<p><img src="images/clipboard-2787540283.png" /></p>
+<p><em>Tasks can be assigned to multiple users and groups. Each user will get their own copy of the task with their name in the Assigned To field.</em></p>
+<p><img src="images/clipboard-3979902250.png" /></p>
 </div>
-<div id="account-1" class="section level2 hasAnchor" number="10.14">
-<h2><span class="header-section-number">10.14</span> Account<a href="sales-and-marketing-applications.html#account-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>A sales representative is currently working on an account and would like to collaborate with two other sales representatives and a partner user. These users should be able to view and edit the account for a limited period of time. What is a possible solution for this requirement?</p>
+<div id="einstein-activity-capture" class="section level2 hasAnchor" number="8.6">
+<h2><span class="header-section-number">8.6</span> Einstein Activity Capture<a href="objective-1---47-questions.html#einstein-activity-capture" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Cosmic Innovation has recently migrated to Lightning Experience, and the Salesforce Administrator has enabled ‘Einstein Activity Capture’. A sales user of Cosmic Innovation has created a task related to a contact record in Salesforce. Where can this task be viewed in Lightning Experience?</p>
 <ul>
-<li><p>Share the account with the users using the ‘Sharing’ button.</p></li>
-<li><p>Add and remove users to the account team from the ‘Account Team’ related list.</p></li>
+<li><p>In the ‘Activity Timeline’ of the contact record.</p></li>
+<li><p>In the ‘Activity Timeline’ of the account record related to the contact.</p></li>
+<li><p>In the ‘My Tasks’ list of the user assigned to the task.</p></li>
 </ul>
-<p><strong><em>Internal and partner users can be added to an account team in Lightning Experience. From the ‘Account Team’ related list on an account, either a team member or a default account team can be added. Team members can be given ‘Read/Write’ access to an account. The related list must be added to the account page layout by an administrator to use this functionality.</em></strong></p>
-<p><em>The ‘Sharing’ button can also be used to share a record with other users, groups, roles, and territories. A sharing rule is used to grant record access to users in groups, roles, and territories. A permission set can be used to grant additional access to objects, but it cannot be used to grant access to specific records of an object.</em></p>
-<p><img src="images/clipboard-2431077863.png" /></p>
+<p><img src="images/clipboard-3124831212.png" /></p>
+<div class="float">
+<img src="images/clipboard-2707423473.png" alt="" />
+<div class="figcaption"><img src="images/clipboard-3455838047.png" /></div>
 </div>
-<div id="lead" class="section level2 hasAnchor" number="10.15">
-<h2><span class="header-section-number">10.15</span> Lead<a href="sales-and-marketing-applications.html#lead" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="einstein-lead-scoring" class="section level3 hasAnchor" number="10.15.1">
-<h3><span class="header-section-number">10.15.1</span> Einstein Lead Scoring<a href="sales-and-marketing-applications.html#einstein-lead-scoring" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p><strong><em>With Einstein Lead Scoring, leads can be scored separately according to their segments. Since lead and conversion history can be evaluated based on the associated marketing or advertising campaign, it will be easier to determine which campaigns prove to be more successful.</em></strong></p>
-<p><em>Einstein Activity Capture is used to connect email and calendar applications to the Salesforce org and helps reduce data entry work done by agents. Einstein Opportunity Insights evaluates opportunities and gives modeled predictions about the likelihood to close them based on data from previously closed opportunities. Campaign hierarchy is used to organize and link individual marketing campaigns together through parent and child relationships.</em></p>
+<p>Which of the following statements are true about the activity timeline in Lightning Experience?</p>
 <ul>
-<li>Einstein Lead Scoring.</li>
+<li><p>Emails that include commitments and objections can be automatically flagged when Einstein Activity Capture is enabled.</p></li>
+<li><p>Activities displayed can be filtered by date range and activity type.</p></li>
+<li><p>Upcoming and overdue activities can be sorted by date</p></li>
 </ul>
-<p><img src="images/clipboard-2608002648.png" /></p>
-</div>
-</div>
-<div id="sales-pipeline-visibility-and-forecasting" class="section level2 hasAnchor" number="10.16">
-<h2><span class="header-section-number">10.16</span> Sales Pipeline Visibility and Forecasting<a href="sales-and-marketing-applications.html#sales-pipeline-visibility-and-forecasting" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-</div>
-<div id="pipeline-inspection" class="section level2 hasAnchor" number="10.17">
-<h2><span class="header-section-number">10.17</span> Pipeline Inspection<a href="sales-and-marketing-applications.html#pipeline-inspection" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>The Sales Managers at Costa Gears are taking a more proactive role in managing the opportunity pipeline.<br />
-The Sales Cloud Consultant recommended that they utilize Pipeline Inspection. Which of the following capabilities are features of Pipeline Inspection?</p>
+<p><em>The ‘Upcoming &amp; Overdue’ list in the activity timeline displays future events and upcoming tasks. Past months are used to display past meetings, sent emails, and completed tasks. A user can expand a past month (e.g., July 2021) to see which tasks were completed during that month.</em></p>
+<p><em>‘Upcoming &amp; Overdue’ activities can be sorted by date; activities with the oldest or newest dates can be displayed first. Overdue items are shown in red. Filters can be applied to date range and activity type.</em></p>
+<p><em>When Einstein Activity Capture is enabled, email insights such as ‘Commitment Made’ and ‘Objection Made’ show that a user expressed an intention or aversion to take action. The activity timeline shows which emails include insights.</em></p>
+<p><img src="images/clipboard-3634234165.png" /></p>
+<p>Cosmic Technologies is a software development company that has B2B customers in several countries. Sales reps of the company primarily use Gmail to communicate with customers via email. They are already using Gmail integration to see related Salesforce data while viewing emails. However, they are currently adding inbound and outbound emails and events to related records like accounts and contacts manually in Salesforce. The sales managers would like to automate this process to improve their productivity and give them access to events via standard reports in Salesforce. Sales reps should be able to easily remove their Gmail account if they do not want it to sync with Salesforce anymore. Which feature of Sales Cloud Einstein can be used for this requirement?<br />
+</p>
 <ul>
-<li><p>Tiered Einstein opportunity scores are displayed along with key factors and score changes.</p></li>
-<li><p>Filters can be applied to narrow the view by criteria or to help identify areas of concern.</p></li>
-<li><p>Key performance indicators for sales pipelines are displayed as metrics at the top of the page.</p></li>
+<li>Einstein Activity Capture</li>
 </ul>
-<p><strong><em>Pipeline Inspection is available as part of the Sales Cloud license at no extra cost with Enterprise, Performance, and Unlimited editions. It provides sales managers with better visibility of their pipeline by providing information on key metrics (based on the available number and currency fields), opportunities, and weekly changes. Metrics such as new opportunities created, increases or decreases in amounts, and overdue opportunities, can be displayed for the sales teams.</em></strong></p>
-<p><em>Pipeline views can be created using different filters to help identify areas of concern. Pipeline Inspection users who have the ‘Revenue Intelligence User’ or the ‘Revenue Intelligence Admin’ permission set can see the changes to opportunities in different forecast categories over time from the ‘Flow’ tab. Inline editing of these fields is no longer possible, aligning the list view behavior with the Opportunity page layout configuration. However, field-level security settings continue to take precedence, overriding the Opportunity page layout settings if necessary.</em></p>
-<p><em>Einstein Deal Insights, powered by Einstein’s machine learning capability, predicts the opportunities unlikely to be won in the current month. Lastly, Einstein Conversation Insights and Email Insights are also features of Pipeline Inspection. Einstein Conversation Insights and Email Insights provide sales agents with the information they need to analyze all customer interactions to track deals. These functionalities encompass suggested actions, such as reviewing call and email logs, producing call summaries for voice and video calls, and generating editable summaries to incorporate future actions and client input.</em></p>
-<p><a href="https://help.salesforce.com/s/articleView?id=sales.pipeline_inspection_drive_revenue_using_parent.htm&amp;type=5" class="uri">https://help.salesforce.com/s/articleView?id=sales.pipeline_inspection_drive_revenue_using_parent.htm&amp;type=5</a></p>
-</div>
-<div id="dynamic-highlights-panel" class="section level2 hasAnchor" number="10.18">
-<h2><span class="header-section-number">10.18</span> Dynamic Highlights Panel<a href="sales-and-marketing-applications.html#dynamic-highlights-panel" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Cosmic Beans handles several types of accounts that range from individual to corporate consumers of their world-class coffee beans. The Dynamic Highlights Panel component has been added to the Account record page. How will this configuration impact the sales team when viewing an account?</p>
+<p><strong><em>Einstein Activity Capture automatically captures emails and events from a connected Gmail account and adds them to the activity timeline of related Salesforce records, such as accounts and contacts. The automatic associations done by Einstein Activity Capture can be manually overridden on the activity timeline or in the Outlook/Gmail integration. A setting called ‘Only Show Events that are Salesforce Records’ can be turned on by navigating to Einstein Activity Capture | Settings in Setup to ensure that the events on the activity timeline are Salesforce records and available in standard reports.</em></strong></p>
+<p><em>Einstein Activity Capture users can also delete Gmail accounts they no longer want to be connected to Salesforce. They can navigate to the ‘Email and Calendar Accounts’ page in their personal settings to delete an account that they no longer want to be connected.</em></p>
+<p>*Einstein Insights displays insights related to accounts and opportunities. There is no feature called Einstein Automated Emails or Einstein Email Sync.* <img src="images/clipboard-1248580846.png" /></p>
+<p><img src="images/clipboard-512591999.png" /></p>
+<p>Cosmic Enterprises uses both Einstein Activity Capture and Outlook Integration. Emails that users send and receive are captured and added to the activity timeline of related records. Which of the following capabilities are available for Outlook integration users who are part of an Einstein Activity Capture configuration?</p>
 <ul>
-<li>Sales users may see different sets of fields displayed on the Dynamic Highlights Panel depending on the account.</li>
+<li>Users can also change the associations between a captured email</li>
 </ul>
-<p>The Dynamic Highlights Panel component is an advanced alternative to the traditional Highlights Panel component in Lightning App Builder. While the Highlights Panel supports up to 7 fields only, the Dynamic Highlights Panel can display up to 12 fields. Unlike the fields in the Highlights Panel that are static, the fields in the Dynamic Highlights Panel support field visibility and can be displayed conditionally based on field values, device, or other criteria. While fields in the Highlights Panel are configured via the compact layout, fields in the Dynamic Highlights Panel are configured directly in Lightning App Builder.</p>
-<p><img src="images/clipboard-2190630262.png" /></p>
+<div id="prevent-automated-email-replies-and-sensitive-emails-from-being-shared" class="section level3 hasAnchor" number="8.6.1">
+<h3><span class="header-section-number">8.6.1</span> Prevent automated email replies and sensitive emails from being shared<a href="objective-1---47-questions.html#prevent-automated-email-replies-and-sensitive-emails-from-being-shared" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Cosmic Electronics uses Einstein Activity Capture to keep its sales reps’ emails and calendar events in sync with Salesforce. Automated email replies and emails containing sensitive information are frequently added to the activity timeline of records such as contacts and opportunities. Sales reps often share them inadvertently with other users, which is against the company’s data security policy. The sales director is looking for a solution to prevent the inadvertent sharing of sensitive emails. How can the company’s system administrator meet this requirement?<br />
+</p>
+<ul>
+<li>Ensure that the options to prevent automated email replies and sensitive emails from being shared are enabled in the Einstein Activity Capture settings.</li>
+</ul>
+<p>In the Einstein Activity Capture settings, two options to prevent automated email replies and sensitive emails from being shared are on by default. They can be turned off, but to meet the requirement in the given scenario, the administrator must ensure that they are turned on. There are no similar options on the ‘Email Settings’ page in Setup. There is also no option to enable or disable ‘Sensitive Email Sharing’ in the activity timeline of records. It is not necessary to contact Salesforce support to meet this requirement.</p>
+<p><img src="images/clipboard-1595183048.png" /></p>
+</div>
+<div id="manage-associations-between-automatically-captured-emails-and-related-records" class="section level3 hasAnchor" number="8.6.2">
+<h3><span class="header-section-number">8.6.2</span> Manage Associations Between Automatically Captured Emails and Related Records<a href="objective-1---47-questions.html#manage-associations-between-automatically-captured-emails-and-related-records" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Cosmic Express uses both Einstein Activity Capture and Gmail Integration. Gmail Integration users regularly access emails that are captured and added to the activity timeline of related records such as opportunities. Which of the following capabilities are available to them for managing email associations?</p>
+<ul>
+<li><p>Users can remove associations between a captured email and its related records.</p></li>
+<li><p>Users can add associations between a captured email and its related records.</p></li>
+</ul>
+<p><strong><em>Gmail Integration users who are part of an Einstein Activity Capture configuration can add or remove the associations between a captured email and its related records in the activity timeline. Associations can also be modified directly from the Gmail integration.</em></strong></p>
+<p><em>Users cannot search for and add an association between two captured emails. It is only possible to search for and add an association to a more relevant record. There is no option to automatically manage email associations; Salesforce automatically relates emails to records.</em></p>
+<p><a href="https://help.salesforce.com/s/articleView?id=release-notes.rn_sales_eac_manage_associations_emails_records.htm&amp;release=238&amp;type=5" class="uri">https://help.salesforce.com/s/articleView?id=release-notes.rn_sales_eac_manage_associations_emails_records.htm&amp;release=238&amp;type=5</a></p>
+</div>
+</div>
+<div id="outlook-integration" class="section level2 hasAnchor" number="8.7">
+<h2><span class="header-section-number">8.7</span> Outlook Integration<a href="objective-1---47-questions.html#outlook-integration" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Global Technologies wants to give its sales representatives the ability to relate emails, contacts, and events in Microsoft Outlook and Microsoft Exchange with Salesforce records. What can be configured by a Salesforce Administrator to meet this need?</p>
+<ul>
+<li>Outlook Integration</li>
+</ul>
+<p><em>Using Lightning Sync and Outlook Integration together is an ideal solution for customers who use Microsoft Exchange, Office 365, and Outlook. With Lightning Sync, users can sync contacts, events, or both between Microsoft Exchange and Salesforce. With Outlook Integration, users can link related emails to records in Salesforce and access Salesforce records from Outlook.</em></p>
+<p><em>Beginning in Winter ’21, new Salesforce customers do not have access to Lightning Sync.</em></p>
+<p><img src="images/clipboard-2351499290.png" /></p>
+<p><img src="images/clipboard-2953073688.png" /></p>
+<p>Which of the following are limitations of synchronizing items between Salesforce and Outlook using Lightning Sync?</p>
+<ul>
+<li><p>Task cannot be synced</p></li>
+<li><p>Synced contacts cannot be deleted automatically in the other calendar application.</p></li>
+</ul>
+<p><em>Lightning Sync cannot be used with Outlook Integration to delete synced contacts automatically in both calendar applications. Private events can be synced, and synced events can be deleted in both Salesforce and Outlook automatically. Repeating events in Lightning Experience, called event series, can be synced by enabling the ‘Sync event series’ setting. Tasks cannot be synced using Lightning Sync. The Outlook Integration app can be used in order to work on Salesforce tasks from Outlook.</em></p>
+<p><em>Note: Lightning Sync is not available for new Salesforce customers. It is recommended to use Einstein Activity Capture, a long-term solution for syncing contacts and events between Microsoft® or Google applications and Salesforce. This question is still here as the official Salesforce exam can still have questions related to Lightning Sync.</em></p>
+<p><img src="images/clipboard-797404071.png" /></p>
+<p><img src="images/clipboard-3566420455.png" /></p>
+</div>
+<div id="new-custom-object" class="section level2 hasAnchor" number="8.8">
+<h2><span class="header-section-number">8.8</span> New Custom Object<a href="objective-1---47-questions.html#new-custom-object" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A Salesforce Administrator has created a ‘Project’ custom object and would also like to track Project Tasks. How can the Salesforce Administrator accomplish this?</p>
+<ul>
+<li>Check the ‘Allow Activities’ check box on the Project object.</li>
+</ul>
+<p>The ‘Allow Activities’ checkbox is available in the custom object settings and will allow Activities to be associated with the custom object. If this option is selected when the object is created, an Activity section will appear in the default page layout.</p>
+<p><img src="images/clipboard-1262486505.png" /></p>
+<p><img src="images/clipboard-558025478.png" /></p>
+<p>The users of Cosmic Marketing Solutions use Lightning Experience only. A Salesforce Administrator has created two custom objects, namely, Job Application and Applicant. There is a lookup relationship field on the Job Application object to the Applicant object. Users would like to be able to send an email to the applicant related to a particular job application easily. Which solutions can be utilized for this requirement?</p>
+<ul>
+<li><p>Create a custom ‘Send Email’ action and add it to the Job Application page layout.</p></li>
+<li><p>Enable activities on the Job Application object and use the ‘Activity’ tab to send the email.</p></li>
+</ul>
+<p>In Lightning Experience, the ‘Activity’ tab can be used by users to send an email. A custom ‘Send Email’ action can also be created and added to the Job Application page layout to allow users to send emails. The email of the applicant on the job application could be used. There is no ‘Email Notifications’ or ‘Email Tracking’ functionality that can be utilized for this use case.</p>
+<p><img src="images/clipboard-2277273725.png" /></p>
+<p><img src="images/clipboard-3814862241.png" /></p>
+<p><img src="images/clipboard-2014413784.png" /></p>
+</div>
+<div id="archived-activities" class="section level2 hasAnchor" number="8.9">
+<h2><span class="header-section-number">8.9</span> Archived Activities<a href="objective-1---47-questions.html#archived-activities" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>What is true regarding archived activities?</p>
+<ul>
+<li><p>Salesforce automatically archives activities if they meet certain criteria.</p></li>
+<li><p>Salesforce does not delete archived activities, but users can manually delete them.</p></li>
+</ul>
+<p><em>Salesforce automatically archives activities that meet certain criteria (e.g. closed tasks due more than 365 days ago). Once archived, they are included in data export files and users can view these.</em></p>
+<p><em>Salesforce does not delete archived activities, but users can manually delete them. Currently, activity archiving is mandatory.</em></p>
+<p><img src="images/clipboard-2609513323.png" /></p>
+</div>
+<div id="private-events" class="section level2 hasAnchor" number="8.10">
+<h2><span class="header-section-number">8.10</span> Private Events<a href="objective-1---47-questions.html#private-events" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>What is true regarding Private Events?</p>
+<ul>
+<li>The user that created the event and any user with the ‘View All Data’ permission can view the event.</li>
+</ul>
+<p><em>Private events are accessible to the user that created the event and any user that has the ‘View All Data’ or ‘Modify All Data’ permission. There are a few exceptions to role-hierarchy based sharing and these include events marked as private.</em></p>
+<p><img src="images/clipboard-1415921162.png" /></p>
+</div>
+<div id="create-calendar-from-object" class="section level2 hasAnchor" number="8.11">
+<h2><span class="header-section-number">8.11</span> Create Calendar from Object<a href="objective-1---47-questions.html#create-calendar-from-object" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>What are two capabilities of the ‘Create Calendar from Salesforce Object’ feature?</p>
+<ul>
+<li><p>A Calendar can be created from a custom or standard object.</p></li>
+<li><p>Calendars can be customized by appying a list view.</p></li>
+</ul>
+<p>A calendar can be created from a standard or custom object and can be customized by applying a list view. The fields that determine what data the calendar displays can be selected. Once created, the calendar can be edited and deleted.</p>
+<p><img src="images/clipboard-4197074549.png" /></p>
+</div>
+<div id="follow-up-event" class="section level2 hasAnchor" number="8.12">
+<h2><span class="header-section-number">8.12</span> Follow-Up Event<a href="objective-1---47-questions.html#follow-up-event" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A sales rep of Cosmic Solutions created a task to call a contact related to the ‘Edge Communications’ account. He would like to follow up on the task by meeting with the contact at a particular location. Which of the following can be created in Lightning Experience to allow the sales rep to follow up and ensure that the account and contact are copied from the original task?</p>
+<ul>
+<li>Follow-Up Event</li>
+</ul>
+<p><em>A follow-up event can be created in Lightning Experience to follow up on an existing task. The key information is copied from the original task so sales reps don’t have to enter data twice. Unlike a follow-up task, a location can be specified in a follow-up event. There is no follow-up activity or record.</em></p>
+<p><img src="images/clipboard-3637527394.png" /></p>
+</div>
+<div id="event" class="section level2 hasAnchor" number="8.13">
+<h2><span class="header-section-number">8.13</span> Event<a href="objective-1---47-questions.html#event" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The sales users of Cosmic Enterprises use Lightning Experience to create and manage records as well as related activities. While creating an event, a sales manager of the company would like to schedule events for monthly meetings that repeat indefinitely. What can a Salesforce Administrator do to meet this requirement after reviewing options in Activity Settings?</p>
+<ul>
+<li>Add the ‘Repeat’ checkbox to the page layout for events.</li>
+</ul>
+<p><strong><em>Sales reps can be allowed to schedule event series by adding the ‘Repeat’ checkbox to the Event page layout. The reps can then select ‘Repeat’ in order to schedule daily, weekly, monthly, or other repeating events. This feature is also called ‘Event Series’ in Lightning Experience, and it cannot be enabled in Activity Settings.</em></strong></p>
+<p><em>Enabling ‘Recurring Events’ can only be enabled in Activity Settings in Salesforce Classic, so it doesn’t apply to this requirement. There is no ‘Multi-Event’ checkbox on the page layout for Events.</em></p>
+<p><img src="images/clipboard-4220718773.png" width="391" /></p>
+<div id="conference-room" class="section level3 hasAnchor" number="8.13.1">
+<h3><span class="header-section-number">8.13.1</span> Conference Room<a href="objective-1---47-questions.html#conference-room" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The main office of Cosmic Solar has several conference rooms that are used for presentations and meetings. Sales users of the company use Salesforce to schedule events. While creating an event in Lightning Experience, what can a sales manager do to reserve a particular conference room for a meeting?</p>
+<ul>
+<li>Add the conference room resource as an attendee.</li>
+</ul>
+<p><em>Meeting resources, such as conference rooms and projectors, can be reserved for an event. A resource can be added as an attendee while creating an event. Resources can be created by navigating to ‘Public Calendars and Resources’ in Setup.</em></p>
+<p><img src="images/clipboard-1100187772.png" /></p>
+</div>
+<div id="attendees" class="section level3 hasAnchor" number="8.13.2">
+<h3><span class="header-section-number">8.13.2</span> Attendees<a href="objective-1---47-questions.html#attendees" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>All the users of Cosmic Enterprises are using Lightning Experience. While creating an event, a sales representative of the company would like to add a contact and a person account as attendees to the event. What should a Salesforce Administrator do to meet this requirement?</p>
+<ul>
+<li>Add the ‘Attendees’ field to the Event page layout.</li>
+</ul>
+<p><em>The ‘Attendees’ field can be added to the Event page layout to allow users to add Salesforce users, contacts, person accounts, and leads to the events that they create in Lightning Experience. Setting up Lightning Sync is only required to send invitations to attendees and receive their responses. There is also no setting in ‘Activity Settings’ that can be enabled to allow users to add attendees.</em></p>
+<p><img src="images/clipboard-4188759958.png" /></p>
+<p>The Salesforce Administrator of Cosmic Clothing has added the ‘Attendees’ field to the Event page layout. A sales representative is creating an event in Lightning Experience. Which of the following can the sales rep add as ‘Attendee’ on the Event page layout?</p>
+<ul>
+<li><p>Contacts</p></li>
+<li><p>Leads</p></li>
+<li><p>Users</p></li>
+</ul>
+<p>When creating an event in Lightning Experience, a sales representative can add Salesforce users, contacts, person accounts, and leads as attendees. Business accounts cannot be added as attendees. It is also not possible to add campaign members as attendees</p>
+<p><img src="images/clipboard-620540156.png" /></p>
+</div>
+</div>
+<div id="public-calendar" class="section level2 hasAnchor" number="8.14">
+<h2><span class="header-section-number">8.14</span> Public Calendar<a href="objective-1---47-questions.html#public-calendar" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The sales reps of Cosmic Solutions use Lightning Experience. One of the sales managers has created a sales team that consists of five sales reps. These sales reps should be able to view, schedule, and update shared events without switching to Salesforce Classic. Which feature can be utilized for this use case?</p>
+<ul>
+<li>Public Calendar.</li>
+</ul>
+<p>Public calendars can be used to manage group activities, such as scheduling a common event. Everyone who shares the public calendar can view, schedule, and update events without switching to Salesforce Classic.</p>
+<div class="float">
+<img src="images/clipboard-248816304.png" alt="" />
+<div class="figcaption"><img src="images/clipboard-3744688841.png" /></div>
+</div>
+</div>
+<div id="enhanced-email" class="section level2 hasAnchor" number="8.15">
+<h2><span class="header-section-number">8.15</span> Enhanced Email<a href="objective-1---47-questions.html#enhanced-email" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Which of the following options allows users to add Outlook emails to Salesforce as an Email Message object and not as Tasks, using Salesforce Outlook Integration?</p>
+<ul>
+<li>Enhanced Email.</li>
+</ul>
+<p><em>Enhanced Email with Outlook Integration allows users to add emails from Outlook to Salesforce records as Email Message objects instead of tasks. Email to Salesforce allows automatically logging emails from third party email applications as activities on contact and lead records in Salesforce. Lightning Email Templates can be used with Outlook Integration to ensure consistent messaging to customers in order to save time.</em></p>
+<p><em>Note: Lightning Sync is not supported anymore for new Salesforce customers. Einstein Activity Capture is the recommended replacement.</em></p>
+<p><img src="images/clipboard-2727135496.png" /></p>
+</div>
+<div id="lightning-sync" class="section level2 hasAnchor" number="8.16">
+<h2><span class="header-section-number">8.16</span> Lightning Sync<a href="objective-1---47-questions.html#lightning-sync" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Which of the following can be synced between Salesforce and Microsoft Exchange using Lightning Sync?</p>
+<ul>
+<li><p>Contacts</p></li>
+<li><p>Events</p></li>
+</ul>
+<p>Lightning Sync can be used to sync contacts and events between Salesforce and Microsoft Exchange. Emails cannot be synced via Lightning Sync but can be attached to multiple contacts or records that allow activities such as Cases.</p>
+<p><img src="images/clipboard-1019061242.png" /></p>
+<p>The Sales Director of Cosmic Solutions would like to increase the productivity of sales representatives by synchronizing items between Salesforce and Outlook. Which data can be synchronized using Lightning Sync with Salesforce Outlook Integration?</p>
+<ul>
+<li><p>Events</p></li>
+<li><p>Contacts</p></li>
+</ul>
+<p><img src="images/clipboard-858526208.png" /></p>
+<p>A company has field sales reps that are always on the road and use their mobile phones with the Salesforce mobile app to manage their work. Reps also use Outlook email and calendar. The sales manager would like for the reps to synchronize repeating events between Outlook and Salesforce. The company uses Lightning Experience. What does the Salesforce Administrator need to do to support this request?</p>
+<ul>
+<li>Enable ‘Sync event series’ in the Lightning Sync configuration.</li>
+</ul>
+<p>Salesforce supports the ability to synchronize repeating events between Outlook calendars and Salesforce, including the Salesforce mobile app. However, the company needs to use Lightning Experience and Lightning Sync. Repeating events created in Salesforce Classic cannot be synchronized with Outlook calendars. Also, reps cannot turn on the repeating events sync feature in the Salesforce mobile app on their own. The Salesforce Administrator has to enable it in the Lightning Sync configuration.</p>
+<p><img src="images/clipboard-739479615.png" /></p>
+</div>
+<div id="email-to-salesforce" class="section level2 hasAnchor" number="8.17">
+<h2><span class="header-section-number">8.17</span> Email to Salesforce<a href="objective-1---47-questions.html#email-to-salesforce" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>As part of the request for Salesforce Outlook Integration, the Sales Director of the company wants sales reps to be able to create and see related Salesforce records and automatically associate emails to them from within Outlook. In addition, the emails should be logged as email objects and not as tasks within Salesforce. Aside from enabling Salesforce Outlook Integration, what other features must be enabled or set by the administrator to fulfill these requirements?</p>
+<ul>
+<li><p>Enable Email to Salesforce</p></li>
+<li><p>Enable Enhanced Email</p></li>
+</ul>
+<p><em>Email to Salesforce is a feature which automatically relates emails to Salesforce records like contacts, leads, and opportunities. Enabling Enhanced Email would allow the reps to easily associate emails to relevant Salesforce records while still composing them. Emails would be associated as tasks in Salesforce if Enhanced Email is not enabled. Salesforce does not have an Advanced Outlook Sync feature.</em></p>
+<p><em>On the other hand, email application panes are used to define the layout of components in the integration side panel. A default email pane is readily available for use and customized ones are only required for more specific usage such as when some components should not be visible for selected user profiles.</em></p>
+<p><img src="images/clipboard-2359408280.png" /></p>
+</div>
+<div id="email-folder" class="section level2 hasAnchor" number="8.18">
+<h2><span class="header-section-number">8.18</span> Email Folder<a href="objective-1---47-questions.html#email-folder" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A user is not able to find an email template when sending an email. What could be the reason for this?</p>
+<ul>
+<li><p>The user does not have access to the Email Template folder.</p></li>
+<li><p>The email template is not marked ‘Available for Use’.</p></li>
+</ul>
+<p>Email Templates must be set to ‘Available for Use’ to allow users to select them. Email templates can be made accessible to all users or only certain groups or roles by setting access to the Email Template folders.</p>
+<p><img src="images/clipboard-4262044361.png" /></p>
+</div>
+<div id="flow-builder-1" class="section level2 hasAnchor" number="8.19">
+<h2><span class="header-section-number">8.19</span> Flow Builder<a href="objective-1---47-questions.html#flow-builder-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In Cosmic Glass Works, when a quote is accepted by the customer, a draft agreement and a follow-up task need to be created. What is the best way to cater to this requirement?</p>
+<ul>
+<li>Use Flow Builder to define an agreement record and task creation process.</li>
+</ul>
+<p><strong><em>A record-triggered flow can be configured to automatically create a draft agreement and follow-up task when a quote is updated to an accepted status. This approach provides a declarative, efficient, and maintainable solution without requiring code.</em></strong></p>
+<p><em>An approval process automates record approvals and related notifications but cannot initiate record creation based solely on the status change of the quote in this scenario. The Quote object does not have settings for automatically generating related records, and while an Apex trigger could achieve this programmatically, a flow is the preferred declarative solution for this type of automation.</em></p>
+<p><img src="images/clipboard-44705237.png" /></p>
+</div>
+<div id="capabilities-of-salesforce-mobile-app" class="section level2 hasAnchor" number="8.20">
+<h2><span class="header-section-number">8.20</span> Capabilities of Salesforce Mobile App<a href="objective-1---47-questions.html#capabilities-of-salesforce-mobile-app" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Which features in the Salesforce mobile app user interface can be customized to fit a company’s branding?</p>
+<ul>
+<li><p>Brand Color</p></li>
+<li><p>Loading page logo</p></li>
+<li><p>Loading page color</p></li>
+</ul>
+<p><strong><em>The brand color defines the base color to use for the header, buttons, search bar and other user interface elements in the Salesforce mobile app. The logo and background color of the loading page when a user logs in can also be customized.</em></strong></p>
+<p><em>Font styles and background images cannot be customized.</em></p>
+<p><img src="images/clipboard-454840708.png" /></p>
+<p>Which device and browser combination supports the full Lightning Experience desktop site by default?</p>
+<ul>
+<li>Safari on iPadOS</li>
+</ul>
+<p>Safari on iPadOS is the only exception that allows for the full Lightning Experience desktop experience on a mobile device. The other options will redirect users to the Salesforce Classic UI.</p>
+<p><a href="https://help.salesforce.com/s/articleView?language=en_US&amp;id=000380219&amp;type=1" class="uri">https://help.salesforce.com/s/articleView?language=en_US&amp;id=000380219&amp;type=1</a></p>
+<p><img src="images/clipboard-1588191324.png" width="297" /></p>
+<p>Which requirement must be met for a user to see a specific item within a Launchpad component?</p>
+<ul>
+<li>The user must have the permission to view the tab associated with that item</li>
+</ul>
+<p><strong><em>Launchpads respect standard security. Therefore, users only see items in the Launchpad for which they have the appropriate tab visibility based on user permission settings.</em></strong></p>
+<p><em>The “Modify All Data” permission is a high-level administrative permission and is not required for standard users to view navigation links. Read access permission is required for viewing custom mobile app branding (such as logo), but it does not control the visibility of Launchpad navigation items. There is no “Public” checkbox for individual items within the Launchpad.</em></p>
+<p><a href="https://help.salesforce.com/s/articleView?language=en_US&amp;id=xcloud.salesforce_app_launchpad.htm&amp;type=5" class="uri">https://help.salesforce.com/s/articleView?language=en_US&amp;id=xcloud.salesforce_app_launchpad.htm&amp;type=5</a></p>
+<p><img src="images/clipboard-3317310981.png" /></p>
+<p>When a user accesses Salesforce through a mobile phone browser on an Android device, which interface is displayed by default?</p>
+<ul>
+<li>Salesforce Classic</li>
+</ul>
+<p><strong><em>Lightning Experience is not supported on mobile web browsers for phones. Salesforce detects the mobile user agent and redirects the user to Salesforce Classic.</em></strong></p>
+<p><em>The Salesforce Mobile App interface cannot be displayed in a mobile phone browser. Lightning Web Runtime is used in Experience Cloud sites.</em></p>
+<p><a href="https://help.salesforce.com/s/articleView?language=en_US&amp;id=000380219&amp;type=1" class="uri">https://help.salesforce.com/s/articleView?language=en_US&amp;id=000380219&amp;type=1</a></p>
 </div>
 </div>
 <script>
@@ -796,8 +989,8 @@ window.onload = function() {
           </div>
         </div>
       </div>
-<a href="objective-2.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="objective-2-1.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="productivity-and-collaboration.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="objective-2.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
