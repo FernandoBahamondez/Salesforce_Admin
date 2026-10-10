@@ -37,9 +37,9 @@ $$
 \\
 \text{Agentforce Engagement} & \text{   , Situacion 2}\\
 \\
-\text{Sales Management} & \text{   , Situacion 2}\\
+\text{Sales Management} & \text{   , Situacion 3}\\
 \\
-\text{Sales Coaching} & \text{   , Situacion 2}\\
+\text{Sales Coaching} & \text{   , Situacion 4}\\
 \\
 \end{cases}
 $$
