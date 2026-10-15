@@ -78,12 +78,22 @@
 <ul>
 <li class="chapter" data-level="1.1" data-path="agentforce-8.html"><a href="agentforce-8.html#fundamentals"><i class="fa fa-check"></i><b>1.1</b> Fundamentals</a>
 <ul>
-<li class="chapter" data-level="1.1.1" data-path="agentforce-8.html"><a href="agentforce-8.html#ai-sales-agents"><i class="fa fa-check"></i><b>1.1.1</b> AI Sales Agents</a></li>
+<li class="chapter" data-level="1.1.1" data-path="agentforce-8.html"><a href="agentforce-8.html#ppidata-masking"><i class="fa fa-check"></i><b>1.1.1</b> PPI/Data Masking</a></li>
+<li class="chapter" data-level="1.1.2" data-path="agentforce-8.html"><a href="agentforce-8.html#owd"><i class="fa fa-check"></i><b>1.1.2</b> OWD</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="agentforce-8.html"><a href="agentforce-8.html#agent-types-and-considerations"><i class="fa fa-check"></i><b>1.2</b> Agent Types and Considerations</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="agentforce-8.html"><a href="agentforce-8.html#agentforce-employee-agent"><i class="fa fa-check"></i><b>1.2.1</b> Agentforce Employee Agent</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="agentforce-8.html"><a href="agentforce-8.html#core-components"><i class="fa fa-check"></i><b>1.3</b> Core Components</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="agentforce-8.html"><a href="agentforce-8.html#actions-instructions"><i class="fa fa-check"></i><b>1.3.1</b> Actions Instructions</a></li>
+<li class="chapter" data-level="1.3.2" data-path="agentforce-8.html"><a href="agentforce-8.html#ai-sales-agents"><i class="fa fa-check"></i><b>1.3.2</b> AI Sales Agents</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="agentforce-8.html"><a href="agentforce-8.html#qa"><i class="fa fa-check"></i>Q&amp;A</a>
 <ul>
 <li class="chapter" data-level="" data-path="agentforce-8.html"><a href="agentforce-8.html#agentforce---builder-tools"><i class="fa fa-check"></i>Agentforce - Builder Tools</a></li>
-<li class="chapter" data-level="1.1.2" data-path="agentforce-8.html"><a href="agentforce-8.html#explain-the-various-organization-security-controls"><i class="fa fa-check"></i><b>1.1.2</b> Explain the various organization security controls</a></li>
+<li class="chapter" data-level="1.3.3" data-path="agentforce-8.html"><a href="agentforce-8.html#explain-the-various-organization-security-controls"><i class="fa fa-check"></i><b>1.3.3</b> Explain the various organization security controls</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="data-analytics-managment-17.html"><a href="data-analytics-managment-17.html"><i class="fa fa-check"></i><b>2</b> Data &amp; Analytics Managment 17%</a>
@@ -345,20 +355,156 @@
 <p>Einstein GPT Trust Layer<br />
 </p>
 <p><img src="images/clipboard-2736234821.png" width="907" /></p>
-<div id="ai-sales-agents" class="section level3 hasAnchor" number="1.1.1">
-<h3><span class="header-section-number">1.1.1</span> AI Sales Agents<a href="agentforce-8.html#ai-sales-agents" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="ppidata-masking" class="section level3 hasAnchor" number="1.1.1">
+<h3><span class="header-section-number">1.1.1</span> PPI/Data Masking<a href="agentforce-8.html#ppidata-masking" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>An administrator wants to ensure that when Agentforce generates email drafts, sensitive customer credit card numbers stored in the case description are never visible to an external Large Language Model (LLM) provider. Which Einstein Trust Layer capability directly prevents this sensitive data from being shared with the LLM?</p>
+<ul>
+<li>PPI/Data Masking</li>
+</ul>
+<p><strong><em>The PII/Data Masking feature of the Einstein Trust Layer is responsible for identifying sensitive information, such as credit card numbers, email addresses, or social security numbers, within a prompt and replacing it with generic placeholder text (e.g., [CREDIT_CARD_NUMBER]) before the request is sent to the external LLM. This ensures that the third-party model never receives or processes the actual sensitive data, keeping it securely inside the Salesforce boundary.</em></strong></p>
+<p><em>Zero Data Retention is a policy agreement that ensures an external LLM provider does not store or train their models on the data sent to them, but it does not prevent the data from being sent in the first place. Prompt Defense is designed to detect and block “jailbreaking” attempts or malicious prompts that try to bypass safety controls, not to hide data. Toxic Language Detection scans the AI’s output to prevent the generation of harmful or offensive content, but it does not protect sensitive input data from reaching the model.</em></p>
+<p><a href="https://www.salesforce.com/artificial-intelligence/trusted-ai/" class="uri">https://www.salesforce.com/artificial-intelligence/trusted-ai/</a></p>
+<p><a href="https://help.salesforce.com/s/articleView?language=en_US&amp;id=ai.generative_ai_trust_layer.htm&amp;type=5" class="uri">https://help.salesforce.com/s/articleView?language=en_US&amp;id=ai.generative_ai_trust_layer.htm&amp;type=5</a></p>
+</div>
+<div id="owd" class="section level3 hasAnchor" number="1.1.2">
+<h3><span class="header-section-number">1.1.2</span> OWD<a href="agentforce-8.html#owd" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A service agent asks Agentforce to summarize a high-priority case managed by a different regional team. Although the administrator confirms the case exists in Salesforce, Agentforce responds that it cannot find the record. The service agent also cannot find this case when performing a manual global search. What is the most likely reason for this behavior?</p>
+<ul>
+<li>The Organization-Wide Default sharing setting for Cases is set to Private, and no sharing rule grants access to the agent.</li>
+</ul>
+<p><strong><em>Agentforce operates strictly within the boundaries of the user’s permissions and visibility settings. It creates a plan and executes actions using the requesting user’s security access. If the organization’s sharing model is set to Private and no sharing rules or manual sharing mechanisms grant the user access to that specific record, the AI agent effectively “cannot see” it and will report that the information is unavailable.</em></strong></p>
+<p><em>The Einstein Trust Layer is responsible for masking sensitive data and enforcing safety policies, but it does not control record-level visibility or hide the existence of records based on ownership. Granting “View All Data” is a security risk and is not required for standard agent operations, as the agent simply needs the same access as the user it is assisting. While search indexing issues can occur, the scenario describes a classic access control issue where the user (and therefore the AI agent) lacks visibility due to restrictive sharing settings.</em></p>
+</div>
+</div>
+<div id="agent-types-and-considerations" class="section level2 hasAnchor" number="1.2">
+<h2><span class="header-section-number">1.2</span> Agent Types and Considerations<a href="agentforce-8.html#agent-types-and-considerations" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<table style="width:100%;">
+<colgroup>
+<col width="2%" />
+<col width="19%" />
+<col width="48%" />
+<col width="29%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left"><strong>Agent Type</strong></th>
+<th align="left"><strong>What it Does</strong></th>
+<th align="left"><strong>Required Editions</strong></th>
+<th align="left"><strong>Required Permissions</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Employee Agent</td>
+<td align="left"><p>Assists employees by providing access to company knowledge, performing tasks, and streamlining workflows across departments.</p>
+<p>Before getting started, review <a href="https://help.salesforce.com/s/articleView?id=ai.agent_employee_agent_considerations.htm&amp;language=en_US&amp;type=5" title="Before setting up an Agentforce Employee agent, keep these considerations in mind.">Considerations for Agentforce Employee Agent</a>.</p></td>
+<td align="left"><p>Available in Enterprise, Performance, Unlimited, and Developer Editions with Foundations or Agentforce 1 Editions. Access to some standard agent actions requires<a href="https://www.salesforce.com/agentforce/pricing/">additional add-on licenses</a>.</p>
+<p>Agentforce Employee agents require <a href="https://help.salesforce.com/s/articleView?id=ai.usage_flex_credits.htm&amp;language=en_US&amp;type=5" title="Using Agentforce and embedded AI features can impact credit consumption.">Flex Credits</a>.</p></td>
+<td align="left"><p>To create and manage Agentforce Employee Agent: Manage AI Agents</p>
+<p>To use Agentforce Employee Agent, see <a href="https://help.salesforce.com/s/articleView?id=ai.agent_manage_aea_access.htm&amp;language=en_US&amp;type=5" title="Control user access to specific Agentforce Employee agents with permission sets or profiles. In Agentforce Builder, use the Agent Access page. In the legacy Agentforce Builder, use the Agent Access tab.">Manage Employee Agent Access</a>.</p></td>
+</tr>
+<tr class="even">
+<td align="left">Lead Nurturing (formerly known as SDR)</td>
+<td align="left"><p>Intelligently engages leads with personalized content, answers common questions, and schedules meetings.</p>
+<p>Before getting started, review <a href="https://help.salesforce.com/s/articleView?id=sales.sales_agent_sdr_considerations.htm&amp;language=en_US&amp;type=5">Considerations for Using Agentforce Lead Nurturing</a>.</p></td>
+<td align="left">Available in Enterprise, Performance, Unlimited, and Developer Editions with Foundations or Agentforce 1 Editions</td>
+<td align="left">See <a href="https://help.salesforce.com/s/articleView?id=sales.sales_agent_sdr_permissions.htm&amp;language=en_US&amp;type=5">SDR Agent Permission Sets</a>.</td>
+</tr>
+<tr class="odd">
+<td align="left">Sales Coach</td>
+<td align="left"><p>Intelligently gives reps personalized, actionable, and stage-specific feedback on their sales pitch or role-play session.</p>
+<p>Before getting started, review <a href="https://help.salesforce.com/s/articleView?id=sales.sales_coach_agent_gen_ai_considerations.htm&amp;language=en_US&amp;type=5">Generative AI Considerations for Agentforce Sales Coach</a>.</p></td>
+<td align="left">Available in Enterprise, Performance, Unlimited, and Developer Editions with Foundations or Agentforce 1 Editions</td>
+<td align="left">See <a href="https://help.salesforce.com/s/articleView?id=sales.sales_agents_coach_permissions.htm&amp;language=en_US&amp;type=5">Agentforce Sales Coach Permissions</a>.</td>
+</tr>
+<tr class="even">
+<td align="left">Service Agent</td>
+<td align="left"><p>Intelligently supports your customers with common inquiries and escalates complex issues.</p>
+<p>Before getting started, review <a href="https://help.salesforce.com/s/articleView?id=ai.service_agent_considerations.htm&amp;language=en_US&amp;type=5" title="To use Agentforce Service Agent, consider supported functionality, usage, limitations and allowances, limits, and other issues.">Considerations for Agentforce Service Agent</a>.</p></td>
+<td align="left">Available in Enterprise, Performance, Unlimited, and Developer Editions with Foundations or Agentforce 1 Editions. Access to some standard agent actions requires <a href="https://www.salesforce.com/agentforce/pricing/">additional add-on licenses</a>.</td>
+<td align="left"><p>To create and manage Agentforce Service agents: Manage Agentforce Service Agents permission set</p>
+<div class="float">
+<img src="https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/fc2f2f57-79fe-4598-a5e0-089f9b72c638/images/icon_note.png" alt="Note" />
+<div class="figcaption">Note</div>
+</div>
+<p>Note This permission set contains the Manage AI Agents permission, which is required to access Agentforce Builder. Manage AI Agents grants org-wide management access to all agents, not just the agent type or template named in the permission set. Users with this permission can manage, activate, and deactivate agents, customize subagents and actions, and monitor agent activity. Assign this permission set only to users who require org-wide agent management access.</p>
+<p>To let the agent user securely access data and perform actions, see <a href="https://help.salesforce.com/s/articleView?id=ai.agent_user.htm&amp;language=en_US&amp;type=5" title="Learn how Agentforce Service agents control data access. Set up an agent user for your Agentforce Service agent and assign permissions, so your agent has everything it needs to do its job.">Configure Service Agent Access</a>.</p></td>
+</tr>
+<tr class="odd">
+<td align="left">Service Assistant</td>
+<td align="left"><p>Intelligently helps your service reps resolve cases faster with case summaries and step-by-step resolution guidance.</p>
+<p>Before getting started, review <a href="https://help.salesforce.com/s/articleView?id=service.sp_considerations.htm&amp;language=en_US&amp;type=5">Considerations for Service Assistant</a>.</p></td>
+<td align="left">Available in Enterprise, Performance, and Unlimited Editions with Foundations and the Agentforce for Service add-on or Agentforce 1 Service Edition</td>
+<td align="left">See <a href="https://help.salesforce.com/s/articleView?id=service.sp_permissions.htm&amp;language=en_US&amp;type=5">Permissions and Licensing for Service Assistant</a>.</td>
+</tr>
+<tr class="even">
+<td align="left">Setup with Agentforce</td>
+<td align="left"><p>Helps your Salesforce admins complete Setup tasks, such as managing users, troubleshooting issues, and customizing your org. The Setup agent is created automatically when you enable Setup with Agentforce and isn’t visible or able to be customized in Agentforce Builder.</p>
+<p>Before getting started, review <a href="https://help.salesforce.com/s/articleView?id=xcloud.setup_agentforce_considerations.htm&amp;language=en_US&amp;type=5">Considerations for Setup with Agentforce</a>.</p></td>
+<td align="left">Available in: Enterprise, Performance, Unlimited, and Developer Editions with Foundations or Agentforce 1 Editions</td>
+<td align="left">To enable or use Setup with Agentforce: <a href="https://help.salesforce.com/s/articleView?id=xcloud.setup_agentforce_permissions.htm&amp;language=en_US&amp;type=5">See Grant Permissions to Use Setup with Agentforce</a></td>
+</tr>
+<tr class="odd">
+<td align="left">Agentforce (Default) - (Retired)</td>
+<td align="left"><p>Helps your employees accomplish key business tasks in Salesforce.</p>
+<p>Before getting started, review <a href="https://help.salesforce.com/s/articleView?id=ai.agent_default_considerations.htm&amp;language=en_US&amp;type=5" title="To use Agentforce (Default), consider supported functionality, usage, limits and allowances, and more.">Agentforce (Default) Considerations</a>.</p></td>
+<td align="left"><div class="float">
+<img src="https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/fc2f2f57-79fe-4598-a5e0-089f9b72c638/images/icon_important.png" alt="Important" />
+<div class="figcaption">Important</div>
+</div>
+<p>Important Starting June 17, 2025, Agentforce (Default) will not include new features or improvements and isn’t available in new Salesforce environments. We recommend migrating to Agentforce Employee agent for continued enhancements and support. If you plan to transition to Agentforce Employee agent or make related license changes, complete the migration of your existing Agentforce (Default) agents in advance to avoid potential disruption in agent availability. If you can’t complete the migration in advance, you can create new agents after the transition, which can involve some downtime. See <a href="https://help.salesforce.com/s/articleView?id=ai.migrate_agentforce_default_to_aea.htm&amp;language=en_US&amp;type=5">Migrate from Agentforce (Default) to Agentforce Employee Agent</a>.</p></td>
+<td align="left"><p>To create and manage Agentforce (Default): Manage AI Agents AND Manage Agentforce Default Agent OR Customize Application</p>
+<p>To use Agentforce (Default), see <a href="https://help.salesforce.com/s/articleView?id=ai.copilot_setup_user_access.htm&amp;language=en_US&amp;type=5" title="Give your employees access to the default Agentforce agent by assigning permissions to users.">Give Users Access to Agentforce (Default)</a>.</p></td>
+</tr>
+<tr class="even">
+<td align="left">Agent for Setup - (Retired)</td>
+<td align="left"><div class="float">
+<img src="https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/fc2f2f57-79fe-4598-a5e0-089f9b72c638/images/icon_note.png" alt="Note" />
+<div class="figcaption">Note</div>
+</div>
+<p>Note Agent for Setup is no longer being updated and can’t be enabled in new orgs beginning April 2026. We recommend that you use Setup with Agentforce instead, which can help with many more administrative tasks and is automatically updated with new functionality.</p>
+<p>Helps your org admins with every day administration tasks, looks for answers in Salesforce Help, and more.</p>
+<p>Before getting started, review <a href="https://resources.docs.salesforce.com/rel1/doc/en-us/static/pdf/setup_agent_original.pdf">Agent for Setup Considerations</a>.</p></td>
+<td align="left">Available in Enterprise, Performance, Unlimited, and Developer Editions with Foundations or Agentforce 1 Editions</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<p><a href="https://help.salesforce.com/s/articleView?id=ai.agent_setup_explore_types.htm&amp;type=5" class="uri">https://help.salesforce.com/s/articleView?id=ai.agent_setup_explore_types.htm&amp;type=5</a></p>
+<div id="agentforce-employee-agent" class="section level3 hasAnchor" number="1.2.1">
+<h3><span class="header-section-number">1.2.1</span> Agentforce Employee Agent<a href="agentforce-8.html#agentforce-employee-agent" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>An HR manager at Cosmic Kicks wants to deploy an AI agent to assist internal staff. The goal is to allow employees to ask questions about company benefits, retrieve their remaining time-off balance, and submit IT help desk tickets using natural language. Which AI agent type is best suited for this internal productivity scenario?</p>
+<ul>
+<li>Agentforce Employee Agent</li>
+</ul>
+<p><strong><em>The Agentforce Employee Agent is specifically designed to support internal employees by integrating with enterprise systems to answer questions and automate administrative tasks. Unlike customer-facing agents, the Employee Agent operates as a teammate in internal channels (like Slack or Salesforce) to assist with HR inquiries, IT tickets, and general productivity workflows.</em></strong></p>
+<p><em>The Agentforce Service Agent is designed for external customer support scenarios, such as resolving cases and inquiries for clients, rather than internal employee productivity. The Agentforce Sales Coach is tailored for role-playing and training sales representatives, not for general HR or IT assistance. The Agentforce SDR is built for outbound sales development and lead qualification, making it unsuitable for internal administrative use cases.</em></p>
+<p><a href="https://help.salesforce.com/s/articleView?id=ai.agent_setup_explore_types.htm&amp;type=5" class="uri">https://help.salesforce.com/s/articleView?id=ai.agent_setup_explore_types.htm&amp;type=5</a></p>
+</div>
+</div>
+<div id="core-components" class="section level2 hasAnchor" number="1.3">
+<h2><span class="header-section-number">1.3</span> Core Components<a href="agentforce-8.html#core-components" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="actions-instructions" class="section level3 hasAnchor" number="1.3.1">
+<h3><span class="header-section-number">1.3.1</span> Actions Instructions<a href="agentforce-8.html#actions-instructions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>CosmicTech Solutions is implementing custom agent actions to enhance its customer service processes. The development team needs to ensure that each action is correctly configured and functions as expected. Which core component of a custom agent action should the development team review during configuration?</p>
+<ul>
+<li>Action Instructions</li>
+</ul>
+<p><strong><em>Instructions guide the agent in deciding how to use the actions within a topic across different use cases. They define what the action does and when it’s used. Ensuring that the action instructions are properly configured is essential for making sure the agent performs tasks as expected and meets the desired outcomes.</em></strong></p>
+<p><em>Context variables, classification descriptions, and language settings are important, but do not directly define the core functionality or behavior of the action.</em></p>
+<p><a href="https://help.salesforce.com/s/articleView?id=ai.copilot_actions_instructions.htm&amp;type=5" class="uri">https://help.salesforce.com/s/articleView?id=ai.copilot_actions_instructions.htm&amp;type=5</a></p>
+</div>
+<div id="ai-sales-agents" class="section level3 hasAnchor" number="1.3.2">
+<h3><span class="header-section-number">1.3.2</span> AI Sales Agents<a href="agentforce-8.html#ai-sales-agents" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Sales Agents:</p>
-<p><span class="math display">\[
-\text{AI Sales Agents}_{} \to
+<p><span class="math display">\[\text{AI Sales Agents}_{} \to
 \text{Agent Type}_{🤖} = \begin{cases}
 \text{SDR Agent}&amp; \text{  , Sales Development Representative}\\
 \\
 \text{Sales Coach} &amp; \text{   , Situacion 2}\\
 \\
-\end{cases}
-\]</span></p>
-<p><span class="math display">\[
-\text{AI Sales Agents}_{} \to
+\end{cases}\]</span></p>
+<p><span class="math display">\[\text{AI Sales Agents}_{} \to
 \text{Agent Type}_{} = \begin{cases}
 \text{Prospecting}&amp; \text{  , Situacion 1}\\
 \\
@@ -368,8 +514,7 @@
 \\
 \text{Sales Coaching} &amp; \text{   , Situacion 4}\\
 \\
-\end{cases}
-\]</span></p>
+\end{cases}\]</span></p>
 </div>
 </div>
 <div id="qa" class="section level2 unnumbered hasAnchor">
@@ -382,8 +527,8 @@
 <li>Cosmic Solutions is building an Agentforce agent to answer customer questions about order status. During development, the admin wants to quickly test a few sample utterances and see which topics and actions the agent selects for each request before creating automated tests.</li>
 </ol>
 <p><strong>Which Agentforce builder tool can be used in this scenario?</strong></p>
-<div id="radio_TVBWMIXLUK" class="webex-radiogroup">
-<label><input type="radio" autocomplete="off" name="radio_TVBWMIXLUK" value=""></input> <span>A. Agentforce Testing Center</span></label><label><input type="radio" autocomplete="off" name="radio_TVBWMIXLUK" value="answer"></input> <span>B. Conversation Preview</span></label><label><input type="radio" autocomplete="off" name="radio_TVBWMIXLUK" value=""></input> <span>C. Enhanced Event Logs</span></label><label><input type="radio" autocomplete="off" name="radio_TVBWMIXLUK" value=""></input> <span>D. Testing Preview</span></label>
+<div id="radio_WUBUJBUHPO" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_WUBUJBUHPO" value=""></input> <span>A. Agentforce Testing Center</span></label><label><input type="radio" autocomplete="off" name="radio_WUBUJBUHPO" value="answer"></input> <span>B. Conversation Preview</span></label><label><input type="radio" autocomplete="off" name="radio_WUBUJBUHPO" value=""></input> <span>C. Enhanced Event Logs</span></label><label><input type="radio" autocomplete="off" name="radio_WUBUJBUHPO" value=""></input> <span>D. Testing Preview</span></label>
 </div>
 <p><br></p>
 <div class="webex-solution">
@@ -399,8 +544,8 @@ Testing Preview is not an actual Agentforce tool and does not exist.</p>
 <ol start="2" style="list-style-type: decimal">
 <li>A Salesforce Administrator needs to configure a solution where support agents receive a generated synopsis of lengthy case history to improve efficiency, while simultaneously ensuring that all cases marked with a “High” priority are immediately and predictably reassigned to a specific queue for compliance purposes. Which solution design aligns with te best practices for selecting between AI and traditional automation?</li>
 </ol>
-<div id="radio_KPNINMZRMX" class="webex-radiogroup">
-<label><input type="radio" autocomplete="off" name="radio_KPNINMZRMX" value="answer"></input> <span>A. Use Agentforce to generate the case synopsis and a case assignment rule to handle the priority-based reassignment.</span></label><label><input type="radio" autocomplete="off" name="radio_KPNINMZRMX" value=""></input> <span>B. Create a screen flow to handle the case synopsis generation and use Agentforce to monitor for high-priority cases.</span></label><label><input type="radio" autocomplete="off" name="radio_KPNINMZRMX" value=""></input> <span>C. Implement Agentforce to handle both the case synopsis generation and the priority-based reassignment to unify the process.</span></label><label><input type="radio" autocomplete="off" name="radio_KPNINMZRMX" value=""></input> <span>D. Configure Agentforce to handle the case reassignment and use a record-triggered flow to generate the case synopsis.</span></label>
+<div id="radio_ZMHTHAWXPE" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_ZMHTHAWXPE" value="answer"></input> <span>A. Use Agentforce to generate the case synopsis and a case assignment rule to handle the priority-based reassignment.</span></label><label><input type="radio" autocomplete="off" name="radio_ZMHTHAWXPE" value=""></input> <span>B. Create a screen flow to handle the case synopsis generation and use Agentforce to monitor for high-priority cases.</span></label><label><input type="radio" autocomplete="off" name="radio_ZMHTHAWXPE" value=""></input> <span>C. Implement Agentforce to handle both the case synopsis generation and the priority-based reassignment to unify the process.</span></label><label><input type="radio" autocomplete="off" name="radio_ZMHTHAWXPE" value=""></input> <span>D. Configure Agentforce to handle the case reassignment and use a record-triggered flow to generate the case synopsis.</span></label>
 </div>
 <p><br></p>
 <div class="webex-solution">
@@ -411,13 +556,13 @@ Check
 <p>The best practice is to use artificial intelligence for tasks that require interpretation, such as summarizing unstructured data, while relying on traditional automation for tasks requiring certainty. AI is ideal for generating synopses from lengthy histories as it can reason and condense information contextually. In contrast, compliance-driven actions like reassignment based on priority require deterministic, predictable outcomes, which are best handled by tools such as case assignment rules to ensure the action happens exactly the same way every time.</p>
 </div>
 </div>
-<div id="describe-the-capabilities-and-use-cases-of-agentforce-scenarios-about-use-cases-when-its-appropriate-to-use-ai-security-troubleshooting-agent-permissions." class="section level4 hasAnchor" number="1.1.1.1">
-<h4><span class="header-section-number">1.1.1.1</span> Describe the capabilities and use cases of Agentforce (scenarios about use cases, when it’s appropriate to use AI, security, troubleshooting agent permissions).<a href="agentforce-8.html#describe-the-capabilities-and-use-cases-of-agentforce-scenarios-about-use-cases-when-its-appropriate-to-use-ai-security-troubleshooting-agent-permissions." class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<div id="describe-the-capabilities-and-use-cases-of-agentforce-scenarios-about-use-cases-when-its-appropriate-to-use-ai-security-troubleshooting-agent-permissions." class="section level4 hasAnchor" number="1.3.2.1">
+<h4><span class="header-section-number">1.3.2.1</span> Describe the capabilities and use cases of Agentforce (scenarios about use cases, when it’s appropriate to use AI, security, troubleshooting agent permissions).<a href="agentforce-8.html#describe-the-capabilities-and-use-cases-of-agentforce-scenarios-about-use-cases-when-its-appropriate-to-use-ai-security-troubleshooting-agent-permissions." class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <ol start="3" style="list-style-type: decimal">
 <li>A sales manager asks Agentforce to summarize a specific confidential Opportunity record but receives a response the information cannot be retrieved. An administrator verifies that the Opportunity exists and that other managers can successfully access it using Agentforce. What is the primary security mechanism causing this results?</li>
 </ol>
-<div id="radio_NVGGULAAPW" class="webex-radiogroup">
-<label><input type="radio" autocomplete="off" name="radio_NVGGULAAPW" value="answer"></input> <span>A. The AI agent inherits the requesting user's permissions and strictly respects their sharing and field-level security.</span></label><label><input type="radio" autocomplete="off" name="radio_NVGGULAAPW" value=""></input> <span>B.The AI agent is restricted by a separate permission set that specifically limits its access to confidential recod types</span></label><label><input type="radio" autocomplete="off" name="radio_NVGGULAAPW" value=""></input> <span>C. The Einstein Trust Layer has automatically redacted the sensitive financial fields from the AI agent's view preventing the summary.</span></label><label><input type="radio" autocomplete="off" name="radio_NVGGULAAPW" value=""></input> <span>D. The AI agent configuration lacks the 'View All Data' system permission required to search private records.</span></label>
+<div id="radio_QRFUDVAJFL" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_QRFUDVAJFL" value="answer"></input> <span>A. The AI agent inherits the requesting user's permissions and strictly respects their sharing and field-level security.</span></label><label><input type="radio" autocomplete="off" name="radio_QRFUDVAJFL" value=""></input> <span>B.The AI agent is restricted by a separate permission set that specifically limits its access to confidential recod types</span></label><label><input type="radio" autocomplete="off" name="radio_QRFUDVAJFL" value=""></input> <span>C. The Einstein Trust Layer has automatically redacted the sensitive financial fields from the AI agent's view preventing the summary.</span></label><label><input type="radio" autocomplete="off" name="radio_QRFUDVAJFL" value=""></input> <span>D. The AI agent configuration lacks the 'View All Data' system permission required to search private records.</span></label>
 </div>
 <p><br></p>
 <div class="webex-solution">
@@ -432,8 +577,8 @@ Check
 <li>A support agent attempts to use Agentforce to update the “Escalated” checkbox on a Case record during a conversation. The agent acknowledges the request but fails to complete the update, returning an error message indicating it cannot modify the record. An administrator confirms the Agentforce action is correctly configured and active.What is the most likely cause of this issue?<br />
 </li>
 </ol>
-<div id="radio_GBWNMEOFLB" class="webex-radiogroup">
-<label><input type="radio" autocomplete="off" name="radio_GBWNMEOFLB" value=""></input> <span>A. The support agent does not have the 'Customize Application' permission required to invoke Agent actions</span></label><label><input type="radio" autocomplete="off" name="radio_GBWNMEOFLB" value=""></input> <span>B. The Einstein Trust Layer detected sensitive data and blocked the write operation.</span></label><label><input type="radio" autocomplete="off" name="radio_GBWNMEOFLB" value=""></input> <span>C. The Escalated field is not include in the Agentforce Service Agent's creating prompt.</span></label><label><input type="radio" autocomplete="off" name="radio_GBWNMEOFLB" value="answer"></input> <span>D. The support agent's profile lacks field-level security access for the Escalated field.</span></label>
+<div id="radio_VQFCUKPOPK" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_VQFCUKPOPK" value=""></input> <span>A. The support agent does not have the 'Customize Application' permission required to invoke Agent actions</span></label><label><input type="radio" autocomplete="off" name="radio_VQFCUKPOPK" value=""></input> <span>B. The Einstein Trust Layer detected sensitive data and blocked the write operation.</span></label><label><input type="radio" autocomplete="off" name="radio_VQFCUKPOPK" value=""></input> <span>C. The Escalated field is not include in the Agentforce Service Agent's creating prompt.</span></label><label><input type="radio" autocomplete="off" name="radio_VQFCUKPOPK" value="answer"></input> <span>D. The support agent's profile lacks field-level security access for the Escalated field.</span></label>
 </div>
 <p><br></p>
 <div class="webex-solution">
@@ -447,8 +592,8 @@ Check
 <ol start="5" style="list-style-type: decimal">
 <li>The sales director at Cosmic Containers is facing a challenge with a high volume of inbound leads. The sales team is unable to respond quickly enough, resulting in missed opportunities. The director needs a solution that can autonomously engage with these leads 24/7, answer initial product questions, and schedule meetings directly on the sales representatives’ calendars. Which Agentforce agent type is specifically designed to meet these requirements?</li>
 </ol>
-<div id="radio_JKTHYUPIYB" class="webex-radiogroup">
-<label><input type="radio" autocomplete="off" name="radio_JKTHYUPIYB" value=""></input> <span>A. Agentforce Sales Coach</span></label><label><input type="radio" autocomplete="off" name="radio_JKTHYUPIYB" value="answer"></input> <span>B. Agentforce SDR</span></label><label><input type="radio" autocomplete="off" name="radio_JKTHYUPIYB" value=""></input> <span>C. Agentforce Employee Agent</span></label><label><input type="radio" autocomplete="off" name="radio_JKTHYUPIYB" value=""></input> <span>D. Agentforce Service Agent</span></label>
+<div id="radio_FIACXRRPBT" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_FIACXRRPBT" value=""></input> <span>A. Agentforce Sales Coach</span></label><label><input type="radio" autocomplete="off" name="radio_FIACXRRPBT" value="answer"></input> <span>B. Agentforce SDR</span></label><label><input type="radio" autocomplete="off" name="radio_FIACXRRPBT" value=""></input> <span>C. Agentforce Employee Agent</span></label><label><input type="radio" autocomplete="off" name="radio_FIACXRRPBT" value=""></input> <span>D. Agentforce Service Agent</span></label>
 </div>
 <p><br></p>
 <div class="webex-solution">
@@ -463,8 +608,8 @@ Check
 <ol start="6" style="list-style-type: decimal">
 <li>An administrator wants to ensure that when Agentforce generates email drafts, sensitive customer credit card numbers stored in the case description are never visible to an external Large Language Model (LLM) provider. Which Einstein Trust Layer capability directly prevents this sensitive data from being shared with the LLM?</li>
 </ol>
-<div id="radio_SXVHNMWJDB" class="webex-radiogroup">
-<label><input type="radio" autocomplete="off" name="radio_SXVHNMWJDB" value=""></input> <span>A. Zero Data Retention</span></label><label><input type="radio" autocomplete="off" name="radio_SXVHNMWJDB" value=""></input> <span>B. Toxic Language Detection </span></label><label><input type="radio" autocomplete="off" name="radio_SXVHNMWJDB" value=""></input> <span>C. Prompt Defense</span></label><label><input type="radio" autocomplete="off" name="radio_SXVHNMWJDB" value="answer"></input> <span>D. PII/ Data Masking </span></label>
+<div id="radio_WELVRCNISI" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_WELVRCNISI" value=""></input> <span>A. Zero Data Retention</span></label><label><input type="radio" autocomplete="off" name="radio_WELVRCNISI" value=""></input> <span>B. Toxic Language Detection </span></label><label><input type="radio" autocomplete="off" name="radio_WELVRCNISI" value=""></input> <span>C. Prompt Defense</span></label><label><input type="radio" autocomplete="off" name="radio_WELVRCNISI" value="answer"></input> <span>D. PII/ Data Masking </span></label>
 </div>
 <p><br></p>
 <div class="webex-solution">
@@ -479,8 +624,8 @@ Zero Data Retention is a policy agreement that ensures an external LLM provider 
 <ol start="7" style="list-style-type: decimal">
 <li>A service agent asks Agentforce to summarize a high-priority case managed by a different regional team. Although the administrator confirms the case exists in Salesforce, Agentforce responds that it cannot find the record. The service agent also cannot find this case when performing a manual global search. What is the most likely reason for this behavior?</li>
 </ol>
-<div id="radio_HWXAJAYDER" class="webex-radiogroup">
-<label><input type="radio" autocomplete="off" name="radio_HWXAJAYDER" value=""></input> <span>A. The Agentforce Service Agent User profile lacks the 'View All Data' system permission required to search across regions </span></label><label><input type="radio" autocomplete="off" name="radio_HWXAJAYDER" value=""></input> <span>B. The Einstein Trust Layer has flagged the case content as sensitive and blocked the agent from accesssing it.</span></label><label><input type="radio" autocomplete="off" name="radio_HWXAJAYDER" value="answer"></input> <span>C. The Organization-Wide Default sharing settings for Cases is set to Private, and no sharing rule grants access to the agent.</span></label><label><input type="radio" autocomplete="off" name="radio_HWXAJAYDER" value=""></input> <span>D. The case record has not been indexed by the Einstein Search engine yet.</span></label>
+<div id="radio_DSYNMICYID" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_DSYNMICYID" value=""></input> <span>A. The Agentforce Service Agent User profile lacks the 'View All Data' system permission required to search across regions </span></label><label><input type="radio" autocomplete="off" name="radio_DSYNMICYID" value=""></input> <span>B. The Einstein Trust Layer has flagged the case content as sensitive and blocked the agent from accesssing it.</span></label><label><input type="radio" autocomplete="off" name="radio_DSYNMICYID" value="answer"></input> <span>C. The Organization-Wide Default sharing settings for Cases is set to Private, and no sharing rule grants access to the agent.</span></label><label><input type="radio" autocomplete="off" name="radio_DSYNMICYID" value=""></input> <span>D. The case record has not been indexed by the Einstein Search engine yet.</span></label>
 </div>
 <p><br></p>
 <div class="webex-solution">
@@ -494,8 +639,8 @@ Check
 <ol start="8" style="list-style-type: decimal">
 <li>An HR manager at Cosmic Kicks wants to deploy an AI agent to assist internal staff. The goal is to allow employees to ask questions about company benefits, retrieve their remaining time-off balance, and submit IT help desk tickets using natural language. Which AI agent type is best suited for this internal productivity scenario?</li>
 </ol>
-<div id="radio_JYLBWSTQBR" class="webex-radiogroup">
-<label><input type="radio" autocomplete="off" name="radio_JYLBWSTQBR" value=""></input> <span>A. Agentforce SDR. </span></label><label><input type="radio" autocomplete="off" name="radio_JYLBWSTQBR" value="answer"></input> <span>B. Agentforce Employee Agent</span></label><label><input type="radio" autocomplete="off" name="radio_JYLBWSTQBR" value=""></input> <span>C. Agentforce Service Agent</span></label><label><input type="radio" autocomplete="off" name="radio_JYLBWSTQBR" value=""></input> <span>D.Agentforce Sales Coach</span></label>
+<div id="radio_SVNCLUOTUU" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_SVNCLUOTUU" value=""></input> <span>A. Agentforce SDR. </span></label><label><input type="radio" autocomplete="off" name="radio_SVNCLUOTUU" value="answer"></input> <span>B. Agentforce Employee Agent</span></label><label><input type="radio" autocomplete="off" name="radio_SVNCLUOTUU" value=""></input> <span>C. Agentforce Service Agent</span></label><label><input type="radio" autocomplete="off" name="radio_SVNCLUOTUU" value=""></input> <span>D.Agentforce Sales Coach</span></label>
 </div>
 <p><br></p>
 <div class="webex-solution">
@@ -510,8 +655,8 @@ Check
 <li>CosmicTech Solutions is implementing custom agent actions to enhance its customer service processes. The development team needs to ensure that each action is correctly configured and functions as expected.<br />
 Which core component of a custom agent action should the development team review during configuration?</li>
 </ol>
-<div id="radio_DWUHTTZYAJ" class="webex-radiogroup">
-<label><input type="radio" autocomplete="off" name="radio_DWUHTTZYAJ" value=""></input> <span>A. Classification Descriptions</span></label><label><input type="radio" autocomplete="off" name="radio_DWUHTTZYAJ" value=""></input> <span>B. Context Variables</span></label><label><input type="radio" autocomplete="off" name="radio_DWUHTTZYAJ" value=""></input> <span>C. Language Settings</span></label><label><input type="radio" autocomplete="off" name="radio_DWUHTTZYAJ" value="answer"></input> <span>D. Action Instructions</span></label>
+<div id="radio_JZNOTSNVKO" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_JZNOTSNVKO" value=""></input> <span>A. Classification Descriptions</span></label><label><input type="radio" autocomplete="off" name="radio_JZNOTSNVKO" value=""></input> <span>B. Context Variables</span></label><label><input type="radio" autocomplete="off" name="radio_JZNOTSNVKO" value=""></input> <span>C. Language Settings</span></label><label><input type="radio" autocomplete="off" name="radio_JZNOTSNVKO" value="answer"></input> <span>D. Action Instructions</span></label>
 </div>
 <p><br></p>
 <div class="webex-solution">
@@ -526,8 +671,8 @@ Check
 <li>Cosmic Care Solutions is evaluating ways to improve its customer support operations. The leadership team is deciding between implementing Einstein bots or adopting Salesforce Agentforce Service Agent. They want a solution that can independently handle customer conversations, take actions in Salesforce, and reduce the need for constant human intervention and scripted workflows.<br />
 Which statement best describes the key difference between traditional bots and Agentforce Service Agent?</li>
 </ol>
-<div id="radio_PLANNLXBOU" class="webex-radiogroup">
-<label><input type="radio" autocomplete="off" name="radio_PLANNLXBOU" value=""></input> <span>A. Bots and Agentforce Service Agent both rely mainly on scripted conversations, but Agentforce Service Agent requires larger training datasets to operate effectively</span></label><label><input type="radio" autocomplete="off" name="radio_PLANNLXBOU" value=""></input> <span>B. Bots are fully autonomous and capable of proactive decision-making, whereas Agentforce Service Agent is mainly designed to route cases to human services reps.</span></label><label><input type="radio" autocomplete="off" name="radio_PLANNLXBOU" value="answer"></input> <span>C. Bots depend on predefined scripts and human assitance, while Agentforce Service Agent uses AI reasoning to autonomously manage realistic conversations and complete actions.</span></label>
+<div id="radio_PYKZPMTHYJ" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_PYKZPMTHYJ" value=""></input> <span>A. Bots and Agentforce Service Agent both rely mainly on scripted conversations, but Agentforce Service Agent requires larger training datasets to operate effectively</span></label><label><input type="radio" autocomplete="off" name="radio_PYKZPMTHYJ" value=""></input> <span>B. Bots are fully autonomous and capable of proactive decision-making, whereas Agentforce Service Agent is mainly designed to route cases to human services reps.</span></label><label><input type="radio" autocomplete="off" name="radio_PYKZPMTHYJ" value="answer"></input> <span>C. Bots depend on predefined scripts and human assitance, while Agentforce Service Agent uses AI reasoning to autonomously manage realistic conversations and complete actions.</span></label>
 </div>
 <p><br></p>
 <div class="webex-solution">
@@ -539,15 +684,13 @@ Check
 </div>
 </div>
 </div>
-<div id="explain-the-various-organization-security-controls" class="section level3 hasAnchor" number="1.1.2">
-<h3><span class="header-section-number">1.1.2</span> Explain the various organization security controls<a href="agentforce-8.html#explain-the-various-organization-security-controls" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="explain-the-various-organization-security-controls" class="section level3 hasAnchor" number="1.3.3">
+<h3><span class="header-section-number">1.3.3</span> Explain the various organization security controls<a href="agentforce-8.html#explain-the-various-organization-security-controls" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
-<li>An administrator has created and activated an Employee Agent in Agentforce to assist the sales team with internal querires abount accounts, opportunities, and company knowledge.
-However, the agent is not visible to the sales users, even though their profiles have standard object permissions.
-What is the correct step to make this Employee Agent available to the sales user?</li>
+<li>An administrator has created and activated an Employee Agent in Agentforce to assist the sales team with internal querires abount accounts, opportunities, and company knowledge. However, the agent is not visible to the sales users, even though their profiles have standard object permissions. What is the correct step to make this Employee Agent available to the sales user?</li>
 </ul>
-<div id="radio_IGYNOKDOJI" class="webex-radiogroup">
-<label><input type="radio" autocomplete="off" name="radio_IGYNOKDOJI" value=""></input> <span>A. Assign the dedicated agent user (auto-generated for the Employee Agent) to a permission set with the 'View All Records' and 'View All fields' permissions on relvant objects. </span></label><label><input type="radio" autocomplete="off" name="radio_IGYNOKDOJI" value="answer"></input> <span>B. In the Agentforce Agents Setup page, open the agent details and add the sales users' profiles or permission sets directtly to the Agent Accesss tab on the agent record. </span></label><label><input type="radio" autocomplete="off" name="radio_IGYNOKDOJI" value=""></input> <span>C. In the configuration page of a permission set assigned to the sales users, clikc Agent Access, Edit, and move the specific Employee Agent t the Enabed Agents list.</span></label><label><input type="radio" autocomplete="off" name="radio_IGYNOKDOJI" value=""></input> <span>D. Ensure the sales users have the 'Connect Agent to Lightning Experience' permission enabled in their profiles, as this controls agent visibility in the internal UI.</span></label>
+<div id="radio_ODILMGGKPI" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_ODILMGGKPI" value=""></input> <span>A. Assign the dedicated agent user (auto-generated for the Employee Agent) to a permission set with the 'View All Records' and 'View All fields' permissions on relvant objects. </span></label><label><input type="radio" autocomplete="off" name="radio_ODILMGGKPI" value="answer"></input> <span>B. In the Agentforce Agents Setup page, open the agent details and add the sales users' profiles or permission sets directtly to the Agent Accesss tab on the agent record. </span></label><label><input type="radio" autocomplete="off" name="radio_ODILMGGKPI" value=""></input> <span>C. In the configuration page of a permission set assigned to the sales users, clikc Agent Access, Edit, and move the specific Employee Agent t the Enabed Agents list.</span></label><label><input type="radio" autocomplete="off" name="radio_ODILMGGKPI" value=""></input> <span>D. Ensure the sales users have the 'Connect Agent to Lightning Experience' permission enabled in their profiles, as this controls agent visibility in the internal UI.</span></label>
 </div>
 <p><br></p>
 <div class="webex-solution">
