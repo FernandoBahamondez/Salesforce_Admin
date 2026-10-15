@@ -38,7 +38,7 @@ sharing-setting
 object-manager
 opportunity-team-member
 email-template
-automation
+automation-15
 approval-processes
 workflow-rule
 case-escalation-rule
@@ -72,7 +72,7 @@ create-a-case-and-customize-it-if-required.
 debug-option
 view-test
 error-and-warning-pane
-object-manager-and-lightning-app-builder.
+object-manager-lightning-app-builder-15
 question---objective-1
 lookup-filter
 contact-with-multiple-companies.
@@ -98,7 +98,7 @@ dynamic-form
 new-line-of-business
 count-type-roll-up-summary
 campaign
-service-and-support-applications
+service-support-applications-10
 queues
 case-assignment-rules
 auto-response-rule
@@ -122,8 +122,7 @@ omni-channel
 support-process
 open-cti
 email-to-case
-productivity-and-collaboration
-objective-1---47-questions
+productivity-collaboration-10
 activity-settings
 roll-up-of-activities-to-a-contacts-primary-account
 enable-group-task
@@ -153,7 +152,6 @@ email-to-salesforce
 email-folder
 flow-builder-1
 capabilities-of-salesforce-mobile-app
-objective-2
 chatter-describe-the-features
 enable-profile-based-roll-out-for-chatter
 allow-records-in-groups
@@ -186,7 +184,7 @@ appexchange
 credit-card-payment
 appexchange-isv-partner
 agentexchange
-sales-and-marketing-applications
+sales-marketing-applications-10
 product
 price-books
 sales-process
@@ -206,7 +204,6 @@ einstein-lead-scoring
 sales-pipeline-visibility-and-forecasting
 pipeline-inspection
 dynamic-highlights-panel
-objective-2-1
 campaign-1
 campaign-management
 campaign-influence
