@@ -1,4 +1,4 @@
-# Object Manager and Lightning App Builder.
+# Object Manager & Lightning App Builder 15%
 
 ## 17 Question - Objective 1
 
@@ -26,7 +26,7 @@ A sales manager often finds that a contact has a relationship with multiple comp
 How can a Salesforce Administrator enable this?
 
 - Add the Related Accounts related list to the Contact page layout,\
-  add the Related Contacs related list on the account page layout,\
+  add the Related Contacts related list on the account page layout,\
   and remove the existing Contacts related list on the Account page layout.
 
 - Enable the 'Contacts to Multiple Accounts' feature.

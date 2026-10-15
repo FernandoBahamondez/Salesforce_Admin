@@ -1,6 +1,6 @@
-# Productivity and Collaboration
+# Productivity & Collaboration 10%
 
-# Objective 1 - 47 questions
+Objective 1 \| 47 questions
 
 ## Activity Settings
 
@@ -544,9 +544,9 @@ When a user accesses Salesforce through a mobile phone browser on an Android dev
 
 <https://help.salesforce.com/s/articleView?language=en_US&id=000380219&type=1>
 
-# Objective 2
+------------------------------------------------------------------------
 
-55 Questions.
+Objective 2 -55 Questions.
 
 ## Chatter \| Describe the features
 

@@ -1,4 +1,4 @@
-# Sales and Marketing Applications
+# Sales & Marketing Applications 10%
 
 Objective 1 \| 40 Questions
 
@@ -302,7 +302,9 @@ The Dynamic Highlights Panel component is an advanced alternative to the traditi
 
 ![](images/clipboard-2190630262.png)
 
-# Objective 2
+------------------------------------------------------------------------
+
+Objective 2
 
 ## Campaign
 
