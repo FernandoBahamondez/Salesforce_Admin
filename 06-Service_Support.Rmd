@@ -48,6 +48,18 @@ What is true regarding queues?
 
 ![](images/clipboard-1881088664.png){width="476"}
 
+## Support Settings
+
+Which of the following are true regarding automated case actions in Salesforce?
+
+- When a case is automatically assigned using a case assignment rule, the automated case user is listed in the 'Case History' related list.
+
+- When a case is created through Web-to-Case, the automatedcase user is listed in the 'Case History' related list.
+
+The automated case user is listed in the 'Case History' related list for all automated case changes in Salesforce. For example, automated case changes can occur when a case is assigned using an assignment rule, when a case is escalated, or when a case is created through Web-to-Case or On-Demand Email-to-Case.
+
+![](images/clipboard-524422109.png)
+
 ## Case Assignment Rules
 
 Tim works for a Support Center that is looking to streamline their case management. Currently, all cases are routed to a single user who then manually assigns them to support reps. The support center handles all cases based on the Geography field selected on the case. Which of the following combination of configuration options could Tim suggest to help automate their Case Management?

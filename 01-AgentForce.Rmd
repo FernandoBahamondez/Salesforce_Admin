@@ -28,6 +28,32 @@ An administrator wants to ensure that when Agentforce generates email drafts, se
 
 <https://help.salesforce.com/s/articleView?language=en_US&id=ai.generative_ai_trust_layer.htm&type=5>
 
+Cosmic Bank's compliance team asks the admin whether sensitive customer data typed into an Agentforce conversation is masked before being sent to the underlying large language model, the same way it would be for other generative AI features like Einstein Work Summaries. How should the admin respond?
+
+- Pattern-based and field-based data masking for LLMs is disabled for agents, so this masking behaviour soes not apply to Agentforce conversations the same way.
+
+***Pattern-based and field-based data masking for LLMs is disabled for agents for better performance, which is a key distinction admins must understand when evaluating data governance for Agentforce versus other Einstein generative AI features such as Einstein Service Replies or Work Summaries, where masking can be configured.***
+
+*While data masking can help protect sensitive information from exposure to the LLMs, in some cases, it can affect the accuracy and relevance of the agent’s response.*
+
+*Claiming that all agent conversations are automatically masked the same way as other generative AI features is factually incorrect for agents specifically. Claiming masking is turned off everywhere except Agentforce reverses the actual behavior. Attributing masking to the end user's browser is also incorrect, since data masking is a server-side Einstein Trust Layer capability, not a browser setting.*
+
+<https://help.salesforce.com/s/articleView?id=ai.copilot_trust.htm&type=5>
+
+### Zero-data retention policy
+
+The security team at Cosmic Bank is reviewing Agentforce before rollout. The team needs assurance that the external model provider will not keep the prompts and responses sent to its large language model and will not use them to train its models. Which Einstein Trust Layer capability addresses this requirement?
+
+- Zero-data retention policy
+
+***Under the zero-data retention policy, third-party LLM providers don’t retain data sent to their models. No data is used for model training or product improvements by those providers. Salesforce enforces this policy with its external model providers.***
+
+*Data masking detects sensitive data and replaces it before the prompt is sent to the model. It limits what the model sees but doesn’t govern whether the provider keeps or trains on what it receives.*
+
+*The audit trail logs prompts, responses, and trust signals in Data 360 so they can be reviewed. It supports oversight inside Salesforce and doesn’t control what the external provider does with the data.*
+
+*Toxicity scoring rates generated content for harmful or inappropriate language and logs the scores in the audit trail. It doesn’t govern whether the external provider keeps or trains on the data it receives*
+
 ### OWD
 
 A service agent asks Agentforce to summarize a high-priority case managed by a different regional team. Although the administrator confirms the case exists in Salesforce, Agentforce responds that it cannot find the record. The service agent also cannot find this case when performing a manual global search. What is the most likely reason for this behavior?
@@ -37,6 +63,28 @@ A service agent asks Agentforce to summarize a high-priority case managed by a d
 ***Agentforce operates strictly within the boundaries of the user’s permissions and visibility settings. It creates a plan and executes actions using the requesting user's security access. If the organization's sharing model is set to Private and no sharing rules or manual sharing mechanisms grant the user access to that specific record, the AI agent effectively "cannot see" it and will report that the information is unavailable.***
 
 *The Einstein Trust Layer is responsible for masking sensitive data and enforcing safety policies, but it does not control record-level visibility or hide the existence of records based on ownership. Granting "View All Data" is a security risk and is not required for standard agent operations, as the agent simply needs the same access as the user it is assisting. While search indexing issues can occur, the scenario describes a classic access control issue where the user (and therefore the AI agent) lacks visibility due to restrictive sharing settings.*
+
+### Einstein Trust Layer's
+
+Cosmic Telecom wants to understand what protects the org from a customer trying to manipulate the agent into ignoring its instructions or revealing internal system prompts. Which Salesforce feature is primarily responsible for this kind of protection?
+
+- The Einstein Trust Layer's prompt injection and toxicity detection.
+
+The Einstein Trust Layer is the secure AI architecture natively built into Salesforce that Agentforce relies on; it includes content-safety protections such as prompt injection detection and toxicity detection designed to defend against attempts to manipulate the model or extract unintended output. Field-level security governs access to record data, not conversational manipulation of the model, so it doesn't address this concern. A page layout is a UI configuration and has no bearing on AI model security. Organization-wide default sharing settings control record visibility between users, not protection against prompt manipulation.
+
+<https://help.salesforce.com/s/articleView?id=ai.copilot_trust.htm&type=5>
+
+### Agentforce Testing Center
+
+Cosmic Travel wants to test its agent against a large, diverse set of realistic customer questions before a major release, rather than manually typing each test conversation one at a time. Which tool should the admin use?
+
+- Agentforce Testing Center, which supports batch testing.
+
+***Agentforce Testing Center is purpose-built for scaled validation: it supports batch testing so admins can run large sets of test cases (including AI-assisted generation of test data) and review results systematically, dramatically reducing testing time compared to one-off manual runs.***
+
+*Using Conversation Preview repeatedly for each test case is well suited to quick, individual checks during active building but is not designed for large-scale batch validation. The Salesforce mobile app's offline briefing feature is unrelated to agent testing. The Setup Audit Trail records configuration changes, not conversational test results.*
+
+<https://help.salesforce.com/s/articleView?id=ai.agent_testing_center.htm&language=en_US&type=5>
 
 ## Agent Types and Considerations
 
@@ -98,6 +146,20 @@ An HR manager at Cosmic Kicks wants to deploy an AI agent to assist internal sta
 
 <https://help.salesforce.com/s/articleView?id=ai.agent_setup_explore_types.htm&type=5>
 
+Cosmic Travel Group plans to launch a service agent that answers general customer questions. During planning, the consultant finds that many knowledge articles have inconsistent formatting, outdated details, and conflicting information. The articles for the company’s new guided tours offering were updated recently and are well structured. What should the consultant recommend?
+
+- Start with a FAQ use case for guided tours while the general articles are improved.
+
+***Agents need trustworthy, high-quality data to perform well, so the first use case should be one that the existing data can support. Starting with the guided tours FAQ lets the company deliver value with ready data while it cleans up the rest of the knowledge base. The results can then guide those improvements.***
+
+*Refining instructions after launch doesn’t fix the underlying problem. An agent grounded in outdated and conflicting articles gives unreliable answers, however its instructions are written.*
+
+*When data requirements can’t be met, the guidance is to reduce the scope or make the agent less autonomous, not more. More autonomy over weak data increases risk.*
+
+*Adding another source doesn’t fix the outdated and conflicting articles that the agent would still draw on. The first use case should be one that the existing data can already support.*
+
+<https://trailhead.salesforce.com/content/learn/modules/agentforce-agent-planning/identify-the-agent-use-case>
+
 ## Core Components
 
 ### Actions Instructions
@@ -150,6 +212,104 @@ Testing Preview is not an actual Agentforce tool and does not exist.*
 
 ![](images/clipboard-892693140.png)
 
+Cosmic Media's admin has updated several instructions in an existing Topic and wants to verify the agent responds correctly before rolling the change out to all users. What is the most appropriate tool to use directly within Agent Builder for this quick validation?
+
+- Conversation Preview, to test the agent's responses interactively before publishing changes.
+
+***Agent Builder provides a Conversation Preview panel that lets admins interact with the agent in real time to test how it responds to updated Topics, instructions, or actions before those changes go live. This is the light, in-context testing referenced as part of an admin's day-to-day responsibility for maintaining agents.***
+
+*The Setup Audit Trail tracks configuration changes made by users in the org, not conversational agent behavior, so it doesn't serve this purpose. Object Manager is used to manage schema and fields, not to test agent responses. Report Builder is used to build reports on Salesforce data, not to validate an agent's conversational behavior.*
+
+### Topic
+
+Cosmic Shoes' admin is building a new agent in Agent Builder and needs to define what the agent is allowed to discuss and do within a specific area of the business, such as order status inquiries. Which agent building block should the admin configure first for this purpose?
+
+- A Topic
+
+***A Topic (subagent) is the foundational building block in Agent Builder that scopes what an agent can understand and act on for a given subject area; each Topic includes a description, scope, instructions, and the actions assigned to it.***
+
+*A permission set controls user access to the agent itself, not conversational scope, so it doesn't serve this purpose. A validation rule enforces data integrity on records and is unrelated to agent conversation boundaries. A page layout controls how fields display on a record in the UI and has no effect on what an agent is scoped to discuss or do.*
+
+<https://help.salesforce.com/s/articleView?language=en_US&id=ai.copilot_topics.htm&type=5>
+
+Cosmic Retail's admin notices that the agent frequently invokes the wrong action within a Topic that has many available actions. According to Agentforce best practices, what is the most effective way to help the reasoning engine choose the correct action?
+
+- Write clear, specific descriptions for each action and its inputs/outputs so the reasoning engine can match user intent accurately.
+
+***The reasoning engine relies heavily on the natural-language descriptions of actions, their inputs, and their outputs to decide when and how to invoke them; vague or overlapping descriptions are a leading cause of incorrect action selection.***
+
+*Rebuilding the agent from scratch is unnecessary and doesn't address the root cause. Disabling every action but one would cripple the agent's intended functionality rather than fixing the selection logic. Renaming actions with generic labels like Action1 or Action2 would make it harder, not easier, for the reasoning engine to distinguish between them.*
+
+<https://help.salesforce.com/s/articleView?id=003876294&type=1>
+
+Cosmic Realty's admin is reviewing a Topic that currently has 30 actions assigned to it and is concerned about agent accuracy. What is the recommended approach?
+
+- Keep the number of actions assigned to a single Topic reasonably scoped.
+
+***Best practice guidance for building agents emphasizes keeping each Topic focused, with a scoped and manageable number of well-described actions, since an overloaded Topic increases ambiguity and reduces the reasoning engine's accuracy in selecting the right action for a given request.***
+
+*Assigning every available action to every Topic, or combining all Topics into one, both increase ambiguity and scope creep rather than improving agent reliability, running counter to the scoped, well-defined Topic design Salesforce recommends. Removing the Topic's description field is also counterproductive, since that description is what the reasoning engine uses to match user intent to the right Topic in the first place; removing it would degrade accuracy further.*
+
+### Data Cloud
+
+Before an admin can turn on Einstein generative AI features to support Agentforce, what must already be provisioned and enabled in the org?
+
+- Data Cloud
+
+Data Cloud must be provisioned and enabled before turning on Einstein generative AI features, since it underlies essential functionality including the Trust Layer.
+
+<https://help.salesforce.com/s/articleView?id=ai.generative_ai_enable.htm&type=5>
+
+### PS & PSG
+
+Cosmic Logistics has activated its first Agentforce agent, but several users report they cannot see or open the agent at all. The admin confirms the agent is active. What is the most likely cause?
+
+- The users have not been assigned the required permissin set or permission set group
+
+***Users need to be explicitly granted access to an agent through the appropriate permission set or permission set group before the agent becomes visible to them, even once the agent itself is active.***
+
+*An overloaded Topic with too many actions might affect agent performance or accuracy, but it would not prevent the agent from appearing at all. Browser compatibility is not a documented cause of this specific access issue. The choice of flow versus Apex for an action has no bearing on whether users can see the agent itself.*
+
+<https://help.salesforce.com/s/articleView?id=ai.copilot_setup_user_access.htm&type=5>
+
+Cosmic Outfitters has a service agent with an action that runs a flow to update ‘Order’ records. In conversations, the action fails with an ‘Insufficient Privileges’ error. When the Salesforce administrator runs the same flow, it completes without errors. What should the administrator check first?
+
+- Whether the agent user's permission set grants the needed object permissions on 'Order'.
+
+***‘Insufficient Privileges’ errors usually point to missing permissions or incorrect object-level access. The agent user’s profile or permission set must include at least the minimum object permissions for each object the agent works with through flows. Running the flow as the agent user, instead of as an administrator, reveals permission issues that are otherwise easy to miss.***
+
+*Subagent instructions affect whether and when the agent chooses an action. In this scenario, the agent already calls the action, and the failure happens when the flow runs.*
+
+*Activating a new agent version doesn’t change the agent user’s access. The same permission error would occur in the new version.*
+
+*Data masking hides sensitive data from the large language model. It doesn’t affect the agent user’s access to records, so it can’t cause or fix an ‘Insufficient Privileges’ error.*
+
+### Apex Class
+
+A developer at Cosmic Logistics builds a custom agent action that calls an Apex class to calculate delivery estimates. The class works when the developer tests it directly, but the action fails when the agent runs it. The agent user has the object permissions it needs. Which step resolves the issue while keeping the agent user’s access to a minimum?
+
+- Give the agent user's profile access to the Apex class.
+
+***For Apex, the guidance is to extend the security for any Apex class used by an agent to the agent user’s profile. Without access to the class, the action fails for the agent even though it runs for the developer.***
+
+*The class runs correctly when the developer tests it directly, so the inputs aren’t the problem. The failure only happens when the agent user runs it, which points to access rather than instructions.*
+
+*A data library provides content that grounds the agent’s answers, such as knowledge articles or uploaded files. It doesn’t give the agent user permission to run an Apex class.*
+
+*‘Modify All Data’ grants broad access across the org and goes far beyond what the action needs. Agent users should have only the minimum level of access for the work the agent does.*
+
+<https://trailhead.salesforce.com/content/learn/modules/agent-behavior-troubleshooting-in-agentforce/fix-configuration-and-data-issues>
+
+### Human Escalation
+
+Cosmic Software is deploying an Agentforce Service Agent to handle inbound customer chats and wants the agent to bring a human support rep into the conversation when a request is too complex for the agent to resolve. What capability supports this requirement?
+
+- Human escalation, which allows the agent to hand off the conversation to a human agent.
+
+***Agentforce agents, including Service Agent templates, support human escalation so that when a conversation exceeds the agent's defined scope or capability, it can be transferred to a human representative along with a conversation summary and key details to enable a smooth handoff.***
+
+*A validation rule only controls whether a record can be saved and does not manage conversation handoff. A public group manages sharing visibility, not conversational escalation behavior. A required field affects record save behavior and has no role in routing a live conversation to a human.*
+
 ## Agent & Case
 
 A sales manager asks Agentforce to summarize a specific confidential Opportunity record but receives a response indicating the information cannot be retrieved. An administrator verifies that the Opportunity exists and that other managers can successfully access it using Agentforce. What is the primary security mechanism causing this result?
@@ -182,6 +342,12 @@ Which statement best describes the key difference between traditional bots and A
 Traditional bots rely heavily on scripted conversations, predefined flows, and human support for handling more complex situations. In contrast, Agentforce Service Agent uses Salesforce’s AI reasoning engine to autonomously engage in realistic customer conversations, complete actions in Salesforce, and proactively support customer service goals with less manual setup and intervention.
 
 <https://trailhead.salesforce.com/content/learn/modules/salesforce-messaging/enhance-a-basic-messaging-implementation>
+
+### Poor Feet
+
+Cosmic Wealth Partners wants an agent to approve or decline client requests for exceptions to its fee schedule. Today, senior advisors decide each request case by case. No written policy defines when an exception is allowed. The company’s records of past requests are complete and up to date. How should the consultant assess this use case?
+
+- It's a poor fit for now, because the decision lack well-defined policies fot he agent to follow.
 
 ## Q&A {.unnumbered}
 
