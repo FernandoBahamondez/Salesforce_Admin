@@ -60,6 +60,26 @@ The automated case user is listed in the 'Case History' related list for all aut
 
 ![](images/clipboard-524422109.png)
 
+## Case Management
+
+After implementing the Lightning Service Console, agents complain that they find it difficult to locate updates of a specific type within case records, such as email messages and text posts. What should the Consultant recommend?
+
+- Assign the record page to the Service Console app and profile.
+
+- Add the Chatter Feed component to the Case record page.
+
+***Custom case feed filters are no longer supported in Lightning Experience. The Salesforce Administrator can add the Chatter feed component to the case Lightning record page and display the case record's updates. The Chatter feed items are automatically filtered and categorized into the following tabs:***
+
+*All Updates\
+Emails\
+Call Logs\
+Text Posts\
+Status Changes*
+
+*The Lightning case record page should be assigned to the app and user profile to allow visibility.*
+
+![](images/clipboard-1389059201.png)
+
 ## Case Assignment Rules
 
 Tim works for a Support Center that is looking to streamline their case management. Currently, all cases are routed to a single user who then manually assigns them to support reps. The support center handles all cases based on the Geography field selected on the case. Which of the following combination of configuration options could Tim suggest to help automate their Case Management?
@@ -267,7 +287,7 @@ Cosmic Solutions often has multiple contacts involved in a case. Which of the fo
 
 ### Flow
 
-Cosmic Solutions provides call center services for the business-to-consumer needs of various enterprises throughout the country. The management is considering the use of a flow for automating the case management process while a support agent is on a call with a customer. Which of the following are typical use cases of flow for case management in a contact center?
+Cosmic Solutions provides call center services for the business-to-consumer needs of various enterprises throughout the country. The management is considering the use of a flow for automating the case management process while a support agent is on a call with a customer. Which of the following are typical use cases of flow for case management in a contact center? \*\*
 
 - Provide a series of prompts for troubleshooting customer issues.
 

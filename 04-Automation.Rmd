@@ -78,6 +78,38 @@ A collection variable in a flow contains a list of names of supported shipping c
 
 ![](images/clipboard-404116776.png)
 
+The Salesforce Administrator of Cosmic Furniture has defined a lookup relationship between the standard Account object and a custom object called 'Survey Result'. The director of the company would like a field on the Account object that tracks the total number of survey results associated with the account when related survey results are created or deleted. Which of the following should be used to meet this requirement?
+
+- Flow Builder
+
+***An after-save record-triggered flow can be created to count the total number of survey results related to an account when a new survey result is created, and then store that value in a field on the Account record. Similarly, a before-delete record-triggered flow can be created to recalculate the related survey results, decrement the count, and update the Account field when a survey result is deleted.***
+
+*Because the relationship is a lookup, a roll-up summary field cannot be used. A report subscription can send summarized data to users on a schedule but cannot update record fields. An Apex trigger could also be used, but this requirement can be met without writing any code.*
+
+![](images/clipboard-1985499730.png)
+
+Easy Finance requires a credit check for each loan application with a value greater than \$10,000 before a decision is made on the application. Loan applications are represented in Salesforce using the Opportunity object. Salesforce users perform the credit check. Which of the following is the most appropriate solution to notify such users that a credit check needs to be performed by a certain date?
+
+- Use Flow Builder to create a task for the credit check user.
+
+***An Approval Process is not the appropriate solution as the credit check is a step before the actual decision or approval of the credit. However, it could be used in a later step to notify users; a task or email alert can be used.***
+
+*Flow Builder can be used to create tasks for related users. The users would be notified of the task, and it would appear in their tasks list. In addition, a due date can be set on the task, and they can be reminded of the task if it becomes overdue and is not complete.*
+
+*It's important to note that Salesforce now recommends using Flow Builder to automate business processes since it's more efficient and offers better performance than other declarative tools.*
+
+*There is no prebuilt flow named 'Create a Task'.*
+
+Universal Containers has a requirement to build a flow that will create orders and order products when an opportunity with opportunity products is 'Closed/Won'. In the flow, how should a Salesforce Administrator reference the ID of a newly created order in the 'Create Records' action for the order products to relate them to the order?
+
+- Use the automatically generated value from the variable on the 'Orded ID' field in the 'Create Records' action.
+
+***The ID of the created record from a 'Create Records' action in a Lightning Flow is automatically stored as an output variable to use in subsequent record actions. In this case, the automatically stored order ID output variable would be used to relate the new order product to the correct order created in the previous Flow action.***
+
+*Manually assigning a variable in the 'Create Order' action is not needed. Copying and pasting order IDs would not be efficient as these IDs are automatically generated. Connecting actions determine the order of how actions are executed in the flow, and field value assignments are not defined by it.*
+
+![](images/clipboard-2642620763.png)
+
 ### Resources.
 
 Resources store and reference values used throughout the flow.\

@@ -656,7 +656,7 @@ Julie has created a new post on the Chatter feed. After she has shared the post,
 
 #### Editing feed posts and comments
 
-What is true regarding editing feed posts and comments?
+What is true regarding editing feed posts and comments? \*\*
 
 - The ability for users to edit their own feed posts is enabled by default.
 

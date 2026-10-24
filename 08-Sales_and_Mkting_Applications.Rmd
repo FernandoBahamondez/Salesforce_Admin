@@ -398,7 +398,7 @@ In Lightning Experience, a list email will send an individual email to each reci
 
 ![](images/clipboard-4103764558.png)
 
-A sales representative who uses Lightning Experience would like to send a personalized email to some of the campaign members related to a campaign. Which of the following should be used by the sales representative to send a list email for this use case?
+A sales representative who uses Lightning Experience would like to send a personalized email to some of the campaign members related to a campaign. Which of the following should be used by the sales representative to send a list email for this use case? \*\*
 
 - Campaign Members related list detailed view.
 

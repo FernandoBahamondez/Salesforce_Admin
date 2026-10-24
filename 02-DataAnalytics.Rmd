@@ -1,5 +1,21 @@
 # Data & Analytics Managment 17%
 
+## Dashboard
+
+### Subscribers
+
+A user wants to subscribe to a dashboard in Lightning Experience to receive its refreshed results every day by email. He would also like to send the results to two of his coworkers by adding them as subscribers. Which of the following statements are important to consider for adding other users as subscribers?
+
+- Any filter applied to the dashboard are not applied to the emailed dashboard.
+
+- Dashboard subscriptions can be by a user, group or role-based.
+
+- Only a user who has permission to access the dashboard can be added as a subscriber.
+
+More than one user can be added as an additional subscriber to a dashboard in Lightning Experience. Only users with access to the dashboard are shown in the list of recipients who are available for subscription. Filters applied to a dashboard are not applied to the emailed dashboard; the dashboard appears unfiltered. Dashboard subscriptions can be by a user, group, or by role. To add other users to the dashboard subscription, the user must have the specific 'Subscribe to Dashboards: Add Recipients' permission granted via profile or permission set.
+
+![](images/clipboard-967958412.png)
+
 ## Questions
 
 ### *Describe the considerations when importing, updating, transferring, mass deleting, exporting and backing up data.* {.unnumbered}

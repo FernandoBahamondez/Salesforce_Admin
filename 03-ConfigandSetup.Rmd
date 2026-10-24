@@ -110,6 +110,16 @@ Profile Object Settings include:\
 
 ##### Minimum Access - Salesforce
 
+All users in a Salesforce org have been assigned a profile that allows them to read, create, edit, and delete records of most of the standard objects. The Salesforce Administrator needs to provide access to a group of external users but would like to ensure that they have read-only access to all the major standard objects. What is the best way to accomplish this?
+
+- Clone the 'Minimum Access' standard profile, edit this new custom profile to add read-only access to the necessary objects, and assign it to the external users.
+
+***Salesforce includes a number of standard profiles that can be readily used, such as the 'Minimum Access' profile which includes the following permissions: Access Activities, Chatter Internal User, Lightning Console User, and View Help Link. Salesforce recommends cloning a standard profile and assigning users to the cloned profile as a best practice. This way, further modifications to access and permissions that are needed in the future can be made easily. External users that are required to have read-only access can be assigned the cloned Minimum Access profile.***
+
+*On the other hand, a permission set can only be used to grant additional permissions to specific users and not remove or restrict access. Also, there is no 'Delete All' permission on the User object.*
+
+![](images/clipboard-2731191348.png)
+
 The company has a group of support users who require access to Salesforce. All these users need access to Chatter features and activities. A few of these users also require the ability to view and edit cases and records of a custom object called 'Product Issue'. None of the users should be able to view or edit the records of any other object. Which solution should be utilized to ensure that these users have the required permissions?
 
 - Assign the 'Minimun Access - Salesforce' to all the users and assign a permission set to the user who requiere additional access.
