@@ -1,4 +1,37 @@
-# Object Manager & Lightning App Builder 15%
+# Object Manager & Lightning App Builder 
+
+## Fundamentals
+
+### Lightning App Builder
+
+![](images/clipboard-1981036481.png)
+
+![](images/clipboard-314906016.png)
+
+![](images/clipboard-154341543.png)
+
+![](images/clipboard-2559163409.png)
+
+![](images/clipboard-3519029029.png)
+
+# ![](images/clipboard-1659280374.png)
+
+Create home page in the app
+
+\
+![](images/clipboard-2357431692.png)
+
+![](images/clipboard-3439631807.png)
+
+![](images/clipboard-3447680060.png)
+
+![](images/clipboard-3951323313.png)
+
+![](images/clipboard-1712513286.png)
+
+![](images/clipboard-1051788448.png)
+
+# 15%
 
 ## 17 Question - Objective 1
 
