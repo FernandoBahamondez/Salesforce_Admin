@@ -1,4 +1,4 @@
-# Object Manager & Lightning App Builder 
+# Object Manager & Lightning App Builder 15%
 
 ## Fundamentals
 
@@ -14,7 +14,7 @@
 
 ![](images/clipboard-3519029029.png)
 
-# ![](images/clipboard-1659280374.png)
+asd![](images/clipboard-1659280374.png)
 
 Create home page in the app
 
@@ -30,8 +30,6 @@ Create home page in the app
 ![](images/clipboard-1712513286.png)
 
 ![](images/clipboard-1051788448.png)
-
-# 15%
 
 ## 17 Question - Objective 1
 
