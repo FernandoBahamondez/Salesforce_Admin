@@ -90,11 +90,9 @@ create-a-case-and-customize-it-if-required.
 debug-option
 view-test
 error-and-warning-pane
-object-manager-lightning-app-builder
+object-manager-lightning-app-builder-15
 fundamentals-2
 lightning-app-builder
-section
-section-1
 question---objective-1
 lookup-filter
 contact-with-multiple-companies.
